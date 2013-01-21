@@ -10,24 +10,14 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
-using Microsoft.Phone.Shell;
-
 
 namespace _2UG
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class welcomepage : PhoneApplicationPage
     {
-        // Constructor
-        public MainPage()
+        public welcomepage()
         {
             InitializeComponent();
-
-            
-        }
-
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            
         }
     }
 }

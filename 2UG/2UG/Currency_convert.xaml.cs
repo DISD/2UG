@@ -10,24 +10,14 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
-using Microsoft.Phone.Shell;
-
 
 namespace _2UG
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class Currency_convert : PhoneApplicationPage
     {
-        // Constructor
-        public MainPage()
+        public Currency_convert()
         {
             InitializeComponent();
-
-            
-        }
-
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            
         }
     }
 }

@@ -1,0 +1,60 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:Currency_convert.xaml" caret="0" fromTop="0" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:Other.xaml" caret="0" fromTop="0" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:welcomepage.xaml" caret="0" fromTop="0" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:Animals.xaml" caret="2326" fromTop="18" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:ughist.xaml" caret="1684" fromTop="25" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="0" fromTop="0" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml" caret="1881" fromTop="12" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml" caret="1202" fromTop="11" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml" caret="1574" fromTop="15" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml" caret="1" fromTop="0" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="675" fromTop="31" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="555" fromTop="17" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="567" fromTop="11" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="675" fromTop="13" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="686" fromTop="24" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="686" fromTop="29" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="675" fromTop="7" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="365" fromTop="0" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml" caret="2210" fromTop="18" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="690" fromTop="20" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="5265" fromTop="25" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="6369" fromTop="31" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:Animals.xaml" caret="2502" fromTop="18" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:ughist.xaml" caret="1684" fromTop="25" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="using" priority="30" />
+      <Item value="Microsoft" priority="30" />
+      <Item value="Phone" priority="26" />
+      <Item value="Shell" priority="53" />
+      <Item value="namespace" priority="30" />
+      <Item value="Shell.Interop" priority="22" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
