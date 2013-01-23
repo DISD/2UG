@@ -29,5 +29,20 @@ namespace _2UG
         {
             
         }
+
+        private void button1_Click_1(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Transport.xaml", UriKind.Relative));
+        }
+
+        private void MenuItem1_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/", UriKind.Relative));
+        }
+
+        private void MenuItem2_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/", UriKind.Relative));
+        }
     }
 }

@@ -16,3 +16,4 @@ E:\windows-phone-apps\2UG\2UG\2UG\obj\Debug\Currency_convert.g.i.cs
 E:\windows-phone-apps\2UG\2UG\2UG\obj\Debug\Other.g.i.cs
 E:\windows-phone-apps\2UG\2UG\2UG\obj\Debug\welcomepage.g.i.cs
 E:\windows-phone-apps\2UG\2UG\2UG\obj\Debug\ughist.g.i.cs
+E:\windows-phone-apps\2UG\2UG\2UG\obj\Debug\Transport.g.i.cs

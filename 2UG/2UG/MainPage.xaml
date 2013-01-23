@@ -6,7 +6,7 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="696"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
@@ -29,16 +29,29 @@
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0"></Grid>
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,-3,0"></Grid>
         <StackPanel Height="334" HorizontalAlignment="Left" Name="stackPanel1" VerticalAlignment="Top" Width="480" Grid.RowSpan="2">
             <Image Height="332" Name="image1" Stretch="Fill" Width="483" Source="/2UG;component/images/welcomelogo2.jpg" />
         </StackPanel>
-        <StackPanel Height="416" HorizontalAlignment="Left" Margin="12,323,0,0" Name="stackPanel2" VerticalAlignment="Center" Width="456" Grid.Row="1" Background="#FFF5E9E9" Orientation="Vertical">
-            <Canvas Height="403" Name="canvas1" Width="443" HorizontalAlignment="Left">
-                <Border BorderBrush="Silver" BorderThickness="1" Canvas.Left="13" Canvas.Top="17" Height="100" Name="border1" Width="200" HorizontalAlignment="Stretch" />
-                <Border BorderBrush="Silver" BorderThickness="1" Canvas.Left="237" Canvas.Top="17" Height="100" Name="border2" Width="200" />
-                <Border BorderBrush="Silver" BorderThickness="1" Canvas.Left="13" Canvas.Top="137" Height="117" Name="border3" Width="357" />
-                <Border BorderBrush="Silver" BorderThickness="1" Canvas.Left="13" Canvas.Top="260" Height="110" Name="border4" Width="200" />
+        <StackPanel Height="344" HorizontalAlignment="Left" Margin="12,323,0,12" Name="stackPanel2" VerticalAlignment="Center" Width="456" Grid.Row="1" Background="#FFF5E9E9" Orientation="Vertical">
+            <Canvas Height="317" Name="canvas1" Width="452" HorizontalAlignment="Left">
+                <Border BorderBrush="Silver" BorderThickness="1" Canvas.Left="14" Canvas.Top="20" Height="100" Name="border1" Width="200" HorizontalAlignment="Left">
+                    <Image Height="93" Name="image2" Stretch="Fill" Width="81" HorizontalAlignment="Left" DataContext="{Binding}" Source="/2UG;component/images/VisitUganda.png" />
+                </Border>
+                <Border BorderBrush="Silver" BorderThickness="1" Canvas.Left="237" Canvas.Top="17" Height="100" Name="border2" Width="200">
+                    <Image Height="93" Name="image3" Stretch="Fill" Width="80" HorizontalAlignment="Left" Source="/2UG;component/images/VisitUganda.png" />
+                </Border>
+                <Border BorderBrush="Silver" BorderThickness="1" Canvas.Left="13" Canvas.Top="137" Height="103" Name="border3" Width="200">
+                    <Image Height="101" Name="image4" Stretch="Fill" Width="81" HorizontalAlignment="Left" Source="/2UG;component/images/VisitUganda.png" />
+                </Border>
+                <Border BorderBrush="Silver" BorderThickness="1" Canvas.Left="237" Canvas.Top="137" Height="103" Name="border4" Width="200">
+                    <Image Height="101" Name="image5" Stretch="Fill" Width="80" HorizontalAlignment="Left" Source="/2UG;component/images/VisitUganda.png" />
+                </Border>
+                <TextBlock Canvas.Left="324" Canvas.Top="20" Height="94" Name="textBlock2" Text="Hotle" Width="113" Foreground="#FF050505" />
+                <TextBlock Canvas.Left="101" Canvas.Top="138" Height="101" Name="textBlock3" Text="Tourist Attraction" Width="112" Foreground="#FF121010" TextWrapping="Wrap" />
+                <TextBlock Canvas.Left="324" Canvas.Top="138" Height="101" Name="textBlock4" Text="Currecy Convert" Width="113" Foreground="#FF151313" TextWrapping="Wrap" />
+                <TextBlock Height="79" Name="textBlock1" Text="Transport" Width="99" Foreground="#FF0F0D0D" Canvas.Left="101" Canvas.Top="20" />
+                <Button Height="93" Name="button1" Width="112" Foreground="#FF2F2E2E" BorderBrush="{x:Null}" Click="button1_Click_1" Canvas.Left="101" Canvas.Top="20" />
             </Canvas>
         </StackPanel>
     </Grid>
@@ -54,5 +67,16 @@
             </shell:ApplicationBar.MenuItems>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>-->
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar  IsVisible="True" IsMenuEnabled="True">            
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Click="MenuItem1_Click"  Text="About 2UG"/>
+                <shell:ApplicationBarMenuItem Click="MenuItem2_Click"  Text="UG History"/>
+
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
 
 </phone:PhoneApplicationPage>
