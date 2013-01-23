@@ -10,7 +10,7 @@
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
-    SupportedOrientations="Portrait" Orientation="Portrait"
+    SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
     shell:SystemTray.IsVisible="True">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
@@ -36,22 +36,31 @@
         <StackPanel Height="344" HorizontalAlignment="Left" Margin="12,323,0,12" Name="stackPanel2" VerticalAlignment="Center" Width="456" Grid.Row="1" Background="#FFF5E9E9" Orientation="Vertical">
             <Canvas Height="317" Name="canvas1" Width="452" HorizontalAlignment="Left">
                 <Border BorderBrush="Silver" BorderThickness="1" Canvas.Left="14" Canvas.Top="20" Height="100" Name="border1" Width="200" HorizontalAlignment="Left">
-                    <Image Height="93" Name="image2" Stretch="Fill" Width="81" HorizontalAlignment="Left" DataContext="{Binding}" Source="/2UG;component/images/VisitUganda.png" />
+                    <Image Height="100" Name="image2" Stretch="Fill" Width="81" HorizontalAlignment="Left" DataContext="{Binding}" Source="/2UG;component/images/VisitUganda.png" />
                 </Border>
                 <Border BorderBrush="Silver" BorderThickness="1" Canvas.Left="237" Canvas.Top="17" Height="100" Name="border2" Width="200">
                     <Image Height="93" Name="image3" Stretch="Fill" Width="80" HorizontalAlignment="Left" Source="/2UG;component/images/VisitUganda.png" />
                 </Border>
                 <Border BorderBrush="Silver" BorderThickness="1" Canvas.Left="13" Canvas.Top="137" Height="103" Name="border3" Width="200">
-                    <Image Height="101" Name="image4" Stretch="Fill" Width="81" HorizontalAlignment="Left" Source="/2UG;component/images/VisitUganda.png" />
+                    <Image Height="101" Name="image4" Stretch="Fill" Width="81" HorizontalAlignment="Left" Source="/2UG;component/images/VisitUganda.png" ImageFailed="image4_ImageFailed" />
                 </Border>
                 <Border BorderBrush="Silver" BorderThickness="1" Canvas.Left="237" Canvas.Top="137" Height="103" Name="border4" Width="200">
                     <Image Height="101" Name="image5" Stretch="Fill" Width="80" HorizontalAlignment="Left" Source="/2UG;component/images/VisitUganda.png" />
                 </Border>
-                <TextBlock Canvas.Left="324" Canvas.Top="20" Height="94" Name="textBlock2" Text="Hotle" Width="113" Foreground="#FF050505" />
-                <TextBlock Canvas.Left="101" Canvas.Top="138" Height="101" Name="textBlock3" Text="Tourist Attraction" Width="112" Foreground="#FF121010" TextWrapping="Wrap" />
-                <TextBlock Canvas.Left="324" Canvas.Top="138" Height="101" Name="textBlock4" Text="Currecy Convert" Width="113" Foreground="#FF151313" TextWrapping="Wrap" />
-                <TextBlock Height="79" Name="textBlock1" Text="Transport" Width="99" Foreground="#FF0F0D0D" Canvas.Left="101" Canvas.Top="20" />
-                <Button Height="93" Name="button1" Width="112" Foreground="#FF2F2E2E" BorderBrush="{x:Null}" Click="button1_Click_1" Canvas.Left="101" Canvas.Top="20" />
+                <!--  
+                <TextBlock Canvas.Left="324" Canvas.Top="20" Height="94" Name="hotel_textblock" Text="Hotels" Width="113" Foreground="#FF050505" />
+                <TextBlock Canvas.Left="101" Canvas.Top="138" Height="101" Name="attraction_textblock" Text="Tourist Attractions" Width="112" Foreground="#FF121010" TextWrapping="Wrap" />
+                <TextBlock Canvas.Left="324" Canvas.Top="138" Height="101" Name="spot_textblock" Text="Hot spots" Width="113" Foreground="#FF151313" TextWrapping="Wrap" />
+                <TextBlock Height="79" Name="transport_textblock" Text="Transport" Width="99" Foreground="#FF0F0D0D" Canvas.Left="101" Canvas.Top="20" />
+                <TextBlock Canvas.Left="227" Canvas.Top="256" Height="101" Name="convertor_textblock" Text="Currency Convertor" Width="113" Foreground="#FF151313" TextWrapping="Wrap" />
+                -->
+                <Button Height="100" Content="Transport" Name="transport_button" Width="111" Foreground="#FF2F2E2E" BorderBrush="{x:Null}" Canvas.Left="101" Canvas.Top="20" Click="transport_Click" FontWeight="Normal" FontStyle="Normal" FontSize="14" FontFamily="Segoe WP Semibold" HorizontalContentAlignment="Left" />
+                <Border BorderBrush="Silver" BorderThickness="1" Canvas.Left="143" Canvas.Top="256" Height="100" Name="border5" Width="200"></Border>
+                <Image Canvas.Left="143" Canvas.Top="256" Height="101" Name="image6" Stretch="Fill" Width="80" HorizontalAlignment="Left" Source="/2UG;component/images/VisitUganda.png" />
+                <Button Canvas.Left="324" Canvas.Top="21" Content="Hotels" Height="96" Name="hotel_button" Width="113" Foreground="#FF2F2E2E" BorderBrush="{x:Null}" Click="hotel_Click" FontSize="16" />
+                <Button Canvas.Left="101" Canvas.Top="138" Content="Tourist &#x0a;Attractions" Height="102" Name="attraction_button" Width="113" Foreground="#FF2F2E2E" BorderBrush="{x:Null}" Click="attraction_Click" FontSize="14" />
+                <Button Canvas.Left="324" Canvas.Top="138" Content="Hot &#x0a;Spots"  Height="104" Name="spot_button" Width="113" Foreground="#FF2F2E2E" BorderBrush="{x:Null}" Click="spot_Click" FontSize="16" />
+                <Button Canvas.Left="228" Canvas.Top="256" Content="Currency Convertor"  Height="104" Name="convertor_button" Width="113" Foreground="#FF2F2E2E" BorderBrush="{x:Null}" Click="convertor_Click" FontSize="16" FontStretch="Normal" FontWeight="Normal" HorizontalAlignment="Center" VerticalContentAlignment="Center" Visibility="Visible" VerticalAlignment="Center" />
             </Canvas>
         </StackPanel>
     </Grid>

@@ -17,3 +17,28 @@ E:\windows-phone-apps\2UG\2UG\2UG\obj\Debug\Other.g.i.cs
 E:\windows-phone-apps\2UG\2UG\2UG\obj\Debug\welcomepage.g.i.cs
 E:\windows-phone-apps\2UG\2UG\2UG\obj\Debug\ughist.g.i.cs
 E:\windows-phone-apps\2UG\2UG\2UG\obj\Debug\Transport.g.i.cs
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\Bin\Debug\ApplicationIcon.png
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\Bin\Debug\Background.png
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\Bin\Debug\2UG.dll
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\Bin\Debug\2UG.pdb
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\Bin\Debug\AppManifest.xaml
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\Bin\Debug\_2UG.xap
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\obj\Debug\App.g.i.cs
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\obj\Debug\Animals.g.i.cs
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\obj\Debug\Currency_convert.g.i.cs
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\obj\Debug\MainPage.g.i.cs
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\obj\Debug\Other.g.i.cs
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\obj\Debug\Transport.g.i.cs
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\obj\Debug\ughist.g.i.cs
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\obj\Debug\welcomepage.g.i.cs
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\obj\Debug\2UG.g.resources
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\obj\Debug\2UG.dll
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\obj\Debug\2UG.pdb
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\obj\Debug\XapCacheFile.xml
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\obj\Debug\Attraction.g.i.cs
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\obj\Debug\Convertor.g.i.cs
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\obj\Debug\Hotel.g.i.cs
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\obj\Debug\Spot.g.i.cs
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\obj\Debug\About.g.i.cs
+C:\Users\Acer\Documents\Visual Studio 2010\Projects\WindowsPhone\2UG\2UG\2UG\obj\Debug\History.g.i.cs

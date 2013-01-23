@@ -57,14 +57,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Animals.xaml.cs">
       <DependentUpon>Animals.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Attraction.xaml.cs">
+      <DependentUpon>Attraction.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Convertor.xaml.cs">
+      <DependentUpon>Convertor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Currency_convert.xaml.cs">
       <DependentUpon>Currency_convert.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="History.xaml.cs">
+      <DependentUpon>History.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel.xaml.cs">
+      <DependentUpon>Hotel.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -73,6 +88,9 @@
       <DependentUpon>Other.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Spot.xaml.cs">
+      <DependentUpon>Spot.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Transport.xaml.cs">
       <DependentUpon>Transport.xaml</DependentUpon>
     </Compile>
@@ -88,11 +106,31 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Animals.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Attraction.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Convertor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Currency_convert.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="History.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Hotel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -101,6 +139,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Other.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Spot.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -130,6 +172,7 @@
     </Content>
     <Resource Include="images\welcomelogo2.jpg" />
     <Resource Include="images\VisitUganda.png" />
+    <Resource Include="images\next.png" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
