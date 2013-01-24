@@ -170,9 +170,15 @@
     <Content Include="Background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Resource Include="images\welcomelogo2.jpg" />
-    <Resource Include="images\VisitUganda.png" />
+    <Resource Include="images\banner.jpg" />
     <Resource Include="images\next.png" />
+    <Resource Include="images\currency_converter_icon.png" />
+    <Resource Include="images\hotel_icon.png" />
+    <Resource Include="images\tourist_attraction_icon.png" />
+    <Resource Include="images\transport_icon.png" />
+    <Resource Include="images\dangerous_spot.png" />
+    <Content Include="images\2ug_icon.png" />
+    <Content Include="images\about_icon.png" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />

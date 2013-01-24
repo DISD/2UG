@@ -19,5 +19,9 @@ namespace _2UG
         {
             InitializeComponent();
         }
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

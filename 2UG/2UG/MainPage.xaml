@@ -12,80 +12,88 @@
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
     shell:SystemTray.IsVisible="True">
-
+    <!--Form resources-->
+    <phone:PhoneApplicationPage.Resources>
+        <Style x:Key="TransportButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                            <Image Name="transportImage" Source="/2UG;component/images/transport_icon.png"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="HotelButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Image Name="hotelImage" Source="/2UG;component/images/hotel_icon.png"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="TouristButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Image Name="touristImage" Source="/2UG;component/images/tourist_attraction_icon.png"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="DangerousSpotButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Image Name="dangerousSpotImage" Source="/2UG;component/images/dangerous_spot.png"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="CurrencyConverterButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Image Name="currencyCImage" Source="/2UG;component/images/currency_converter_icon.png"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </phone:PhoneApplicationPage.Resources>
+    
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="#FFF5E9E9">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
-        <!--TitlePanel contains the name of the application and page title-->
-        
         <StackPanel x:Name="TitlePanel" Margin="12,17,0,0" Height="0" VerticalAlignment="Top">
-            <!--<TextBlock x:Name="ApplicationTitle" Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock x:Name="PageTitle" Text="page name" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>-->
-        
         </StackPanel>
 
-        <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,-3,0"></Grid>
-        <StackPanel Height="334" HorizontalAlignment="Left" Name="stackPanel1" VerticalAlignment="Top" Width="480" Grid.RowSpan="2">
-            <Image Height="332" Name="image1" Stretch="Fill" Width="483" Source="/2UG;component/images/welcomelogo2.jpg" />
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,-3,0" Background="#FFEFEFEF"></Grid>
+        <StackPanel Height="245" HorizontalAlignment="Left" Name="stackPanel1" VerticalAlignment="Top" Width="480" Grid.RowSpan="2">
+            <Image Height="242" Name="image1" Stretch="Fill" Width="483" Source="/2UG;component/images/banner.jpg" />
         </StackPanel>
-        <StackPanel Height="344" HorizontalAlignment="Left" Margin="12,323,0,12" Name="stackPanel2" VerticalAlignment="Center" Width="456" Grid.Row="1" Background="#FFF5E9E9" Orientation="Vertical">
-            <Canvas Height="317" Name="canvas1" Width="452" HorizontalAlignment="Left">
-                <Border BorderBrush="Silver" BorderThickness="1" Canvas.Left="14" Canvas.Top="20" Height="100" Name="border1" Width="200" HorizontalAlignment="Left">
-                    <Image Height="100" Name="image2" Stretch="Fill" Width="81" HorizontalAlignment="Left" DataContext="{Binding}" Source="/2UG;component/images/VisitUganda.png" />
-                </Border>
-                <Border BorderBrush="Silver" BorderThickness="1" Canvas.Left="237" Canvas.Top="17" Height="100" Name="border2" Width="200">
-                    <Image Height="93" Name="image3" Stretch="Fill" Width="80" HorizontalAlignment="Left" Source="/2UG;component/images/VisitUganda.png" />
-                </Border>
-                <Border BorderBrush="Silver" BorderThickness="1" Canvas.Left="13" Canvas.Top="137" Height="103" Name="border3" Width="200">
-                    <Image Height="101" Name="image4" Stretch="Fill" Width="81" HorizontalAlignment="Left" Source="/2UG;component/images/VisitUganda.png" ImageFailed="image4_ImageFailed" />
-                </Border>
-                <Border BorderBrush="Silver" BorderThickness="1" Canvas.Left="237" Canvas.Top="137" Height="103" Name="border4" Width="200">
-                    <Image Height="101" Name="image5" Stretch="Fill" Width="80" HorizontalAlignment="Left" Source="/2UG;component/images/VisitUganda.png" />
-                </Border>
-                <!--  
-                <TextBlock Canvas.Left="324" Canvas.Top="20" Height="94" Name="hotel_textblock" Text="Hotels" Width="113" Foreground="#FF050505" />
-                <TextBlock Canvas.Left="101" Canvas.Top="138" Height="101" Name="attraction_textblock" Text="Tourist Attractions" Width="112" Foreground="#FF121010" TextWrapping="Wrap" />
-                <TextBlock Canvas.Left="324" Canvas.Top="138" Height="101" Name="spot_textblock" Text="Hot spots" Width="113" Foreground="#FF151313" TextWrapping="Wrap" />
-                <TextBlock Height="79" Name="transport_textblock" Text="Transport" Width="99" Foreground="#FF0F0D0D" Canvas.Left="101" Canvas.Top="20" />
-                <TextBlock Canvas.Left="227" Canvas.Top="256" Height="101" Name="convertor_textblock" Text="Currency Convertor" Width="113" Foreground="#FF151313" TextWrapping="Wrap" />
-                -->
-                <Button Height="100" Content="Transport" Name="transport_button" Width="111" Foreground="#FF2F2E2E" BorderBrush="{x:Null}" Canvas.Left="101" Canvas.Top="20" Click="transport_Click" FontWeight="Normal" FontStyle="Normal" FontSize="14" FontFamily="Segoe WP Semibold" HorizontalContentAlignment="Left" />
-                <Border BorderBrush="Silver" BorderThickness="1" Canvas.Left="143" Canvas.Top="256" Height="100" Name="border5" Width="200"></Border>
-                <Image Canvas.Left="143" Canvas.Top="256" Height="101" Name="image6" Stretch="Fill" Width="80" HorizontalAlignment="Left" Source="/2UG;component/images/VisitUganda.png" />
-                <Button Canvas.Left="324" Canvas.Top="21" Content="Hotels" Height="96" Name="hotel_button" Width="113" Foreground="#FF2F2E2E" BorderBrush="{x:Null}" Click="hotel_Click" FontSize="16" />
-                <Button Canvas.Left="101" Canvas.Top="138" Content="Tourist &#x0a;Attractions" Height="102" Name="attraction_button" Width="113" Foreground="#FF2F2E2E" BorderBrush="{x:Null}" Click="attraction_Click" FontSize="14" />
-                <Button Canvas.Left="324" Canvas.Top="138" Content="Hot &#x0a;Spots"  Height="104" Name="spot_button" Width="113" Foreground="#FF2F2E2E" BorderBrush="{x:Null}" Click="spot_Click" FontSize="16" />
-                <Button Canvas.Left="228" Canvas.Top="256" Content="Currency Convertor"  Height="104" Name="convertor_button" Width="113" Foreground="#FF2F2E2E" BorderBrush="{x:Null}" Click="convertor_Click" FontSize="16" FontStretch="Normal" FontWeight="Normal" HorizontalAlignment="Center" VerticalContentAlignment="Center" Visibility="Visible" VerticalAlignment="Center" />
-            </Canvas>
+        <StackPanel Height="436" HorizontalAlignment="Left" Margin="0,231,0,12" Name="stackPanel2" VerticalAlignment="Top" Width="480" Grid.Row="1" Background="#FFEFEFEF" Orientation="Vertical">
+            <StackPanel Height="125" Name="stackPanel3" Width="463" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Orientation="Horizontal">
+                <Button Height="110" Name="transportBtn" Width="206" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5" Style="{StaticResource TransportButtonStyle}" Click="transportBtn_Click" />
+                <Button Height="110" Name="hotelBtn" Width="206" Margin="10,5" Style="{StaticResource HotelButtonStyle}" />
+            </StackPanel>
+            <StackPanel Height="125" Name="stackPanel4" Width="463" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+                <Button Height="110" Name="touristABtn" Width="206" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5" Style="{StaticResource TouristButtonStyle}" />
+                <Button Height="110" Name="dangerousSptBtn" Width="206" Margin="10,5" Style="{StaticResource DangerousSpotButtonStyle}" />
+            </StackPanel>
+            <StackPanel Height="125" Name="stackPanel5" Width="463" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Vertical">
+                <Button Height="110" Name="currecyCBtn" Width="206" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,5" Style="{StaticResource CurrencyConverterButtonStyle}" />
+            </StackPanel>
         </StackPanel>
     </Grid>
- 
-    <!--Sample code showing usage of ApplicationBar-->
-    <!--<phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
-            <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
-                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
-            </shell:ApplicationBar.MenuItems>
-        </shell:ApplicationBar>
-    </phone:PhoneApplicationPage.ApplicationBar>-->
 
     <phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar  IsVisible="True" IsMenuEnabled="True">            
-            <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Click="MenuItem1_Click"  Text="About 2UG"/>
-                <shell:ApplicationBarMenuItem Click="MenuItem2_Click"  Text="UG History"/>
-
-            </shell:ApplicationBar.MenuItems>
+        <shell:ApplicationBar BackgroundColor="#E3E3E3" ForegroundColor="#8995A1" IsVisible="True">
+            <shell:ApplicationBarIconButton IconUri="/images/2ug_icon.png" IsEnabled="true" Text="About" />
+            <shell:ApplicationBarIconButton IconUri="/images/about_icon.png" IsEnabled="true" Text="Ug History"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
-
 
 </phone:PhoneApplicationPage>
