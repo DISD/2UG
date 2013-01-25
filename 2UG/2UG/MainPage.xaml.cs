@@ -21,6 +21,16 @@ namespace _2UG
         public MainPage()
         {
             InitializeComponent();
+            //Creates the animation when another page is loaded
+            NavigationInTransition navigationInTransition = new NavigationInTransition();
+            navigationInTransition.Backward = new TurnstileTransition { Mode = TurnstileTransitionMode.BackwardIn };
+            navigationInTransition.Forward = new TurnstileTransition { Mode = TurnstileTransitionMode.ForwardIn};
+
+            NavigationOutTransition navigateOutTransition = new NavigationOutTransition();
+            navigateOutTransition.Backward = new TurnstileTransition { Mode = TurnstileTransitionMode.BackwardOut };
+            navigateOutTransition.Forward = new TurnstileTransition { Mode = TurnstileTransitionMode.ForwardOut };
+            TransitionService.SetNavigationInTransition(this, navigationInTransition);
+            TransitionService.SetNavigationOutTransition(this, navigateOutTransition);
 
             
         }

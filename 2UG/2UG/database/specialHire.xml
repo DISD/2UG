@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<special-hires>
+  <special-hire>
+    <name>African Jungles Safaris</name>
+    <description>
+      We are Tour and travel company based in
+      Uganda that offers Luxury, Medium and Budget
+      Tour & Safaris Services, Air Ticketing Services,
+      Hotel Reservations Services and Car Hire Services.
+    </description>
+    <address>Uganda House, 24737, Uganda</address>
+    <telephone>+2556785595</telephone>
+    <district>Kampala</district>
+    <icon>../database_images/default_special_hire.png</icon>
+  </special-hire>
+
+  <special-hire>
+    <name>Aab - Gorilla Tours Uganda</name>
+    <description>
+      We Offers Safaris, Gorillas Treks,
+      Mountain Hiking, Bird Watching, Water Rafting,
+      Cultural Tours, Adventure Travels, Tailor-made Tours,
+      Car Hire, Hotel & Flight Reservations. We Provide
+      Quality Travel Services and Unique Cultural Exper
+    </description>
+    <address>Uganda House, 24737, Uganda</address>
+    <telephone>00000000</telephone>
+    <district>Kampala</district>
+    <icon>../database_images/default_special_hire.png</icon>
+  </special-hire>
+
+  <special-hire>
+    <name>Merit Safaris</name>
+    <description>
+      We are Dealing in Tour Operators Services,
+      Hotel Booking Services, Car & Coach Rental Services
+    </description>
+    <address>Plot 279 Willis/balintuma Road, Uganda</address>
+    <telephone>0000000000</telephone>
+    <icon>../database_images/default_special_hire.png</icon>
+  </special-hire>
+
+ </special-hires>

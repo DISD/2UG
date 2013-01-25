@@ -13,15 +13,11 @@ using Microsoft.Phone.Controls;
 
 namespace _2UG
 {
-    public partial class Transport : PhoneApplicationPage
+    public partial class PivotPage1 : PhoneApplicationPage
     {
-        public Transport()
+        public PivotPage1()
         {
             InitializeComponent();
-        }
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            
         }
     }
 }
