@@ -19,11 +19,69 @@ namespace _2UG
     {
         private static XDocument loadSpecialHireXMl = XDocument.Load("database/specialHire.xml");
 
+        private static XDocument loadTourTravelXML = XDocument.Load("database/tourTravel.xml");
+
         public PivotPage1()
         {
             InitializeComponent();
             populateSpecialHireListBox();
+            populateTourTravelListBox();
         }
+
+        private void populateTourTravelListBox()
+        {
+            tourTravelList.ItemsSource = retrieveTourTravelData(""); 
+        }
+
+        private IEnumerable<TourTravel> retrieveTourTravelData(string districtName)
+        {
+            IEnumerable<TourTravel> tourTravelData = null;
+
+            if (districtName.Equals(""))
+            {
+                tourTravelData = from tTravel in loadTourTravelXML.Descendants("tour_travel")
+                                  select new TourTravel()
+                                  {
+                                      Name = (String)tTravel.Element("name"),
+                                      Address = (String)tTravel.Element("address"),
+                                      Telphone = (String)tTravel.Element("telphone"),
+                                      District = convertFirstElementToUpperCase((String)tTravel.Element("district")),
+                                      IconUri = (String)tTravel.Element("icon")
+                                  };
+            }
+            else
+            {
+                tourTravelData = from tTravel in loadSpecialHireXMl.Descendants("tour_travel")
+                                 where tTravel.Element("district").Value.Contains(districtName.ToLower())
+                                  select new TourTravel()
+                                  {
+                                      Name = (String)tTravel.Element("name"),
+                                      Address = (String)tTravel.Element("address"),
+                                      Telphone = (String)tTravel.Element("telphone"),
+                                      District = convertFirstElementToUpperCase((String)tTravel.Element("district")),
+                                      IconUri = (String)tTravel.Element("icon")
+                                  };
+            }
+            return tourTravelData;
+        }
+
+        private void tourTravel_Searchbox_handler(Object sender, KeyEventArgs e)
+        {
+            var tourTravelData = retrieveTourTravelData(tourTravelSearchBox.Text);
+            if (tourTravelData.Any() == false)
+            {
+                if (e.Key == Key.Enter)
+                {
+                    TourTravel twTravel = new TourTravel();
+                    twTravel.Name = "No Tour n Travel found!";
+
+                    tourTravelData = new[] { twTravel };
+                }
+            }
+
+            tourTravelList.ItemsSource = tourTravelData;
+        }
+
 
         private void populateSpecialHireListBox(){
             specialHireList.ItemsSource = retrieveSpecialHireData("");
@@ -61,8 +119,13 @@ namespace _2UG
 
          private string convertFirstElementToUpperCase(string text)
         {
-
-            return char.ToUpper(text[0]) + text.Substring(1);
+            if (text.Length > 0)
+            {
+                return char.ToUpper(text[0]) + text.Substring(1);
+            }
+            else {
+                return null;
+            }
         }
 
         private void specialHire_Searchbox_handler(Object sender, KeyEventArgs e)
@@ -80,5 +143,6 @@ namespace _2UG
 
             specialHireList.ItemsSource = specialHireData;
         }
+
     }
 }

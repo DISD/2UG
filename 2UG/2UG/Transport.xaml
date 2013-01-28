@@ -77,10 +77,53 @@
             <controls:PivotItem >
                 <controls:PivotItem.Header>
                     <Grid>
-                        <TextBlock Name="FirstPivot3" FontSize="31" Text="sddss" />
+                        <TextBlock Name="FirstPivot3" FontSize="31" Text="Tour and Travel" />
                     </Grid>
                 </controls:PivotItem.Header>
-                <Grid/>
+
+                <Grid Width="460" Height="484">
+                    <StackPanel Height="93" HorizontalAlignment="Center" Margin="-1,-1,5,0" VerticalAlignment="Top" Width="456" Orientation="Vertical" Background="#7D09E2D1">
+                        <TextBlock Height="27" Text="Search By District" Width="193" TextWrapping="Wrap" FontSize="22" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,0,0" Foreground="#FF272727" />
+                        <StackPanel Height="54" Width="454" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+                            <Image Height="31" Stretch="Uniform" Width="33" Source="/2UG;component/images/search-icon.png" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" />
+                            <TextBox Height="59" Text="" Width="357" BorderThickness="1" VerticalContentAlignment="Top" BorderBrush="#BFAEAECE" Padding="0" HorizontalContentAlignment="Left" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Arial" FontSize="18" TextWrapping="Wrap" Name="tourTravelSearchBox" KeyDown="specialHire_Searchbox_handler" />
+                        </StackPanel>
+                    </StackPanel>
+                    
+                    <!--Tour n Travel Items-->
+                    <ScrollViewer Width="459"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="379" Margin="-2,98,0,0">
+                        <ListBox Height="374" Width="453" Name="tourTravelList" HorizontalAlignment="Left" VerticalAlignment="Top" >
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Height="160" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="463" Orientation="Vertical">
+                                        <StackPanel Height="153" Width="462" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal" >
+                                            <StackPanel Height="150" Width="120" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top">
+                                                <Image Height="90" Stretch="Fill" Width="116" Source="{Binding IconUri}" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                                                <StackPanel Height="56" Width="117" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FF030303">
+                                                    <TextBlock Height="34" Text="{Binding District}" Width="74" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontFamily="Arial" FontSize="16" TextWrapping="Wrap" Margin="5,15,5,5" Name="Tour_Travel_district"/>
+                                                </StackPanel>
+                                            </StackPanel>
+                                            <StackPanel Height="143" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="334" Orientation="Vertical" Margin="5">
+                                                <StackPanel Width="334" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF719668" Margin="0,0,0,3">
+                                                    <TextBlock Height="30" Text="{Binding Name}" Foreground="#FFFFEA00" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Arial" FontSize="22" FontStretch="Normal" Name="Tour_Travel_Name" Width="306" TextWrapping="Wrap" Margin="3" />
+                                                </StackPanel>
+                                                <StackPanel Height="70" Width="334" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
+                                                    <Image Height="19" Stretch="None" Width="23" Name="Tour_Travel_Address_icon" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/database_images/default_address_icon.png" Margin="3,3,0,0" />
+                                                    <TextBlock Height="55" Text="{Binding Address}" Width="299" Name="Tour_Travel_Address" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF4D9ACE" FontFamily="Arial" FontSize="13" TextWrapping="Wrap" Margin="3,3,0,0" />
+                                                </StackPanel>
+                                                <StackPanel Height="40" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="333" Orientation="Horizontal">
+                                                    <Image Height="40" Stretch="None" Width="26" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/database_images/default_telphone_icon.png"  Name="Special_Hire_Tel_Icon" Margin="3,3,0,0" />
+                                                    <TextBlock Name="Tour_Travel_Tel" Text="{Binding Telphone}" Width="300" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Arial" FontSize="14" TextWrapping="Wrap" Foreground="#FF2E98BE" Margin="3,3,0,0" Height="23" />
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </StackPanel>
+                                        <Border BorderBrush="#FFCCCCCC" BorderThickness="0,0,0,2" Height="6" Name="border1" Width="459" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </ScrollViewer>
+                </Grid>
             </controls:PivotItem>
         </controls:Pivot>
         
