@@ -88,6 +88,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\SpecialHire.cs" />
+    <Compile Include="Model\TourTravel.cs" />
     <Compile Include="Other.xaml.cs">
       <DependentUpon>Other.xaml</DependentUpon>
     </Compile>
@@ -188,10 +189,21 @@
     <Resource Include="database_images\default_special_hire.png" />
     <Resource Include="database_images\default_telphone_icon.png" />
     <Resource Include="database_images\default_address_icon.png" />
+    <Content Include="database\tourTravel.xml" />
     <Content Include="images\2ug_icon.png" />
+    <Resource Include="images\aab.gif" />
     <Content Include="images\about_icon.png" />
     <Resource Include="images\search-icon.png" />
+    <Resource Include="images\afritours.PNG" />
     <Content Include="images\appbar.back.rest.png" />
+    <Resource Include="images\asyanuttours-safaris.png" />
+    <Resource Include="images\header.jpg" />
+    <Resource Include="images\header_area_02.gif" />
+    <Resource Include="images\header_logo.gif" />
+    <Resource Include="images\kazinga.PNG" />
+    <Resource Include="images\logo.jpg" />
+    <Resource Include="images\maranatha.png" />
+    <Resource Include="images\matoke-tours-logo.png" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup />
