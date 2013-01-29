@@ -87,11 +87,9 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Other.cs" />
     <Compile Include="Model\SpecialHire.cs" />
     <Compile Include="Model\TourTravel.cs" />
-    <Compile Include="Other.xaml.cs">
-      <DependentUpon>Other.xaml</DependentUpon>
-    </Compile>
     <Compile Include="PivotPage1.xaml.cs">
       <DependentUpon>Transport.xaml</DependentUpon>
     </Compile>
@@ -143,10 +141,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Other.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Transport.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -183,6 +177,8 @@
     <Resource Include="images\transport_icon.png" />
     <Resource Include="images\dangerous_spot.png" />
     <Resource Include="images\2Ug.png" />
+    <Resource Include="images\pioneer.png" />
+    <Content Include="database\other.xml" />
     <Content Include="database\specialHire.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -192,15 +188,16 @@
     <Content Include="database\tourTravel.xml" />
     <Content Include="images\2ug_icon.png" />
     <Resource Include="images\aab.gif" />
+    <Resource Include="images\aab.png" />
     <Content Include="images\about_icon.png" />
     <Resource Include="images\search-icon.png" />
-    <Resource Include="images\afritours.PNG" />
+    <Resource Include="images\afritours.png" />
     <Content Include="images\appbar.back.rest.png" />
     <Resource Include="images\asyanuttours-safaris.png" />
     <Resource Include="images\header.jpg" />
-    <Resource Include="images\header_area_02.gif" />
-    <Resource Include="images\header_logo.gif" />
-    <Resource Include="images\kazinga.PNG" />
+    <Content Include="images\header_area_02.png" />
+    <Content Include="images\header_logo.png" />
+    <Resource Include="images\kazinga.png" />
     <Resource Include="images\logo.jpg" />
     <Resource Include="images\maranatha.png" />
     <Resource Include="images\matoke-tours-logo.png" />

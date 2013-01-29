@@ -18,14 +18,35 @@ namespace _2UG
     public partial class PivotPage1 : PhoneApplicationPage
     {
         private static XDocument loadSpecialHireXMl = XDocument.Load("database/specialHire.xml");
-
         private static XDocument loadTourTravelXML = XDocument.Load("database/tourTravel.xml");
+        private static XDocument loadOtherXML = XDocument.Load("database/other.xml");
 
         public PivotPage1()
         {
             InitializeComponent();
             populateSpecialHireListBox();
             populateTourTravelListBox();
+            populateOtherListBox();
+        }
+
+        private void populateOtherListBox()
+        {
+            otherList.ItemsSource = retrieveOtherData("");
+        }
+
+        private IEnumerable<Other> retrieveOtherData(string districtName)
+        {
+            IEnumerable<Other> otherData = null;
+            otherData = from oTher in loadOtherXML.Descendants("other")
+                        select new Other()
+                        {
+                            Name = (String)oTher.Element("name"),
+                            Address = (String)oTher.Element("address"),
+                            Telphone = (String)oTher.Element("telphone"),
+                            District = (String)oTher.Element("district"),
+                            IconUri = (String)oTher.Element("icon")
+                        };
+            return otherData;
         }
 
         private void populateTourTravelListBox()
