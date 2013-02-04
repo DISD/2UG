@@ -18,12 +18,13 @@
         <StackPanel Height="59" HorizontalAlignment="Left" Name="stackPanel1" VerticalAlignment="Top" Width="480" Background="#FF004B4B" Orientation="Horizontal">
             <Image Height="47" Stretch="Uniform" Width="53" Margin="5" Source="/2UG;component/images/2Ug.png" />
         </StackPanel>
-        <StackPanel Height="46" HorizontalAlignment="Left" Margin="0,59,0,0" VerticalAlignment="Top" Width="480" Background="#FFAABA70" />
-
+        <StackPanel Height="46" HorizontalAlignment="Left" Margin="0,59,0,0" VerticalAlignment="Top" Width="480" Background="#FFAABA70">
+            <TextBlock Height="30" Text="TextBlock" Name="msgText" />
+        </StackPanel>
         <!--Pivot Control-->
-        <controls:Pivot  Margin="0,111,0,12" Foreground="Black" FontFamily="Georgia" VerticalAlignment="Stretch">
+        <controls:Pivot  Margin="0,111,0,12" Foreground="Black" FontFamily="Georgia" VerticalAlignment="Stretch" Name="transportPivot">
             <!--Pivot item one-->
-            <controls:PivotItem  Foreground="#FFFFBABA">
+            <controls:PivotItem  Foreground="#FFFFBABA" Name="specialHirePivot">
                 <controls:PivotItem.Header>
                     <Grid Width="200" Height="46" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center">
                         <TextBlock Name="FirstPivot" FontSize="26" Text="Special Hire" Height="44" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Georgia" TextWrapping="Wrap" Width="163" />
@@ -34,19 +35,9 @@
                         <ColumnDefinition Width="264*" />
                         <ColumnDefinition Width="196*" />
                     </Grid.ColumnDefinitions>
-                    <StackPanel Height="93" HorizontalAlignment="Center" Margin="-1,-1,5,0" VerticalAlignment="Top" Width="456" Orientation="Vertical" Background="#7DD8D811" Grid.ColumnSpan="2">
-                        <StackPanel Width="442" Orientation="Horizontal">
-                            <TextBlock Height="27" Text="Search Special Hire by :" Width="236" TextWrapping="Wrap" FontSize="22" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,0,0" Foreground="#FF272727" />
-                            <TextBlock Height="26" Text="District" Width="71" Margin="5,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#FFEC0E00" />
-                        </StackPanel>
-                        <StackPanel Height="54" Width="454" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
-                            <Image Height="31" Stretch="Uniform" Width="33" Source="/2UG;component/images/search-icon.png" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" />
-                            <TextBox Height="59" Text="" Width="357" BorderThickness="1" VerticalContentAlignment="Top" BorderBrush="#BFAEAECE" Padding="0" HorizontalContentAlignment="Left" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Arial" FontSize="18" TextWrapping="Wrap" Name="specialHireSearchBox" KeyDown="specialHire_Searchbox_handler" />
-                        </StackPanel>
-                    </StackPanel>
                     <!--Special Hire Items-->
-                    <ScrollViewer Width="459"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="379" Margin="-2,98,0,0" Grid.ColumnSpan="2">
-                        <ListBox Height="374" Width="453" Name="specialHireList" HorizontalAlignment="Left" VerticalAlignment="Top" >
+                    <ScrollViewer Width="459"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="477" Margin="-2,0,0,0" Grid.ColumnSpan="2">
+                        <ListBox Height="476" Width="453" Name="specialHireList" HorizontalAlignment="Left" VerticalAlignment="Top" >
                             <ListBox.ItemTemplate>
                                 <DataTemplate>
                                     <StackPanel  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="455" Orientation="Vertical">
@@ -70,15 +61,15 @@
                                         </StackPanel>
                                         <Border BorderBrush="#FFCCCCCC" BorderThickness="0,0,0,2" Height="6" Name="border1" Width="455" HorizontalAlignment="Left" VerticalAlignment="Top" />
                                     </StackPanel>
-                                </DataTemplate>
-                            </ListBox.ItemTemplate>
+                                    </DataTemplate> 
+                            </ListBox.ItemTemplate> 
                         </ListBox>
                     </ScrollViewer>
                 </Grid>
             </controls:PivotItem>
 
             <!--Pivot item two-->
-            <controls:PivotItem Foreground="#FFFFBABA">
+            <controls:PivotItem Foreground="#FFFFBABA" Name="tourNTravelPivot">
                 <controls:PivotItem.Header>
                     <Grid Width="200" Height="46" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center">
                         <TextBlock Name="FirstPivot2" FontSize="26" Text="Tour n Travel" Height="44" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Georgia" TextWrapping="Wrap" Width="163" />
@@ -89,20 +80,9 @@
                         <ColumnDefinition Width="450*" />
                         <ColumnDefinition Width="10*" />
                     </Grid.ColumnDefinitions>
-                    <StackPanel Height="93" HorizontalAlignment="Center" Margin="3,3,2,0" VerticalAlignment="Top" Width="455" Orientation="Vertical" Background="#FF719668" Grid.ColumnSpan="2">
-                        <StackPanel Width="442" Orientation="Horizontal">
-                            <TextBlock Height="27" Text="Search Tour n Travel by" Width="243" TextWrapping="Wrap" FontSize="22" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,0,0" Foreground="White" />
-                            <TextBlock Height="26" Text="District" Width="71" Margin="5,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                        </StackPanel>
-                        <StackPanel Height="54" Width="439" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
-                            <Image Height="31" Stretch="Uniform" Width="33" Source="/2UG;component/images/search-icon.png" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" />
-                            <TextBox Height="59" Text="" Width="363" BorderThickness="1" VerticalContentAlignment="Top" BorderBrush="#BFAEAECE" Padding="0" HorizontalContentAlignment="Left" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Arial" FontSize="18" TextWrapping="Wrap" Name="tourTravelSearchBox" KeyDown="tourTravel_Searchbox_handler" />
-                        </StackPanel>
-                    </StackPanel>
-
                     <!--Tour n Travel Items-->
-                    <ScrollViewer Width="459"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="379" Margin="-2,98,0,0">
-                        <ListBox Height="374" Width="453" Name="tourTravelList" HorizontalAlignment="Left" VerticalAlignment="Top" >
+                    <ScrollViewer Width="459"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="476" Margin="-2,1,0,0" Grid.ColumnSpan="2">
+                        <ListBox Height="476" Width="453" Name="tourTravelList" HorizontalAlignment="Left" VerticalAlignment="Top" >
                             <ListBox.ItemTemplate>
                                 <DataTemplate>
                                     <StackPanel HorizontalAlignment="Left"  VerticalAlignment="Top" Width="455" Orientation="Vertical">
@@ -112,11 +92,11 @@
                                                     <TextBlock Text="{Binding Name}" Foreground="Red" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Arial" FontSize="22" FontStretch="Normal" Name="special_Hire_Name" Width="452" TextWrapping="Wrap" Margin="3"/>
                                                 </StackPanel>
                                                 <StackPanel Width="453" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
-                                                    <Image Stretch="None" Width="23" Name="Special_Hire_Address_icon" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/database_images/default_address_icon.png" Margin="3,3,0,0" />
+                                                    <Image Stretch="None" Width="23" Name="TournTravel_Address_icon" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/database_images/default_address_icon.png" Margin="3,3,0,0" />
                                                     <TextBlock Text="{Binding Address}" Width="419" Name="Special_Hire_Address" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF4D9ACE" FontFamily="Arial" FontSize="15" TextWrapping="Wrap" Margin="3,3,0,0" />
                                                 </StackPanel>
                                                 <StackPanel HorizontalAlignment="Left"  VerticalAlignment="Top" Width="449" Orientation="Horizontal">
-                                                    <Image  Stretch="None" Width="26" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/database_images/default_telphone_icon.png"  Name="Special_Hire_Tel_Icon" Margin="3,3,0,0" />
+                                                    <Image  Stretch="None" Width="26" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/database_images/default_telphone_icon.png"  Name="TournTravel_Tel_Icon" Margin="3,3,0,0" />
                                                     <TextBlock Name="Special_Hire_Tel" Text="{Binding Telphone}" Width="416" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Arial" FontSize="16" TextWrapping="Wrap" Foreground="#FF2E98BE" Margin="3,3,0,0"  />
                                                 </StackPanel>
                                                 <StackPanel Width="447" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top">
@@ -126,15 +106,14 @@
                                             </StackPanel>
                                         <Border BorderBrush="Red" BorderThickness="0,0,0,2" Height="6" Name="border1" Width="455" HorizontalAlignment="Left" VerticalAlignment="Top" />
                                     </StackPanel>
-                                </DataTemplate>
-                            </ListBox.ItemTemplate>
+                                    </DataTemplate> </ListBox.ItemTemplate> 
                         </ListBox>
                     </ScrollViewer>
                 </Grid>
             </controls:PivotItem>
             
                 <!--Pivot Item 3-->
-            <controls:PivotItem Foreground="#FFFFBABA">
+            <controls:PivotItem Foreground="#FFFFBABA" Name="otherPivot">
                 <controls:PivotItem.Header>
                     <Grid Width="200" Height="46" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center">
                         <TextBlock Name="FirstPivot3" FontSize="26" Text="Others" Height="44" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Georgia" TextWrapping="Wrap" Width="163" />
@@ -173,6 +152,8 @@
 
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar BackgroundColor="#E3E3E3" ForegroundColor="Black" IsVisible="True" Opacity=".5">
+            <shell:ApplicationBarIconButton IconUri="/images/appbar.refresh.rest.png" Text="Refresh" Click="refreshBtnClick"/>
+            <shell:ApplicationBarIconButton IconUri="/images/appbar.search.rest.png" Text="Search" Click="BtnSearchClick" />
             <shell:ApplicationBarIconButton IconUri="/images/appbar.back.rest.png" Text="Back" Click="BtnBackClick"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>

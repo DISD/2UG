@@ -12,6 +12,9 @@ using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 using _2UG.Model;
 using System.Xml.Linq;
+using System.Windows.Controls.Primitives;
+using _2UG.pages;
+using Microsoft.Phone.Shell;
 
 namespace _2UG
 {
@@ -20,13 +23,24 @@ namespace _2UG
         private static XDocument loadSpecialHireXMl = XDocument.Load("database/transport/specialHire.xml");
         private static XDocument loadTourTravelXML = XDocument.Load("database/transport/tourTravel.xml");
         private static XDocument loadOtherXML = XDocument.Load("database/transport/other.xml");
-
+        private static int UNKOWN_SEARCH_CRITERIA = 3;
+      
         public PivotPage1()
         {
             InitializeComponent();
             populateSpecialHireListBox();
             populateTourTravelListBox();
             populateOtherListBox();
+        }
+
+        private void populateSpecialHireListBox()
+        {
+            specialHireList.ItemsSource = retrieveSpecialHireData("", UNKOWN_SEARCH_CRITERIA);
+        }
+
+        private void populateTourTravelListBox()
+        {
+            tourTravelList.ItemsSource = retrieveTourTravelData("", UNKOWN_SEARCH_CRITERIA);
         }
 
         private void populateOtherListBox()
@@ -47,16 +61,11 @@ namespace _2UG
             return otherData;
         }
 
-        private void populateTourTravelListBox()
-        {
-            tourTravelList.ItemsSource = retrieveTourTravelData(""); 
-        }
-
-        private IEnumerable<TourTravel> retrieveTourTravelData(string districtName)
+        private IEnumerable<TourTravel> retrieveTourTravelData(string searchText, int searchCriteria)
         {
             IEnumerable<TourTravel> tourTravelData = null;
 
-            if (districtName.Equals(""))
+            if (searchText.Equals("") && searchCriteria == UNKOWN_SEARCH_CRITERIA)
             {
                 tourTravelData = from tTravel in loadTourTravelXML.Descendants("tour_travel")
                                   select new TourTravel()
@@ -68,48 +77,40 @@ namespace _2UG
                                       IconUri = (String)tTravel.Element("icon")
                                   };
             }
-            else
+            else if (!searchText.Equals("") && searchCriteria == 0)
             {
-                tourTravelData = from tTravel in loadSpecialHireXMl.Descendants("tour_travel")
-                                 where tTravel.Element("district").Value.Contains(districtName.ToLower())
-                                  select new TourTravel()
-                                  {
-                                      Name = (String)tTravel.Element("name"),
-                                      Address = (String)tTravel.Element("address"),
-                                      Telphone = (String)tTravel.Element("telphone"),
-                                      District = convertFirstElementToUpperCase((String)tTravel.Element("district")),
-                                      IconUri = (String)tTravel.Element("icon")
-                                  };
+                tourTravelData = from tTravel in loadTourTravelXML.Descendants("tour_travel")
+                                 where tTravel.Element("district").Value.Contains(searchText.ToLower())
+                                 select new TourTravel()
+                                 {
+                                     Name = (String)tTravel.Element("name"),
+                                     Address = (String)tTravel.Element("address"),
+                                     Telphone = (String)tTravel.Element("telphone"),
+                                     District = convertFirstElementToUpperCase((String)tTravel.Element("district")),
+                                     IconUri = (String)tTravel.Element("icon")
+                                 };
             }
+            else if (!searchText.Equals("") && searchCriteria == 1)
+            {
+                tourTravelData = from tTravel in loadTourTravelXML.Descendants("tour_travel")
+                                 where tTravel.Element("name").Value.Contains(convertFirstElementToUpperCase(searchText.ToLower()))
+                                 select new TourTravel()
+                                 {
+                                     Name = (String)tTravel.Element("name"),
+                                     Address = (String)tTravel.Element("address"),
+                                     Telphone = (String)tTravel.Element("telphone"),
+                                     District = convertFirstElementToUpperCase((String)tTravel.Element("district")),
+                                     IconUri = (String)tTravel.Element("icon")
+                                 };
+            }
+
             return tourTravelData;
         }
 
-        private void tourTravel_Searchbox_handler(Object sender, KeyEventArgs e)
-        {
-            var tourTravelData = retrieveTourTravelData(tourTravelSearchBox.Text);
-            if (tourTravelData.Any() == false)
-            {
-                if (e.Key == Key.Enter)
-                {
-                    TourTravel twTravel = new TourTravel();
-                    twTravel.Name = "No Tour n Travel found!";
-
-                    tourTravelData = new[] { twTravel };
-                }
-            }
-
-            tourTravelList.ItemsSource = tourTravelData;
-        }
-
-
-        private void populateSpecialHireListBox(){
-            specialHireList.ItemsSource = retrieveSpecialHireData("");
-        }
-
-        private IEnumerable<SpecialHire> retrieveSpecialHireData(string districtName)
+        private IEnumerable<SpecialHire> retrieveSpecialHireData(string searchText, int searchCriteria)
         {
             IEnumerable<SpecialHire> specialHireData = null;
-            if (districtName.Equals(""))
+            if (searchText.Equals("") && searchCriteria == UNKOWN_SEARCH_CRITERIA)
             {
                 specialHireData = from sHire in loadSpecialHireXMl.Descendants("special_hire")
                                   select new SpecialHire()
@@ -121,9 +122,10 @@ namespace _2UG
                                       IconUri = (String)sHire.Element("icon")
                                   };
             }
-            else {
+            else if (!searchText.Equals("") && searchCriteria == 0)
+            {
                 specialHireData = from sHire in loadSpecialHireXMl.Descendants("special_hire")
-                                  where sHire.Element("district").Value.Contains(districtName.ToLower())
+                                  where sHire.Element("district").Value.Contains(searchText.ToLower())
                                   select new SpecialHire()
                                   {
                                       Name = (String)sHire.Element("name"),
@@ -133,6 +135,20 @@ namespace _2UG
                                       IconUri = (String)sHire.Element("icon")
                                   };
             }
+            else
+            {
+                specialHireData = from sHire in loadSpecialHireXMl.Descendants("special_hire")
+                                  where sHire.Element("name").Value.Contains(convertFirstElementToUpperCase(searchText.ToLower()))
+                                  select new SpecialHire()
+                                  {
+                                      Name = (String)sHire.Element("name"),
+                                      Address = (String)sHire.Element("address"),
+                                      Telphone = (String)sHire.Element("telphone"),
+                                      District = convertFirstElementToUpperCase((String)sHire.Element("district")),
+                                      IconUri = (String)sHire.Element("icon")
+                                  };
+            }
+
             return specialHireData;
         }
 
@@ -152,26 +168,97 @@ namespace _2UG
             return null;
         }
 
-        private void specialHire_Searchbox_handler(Object sender, KeyEventArgs e)
-        {
-            var specialHireData = retrieveSpecialHireData(specialHireSearchBox.Text);
-            if(specialHireData.Any() == false){
-                if (e.Key == Key.Enter)
-                {
-                    SpecialHire spHire = new SpecialHire();
-                    spHire.Name = "No special Hire found!";
-
-                    specialHireData = new[] { spHire };
-                }
-            }
-
-            specialHireList.ItemsSource = specialHireData;
-        }
-
         private void BtnBackClick(object sender, EventArgs e)
         {
             NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
         }
 
-    }
+        private void BtnSearchClick(object sender, EventArgs e)
+        {
+
+            (ApplicationBar.Buttons[0] as ApplicationBarIconButton).IsEnabled = false;
+            (ApplicationBar.Buttons[1] as ApplicationBarIconButton).IsEnabled = false;
+            (ApplicationBar.Buttons[2] as ApplicationBarIconButton).IsEnabled = false;
+
+            TransportSearchBox transportSearchBox = new TransportSearchBox();
+            transportSearchBox.Closed += new EventHandler(OnSearchBoxShow);
+            transportSearchBox.Show();
+            transportSearchBox.VerticalAlignment = VerticalAlignment.Top;
+            transportSearchBox.HorizontalAlignment = HorizontalAlignment.Center;
+            transportSearchBox.Margin = new Thickness(0, 150,0,0);
+        }
+
+        private void OnSearchBoxShow(object sender, EventArgs e)
+        {
+            TransportSearchBox t_SearchBox = sender as TransportSearchBox;
+            if (t_SearchBox.DialogResult == true)
+            {
+                int pivotActiveItem = transportPivot.SelectedIndex;
+                int searchCretria = t_SearchBox.SearchCretria;
+                string searchText = t_SearchBox.SearchText;
+
+                if (!searchText.Equals(""))
+                {
+
+                    if (pivotActiveItem == 0)
+                    {
+
+                        var specialHireData = retrieveSpecialHireData(searchText, searchCretria);
+                        if (specialHireData.Any() == false)
+                        {
+                            SpecialHire spHire = new SpecialHire();
+                            spHire.Name = "No special Hire found!";
+
+                            specialHireData = new[] { spHire };
+                        }
+
+                        specialHireList.ItemsSource = specialHireData;
+                        transportPivot.SelectedItem = specialHirePivot;
+                    }
+                    else if (pivotActiveItem == 1)
+                    {
+                        var tourNTravelData = retrieveTourTravelData(searchText, searchCretria);
+                        if (tourNTravelData.Any() == false)
+                        {
+                            TourTravel tTravel = new TourTravel();
+                            tTravel.Name = "No travel n travel found!";
+
+                            tourNTravelData = new[] { tTravel };
+                        }
+
+
+                        tourTravelList.ItemsSource = tourNTravelData;
+                        transportPivot.SelectedItem = tourNTravelPivot;
+
+                    }
+                }
+                
+                (ApplicationBar.Buttons[0] as ApplicationBarIconButton).IsEnabled = true;
+                (ApplicationBar.Buttons[1] as ApplicationBarIconButton).IsEnabled = true;
+                (ApplicationBar.Buttons[2] as ApplicationBarIconButton).IsEnabled = true;
+
+            }
+            else
+            {
+                (ApplicationBar.Buttons[0] as ApplicationBarIconButton).IsEnabled = true;
+                (ApplicationBar.Buttons[1] as ApplicationBarIconButton).IsEnabled = true;
+                (ApplicationBar.Buttons[2] as ApplicationBarIconButton).IsEnabled = true;
+            }
+        }
+
+        private void refreshBtnClick(object o, EventArgs e)
+        {
+            int pivotActiveItem = transportPivot.SelectedIndex;
+            if (pivotActiveItem == 0)
+            {
+                specialHireList.ItemsSource = retrieveSpecialHireData("", UNKOWN_SEARCH_CRITERIA);
+            }
+            else if (pivotActiveItem == 1)
+            {
+                tourTravelList.ItemsSource = retrieveTourTravelData("", UNKOWN_SEARCH_CRITERIA);
+            }
+
+        }
+
+         }
 }

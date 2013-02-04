@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <tour_travels>
-
-  <tour_travels>
-
     <tour_travel>
       <name>AAB Tours and Travel</name>
       <address>Zana: Kampala - Entebbe Highway. 100 Metreson Nyanama/Ndeeba Road P.O, Box 37400 Kampala Uganda</address>
@@ -106,6 +103,7 @@
       <address>Munyonyo Common Wealth Resort, P.O.Box 9021 Kampala Uganda</address>
       <telphone>(+256)/ 414662300</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
+      <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Al Heelam Tours n Travel </name>>
@@ -130,9 +128,7 @@
     </tour_travel>
     <tour_travel>
       <name>Destination Jungle LTD </name>
-      <address>
-        Pan Africa House 5th Floor, P.O.Box 2874 Kampala – Uganda
-      </address>
+      <address>Pan Africa House 5th Floor, P.O.Box 2874 Kampala – Uganda</address>
       <telphone>(+256)414232754, 712385446 </telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
@@ -467,5 +463,4 @@
       <icon>../database_images/t_tour_n_travel/trek-ea.gif</icon>
       <district>kampala</district>
     </tour_travel>
-  </tour_travels>
 </tour_travels>

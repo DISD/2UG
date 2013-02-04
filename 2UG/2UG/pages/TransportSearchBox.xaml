@@ -1,0 +1,33 @@
+﻿<tk:ChildWindow x:Class="_2UG.pages.TransportSearchBox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:tk="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+     mc:Ignorable="d"
+                 VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+    Title="Search By :" 
+                
+                BorderBrush="Black"
+                BorderThickness="1"                 
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneAccentBrush}"                
+    d:DesignHeight="272" d:DesignWidth="480"
+    HasCloseButton="false" >
+
+    <Grid x:Name="LayoutRoot" Background="#FF454508" Height="221" Width="460">
+        <StackPanel HorizontalAlignment="Left" Margin="12,12,0,0" Name="stackPanel1" VerticalAlignment="Top" Background="#FF3BA33B" Width="436">
+            <StackPanel Height="77" Name="stackPanel2" Width="433" HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Horizontal" Background="#FF295C29">
+                <RadioButton Content="District" Name="districtRadioBtn" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="#FFCDE8CD" Margin="0" />
+                <RadioButton Content="Name" Name="nameRadioBtn" HorizontalAlignment="Right" VerticalAlignment="Top" BorderBrush="#BFF2F2F2" Foreground="#FFCDE8CD" VerticalContentAlignment="Top" Margin="0" Width="149" IsChecked="True" HorizontalContentAlignment="Left" />
+            </StackPanel>
+            <TextBox Name="t_SearchText" Text="" HorizontalAlignment="Center" VerticalAlignment="Top" Width="442" Foreground="#FF046547" FontSize="18" />
+            <StackPanel Name="stackPanel3" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Horizontal">
+                <Button Content="Search" Height="55" Name="button1" Width="105" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" BorderBrush="#FFC6FF72" FontSize="13" Click="button1_Click"></Button>
+                <Button Content="Close" Height="55" Name="closeBtn" Width="108" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Margin="30,0,0,0" BorderBrush="#FFC6FF72" Foreground="#FF580101" Click="button2_Click" FontSize="13" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</tk:ChildWindow>
