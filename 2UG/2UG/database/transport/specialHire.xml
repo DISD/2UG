@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<special_hires>
+  <special_hire>
+    <name>African Jungles Safaris</name>
+    <address>Uganda House, 24737, Uganda</address>
+    <telphone>+2556785595</telphone>
+    <district>kampala</district>
+    <icon>../database_images/default_special_hire.png</icon>
+  </special_hire>
+
+  <special_hire>
+    <name>Aab - Gorilla Tours Uganda</name>
+    <address>Uganda House, 24737, Uganda</address>
+    <telphone>00000000</telphone>
+    <district>kampala</district>
+    <icon>../database_images/default_special_hire.png</icon>
+  </special_hire>
+
+  <special_hire>
+    <name>Merit Safaris</name>
+    <address>Plot 279 Willis/balintuma Road, Uganda</address>
+    <telphone>0000000000</telphone>
+    <district>jinja</district>
+    <icon>../database_images/default_special_hire.png</icon>
+  </special_hire>
+
+ </special_hires>

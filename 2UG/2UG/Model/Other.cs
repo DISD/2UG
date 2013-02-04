@@ -15,9 +15,7 @@ namespace _2UG.Model
     {
         private String name;
         private String address;
-        private String telphone;
-        private String district;
-        private String iconUri;
+        private String route;
 
         public String Name
         {
@@ -31,22 +29,10 @@ namespace _2UG.Model
             set { address = value; }
         }
 
-        public String Telphone
+        public String Route
         {
-            get { return telphone; }
-            set { telphone = value; }
-        }
-
-        public String District
-        {
-            get { return district; }
-            set { district = value; }
-        }
-
-        public String IconUri
-        {
-            get { return iconUri; }
-            set { iconUri = value; }
+            get { return route; }
+            set { route = value; }
         }
     }
 }

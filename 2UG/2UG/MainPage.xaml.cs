@@ -42,7 +42,12 @@ namespace _2UG
 
         private void transportBtn_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Transport.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/pages/Transport.xaml", UriKind.Relative));
+        }
+
+        private void about_Ug_click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/pages/About_ug.xaml", UriKind.Relative));
         }
     }
 }
