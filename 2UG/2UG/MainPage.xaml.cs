@@ -49,5 +49,10 @@ namespace _2UG
         {
             NavigationService.Navigate(new Uri("/pages/About_ug.xaml", UriKind.Relative));
         }
+
+        private void hotelBtn_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/pages/Hotel.xaml", UriKind.Relative));
+        }
     }
 }

@@ -63,6 +63,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="model\hotel\StructHotel.cs" />
     <Compile Include="pages\About_ug.xaml.cs">
       <DependentUpon>About_ug.xaml</DependentUpon>
     </Compile>
@@ -173,6 +174,7 @@
     <None Include="Properties\WMAppManifest.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="database\hotel\hotel.xml" />
     <Content Include="images\appbar.search.rest.png" />
     <Content Include="images\appbar.refresh.rest.png" />
     <Content Include="music\kadodi.wma" />
@@ -207,9 +209,7 @@
     <Resource Include="images\logo.jpg" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="database\hotel\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>

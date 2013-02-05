@@ -1,0 +1,18 @@
+<hotels>
+
+<hotel>
+<name>source cafe</name>
+<district>kla</district>
+<address>20 Main St Town Centre, Jinja, 0434 120 911</address>
+<type>desserts</type>
+</hotel>
+
+<hotel>
+<name>fang fang</name>
+<district>kla</district>
+<address>jinja
+</address>
+<type>chinise</type>
+</hotel>
+
+</hotels>
