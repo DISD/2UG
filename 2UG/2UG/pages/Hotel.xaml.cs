@@ -155,7 +155,7 @@ namespace _2UG
                                 Name = (String)hItem.Element("name"),
                                 District = (String)hItem.Element("district"),
                                 Address = (String)hItem.Element("address"),
-                                Type = (String)hItem.Element("type")
+                                Rate = (String)hItem.Element("rate")
 
                             };
             return hotelItemData;

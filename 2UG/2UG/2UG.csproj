@@ -79,9 +79,6 @@
     <Compile Include="pages\Attraction.xaml.cs">
       <DependentUpon>Attraction.xaml</DependentUpon>
     </Compile>
-    <Compile Include="pages\Convertor.xaml.cs">
-      <DependentUpon>Convertor.xaml</DependentUpon>
-    </Compile>
     <Compile Include="pages\Currency_convert.xaml.cs">
       <DependentUpon>Currency_convert.xaml</DependentUpon>
     </Compile>
@@ -131,10 +128,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="pages\Convertor.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="pages\Currency_convert.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -178,14 +171,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="database\hotel\apartment.xml" />
-    <Content Include="database\hotel\club.xml" />
-    <Content Include="database\hotel\hotel.xml">
+    <Content Include="database\hotel\club.xml">
       <SubType>Designer</SubType>
     </Content>
     <Resource Include="images\21334-logo.GIF" />
     <Resource Include="images\7hills_r.gif" />
     <Resource Include="images\aab.gif" />
     <Resource Include="images\afritours.PNG" />
+    <Content Include="database\hotel\hotel.xml" />
     <Content Include="database\hotel\restaurant.xml" />
     <Content Include="images\appbar.search.rest.png" />
     <Content Include="images\appbar.refresh.rest.png" />

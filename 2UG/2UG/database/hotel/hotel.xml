@@ -1,18 +1,445 @@
 <hotels>
+  <hotel>
+    <name>KAMPALA SERENA HOTEL</name>
+    <address>  email: kamapla@serena.co.ug</address>
+    <telephone>Tel: +256 414 309000, Fax: +256 414 259130</telephone>
+    <district>Kampala</district>
+    <description>The hotel boasts all the usual facilities you would expect from such a landmark establishment.</description>
+    <rate> USD 272 / night</rate>
+    <image>serena</image>
+  </hotel>
 
-<hotel>
-<name>source cafe</name>
-<district>kla</district>
-<address>20 Main St Town Centre, Jinja, 0434 120 911</address>
-<type>desserts</type>
-</hotel>
+  <hotel>
+    <name>SHERATON HOTEL</name>
+    <address> email: reservations.kampala@sheraton.com, www.sheraton.com/kampala</address>
+    <telephone>Tel: 0312 322337/8, Fax 0414 342357</telephone>
+    <district>Kampala</district>
+    <description>An elegantly designed with luxurious and very spacious rooms, with easy access to the city centre with exquisite gardens. A top Kampala Hotel !.</description>
+    <rate> USD 305 per night</rate>
+    <image></image>
+  </hotel>
 
-<hotel>
-<name>fang fang</name>
-<district>kla</district>
-<address>jinja
-</address>
-<type>chinise</type>
-</hotel>
 
+  <hotel>
+    <name>EMERALD HOTEL</name>
+    <address>Bombo Road, Bat Valley Crescent, Plot 3 Semliki Walk  </address>
+    <telephone>Tel: +256 414 309000, Fax: +256 414 259130</telephone>
+    <district>Kampala</district>
+    <description>
+      5 star accommodations Accessible to many local attractions Great combination for business and pleasure
+      Ideal accommodations for a vacation getaway Close proximity to business district Close proximity to shopping district.
+    </description>
+    <rate> USD 60 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>GRAND IMPERIAL HOTEL</name>
+    <address>Kampala city center </address>
+    <telephone>Tel: +256 414 309000, Fax: +256 414 259130</telephone>
+    <district>Kampala</district>
+    <description>Newly refurbished hotel, located in the main city center.</description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>CAPITOL PALACE HOTEL</name>
+    <address>Naguru hill</address>
+    <telephone>Tel: 0312-102938, Mobile: 0754-370110,(+1)832-545-7770(US)</telephone>
+    <district>Kampala</district>
+    <description>Its design combines both contemporary cosmopolitan structure and cottages style setting ...</description>
+    <rate> USD 50 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>CITY ROYAL HOTEL</name>
+    <address> </address>
+    <telephone>Tel: +256 414 309000, Fax: +256 414 259130</telephone>
+    <district>Kampala</district>
+    <description>offers the very best in luxury accommodation to four star standards</description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>COLLINE HOTEL</name>
+    <address>Mukono Town only 21 kms from Kampala City center </address>
+    <telephone>Tel: 0312-102938, 0754-370110, (+1)832-545 7770(US)</telephone>
+    <district>Mukono</district>
+    <description>Its unique district offers an atmosphere of tranquility and serenity far away from the city's maddening crowds and noise.</description>
+    <rate> USD 60 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>FAIRWAY HOTEL</name>
+    <address>Plot 1-2 Kafu Road, PO Box 4595, Kampala, Uganda, info@fairwayhotel.co.ug</address>
+    <telephone>Tel: +256 (0)41 4259571/2/5</telephone>
+    <district>Kampala</district>
+    <description>With a serene location, comfortable and reasonable accommodation.</description>
+    <rate> USD 78 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>FOREST COTTAGES</name>
+    <address>Old Kira Road, info@forest-cottages.com  </address>
+    <telephone>+256 414287308, +256 414297308 </telephone>
+    <district>Kampala</district>
+    <description>Forest Cottages has been carefully landscaped to retain the huge, s</description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>GOLF COURSE HOTEL</name>
+    <address>Plot 64-86, Yusuf Lule Road, P.O. Box 22774, Kampala, Uganda.  reservation@golfcoursehotel.com,</address>
+    <telephone>Tel: +256 414 309000, Fax: +256 414 259130</telephone>
+    <district>Kampala</district>
+    <description>It offers luxurious and exclusive accommodation in Kampala.</description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>HOTEL AFRICANA</name>
+    <address> 2-4 Wampewo Ave, email: africana@hotelafricana.com, www.hotelafricana.com.</address>
+    <telephone>Tel. 0414 777500</telephone>
+    <district>Kampala</district>
+    <description>It offers luxurious and exclusive accommodation in Kampala.</description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>HOTEL TRIANGLE KAMPALA</name>
+    <address>Plot 16 Buganda road, P.O. Box 8632 Kampala, email: reservations@hoteltriangle.co.ug  www.hoteltriangle.co.ug </address>
+    <telephone>Tel:  +256 414 231747, +256 (0)414 233410, 	+256 414 662722</telephone>
+    <district>Kampala</district>
+    <description> Facilities included in this modern 60 room hotel include a swimming pool and health club.</description>
+    <rate> USD 100 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>HUMURA HOTEL</name>
+    <address>Plot 3 Kitante Close, Kololo, P. O. Box 35521 Kampala, Uganda, reservations@humura.or.ug</address>
+    <telephone>Tel:+256 414 700400, +256 414 700402, Fax: +256 414 235275</telephone>
+    <district>Mukono</district>
+    <description>It offers luxurious and exclusive accommodation in Kampala.</description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>IMPERIAL BOTANICAL BEACH HOTEL</name>
+    <address>P O Box 4326, Kampala, Uganda. imperialhotels@hoteleq.com</address>
+    <telephone>Tel: +256 417 111000, Fax: +256 414 250146</telephone>
+    <district>Entebbe</district>
+    <description>It offers luxurious and exclusive accommodation in Kampala.</description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>IMPERIAL RESORT BEACH HOTEL</name>
+    <address>P O Box 4326, Kampala, Uganda. imperialhotels@hoteleq.com</address>
+    <telephone>Tel: +256 417 111000, Fax: +256 414 250146</telephone>
+    <district>Entebbe</district>
+    <description>It offers luxurious and exclusive accommodation in Kampala.</description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>IMPERIAL ROYALE HOTEL</name>
+    <address>P O Box 4326, Kampala, Uganda. imperialhotels@hoteleq.com </address>
+    <telephone>Tel: +256 417 111000, Fax: +256 414 250146</telephone>
+    <district>Kampala</district>
+    <description>It offers luxurious and exclusive accommodation in Kampala.</description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>JINJA NILE RESORT</name>
+    <address> P.O. Box 1553, Jinja Uganda. nileresort@source.co.ug</address>
+    <telephone>Tel: +256 43 4 122190, +256 772 607385, Fax: +256 434 122581</telephone>
+    <district>Jinja</district>
+    <description>It offers luxurious and exclusive accommodation </description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>LAKE VIEW RESORT HOTEL</name>
+    <address>Plot 159 Fortportal-Kasese Road, P.O Box 1200 Mbarara Uganda, info@lakeviewresorthotel.co.ug</address>
+    <telephone>Tel: +256 414 309000, Fax: +256 414 259130</telephone>
+    <district>Mbarara</district>
+    <description>It offers accommodation in 70 tastefully designed rooms with AC ...</description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>LE PETIT VILLAGE HOTEL</name>
+    <address>Plot 1273, Ggaba Road, P.O Box 12721, Kampala, Uganda, info@lepetitvillage.net </address>
+    <telephone>Tel: + 256 312 265 530, Fax: +256 414 510 465</telephone>
+    <district>Kampala</district>
+    <description>It's intimate rooms are decorated in Safari Chic rustic elegance, which makes it the perfect place to relax in understated luxury.</description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>METROPOLE HOTEL</name>
+    <address>Plot 51/53, Windsor Crescent, P.O. Box 22774, Kampala, Uganda, metropole@metropolekampala.com</address>
+    <telephone>Tel: +256-414-391 000, Fax :+256 414 500116</telephone>
+    <district>Kampala</district>
+    <description>Metropole Hotel Kampala is the pioneer in using IP Telephony infrastructure in the Hospitality industry in Africa</description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>MOUNTAIN OF THE MOON HOTEL</name>
+    <address>Plot 4 , Nyaika Avenue, Fort Portal, Western Uganda, info@mountainsofthemoon.co.ug</address>
+    <telephone>Tel: +256 483 423200, +256 775 557840, Fax. +256 483 422631</telephone>
+    <district>Fort-Portal</district>
+    <description>It has become one of Fort Portal’s signature hotels.</description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>NEW COURT VIEW HOTEL</name>
+    <address>P.O. BOX 461, MASINDI UGANDA, courtview@utlonline.co.ug</address>
+    <telephone>Tel: +256 4654 20461</telephone>
+    <district>Masindi</district>
+    <description>It offers luxurious and exclusive accommodation in Kampala.</description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>PALAIS DACHA HOTEL N APARTMENTS</name>
+    <address>Mutungo Hill, Engineers Close. P.O. Box 24524 KAMPALA, UGANDA. reservations@palaisdacha.net</address>
+    <telephone>Tel: +256 782 879490, FAX: + 256 414 223159 </telephone>
+    <district>Kampala</district>
+    <description>It offers luxurious and exclusive accommodation in Kampala.</description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>PROTEA HOTEL</name>
+    <address>4 Elgon Terrace, Kololo Kampala, res@proteakla.co.ug</address>
+    <telephone>Tel: +256 312 550000</telephone>
+    <district>Kampala</district>
+    <description>It offers GUESTS 4-star luxury and 5-star service, 59 luxurious rooms and 11 sumptuous suites, all en-suite and air-conditioned..</description>
+    <rate> USD 200 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>SHANGRI-LA HOTEL</name>
+    <address>P.0. Box 11726 Kampala / Plot 8/10 Ternan Ave, Kampala</address>
+    <telephone>Tel: +256 414 250366 </telephone>
+    <district>Kampala</district>
+    <description>It offers luxurious and exclusive accommodation in Kampala.</description>
+    <rate> USD 120 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>SPEKE HOTEL</name>
+    <address>Plot 7-9 Nile Avenue, Kampala, Uganda. P.O. Box 7036, Kampala, Uganda. spekehotel@spekehotel.com</address>
+    <telephone>Tel: 0414 259221 0414 235332, Fax: 0414 235345 </telephone>
+    <district>Kampala</district>
+    <description>It offers luxurious and exclusive accommodation in Kampala.</description>
+    <rate> USD 150 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>SPORTS VIEW HOTEL</name>
+    <address>Mukono Town only 21 kms from Kampala City center </address>
+    <telephone>Tel: +256 414 309000, Fax: +256 414 259130</telephone>
+    <district>Wakiso</district>
+    <description>Its Kampala's oldest hotel and is named after the explorer Hannington Speke.</description>
+    <rate> USD 100 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>TOURIST HOTEL</name>
+    <address>Nakasero Market, email: tourist@spekehotel.com, www.touristhotel.net</address>
+    <telephone>Tel: +256 414 309000, Fax: +256 414 259130</telephone>
+    <district>Kampala</district>
+    <description>It offers luxurious and exclusive accommodation in Kampala.</description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>TROPIC INN HOTEL</name>
+    <address>Central Masaka and 120 km SW of Kampala. </address>
+    <telephone></telephone>
+    <district>Masaka</district>
+    <description>It boasts of 70 lavishly furnished rooms and 3 presidential suites , a swimming pool set in the 8 acre lash gardensTropic Inn Hotel</description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>WHITE HORSE INN</name>
+    <address>25 Lwamafa Road, Kabale Uganda  </address>
+    <telephone></telephone>
+    <district>Kabale</district>
+    <description>It offers luxurious and exclusive accommodation in Kampala.</description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>RIDAR HOTEL</name>
+    <address>P.O.Box 7627, Kampala, Uganda, reservations@ridarhotel.net</address>
+    <telephone>Tel:+256 414 290697, +256392 700696, Fax: +256 414 290699</telephone>
+    <district>Seeta - Mukono</district>
+    <description>Its a 4 star hotel, that offers the perfect place to relax while enjoying privileged surroundings only found in the heart of the Pearl of Africa. </description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>BILKON HOTEL</name>
+    <address>P.O Box 984, Jinja, bilkonhotel@bilkonhotel.com</address>
+    <telephone>Tel: +256 434 123944, +256 772 504452</telephone>
+    <district>Jinja</district>
+    <description>Its a hotel with a difference only a stones throw away from the Source of the River Nile and a few km from Bujagali fall</description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>KINGFISHER RESORT</name>
+    <address>P.O.Box 608, Jinja, near the Source of the Nile, kingfishersafaris@gmx.net</address>
+    <telephone>Tel:+256772 632063,+256 772 510197, +256 792 365656</telephone>
+    <district>Jinja</district>
+    <description>The resort is an ideal base for bird watching, tours on the L.Victoria, white water rafting on the Nile and safaris through EA.</description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>MINISTERS' VILLAGE HOTEL</name>
+    <address>Ntinda Kampala Uganda, info@ministers-village-hotel.com </address>
+    <telephone>Tel: +256 392 858505, +256 775 221992, +256 782 003353</telephone>
+    <district>Kampala</district>
+    <description>Ministers Village hotel is Ntinda`s first quality hotel,hospitable to our guests.</description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>HOTEL RUCH</name>
+    <address>Plot 3 Kintu Road</address>
+    <telephone>Tel: +256 312 210110, +256 702 820100, Fax: +256 312 265308 </telephone>
+    <district>Kampala</district>
+    <description>Its one of the few Kampala Hotels where a warm welcome and a quiet night's sleep is guaranteed.</description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>HOLIDAY EXPRESS HOTEL</name>
+    <address>corner of Luwum and Dustur Streets in central Kampala, email: holidayexp@holidayexpresshotel.com, www.holidayexpresshotel.com</address>
+    <telephone>Tel: 0312 262858/7 or 0414 253451/253455</telephone>
+    <district>Kampala</district>
+    <description>The place is so quiet for conferences, and has a clear panoramic view of Kampala City..</description>
+    <rate> USD 70 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>EMIN PASHA HOTEL</name>
+    <address> 27 Akii-Bua Road </address>
+    <telephone>Tel: +256 (0)414 236977/8/9, +256 (0)312 264712/3/4 Fax: +256 (0)414</telephone>
+    <district>Kampala</district>
+    <description>The place is so quiet for conferences, and has a clear panoramic view of Kampala City..</description>
+    <rate> USD 260 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>HOTEL EQUATORIAL</name>
+    <address>William Street, email: equator@starcom.co.ug.</address>
+    <telephone>Tel. 0414 250780/9</telephone>
+    <district>Kampala</district>
+    <description>The place is so quiet for conferences, and has a clear panoramic view of Kampala City..</description>
+    <rate> USD 110 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>BENCATHY HOTEL</name>
+    <address>Plot 1100 Ggaba Rd, P.O BOX 11304, Kampala, Email: bencathyhotel@gmail.com, Internet: www.traveluganda.co.ug/bencathyhotel</address>
+    <telephone>Tel: +256 (0)312 294993, +256 (0)783 032040. 0783 032022</telephone>
+    <district>Kampala</district>
+    <description>Its a newly refurnished Hotel (priviously Kings Holiday Inn) located on Ggaba Road Opposite Shell Petrol Station Kabalagala just 50m from the main road.</description>
+    <rate> USD 20 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>COLLEGE INN</name>
+    <address>Bombo Rd, Wandegeya Kampala</address>
+    <telephone>Tel: +256 (0)41 4533835, Mobile: (0)772 897710, email: reservations@collegeinn.co.ug</telephone>
+    <district>Kampala</district>
+    <description>Its a furnished Inn confortable, and convienient</description>
+    <rate> USD 20 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>EXCELLENT HOTEL KAMPALA</name>
+    <address>along Kampala Road, Opposite Fido Dido Restaurant , email:info@excellenthotelkampala.com</address>
+    <telephone>Tel: +256 713660020</telephone>
+    <district>Kampala</district>
+    <description></description>
+    <rate> USD 20 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>HOTEL DIPLOMATE</name>
+    <address>Tank Hill Muyenga, www.diplomatekampala.com</address>
+    <telephone>Tel: 0414 572828</telephone>
+    <district>Kampala</district>
+    <description>Its a newly refurnished Hotel </description>
+    <rate> USD 20 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>JICCA HOTEL</name>
+    <address> Kabira Road (Bukenya Zone),  info@jiccahotel.com</address>
+    <telephone>Tel: +256 414 299195, 0772 590111</telephone>
+    <district>Kampala</district>
+    <description>Its a furnished Hotel </description>
+    <rate> USD 18 per night</rate>
+    <image></image>
+  </hotel>
+
+  <hotel>
+    <name>MUKONO RESORT HOTEL</name>
+    <address> mukono</address>
+    <telephone>Tel: +256 (0)392 834775, +256 (0)712 348300</telephone>
+    <district>Mukonp</district>
+    <description>Its a furnished Hotel </description>
+    <rate> USD 10 per night</rate>
+    <image></image>
+  </hotel>
 </hotels>

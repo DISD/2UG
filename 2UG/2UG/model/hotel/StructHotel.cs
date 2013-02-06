@@ -15,7 +15,7 @@ namespace _2UG.Model
     {
         private String name;
         private String address;
-        private String type;
+        private String rate;
         private String district;
 
         public String Name
@@ -30,10 +30,10 @@ namespace _2UG.Model
             set { address = value; }
         }
 
-        public String Type
+        public String Rate
         {
-            get { return type; }
-            set { type = value; }
+            get { return rate; }
+            set { rate = value; }
         }
 
         public String District
