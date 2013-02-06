@@ -63,7 +63,10 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="model\hotel\StructApartment.cs" />
+    <Compile Include="model\hotel\StructClub.cs" />
     <Compile Include="model\hotel\StructHotel.cs" />
+    <Compile Include="model\hotel\StructRestaurant.cs" />
     <Compile Include="pages\About_ug.xaml.cs">
       <DependentUpon>About_ug.xaml</DependentUpon>
     </Compile>
@@ -174,9 +177,71 @@
     <None Include="Properties\WMAppManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="database\hotel\hotel.xml" />
+    <Content Include="database\hotel\apartment.xml" />
+    <Content Include="database\hotel\club.xml" />
+    <Content Include="database\hotel\hotel.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Resource Include="images\21334-logo.GIF" />
+    <Resource Include="images\7hills_r.gif" />
+    <Resource Include="images\aab.gif" />
+    <Resource Include="images\afritours.PNG" />
+    <Content Include="database\hotel\restaurant.xml" />
     <Content Include="images\appbar.search.rest.png" />
     <Content Include="images\appbar.refresh.rest.png" />
+    <Resource Include="images\haven.PNG" />
+    <Resource Include="images\housebox150.png" />
+    <Resource Include="images\housing.PNG" />
+    <Resource Include="images\logo.png" />
+    <Resource Include="images\mowin.jpg" />
+    <Resource Include="images\prestigue.PNG" />
+    <Resource Include="images\property.PNG" />
+    <Resource Include="images\rochester.PNG" />
+    <Resource Include="images\arirang.jpg" />
+    <Resource Include="images\barbeque.jpg" />
+    <Resource Include="images\bbq.jpg" />
+    <Resource Include="images\blacklatern.jpg" />
+    <Resource Include="images\blue_mango.jpg" />
+    <Resource Include="images\bubbles.jpg" />
+    <Resource Include="images\cafe-Pap.jpg" />
+    <Resource Include="images\cafe_ballet.jpg" />
+    <Resource Include="images\canaan.jpg" />
+    <Resource Include="images\cayenne.jpg" />
+    <Resource Include="images\ekitoobero.jpg" />
+    <Resource Include="images\fangfang.jpg" />
+    <Resource Include="images\fasika.gif" />
+    <Resource Include="images\gattomatto.jpg" />
+    <Resource Include="images\haandi.jpg" />
+    <Resource Include="images\iguana.png" />
+    <Resource Include="images\image1.PNG" />
+    <Resource Include="images\image2.PNG" />
+    <Resource Include="images\kabiracc.jpg" />
+    <Resource Include="images\kampala_casino.jpg" />
+    <Resource Include="images\khana.jpg" />
+    <Resource Include="images\khyber.jpg" />
+    <Resource Include="images\lawns.jpg" />
+    <Resource Include="images\le_petit_bistro.jpg" />
+    <Resource Include="images\logot.jpg" />
+    <Resource Include="images\mamba_point.gif" />
+    <Resource Include="images\mammamia.jpg" />
+    <Resource Include="images\masala.jpg" />
+    <Resource Include="images\nandos.jpg" />
+    <Resource Include="images\nanjing.jpg" />
+    <Resource Include="images\nawab.jpg" />
+    <Resource Include="images\pioneer.PNG" />
+    <Resource Include="images\ponnus.jpg" />
+    <Resource Include="images\prime.PNG" />
+    <Resource Include="images\pyramids.gif" />
+    <Resource Include="images\SAF_EYE_1.gif" />
+    <Resource Include="images\serena.gif" />
+    <Resource Include="images\silver_spur.gif" />
+    <Resource Include="images\steak out.gif.jpg" />
+    <Resource Include="images\travel.PNG" />
+    <Resource Include="images\asyanuttours-safaris.png" />
+    <Resource Include="images\kazinga.PNG" />
+    <Resource Include="images\maranatha.png" />
+    <Resource Include="images\matoke-tours-logo.png" />
+    <Resource Include="images\trek-ea.gif" />
     <Content Include="music\kadodi.wma" />
     <Content Include="ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -35,13 +35,6 @@
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
 
             <StackPanel Height="106" HorizontalAlignment="Left" Margin="-12,110,0,0" Name="stackPanel1" VerticalAlignment="Top" Width="462" Orientation="Vertical">
-                <!--  <ComboBox Name="hotel_comboBox" Width="430" Height="50" Margin="10,5,10,10" VerticalContentAlignment="Top" Foreground="#FF140C0C" FontSize="40" BorderBrush="#FFEFE2E2" VerticalAlignment="Center" SelectionChanged="hotel_comboBox_SelectionChanged">
-                    <ComboBoxItem Content="Hotels" Name="hotel_comboBoxItem" IsSelected="True" FontWeight="Normal" IsEnabled="True" FontSize="30" FontStyle="Italic"></ComboBoxItem>
-                    <ComboBoxItem Content="Restaurants" Name="restaurant_comboBoxItem" IsSelected="False" FontWeight="Normal" IsEnabled="True" FontSize="30" FontStyle="Italic"></ComboBoxItem>
-                    <ComboBoxItem Content="Clubs and Bars" Name="club_comboBoxItem" IsSelected="False" FontWeight="Normal" IsEnabled="True" FontSize="30" FontStyle="Italic"></ComboBoxItem>
-                </ComboBox>-->
-
-
                 <toolkit:ListPicker FullModeItemTemplate="{Binding lpkFullItemTemplate}"
                 Grid.Row="5" ItemTemplate="{Binding lpkItemTemplate}"
                 x:Name="lpkCountry" SelectionChanged="hotels_listPicker_SelectionChanged"/>
@@ -77,7 +70,6 @@
                 </ListBox>
 
             </ScrollViewer>
-            <TextBlock Height="30" HorizontalAlignment="Left" Margin="99,77,0,0" Name="HenryTxtBox" Text="TextBlock" VerticalAlignment="Top" Width="264" />
         </Grid>
         <!--
         <Grid.Background>
