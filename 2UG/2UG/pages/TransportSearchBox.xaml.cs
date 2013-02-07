@@ -21,9 +21,15 @@ namespace _2UG.pages
 
         private int districtOrNameSelected = 1;
 
-        public TransportSearchBox()
+        public TransportSearchBox(string searchName, int isOtherPivotSelected)
         {
             InitializeComponent();
+            this.SearchNameLabel.Text = searchName;
+
+            if(isOtherPivotSelected == 1){
+                districtRadioBtn.IsEnabled = false;
+            }
+
         }
 
         public void button2_Click(object sender, RoutedEventArgs e)

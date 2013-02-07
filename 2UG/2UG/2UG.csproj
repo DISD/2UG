@@ -79,6 +79,9 @@
     <Compile Include="pages\Attraction.xaml.cs">
       <DependentUpon>Attraction.xaml</DependentUpon>
     </Compile>
+    <Compile Include="pages\Convertor.xaml.cs">
+      <DependentUpon>Convertor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="pages\Currency_convert.xaml.cs">
       <DependentUpon>Currency_convert.xaml</DependentUpon>
     </Compile>
@@ -88,8 +91,8 @@
     <Compile Include="pages\Hotel.xaml.cs">
       <DependentUpon>Hotel.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
+    <Compile Include="pages\2UG.xaml.cs">
+      <DependentUpon>2UG.xaml</DependentUpon>
     </Compile>
     <Compile Include="model\transport\Other.cs" />
     <Compile Include="model\transport\SpecialHire.cs" />
@@ -106,9 +109,6 @@
     </Compile>
     <Compile Include="pages\2UgHistory.xaml.cs">
       <DependentUpon>2UgHistory.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="welcomepage.xaml.cs">
-      <DependentUpon>welcomepage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -128,6 +128,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="pages\Convertor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="pages\Currency_convert.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -140,7 +144,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainPage.xaml">
+    <Page Include="pages\2UG.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -160,88 +164,29 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="welcomepage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AppManifest.xml" />
     <None Include="Properties\WMAppManifest.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="background.png" />
+    <Content Include="ApplicationIcon.png" />
+    <Resource Include="images\2Ug.png" />
+    <Resource Include="database_images\default_pin.png" />
     <Content Include="database\hotel\apartment.xml" />
-    <Content Include="database\hotel\club.xml">
-      <SubType>Designer</SubType>
-    </Content>
-    <Resource Include="images\21334-logo.GIF" />
-    <Resource Include="images\7hills_r.gif" />
-    <Resource Include="images\aab.gif" />
-    <Resource Include="images\afritours.PNG" />
+    <Content Include="database\hotel\club.xml" />
     <Content Include="database\hotel\hotel.xml" />
     <Content Include="database\hotel\restaurant.xml" />
+    <Content Include="database\transport\other.xml" />
+    <Content Include="database\transport\specialHire.xml" />
+    <Content Include="database\transport\tourTravel.xml" />
     <Content Include="images\appbar.search.rest.png" />
     <Content Include="images\appbar.refresh.rest.png" />
-    <Resource Include="images\haven.PNG" />
-    <Resource Include="images\housebox150.png" />
-    <Resource Include="images\housing.PNG" />
-    <Resource Include="images\logo.png" />
-    <Resource Include="images\mowin.jpg" />
-    <Resource Include="images\prestigue.PNG" />
-    <Resource Include="images\property.PNG" />
-    <Resource Include="images\rochester.PNG" />
-    <Resource Include="images\arirang.jpg" />
-    <Resource Include="images\barbeque.jpg" />
-    <Resource Include="images\bbq.jpg" />
-    <Resource Include="images\blacklatern.jpg" />
-    <Resource Include="images\blue_mango.jpg" />
-    <Resource Include="images\bubbles.jpg" />
-    <Resource Include="images\cafe-Pap.jpg" />
-    <Resource Include="images\cafe_ballet.jpg" />
-    <Resource Include="images\canaan.jpg" />
-    <Resource Include="images\cayenne.jpg" />
-    <Resource Include="images\ekitoobero.jpg" />
-    <Resource Include="images\fangfang.jpg" />
-    <Resource Include="images\fasika.gif" />
-    <Resource Include="images\gattomatto.jpg" />
-    <Resource Include="images\haandi.jpg" />
-    <Resource Include="images\iguana.png" />
-    <Resource Include="images\image1.PNG" />
-    <Resource Include="images\image2.PNG" />
-    <Resource Include="images\kabiracc.jpg" />
-    <Resource Include="images\kampala_casino.jpg" />
-    <Resource Include="images\khana.jpg" />
-    <Resource Include="images\khyber.jpg" />
-    <Resource Include="images\lawns.jpg" />
-    <Resource Include="images\le_petit_bistro.jpg" />
-    <Resource Include="images\logot.jpg" />
-    <Resource Include="images\mamba_point.gif" />
-    <Resource Include="images\mammamia.jpg" />
-    <Resource Include="images\masala.jpg" />
-    <Resource Include="images\nandos.jpg" />
-    <Resource Include="images\nanjing.jpg" />
-    <Resource Include="images\nawab.jpg" />
-    <Resource Include="images\pioneer.PNG" />
-    <Resource Include="images\ponnus.jpg" />
-    <Resource Include="images\prime.PNG" />
-    <Resource Include="images\pyramids.gif" />
-    <Resource Include="images\SAF_EYE_1.gif" />
-    <Resource Include="images\serena.gif" />
-    <Resource Include="images\silver_spur.gif" />
-    <Resource Include="images\steak out.gif.jpg" />
-    <Resource Include="images\travel.PNG" />
-    <Resource Include="images\asyanuttours-safaris.png" />
-    <Resource Include="images\kazinga.PNG" />
-    <Resource Include="images\maranatha.png" />
-    <Resource Include="images\matoke-tours-logo.png" />
-    <Resource Include="images\trek-ea.gif" />
+    <Resource Include="images\specialHire_img.png" />
+    <Resource Include="images\tourTravel.png" />
+    <Resource Include="images\other_img.png" />
     <Content Include="music\kadodi.wma" />
-    <Content Include="ApplicationIcon.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Background.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Resource Include="images\banner.jpg" />
     <Resource Include="images\next.png" />
     <Resource Include="images\currency_converter_icon.png" />
@@ -249,22 +194,12 @@
     <Resource Include="images\tourist_attraction_icon.png" />
     <Resource Include="images\transport_icon.png" />
     <Resource Include="images\dangerous_spot.png" />
-    <Resource Include="images\2Ug.png" />
-    <Content Include="database\transport\other.xml" />
-    <Content Include="database\transport\specialHire.xml">
-      <SubType>Designer</SubType>
-    </Content>
-    <Resource Include="database_images\default_special_hire.png" />
     <Resource Include="database_images\default_telphone_icon.png" />
     <Resource Include="database_images\default_address_icon.png" />
-    <Content Include="database\transport\tourTravel.xml" />
-    <Resource Include="database_images\default_tour_n_travel.png" />
     <Content Include="images\2ug_icon.png" />
     <Content Include="images\about_icon.png" />
     <Resource Include="images\search-icon.png" />
     <Content Include="images\appbar.back.rest.png" />
-    <Resource Include="images\header.jpg" />
-    <Resource Include="images\logo.jpg" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup />

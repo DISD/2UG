@@ -45,19 +45,34 @@ namespace _2UG
 
         private void populateOtherListBox()
         {
-            otherList.ItemsSource = retrieveOtherData();
+            otherList.ItemsSource = retrieveOtherData("", UNKOWN_SEARCH_CRITERIA);
         }
 
-        private IEnumerable<Other> retrieveOtherData()
+        private IEnumerable<Other> retrieveOtherData(string searchText, int searchCriteria)
         {
             IEnumerable<Other> otherData = null;
-            otherData = from oTher in loadOtherXML.Descendants("other")
-                        select new Other()
-                        {
-                            Name = (String)oTher.Element("name"),
-                            Address = (String)oTher.Element("address"),
-                            Route = (String)oTher.Element("route")
-                        };
+
+            if (searchText.Equals("") && searchCriteria == UNKOWN_SEARCH_CRITERIA)
+            {
+                otherData = from oTher in loadOtherXML.Descendants("other")
+                            select new Other()
+                            {
+                                Name = (String)oTher.Element("name"),
+                                Address = (String)oTher.Element("address"),
+                                Route = (String)oTher.Element("route")
+                            };
+            }
+            else if (!searchText.Equals("") && searchCriteria == 1)
+            { 
+                otherData = from oTher in loadOtherXML.Descendants("other")
+                 where oTher.Element("name").Value.Contains(convertFirstElementToUpperCase(searchText.ToLower()))
+                            select new Other()
+                            {
+                                Name = (String)oTher.Element("name"),
+                                Address = (String)oTher.Element("address"),
+                                Route = (String)oTher.Element("route")
+                            };
+            }
             return otherData;
         }
 
@@ -170,7 +185,7 @@ namespace _2UG
 
         private void BtnBackClick(object sender, EventArgs e)
         {
-            NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/pages/2UG.xaml", UriKind.Relative));
         }
 
         private void BtnSearchClick(object sender, EventArgs e)
@@ -180,7 +195,24 @@ namespace _2UG
             (ApplicationBar.Buttons[1] as ApplicationBarIconButton).IsEnabled = false;
             (ApplicationBar.Buttons[2] as ApplicationBarIconButton).IsEnabled = false;
 
-            TransportSearchBox transportSearchBox = new TransportSearchBox();
+            string activePivotName = "";
+            int pivotActiveItem = transportPivot.SelectedIndex;
+            int otherPivotSelected = 0;
+
+            if(pivotActiveItem == 0){
+                activePivotName = "Special Hire";
+            }
+            else if (pivotActiveItem == 1)
+            {
+                activePivotName = "Tour n Travel";
+            }
+            else {
+                activePivotName = "Others";
+                otherPivotSelected = 1;
+            }
+
+            TransportSearchBox transportSearchBox = new TransportSearchBox(activePivotName, otherPivotSelected);
+
             transportSearchBox.Closed += new EventHandler(OnSearchBoxShow);
             transportSearchBox.Show();
             transportSearchBox.VerticalAlignment = VerticalAlignment.Top;
@@ -231,19 +263,35 @@ namespace _2UG
                         transportPivot.SelectedItem = tourNTravelPivot;
 
                     }
+                    else if(pivotActiveItem == 2){
+                        var otherData = retrieveOtherData(searchText, searchCretria);
+                        if (otherData.Any() == false)
+                        {
+                            Other other = new Other();
+                            other.Name = "No record found!";
+
+                            otherData = new[] { other };
+                        }
+
+                        otherList.ItemsSource = otherData;
+                        transportPivot.SelectedItem = otherPivot;
+                    }
                 }
-                
-                (ApplicationBar.Buttons[0] as ApplicationBarIconButton).IsEnabled = true;
-                (ApplicationBar.Buttons[1] as ApplicationBarIconButton).IsEnabled = true;
-                (ApplicationBar.Buttons[2] as ApplicationBarIconButton).IsEnabled = true;
+
+                enableApplicationBarButton();
 
             }
             else
             {
-                (ApplicationBar.Buttons[0] as ApplicationBarIconButton).IsEnabled = true;
-                (ApplicationBar.Buttons[1] as ApplicationBarIconButton).IsEnabled = true;
-                (ApplicationBar.Buttons[2] as ApplicationBarIconButton).IsEnabled = true;
+                enableApplicationBarButton();
             }
+        }
+
+        private void enableApplicationBarButton()
+        {
+            (ApplicationBar.Buttons[0] as ApplicationBarIconButton).IsEnabled = true;
+            (ApplicationBar.Buttons[1] as ApplicationBarIconButton).IsEnabled = true;
+            (ApplicationBar.Buttons[2] as ApplicationBarIconButton).IsEnabled = true;
         }
 
         private void refreshBtnClick(object o, EventArgs e)
@@ -256,6 +304,10 @@ namespace _2UG
             else if (pivotActiveItem == 1)
             {
                 tourTravelList.ItemsSource = retrieveTourTravelData("", UNKOWN_SEARCH_CRITERIA);
+            }
+            else if (pivotActiveItem == 2)
+            {
+                otherList.ItemsSource = retrieveOtherData("", UNKOWN_SEARCH_CRITERIA);
             }
 
         }

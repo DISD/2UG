@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.0">
-  <App xmlns="" ProductID="{5b638143-feb4-48e3-b0bc-acc27a8eca32}" Title="_2UG" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="_2UG author" Description="Sample description" Publisher="_2UG">
+  <App xmlns="" ProductID="{5b638143-feb4-48e3-b0bc-acc27a8eca32}" Title="2UG-Tour Guide" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="COCIS-Makerere University" Description="A must have tour guide for all tourists in Uganda" Publisher="COCIS-Makerere University">
     <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_GAMERSERVICES"/>
@@ -17,14 +17,14 @@
       <Capability Name="ID_CAP_WEBBROWSERCOMPONENT"/>
     </Capabilities>
     <Tasks>
-      <DefaultTask  Name ="_default" NavigationPage="MainPage.xaml"/>
+      <DefaultTask  Name ="_default" NavigationPage="/pages/2UG.xaml"/>
     </Tasks>
     <Tokens>
       <PrimaryToken TokenID="_2UGToken" TaskName="_default">
         <TemplateType5>
           <BackgroundImageURI IsRelative="true" IsResource="false">Background.png</BackgroundImageURI>
           <Count>0</Count>
-          <Title>_2UG</Title>
+          <Title>2UG-Tour Guide</Title>
         </TemplateType5>
       </PrimaryToken>
     </Tokens>

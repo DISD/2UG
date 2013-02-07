@@ -7,26 +7,34 @@
      mc:Ignorable="d"
                  VerticalAlignment="Top"
                 HorizontalAlignment="Left"
-    Title="Search By :" 
+    Title="Search Box" 
                 
-                BorderBrush="Black"
-                BorderThickness="1"                 
+                BorderBrush="{x:Null}"
+                BorderThickness="0"                 
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
-    Foreground="{StaticResource PhoneAccentBrush}"                
-    d:DesignHeight="272" d:DesignWidth="480"
-    HasCloseButton="false" >
+    Foreground="#FF6E7C00"                
+    d:DesignHeight="245" d:DesignWidth="382"
+    HasCloseButton="False" IsHitTestVisible="True" TabNavigation="Cycle" Background="{x:Null}" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" OverlayBrush="{x:Null}">
 
-    <Grid x:Name="LayoutRoot" Background="#FF454508" Height="221" Width="460">
-        <StackPanel HorizontalAlignment="Left" Margin="12,12,0,0" Name="stackPanel1" VerticalAlignment="Top" Background="#FF3BA33B" Width="436">
-            <StackPanel Height="77" Name="stackPanel2" Width="433" HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Horizontal" Background="#FF295C29">
-                <RadioButton Content="District" Name="districtRadioBtn" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="#FFCDE8CD" Margin="0" />
-                <RadioButton Content="Name" Name="nameRadioBtn" HorizontalAlignment="Right" VerticalAlignment="Top" BorderBrush="#BFF2F2F2" Foreground="#FFCDE8CD" VerticalContentAlignment="Top" Margin="0" Width="149" IsChecked="True" HorizontalContentAlignment="Left" />
-            </StackPanel>
-            <TextBox Name="t_SearchText" Text="" HorizontalAlignment="Center" VerticalAlignment="Top" Width="442" Foreground="#FF046547" FontSize="18" />
-            <StackPanel Name="stackPanel3" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Horizontal">
-                <Button Content="Search" Height="55" Name="button1" Width="105" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" BorderBrush="#FFC6FF72" FontSize="13" Click="button1_Click"></Button>
-                <Button Content="Close" Height="55" Name="closeBtn" Width="108" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="0" Margin="30,0,0,0" BorderBrush="#FFC6FF72" Foreground="#FF580101" Click="button2_Click" FontSize="13" />
+    <Grid x:Name="LayoutRoot" Background="{x:Null}" Height="200" Width="364">
+        <StackPanel HorizontalAlignment="Left" Name="stackPanel1" VerticalAlignment="Top" Background="#FF9CB29C" Width="364" Height="200" Orientation="Horizontal">
+            <StackPanel Height="202" Name="stackPanel2" Width="363" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{x:Null}">
+                <StackPanel Height="77"  Width="363" HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Horizontal" Background="#FF5E835E">
+                    <StackPanel Width="96" Orientation="Horizontal" Background="#FF426C42">
+                        <Border Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top">
+                            <TextBlock Name="SearchNameLabel" Text="" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Height="68" Width="68" Margin="3" Foreground="#FFE4FF52"></TextBlock>
+                        </Border>
+                        <Image Name="image1" Stretch="None" Source="/2UG;component/images/next.png" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="3,0,0,0" />
+                    </StackPanel>
+                    <RadioButton Content="District" Name="districtRadioBtn" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="#FFCDE8CD" Margin="0" Width="141" />
+                    <RadioButton Content="Name" Name="nameRadioBtn" HorizontalAlignment="Right" VerticalAlignment="Top" BorderBrush="#BFF2F2F2" Foreground="#FFCDE8CD" VerticalContentAlignment="Top" Margin="0" Width="130" IsChecked="True" HorizontalContentAlignment="Left" />
+                </StackPanel>
+                <TextBox Name="t_SearchText" Text="" HorizontalAlignment="Center" VerticalAlignment="Top" Width="374" Foreground="#FF297676" FontSize="18" Background="#FFE9EFED" />
+                <StackPanel Name="stackPanel3" VerticalAlignment="Top" HorizontalAlignment="Left" Orientation="Horizontal" Background="Black" Width="362" Height="62">
+                    <Button Content="Search" Height="67" Name="button1" Width="105" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFEBC833" BorderBrush="#FF5E835E" FontSize="13" Click="button1_Click" Background="#0051A751" Padding="0" Margin="50,0,0,0"></Button>
+                    <Button Content="Close" Height="67" Name="closeBtn" Width="108" HorizontalAlignment="Right" VerticalAlignment="Top" Padding="0" Margin="50,0,0,0" BorderBrush="#FF5E835E" Foreground="Red" Click="button2_Click" FontSize="13" Background="#0051A751" />
+                </StackPanel>
             </StackPanel>
         </StackPanel>
     </Grid>

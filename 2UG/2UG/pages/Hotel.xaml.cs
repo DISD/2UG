@@ -22,7 +22,7 @@ namespace _2UG
         private static XDocument loadRestaurantXML = XDocument.Load("database/hotel/restaurant.xml");
         private static XDocument loadApartmentXML = XDocument.Load("database/hotel/apartment.xml");
         private static XDocument loadClubXML = XDocument.Load("database/hotel/club.xml");
-        String[] HotelsCategory = { "", "Hotels","Restaurants", "Clubs", "Apartments",""};
+        String[] HotelsCategory = { "", "Hotels", "Restaurants", "Clubs", "Apartments", "" };
         public Hotel()
         {
             InitializeComponent();
@@ -35,7 +35,7 @@ namespace _2UG
             String text = (string)lpkCountry.SelectedItem;
             if (text == "Hotels")
             {
-                    populateHotelItemListBox();
+                populateHotelItemListBox();
             }
             else if (text == "Restaurants")
             {
@@ -87,7 +87,7 @@ namespace _2UG
                 apartmentData = new[] { aPartment };
             }
 
-            hotelList.ItemsSource = retrieveApartmentItemData(); 
+            hotelList.ItemsSource = retrieveApartmentItemData();
         }
 
         private IEnumerable<StructApartment> retrieveApartmentItemData()
@@ -114,21 +114,21 @@ namespace _2UG
                 restaurantData = new[] { rtaurant };
             }
 
-            hotelList.ItemsSource = retrieveRestaurantItemData(); 
+            hotelList.ItemsSource = retrieveRestaurantItemData();
         }
         // Fetches data from restaurant
         private IEnumerable<StructRestaurant> retrieveRestaurantItemData()
         {
             IEnumerable<StructRestaurant> restaurantData = null;
             restaurantData = from rItem in loadRestaurantXML.Descendants("restaurant")
-                            select new StructRestaurant()
-                            {
-                                Name = (String)rItem.Element("name"),
-                                District = (String)rItem.Element("district"),
-                                Address = (String)rItem.Element("address"),
-                                Type = (String)rItem.Element("type")
+                             select new StructRestaurant()
+                             {
+                                 Name = (String)rItem.Element("name"),
+                                 District = (String)rItem.Element("district"),
+                                 Address = (String)rItem.Element("address"),
+                                 Type = (String)rItem.Element("type")
 
-                            };
+                             };
             return restaurantData;
         }
         // Populates ListBox with Hotel data
@@ -143,7 +143,7 @@ namespace _2UG
                 hotelData = new[] { htel };
             }
 
-            hotelList.ItemsSource = retrieveHotelItemData(); 
+            hotelList.ItemsSource = retrieveHotelItemData();
         }
         // Fetches data about hotels
         private IEnumerable<StructHotel> retrieveHotelItemData()
