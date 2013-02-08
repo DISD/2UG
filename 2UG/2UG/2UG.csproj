@@ -63,10 +63,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="model\hotel\StructApartment.cs" />
-    <Compile Include="model\hotel\StructClub.cs" />
-    <Compile Include="model\hotel\StructHotel.cs" />
-    <Compile Include="model\hotel\StructRestaurant.cs" />
+    <Compile Include="model\hotel\HotelModel.cs" />
     <Compile Include="pages\About_ug.xaml.cs">
       <DependentUpon>About_ug.xaml</DependentUpon>
     </Compile>
@@ -94,6 +91,9 @@
     <Compile Include="model\transport\Other.cs" />
     <Compile Include="model\transport\SpecialHire.cs" />
     <Compile Include="model\transport\TourTravel.cs" />
+    <Compile Include="pages\HotelSearchBox.xaml.cs">
+      <DependentUpon>HotelSearchBox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="pages\PivotPage1.xaml.cs">
       <DependentUpon>Transport.xaml</DependentUpon>
     </Compile>
@@ -141,6 +141,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="pages\HotelSearchBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="pages\Transport.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -165,8 +169,6 @@
   <ItemGroup>
     <Content Include="background.png" />
     <Content Include="ApplicationIcon.png" />
-    <Resource Include="images\2Ug.png" />
-    <Resource Include="database_images\default_pin.png" />
     <Content Include="database\hotel\apartment.xml" />
     <Content Include="database\hotel\club.xml" />
     <Content Include="database\hotel\hotel.xml" />
@@ -174,25 +176,29 @@
     <Content Include="database\transport\other.xml" />
     <Content Include="database\transport\specialHire.xml" />
     <Content Include="database\transport\tourTravel.xml" />
-    <Content Include="images\appbar.search.rest.png" />
-    <Content Include="images\appbar.refresh.rest.png" />
-    <Resource Include="images\specialHire_img.png" />
-    <Resource Include="images\tourTravel.png" />
-    <Resource Include="images\other_img.png" />
-    <Content Include="music\kadodi.wma" />
-    <Resource Include="images\banner.jpg" />
-    <Resource Include="images\next.png" />
-    <Resource Include="images\currency_converter_icon.png" />
-    <Resource Include="images\hotel_icon.png" />
-    <Resource Include="images\tourist_attraction_icon.png" />
-    <Resource Include="images\transport_icon.png" />
-    <Resource Include="images\dangerous_spot.png" />
-    <Resource Include="database_images\default_telphone_icon.png" />
-    <Resource Include="database_images\default_address_icon.png" />
-    <Content Include="images\2ug_icon.png" />
-    <Content Include="images\about_icon.png" />
-    <Resource Include="images\search-icon.png" />
+    <Resource Include="images\2Ug.png" />
+    <Resource Include="images\2ug_icon.png" />
+    <Resource Include="images\about_icon.png" />
     <Content Include="images\appbar.back.rest.png" />
+    <Content Include="images\appbar.refresh.rest.png" />
+    <Content Include="images\appbar.search.rest.png" />
+    <Resource Include="images\banner.jpg" />
+    <Resource Include="images\currency_converter_icon.png" />
+    <Resource Include="images\dangerous_spot.png" />
+    <Resource Include="images\dangerous_spot_icon.png" />
+    <Resource Include="images\default_address_icon.png" />
+    <Resource Include="images\default_pin.png" />
+    <Resource Include="images\default_telphone_icon.png" />
+    <Resource Include="images\down_img.png" />
+    <Resource Include="images\hotel_icon.png" />
+    <Resource Include="images\next.png" />
+    <Resource Include="images\other_img.png" />
+    <Resource Include="images\search-icon.png" />
+    <Resource Include="images\specialHire_img.png" />
+    <Resource Include="images\tourist_attraction_icon.png" />
+    <Resource Include="images\tourTravel.png" />
+    <Resource Include="images\transport_icon.png" />
+    <Content Include="music\kadodi.wma" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup />

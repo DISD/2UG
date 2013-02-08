@@ -26,7 +26,8 @@ namespace _2UG.pages
             InitializeComponent();
             this.SearchNameLabel.Text = searchName;
 
-            if(isOtherPivotSelected == 1){
+            if (isOtherPivotSelected == 1)
+            {
                 districtRadioBtn.IsEnabled = false;
             }
 
@@ -36,12 +37,12 @@ namespace _2UG.pages
         {
             t_SearchText.Text = "";
             this.DialogResult = false;
-            
+
         }
 
-        
+
         private void button1_Click(object sender, RoutedEventArgs e)
-        {   
+        {
             // if districtOrNameSelected = 0 => district radio btn is checked else name
             if (districtRadioBtn.IsChecked == true)
             {

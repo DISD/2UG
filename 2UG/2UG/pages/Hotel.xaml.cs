@@ -10,9 +10,10 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
-using _2UG.Model;
 using _2UG.model.hotel;
 using System.Xml.Linq;
+using Microsoft.Phone.Shell;
+using _2UG.pages;
 
 namespace _2UG
 {
@@ -22,143 +23,198 @@ namespace _2UG
         private static XDocument loadRestaurantXML = XDocument.Load("database/hotel/restaurant.xml");
         private static XDocument loadApartmentXML = XDocument.Load("database/hotel/apartment.xml");
         private static XDocument loadClubXML = XDocument.Load("database/hotel/club.xml");
-        String[] HotelsCategory = { "", "Hotels", "Restaurants", "Clubs", "Apartments", "" };
+
+        private static String[] HOTEL_CATEGORIES = { "Hotels", "Restaurants", "Clubs", "Apartments" };
+        private static String HOTEL_CATEGORY = "Hotels";
+        private static String APARTMENT_CATEGORY = "Apartments";
+        private static String RESTUARANT_CATEGORY = "Restaurants";
+        private static String CLUB_CATEGORY = "Clubs";
+
+        private static String UNKOWN_TYPE = "";
+        private static String UNKOWN_DISTRICT_NAME = "";
+        private static String UNKOWN_NAME = "";
+
+
         public Hotel()
         {
             InitializeComponent();
-            this.lpkCountry.ItemsSource = HotelsCategory;
+
+            this.hotelCategoryListPicker.ItemsSource = HOTEL_CATEGORIES;
+            this.categorySelectedLabel.Text = (string)hotelCategoryListPicker.SelectedItem;
         }
 
         // Checks user selections
         private void hotels_listPicker_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            String text = (string)lpkCountry.SelectedItem;
-            if (text == "Hotels")
+            String selectedCategory = (string)hotelCategoryListPicker.SelectedItem;
+            this.categorySelectedLabel.Text = selectedCategory;
+
+            populateListBox(selectedCategory, UNKOWN_TYPE, UNKOWN_DISTRICT_NAME, UNKOWN_NAME);
+        }
+
+        private void populateListBox(String selectedCategory, String searchByType, String searchByDistrictName, String hotelName)
+        {
+            if (selectedCategory == HOTEL_CATEGORY)
             {
-                populateHotelItemListBox();
+                populateCategoryListBox(loadHotelItemXML, HOTEL_CATEGORY, searchByType, searchByDistrictName, hotelName);
             }
-            else if (text == "Restaurants")
+            else if (selectedCategory == RESTUARANT_CATEGORY)
             {
-                populateRestaurantItemListBox();
+                populateCategoryListBox(loadRestaurantXML, RESTUARANT_CATEGORY, searchByType, searchByDistrictName, hotelName);
             }
-            else if (text == "Apartments")
+            else if (selectedCategory == APARTMENT_CATEGORY)
             {
-                popualteApartmentItemListBox();
+                populateCategoryListBox(loadApartmentXML, APARTMENT_CATEGORY, searchByType, searchByDistrictName, hotelName);
             }
-            else if (text == "Clubs")
+            else if (selectedCategory == CLUB_CATEGORY)
             {
-                populateClubItemListBox();
+                populateCategoryListBox(loadClubXML, CLUB_CATEGORY, searchByType, searchByDistrictName, hotelName);
             }
         }
 
-        private void populateClubItemListBox()
+        private void populateCategoryListBox(XDocument xmlFile, String categoryType, String searchByType, String searchByDistrictName, String hotelName)
         {
-            var clubData = retrieveClubItemData();
-            if (clubData.Any() == false)
+
+            var retrievedData = retrieveXMLData(xmlFile, categoryType, searchByType, searchByDistrictName, hotelName);
+            if (retrievedData.Any() == false)
             {
-                StructClub cLub = new StructClub();
-                cLub.Name = "No Club(s) found";
-                clubData = new[] { cLub };
-            }
-            hotelList.ItemsSource = retrieveClubItemData();
-        }
-
-        private IEnumerable<StructClub> retrieveClubItemData()
-        {
-            var clubData = from cItem in loadClubXML.Descendants("club")
-                           select new StructClub()
-                           {
-                               Name = (string)cItem.Element("name"),
-                               District = (string)cItem.Element("district"),
-                               Address = (string)cItem.Element("address")
-
-                           };
-            return clubData;
-        }
-
-        private void popualteApartmentItemListBox()
-        {
-            var apartmentData = retrieveApartmentItemData();
-            if (apartmentData.Any() == false)
-            {
-                StructApartment aPartment = new StructApartment();
-                aPartment.Name = "No Apartment(s) Item found!";
-
-                apartmentData = new[] { aPartment };
+                HotelModel hotelModel = new HotelModel();
+                hotelModel.name = "No " + categoryType + " found with this search: " + searchByType + searchByDistrictName + hotelName;
+                retrievedData = new[] { hotelModel };
             }
 
-            hotelList.ItemsSource = retrieveApartmentItemData();
+            hotelCategoryList.ItemsSource = retrievedData;
         }
 
-        private IEnumerable<StructApartment> retrieveApartmentItemData()
+        private IEnumerable<HotelModel> retrieveXMLData(XDocument xmlFile, String categoryType, String searchByType, String searchByDistrictName, String hotelName)
         {
-            var apartmentData = from aItem in loadApartmentXML.Descendants("apartment")
-                                select new StructApartment()
-                                {
-                                    Name = (string)aItem.Element("name"),
-                                    District = (string)aItem.Element("district"),
-                                    Address = (string)aItem.Element("address")
+            String firstXMLNode = categoryType.Substring(0, categoryType.Length - 1).ToLower();
+            IEnumerable<HotelModel> data = null;
 
-                                };
-            return apartmentData;
-        }
-        // Populates listbox with restaurant data
-        private void populateRestaurantItemListBox()
-        {
-            var restaurantData = retrieveRestaurantItemData();
-            if (restaurantData.Any() == false)
+            if (!searchByType.Equals(""))
             {
-                StructRestaurant rtaurant = new StructRestaurant();
-                rtaurant.Name = "No Restaurant Item found!";
-
-                restaurantData = new[] { rtaurant };
+                data = from hItem in xmlFile.Descendants(firstXMLNode)
+                       where hItem.Element("type").Value.Contains(searchByType.ToLower())
+                       select new HotelModel()
+                       {
+                           name = (string)hItem.Element("name"),
+                           address = (string)hItem.Element("address"),
+                           telphone = (string)hItem.Element("telphone"),
+                           district = convertFirstElementToUpperCase((string)hItem.Element("district")),
+                           type = convertFirstElementToUpperCase((string)hItem.Element("type"))
+                       };
+            }
+            else if (!searchByDistrictName.Equals(""))
+            {
+                data = from hItem in xmlFile.Descendants(firstXMLNode)
+                       where hItem.Element("district").Value.Contains(searchByDistrictName.ToLower())
+                       select new HotelModel()
+                       {
+                           name = (string)hItem.Element("name"),
+                           address = (string)hItem.Element("address"),
+                           telphone = (string)hItem.Element("telphone"),
+                           district = convertFirstElementToUpperCase((string)hItem.Element("district")),
+                           type = convertFirstElementToUpperCase((string)hItem.Element("type"))
+                       };
+            }
+            else if (!hotelName.Equals(""))
+            {
+                data = from hItem in xmlFile.Descendants(firstXMLNode)
+                       where hItem.Element("name").Value.Contains(hotelName.ToUpper())
+                       select new HotelModel()
+                       {
+                           name = (string)hItem.Element("name"),
+                           address = (string)hItem.Element("address"),
+                           telphone = (string)hItem.Element("telphone"),
+                           district = convertFirstElementToUpperCase((string)hItem.Element("district")),
+                           type = convertFirstElementToUpperCase((string)hItem.Element("type"))
+                       };
+            }
+            else
+            {
+                data = from hItem in xmlFile.Descendants(firstXMLNode)
+                       select new HotelModel()
+                       {
+                           name = (string)hItem.Element("name"),
+                           address = (string)hItem.Element("address"),
+                           telphone = (string)hItem.Element("telphone"),
+                           district = convertFirstElementToUpperCase((string)hItem.Element("district")),
+                           type = convertFirstElementToUpperCase((string)hItem.Element("type"))
+                       };
             }
 
-            hotelList.ItemsSource = retrieveRestaurantItemData();
+            return data;
         }
-        // Fetches data from restaurant
-        private IEnumerable<StructRestaurant> retrieveRestaurantItemData()
-        {
-            IEnumerable<StructRestaurant> restaurantData = null;
-            restaurantData = from rItem in loadRestaurantXML.Descendants("restaurant")
-                             select new StructRestaurant()
-                             {
-                                 Name = (String)rItem.Element("name"),
-                                 District = (String)rItem.Element("district"),
-                                 Address = (String)rItem.Element("address"),
-                                 Type = (String)rItem.Element("type")
 
-                             };
-            return restaurantData;
-        }
-        // Populates ListBox with Hotel data
-        private void populateHotelItemListBox()
+
+        private string convertFirstElementToUpperCase(string text)
         {
-            var hotelData = retrieveHotelItemData();
-            if (hotelData.Any() == false)
+            if (text != null && text.Length > 0)
             {
-                StructHotel htel = new StructHotel();
-                htel.Name = "No Hotel Item found!";
-
-                hotelData = new[] { htel };
+                return char.ToUpper(text[0]) + text.Substring(1);
             }
 
-            hotelList.ItemsSource = retrieveHotelItemData();
+            return null;
         }
-        // Fetches data about hotels
-        private IEnumerable<StructHotel> retrieveHotelItemData()
-        {
-            IEnumerable<StructHotel> hotelItemData = null;
-            hotelItemData = from hItem in loadHotelItemXML.Descendants("hotel")
-                            select new StructHotel()
-                            {
-                                Name = (String)hItem.Element("name"),
-                                District = (String)hItem.Element("district"),
-                                Address = (String)hItem.Element("address"),
-                                Rate = (String)hItem.Element("rate")
 
-                            };
-            return hotelItemData;
+        private void backButtonClick(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/pages/2UG.xaml", UriKind.Relative));
+        }
+
+        private void searchButtonClickHandler(object sender, EventArgs e)
+        {
+            (ApplicationBar.Buttons[0] as ApplicationBarIconButton).IsEnabled = false;
+            (ApplicationBar.Buttons[1] as ApplicationBarIconButton).IsEnabled = false;
+            (ApplicationBar.Buttons[2] as ApplicationBarIconButton).IsEnabled = false;
+
+            HotelSearchBox hotelSearchBox = new HotelSearchBox((string)hotelCategoryListPicker.SelectedItem);
+            hotelSearchBox.Closed += new EventHandler(hotelSearchBoxClosed);
+            hotelSearchBox.Show();
+            hotelSearchBox.VerticalAlignment = VerticalAlignment.Top;
+            hotelSearchBox.HorizontalAlignment = HorizontalAlignment.Center;
+            hotelSearchBox.Margin = new Thickness(0, 150, 0, 0);
+        }
+
+        private void hotelSearchBoxClosed(object sender, EventArgs e)
+        {
+            HotelSearchBox h_searchBox = sender as HotelSearchBox;
+
+            if (h_searchBox.DialogResult == true)
+            {
+                String selectedCategory = (string)hotelCategoryListPicker.SelectedItem;
+                if (!h_searchBox.hotelName.Equals(""))
+                {
+                    populateListBox(selectedCategory, UNKOWN_TYPE, UNKOWN_DISTRICT_NAME, h_searchBox.hotelName);
+                }
+                else if (!h_searchBox.districtName.Equals(""))
+                {
+                    populateListBox(selectedCategory, UNKOWN_TYPE, h_searchBox.districtName, UNKOWN_NAME);
+                }
+                else if (!h_searchBox.hotelType.Equals(""))
+                {
+                    populateListBox(selectedCategory, h_searchBox.hotelType, UNKOWN_DISTRICT_NAME, UNKOWN_NAME);
+                }
+
+                enableApplicationBarButton();
+            }
+            else
+            {
+                enableApplicationBarButton();
+            }
+        }
+
+        private void enableApplicationBarButton()
+        {
+            (ApplicationBar.Buttons[0] as ApplicationBarIconButton).IsEnabled = true;
+            (ApplicationBar.Buttons[1] as ApplicationBarIconButton).IsEnabled = true;
+            (ApplicationBar.Buttons[2] as ApplicationBarIconButton).IsEnabled = true;
+        }
+
+        private void refreshButtonClickHandler(object sender, EventArgs e)
+        {
+            String selectedCategory = (string)hotelCategoryListPicker.SelectedItem;
+            populateListBox(selectedCategory, UNKOWN_TYPE, UNKOWN_DISTRICT_NAME, UNKOWN_NAME);
         }
 
     }

@@ -24,7 +24,7 @@ namespace _2UG
         private static XDocument loadTourTravelXML = XDocument.Load("database/transport/tourTravel.xml");
         private static XDocument loadOtherXML = XDocument.Load("database/transport/other.xml");
         private static int UNKOWN_SEARCH_CRITERIA = 3;
-      
+
         public PivotPage1()
         {
             InitializeComponent();
@@ -63,9 +63,9 @@ namespace _2UG
                             };
             }
             else if (!searchText.Equals("") && searchCriteria == 1)
-            { 
+            {
                 otherData = from oTher in loadOtherXML.Descendants("other")
-                 where oTher.Element("name").Value.Contains(convertFirstElementToUpperCase(searchText.ToLower()))
+                            where oTher.Element("name").Value.Contains(convertFirstElementToUpperCase(searchText.ToLower()))
                             select new Other()
                             {
                                 Name = (String)oTher.Element("name"),
@@ -83,14 +83,14 @@ namespace _2UG
             if (searchText.Equals("") && searchCriteria == UNKOWN_SEARCH_CRITERIA)
             {
                 tourTravelData = from tTravel in loadTourTravelXML.Descendants("tour_travel")
-                                  select new TourTravel()
-                                  {
-                                      Name = (String)tTravel.Element("name"),
-                                      Address = (String)tTravel.Element("address"),
-                                      Telphone = (String)tTravel.Element("telphone"),
-                                      District = convertFirstElementToUpperCase((String)tTravel.Element("district")),
-                                      IconUri = (String)tTravel.Element("icon")
-                                  };
+                                 select new TourTravel()
+                                 {
+                                     Name = (String)tTravel.Element("name"),
+                                     Address = (String)tTravel.Element("address"),
+                                     Telphone = (String)tTravel.Element("telphone"),
+                                     District = convertFirstElementToUpperCase((String)tTravel.Element("district")),
+                                     IconUri = (String)tTravel.Element("icon")
+                                 };
             }
             else if (!searchText.Equals("") && searchCriteria == 0)
             {
@@ -167,7 +167,7 @@ namespace _2UG
             return specialHireData;
         }
 
-         private string convertFirstElementToUpperCase(string text)
+        private string convertFirstElementToUpperCase(string text)
         {
             if (text == null)
             {
@@ -199,14 +199,16 @@ namespace _2UG
             int pivotActiveItem = transportPivot.SelectedIndex;
             int otherPivotSelected = 0;
 
-            if(pivotActiveItem == 0){
+            if (pivotActiveItem == 0)
+            {
                 activePivotName = "Special Hire";
             }
             else if (pivotActiveItem == 1)
             {
                 activePivotName = "Tour n Travel";
             }
-            else {
+            else
+            {
                 activePivotName = "Others";
                 otherPivotSelected = 1;
             }
@@ -217,7 +219,7 @@ namespace _2UG
             transportSearchBox.Show();
             transportSearchBox.VerticalAlignment = VerticalAlignment.Top;
             transportSearchBox.HorizontalAlignment = HorizontalAlignment.Center;
-            transportSearchBox.Margin = new Thickness(0, 150,0,0);
+            transportSearchBox.Margin = new Thickness(0, 150, 0, 0);
         }
 
         private void OnSearchBoxShow(object sender, EventArgs e)
@@ -263,7 +265,8 @@ namespace _2UG
                         transportPivot.SelectedItem = tourNTravelPivot;
 
                     }
-                    else if(pivotActiveItem == 2){
+                    else if (pivotActiveItem == 2)
+                    {
                         var otherData = retrieveOtherData(searchText, searchCretria);
                         if (otherData.Any() == false)
                         {
@@ -312,5 +315,5 @@ namespace _2UG
 
         }
 
-         }
+    }
 }

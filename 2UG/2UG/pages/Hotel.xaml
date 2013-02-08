@@ -11,17 +11,8 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
-    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"
     shell:SystemTray.IsVisible="True">
-
-    <phone:PhoneApplicationPage.Resources>
-        <DataTemplate x:Name="lpkItemTemplate">
-            <TextBlock Text="{Binding Country}" />
-        </DataTemplate>
-        <DataTemplate x:Name="lpkFullItemTemplate">
-            <TextBlock Text="{Binding Country}" />
-        </DataTemplate>
-    </phone:PhoneApplicationPage.Resources>
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="#FFF3F6F9" >
@@ -30,66 +21,84 @@
         <StackPanel Height="59" HorizontalAlignment="Left" Name="stackPanel" VerticalAlignment="Top" Width="480" Background="#FF004B4B" Orientation="Horizontal">
             <Image Height="47" Stretch="None" Margin="5" Source="/2UG;component/images/2Ug.png" />
         </StackPanel>
-        <StackPanel Height="46" HorizontalAlignment="Left" Margin="0,59,0,0" VerticalAlignment="Top" Width="480" Background="#FFAABA70" />
-        <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-
-            <StackPanel Height="106" HorizontalAlignment="Left" Margin="-12,110,0,0" Name="stackPanel1" VerticalAlignment="Top" Width="462" Orientation="Vertical">
-                <toolkit:ListPicker FullModeItemTemplate="{Binding lpkFullItemTemplate}"
-                Grid.Row="5" ItemTemplate="{Binding lpkItemTemplate}"
-                x:Name="lpkCountry" SelectionChanged="hotels_listPicker_SelectionChanged"/>
+        <StackPanel Height="46" HorizontalAlignment="Left" Margin="0,59,0,0" VerticalAlignment="Top" Width="480" Background="#FFAABA70">
+            <StackPanel Height="46" Width="480" Background="#FFAABA70" Orientation="Horizontal">
+                <Border HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="51" Background="#FF141414">
+                    <TextBlock Text="2UG" Name="msgText" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Foreground="#E6FFFFFF" FontFamily="Segoe WP" />
+                </Border>
+                <Border HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="32" Background="#FF9A2020">
+                    <Image Stretch="None" Source="/2UG;component/images/next.png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" />
+                </Border>
+                <Border Width="396" Background="#FFCACA4E">
+                    <TextBlock FontFamily="Segoe WP" Foreground="#E6440808" Text="Hotel(s)" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" FontSize="26" />
+                </Border>
             </StackPanel>
 
-            <ScrollViewer Width="459"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="503" Margin="-2,222,0,0">
-                <ListBox Height="366" Width="450" Name="hotelList" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0" Foreground="#FF931C1C">
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <StackPanel Height="160" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="463" Orientation="Vertical" Margin="0,0,0,0">
-                                <StackPanel Height="153" Width="462" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal" >
-                                    <StackPanel Height="143" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="334" Orientation="Vertical" Margin="5">
-                                        <StackPanel Width="334" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF719668" Margin="0,0,0,3">
-                                            <TextBlock Height="30" Text="{Binding Name}" Foreground="#FFFFEA00" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Arial" FontSize="22" FontStretch="Normal" Name="hotel_Name" Width="306" TextWrapping="Wrap" Margin="3" />
+        </StackPanel>
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <StackPanel Margin="0,111,0,0" Height="579" VerticalAlignment="Top" HorizontalAlignment="Left" Width="479">
+                <StackPanel Height="236" HorizontalAlignment="Left" Margin="0" Name="stackPanel1" VerticalAlignment="Top" Width="480" Orientation="Vertical">
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Width="480">
+                        <TextBlock Text="Click to choose category: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,5" />
+                        <toolkit:ListPicker x:Name="hotelCategoryListPicker" ListPickerMode="Expanded" Grid.Row="5" SelectionChanged="hotels_listPicker_SelectionChanged" Margin="10,0,0,0" Width="380" Background="#FFF3F6F9" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                        <TextBlock Text="The categories include: Hotels, Resturants, Apartments n Clubs" Width="456" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,5,5,5" TextWrapping="Wrap" Foreground="Black" />
+                        <StackPanel.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF004B4B" Offset="0" />
+                                <GradientStop Color="#FFF3F6F9" Offset="1" />
+                            </LinearGradientBrush>
+                        </StackPanel.Background>
+                    </StackPanel>
+                    <StackPanel Height="73" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Width="259">
+                        <Image Source="/2UG;component/images/down_img.png" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,10,0" />
+                        <TextBlock Name="categorySelectedLabel" Text="" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="36" FontFamily="Georgia" />
+                    </StackPanel>
+                    <Border BorderBrush="Black" BorderThickness="0,0,0,2" Height="6" Name="border1" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,5,0,0" Height="342" Width="479">
+                    <ListBox Height="340"  Name="hotelCategoryList" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0" Foreground="#FF931C1C" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Visible">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Vertical">
+                                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Vertical">
+                                        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top">
+                                            <TextBlock Height="30" Text="{Binding name}" Foreground="#FF9A2020" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Arial" FontSize="22" FontStretch="Normal" Name="hotel_Name"  TextWrapping="Wrap" Margin="3" />
                                         </StackPanel>
-                                        <StackPanel Height="34" Width="334" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
-                                            <Image Height="19" Stretch="None" Width="23" Name="hotel_Address_icon" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/database_images/default_address_icon.png" Margin="3,3,0,0" />
-                                            <TextBlock Height="29" Text="{Binding Address}" Width="299" Name="hotel_Address" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF4D9ACE" FontFamily="Arial" FontSize="15" TextWrapping="Wrap" Margin="3,3,0,0" />
+                                        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
+                                            <Image Height="19" Stretch="None" Width="23" Name="hotel_Address_icon" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/images/default_address_icon.png" Margin="3,3,0,0" />
+                                            <TextBlock Text="{Binding address}" Name="hotel_Address" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF626262" FontFamily="Arial" FontSize="15" TextWrapping="Wrap" Margin="3,3,0,3" />
                                         </StackPanel>
-                                        <StackPanel Height="31" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="333" Orientation="Horizontal">
-                                            <Image Height="21" Stretch="None" Width="26" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/database_images/default_telphone_icon.png"  Name="hotel_Tel_Icon" Margin="3,3,0,0" />
-                                            <TextBlock Name="hotel_Tel" Text="{Binding Type}" Width="300" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Arial" FontSize="16" TextWrapping="Wrap" Foreground="#FF2E98BE" Margin="3,3,0,0" Height="23" />
+                                        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+                                            <Image Height="21" Stretch="None" Width="26" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/images/default_telphone_icon.png" Name="hotel_Tel_Icon" Margin="3,3,0,0" />
+                                            <TextBlock Name="hotel_Tel" Text="{Binding telphone}" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Arial" FontSize="16" TextWrapping="Wrap" Foreground="#FF626262" Margin="3,3,0,3" />
                                         </StackPanel>
-                                        <StackPanel Width="454" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top">
-                                            <TextBlock Text="{Binding Address}" Width="446" Foreground="#FF030303" FontFamily="Arial" FontSize="16" TextWrapping="Wrap" Margin="0" Name="hotel_district" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="10,5,5,5" />
+                                        <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" >
+                                            <Image Stretch="None" Width="27" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/images/default_pin.png"  Name="Special_Hire_Pin_Icon" Margin="3,3,0,0" />
+                                            <TextBlock Text="{Binding district}" Foreground="#FF626262" FontFamily="Arial" FontSize="16" TextWrapping="Wrap" Name="hotel_district" HorizontalAlignment="Left" VerticalAlignment="Top" Margin ="3,3,0,0"/>
+                                        </StackPanel>
+                                        <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" >
+                                            <Image Stretch="None" Width="27" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/images/default_pin.png"  Name="Hotel_Pin_Icon" Margin="3,3,0,0" />
+                                            <TextBlock Text="{Binding type}" Foreground="#FF626262" FontFamily="Arial" FontSize="16" TextWrapping="Wrap" Name="hotel_type" HorizontalAlignment="Left" VerticalAlignment="Top" Margin ="3,3,0,0"/>
                                         </StackPanel>
                                     </StackPanel>
+                                    <Border BorderBrush="#FFC1BCBC" BorderThickness="0,0,0,2" Height="6" Name="border2" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FFC1BCBC" />
                                 </StackPanel>
-                                <Border BorderBrush="#FFCCCCCC" BorderThickness="0,0,0,2" Height="6" Name="border1" Width="459" HorizontalAlignment="Left" VerticalAlignment="Top" />
-                            </StackPanel>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
-
-            </ScrollViewer>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </StackPanel>
+            </StackPanel>
         </Grid>
-        <!--
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="Black" Offset="0" />
-                <GradientStop Color="#FFE84F21" Offset="1" />
-            </LinearGradientBrush>
-        </Grid.Background>-->
+
     </Grid>
 
-    <!--Sample code showing usage of ApplicationBar-->
-    <!--<phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
-            <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
-                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
-            </shell:ApplicationBar.MenuItems>
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar BackgroundColor="#E3E3E3" ForegroundColor="Black" IsVisible="True" Opacity="1">
+            <shell:ApplicationBarIconButton IconUri="/images/appbar.refresh.rest.png" Text="Refresh" Click="refreshButtonClickHandler"/>
+            <shell:ApplicationBarIconButton IconUri="/images/appbar.search.rest.png" Text="Search" Click="searchButtonClickHandler" />
+            <shell:ApplicationBarIconButton IconUri="/images/appbar.back.rest.png" Text="Back" Click="backButtonClick"/>
         </shell:ApplicationBar>
-    </phone:PhoneApplicationPage.ApplicationBar>-->
+    </phone:PhoneApplicationPage.ApplicationBar>
 
 </phone:PhoneApplicationPage>
