@@ -79,9 +79,6 @@
     <Compile Include="pages\Attraction.xaml.cs">
       <DependentUpon>Attraction.xaml</DependentUpon>
     </Compile>
-    <Compile Include="pages\Convertor.xaml.cs">
-      <DependentUpon>Convertor.xaml</DependentUpon>
-    </Compile>
     <Compile Include="pages\Currency_convert.xaml.cs">
       <DependentUpon>Currency_convert.xaml</DependentUpon>
     </Compile>
@@ -125,10 +122,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="pages\Attraction.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="pages\Convertor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
