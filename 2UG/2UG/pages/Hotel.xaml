@@ -33,7 +33,6 @@
                     <TextBlock FontFamily="Segoe WP" Foreground="#E6440808" Text="Hotel(s)" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" FontSize="26" />
                 </Border>
             </StackPanel>
-
         </StackPanel>
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" HorizontalAlignment="Left" VerticalAlignment="Top">

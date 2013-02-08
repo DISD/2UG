@@ -76,8 +76,8 @@
     <Compile Include="pages\Attraction.xaml.cs">
       <DependentUpon>Attraction.xaml</DependentUpon>
     </Compile>
-    <Compile Include="pages\Currency_convert.xaml.cs">
-      <DependentUpon>Currency_convert.xaml</DependentUpon>
+    <Compile Include="pages\CurrencyConvert.xaml.cs">
+      <DependentUpon>CurrencyConvert.xaml</DependentUpon>
     </Compile>
     <Compile Include="pages\History.xaml.cs">
       <DependentUpon>History.xaml</DependentUpon>
@@ -125,7 +125,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="pages\Currency_convert.xaml">
+    <Page Include="pages\CurrencyConvert.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -177,8 +177,9 @@
     <Content Include="database\transport\specialHire.xml" />
     <Content Include="database\transport\tourTravel.xml" />
     <Resource Include="images\2Ug.png" />
-    <Resource Include="images\2ug_icon.png" />
-    <Resource Include="images\about_icon.png" />
+    <Resource Include="images\currency_convert_bg.png" />
+    <Content Include="images\2ug_icon.png" />
+    <Content Include="images\about_icon.png" />
     <Content Include="images\appbar.back.rest.png" />
     <Content Include="images\appbar.refresh.rest.png" />
     <Content Include="images\appbar.search.rest.png" />

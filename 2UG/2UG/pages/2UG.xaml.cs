@@ -57,7 +57,7 @@ namespace _2UG
 
         private void currecyCBtn_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/pages/Currency_convert.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/pages/CurrencyConvert.xaml", UriKind.Relative));
         }
     }
 }

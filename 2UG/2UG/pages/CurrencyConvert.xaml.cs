@@ -39,17 +39,22 @@ USD 7/02/13-WAR	2,650.05	2,659.4
         {
             InitializeComponent();
             this.lpkCurrency1.ItemsSource = Currency;
-            this.lpkCurrency2.ItemsSource = Currency;
+             this.lpkCurrency2.ItemsSource = Currency;
         }
 
         private void currency1_listPicker_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            firstCurrency = (string)lpkCurrency1.SelectedItem;
+           firstCurrency = (string)lpkCurrency1.SelectedItem;
         }
 
         private void currency2_listPicker_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            secondCurrency = (string)lpkCurrency2.SelectedItem;
+           secondCurrency = (string)lpkCurrency2.SelectedItem;
+        }
+
+        private void BtnBackClick(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/pages/2UG.xaml", UriKind.Relative));
         }
 
         private void Currency_Product(object sender, RoutedEventArgs e)
@@ -93,7 +98,7 @@ USD 7/02/13-WAR	2,650.05	2,659.4
                             if (secondCurrency == "USH")
                             {
                                 result = valueEntered * 3559.83;
-                                resultTextBlock.Text = string.Concat(result) + " SHS";
+                               resultTextBlock.Text = string.Concat(result) + " SHS";
                             }
                             else
                             {
@@ -118,7 +123,7 @@ USD 7/02/13-WAR	2,650.05	2,659.4
                             else if (secondCurrency == "EUR")
                             {
                                 result = Math.Round((valueEntered * (1 / 3546.53)), 2);
-                                resultTextBlock.Text = string.Concat(result) + " EUR";
+                               resultTextBlock.Text = string.Concat(result) + " EUR";
                             }
                         }
                     }
