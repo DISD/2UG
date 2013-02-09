@@ -20,157 +20,151 @@
         </StackPanel>
         <StackPanel Height="46" HorizontalAlignment="Left" Margin="0,59,0,0" VerticalAlignment="Top" Width="480" Background="#FFAABA70" Orientation="Horizontal">
             <Border HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="51" Background="#FF9A2020">
-            <TextBlock Text="2UG" Name="msgText" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Foreground="#E6FFFFFF" FontFamily="Segoe WP" />
+                <TextBlock Text="2UG" Name="msgText" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Foreground="#E6FFFFFF" FontFamily="Segoe WP" />
             </Border>
             <Border HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="32" Background="#FF141414">
-            <Image Stretch="None" Source="/2UG;component/images/next.png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" />
+                <Image Stretch="None" Source="/2UG;component/images/next.png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" />
             </Border>
             <Border Width="396" Background="#FFCACA4E">
-            <TextBlock FontFamily="Segoe WP" Foreground="#E6440808" Text="Transport" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" FontSize="26" />
+                <TextBlock FontFamily="Segoe WP" Foreground="#E6440808" Text="Transport" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" FontSize="26" />
             </Border>
         </StackPanel>
         <StackPanel Margin="0,105,0,0">
-        <Border HorizontalAlignment="Left" VerticalAlignment="Top">
-        <!--Pivot Control-->
-        <controls:Pivot  Margin="0" Foreground="Black" FontFamily="Georgia" VerticalAlignment="Stretch" Name="transportPivot" Height="712">
-            <!--Pivot item one-->
-            <controls:PivotItem  Foreground="#FFFFBABA" Name="specialHirePivot" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,5,12,0">
-                <controls:PivotItem.Header>
-                    <Grid Width="200" Height="46" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <StackPanel Orientation="Horizontal">
-                            <Image  Margin="0,0,5,0" Source="/2UG;component/images/specialHire_img.png" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Top" />
-                            <TextBlock Name="FirstPivot" FontSize="26" Text="Special Hire" Height="44" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Georgia" TextWrapping="Wrap" Width="163" />
-                        </StackPanel>
-                    </Grid>
-                </controls:PivotItem.Header>
-                <Grid Width="461" Height="547" HorizontalAlignment="Left" VerticalAlignment="Top">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="264*" />
-                        <ColumnDefinition Width="196*" />
-                    </Grid.ColumnDefinitions>
-                    <!--Special Hire Items-->
-                            <ScrollViewer Width="459"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="477" Margin="-2,0,0,0" Grid.ColumnSpan="2" VerticalScrollBarVisibility="Visible">
-                                <ListBox Height="520" Width="453" Name="specialHireList" HorizontalAlignment="Left" VerticalAlignment="Top" >
-                                    <ListBox.ItemTemplate>
-                                        <DataTemplate>
-                                            <StackPanel  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="455" Orientation="Vertical">
-                                                <StackPanel  Width="455" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
-                                                    <StackPanel HorizontalAlignment="Left"  VerticalAlignment="Top" Width="453" Orientation="Vertical" Margin="0">
-                                                        <StackPanel Width="453" HorizontalAlignment="Left" VerticalAlignment="Top" Background="{x:Null}" Margin="0,3,0,0" Orientation="Horizontal">
-                                                            <TextBlock Text="{Binding Name}" Foreground="#FF2E2E19" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Arial" FontSize="22" FontStretch="Normal" Name="special_Hire_Name" TextWrapping="Wrap" Margin="3" />
-                                                        </StackPanel>
-                                                        <StackPanel Width="450" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
-                                                            <Image Stretch="None" Width="23" Name="Special_Hire_Address_icon" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/database_images/default_address_icon.png" Margin="3,3,0,0" />
-                                                            <TextBlock Text="{Binding Address}" Name="Special_Hire_Address" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF54764E" FontFamily="Arial" FontSize="15" TextWrapping="Wrap" Margin="3,3,0,0" />
-                                                        </StackPanel>
-                                                        <StackPanel HorizontalAlignment="Left"  VerticalAlignment="Top" Width="453" Orientation="Horizontal">
-                                                            <Image Stretch="None" Width="26" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/database_images/default_telphone_icon.png"  Name="Special_Hire_Tel_Icon" Margin="3,3,0,0" />
-                                                            <TextBlock Name="Special_Hire_Tel" Text="{Binding Telphone}" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Arial" FontSize="16" TextWrapping="Wrap" Foreground="#FF54764E" Margin="3,3,0,0"/>
-                                                        </StackPanel>
-                                                        <StackPanel Width="454" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
-                                                            <Image Stretch="None" Width="27" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/database_images/default_pin.png"  Name="Special_Hire_Pin_Icon" Margin="3,3,0,0" />
-                                                            <TextBlock Text="{Binding District}"  Foreground="#FF54764E" FontFamily="Arial" FontSize="16" TextWrapping="Wrap" Name="Special_Hire_district" Margin="3,3,0,0" />
-                                                        </StackPanel>
+            <Border HorizontalAlignment="Left" VerticalAlignment="Top">
+                <!--Pivot Control-->
+                <controls:Pivot  Margin="0" Foreground="Black" FontFamily="Georgia" VerticalAlignment="Stretch" Name="transportPivot" Height="712">
+                    <!--Pivot item one-->
+                    <controls:PivotItem  Foreground="#FFFFBABA" Name="specialHirePivot" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,5,12,0">
+                        <controls:PivotItem.Header>
+                            <Grid Width="200" Height="46" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image  Margin="0,0,5,0" Source="/2UG;component/images/specialHire_img.png" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                                    <TextBlock Name="FirstPivot" FontSize="26" Text="Special Hire" Height="44" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Georgia" TextWrapping="Wrap" Width="163" />
+                                </StackPanel>
+                            </Grid>
+                        </controls:PivotItem.Header>
+                        <Grid Width="461" Height="547" HorizontalAlignment="Left" VerticalAlignment="Top">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="450*" />
+                                <ColumnDefinition Width="11*" />
+                            </Grid.ColumnDefinitions>
+                            <!--Special Hire Items-->
+                            <ListBox Height="520" Width="453" Name="specialHireList" HorizontalAlignment="Left" VerticalAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Visible" >
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="455" Orientation="Vertical">
+                                            <StackPanel  Width="455" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+                                                <StackPanel HorizontalAlignment="Left"  VerticalAlignment="Top" Width="453" Orientation="Vertical" Margin="0">
+                                                    <StackPanel Width="453" HorizontalAlignment="Left" VerticalAlignment="Top" Background="{x:Null}" Margin="0,3,0,0" Orientation="Horizontal">
+                                                        <TextBlock Text="{Binding Name}" Foreground="#FF2E2E19" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Arial" FontSize="22" FontStretch="Normal" Name="special_Hire_Name" TextWrapping="Wrap" Margin="3" />
+                                                    </StackPanel>
+                                                    <StackPanel Width="450" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
+                                                        <Image Stretch="None" Width="23" Name="Special_Hire_Address_icon" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/images/default_address_icon.png" Margin="3,3,0,0" />
+                                                        <TextBlock Text="{Binding Address}" Name="Special_Hire_Address" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF54764E" FontFamily="Arial" FontSize="15" TextWrapping="Wrap" Margin="3,3,0,0" />
+                                                    </StackPanel>
+                                                    <StackPanel HorizontalAlignment="Left"  VerticalAlignment="Top" Width="453" Orientation="Horizontal">
+                                                        <Image Stretch="None" Width="26" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/images/default_telphone_icon.png"  Name="Special_Hire_Tel_Icon" Margin="3,3,0,0" />
+                                                        <TextBlock Name="Special_Hire_Tel" Text="{Binding Telphone}" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Arial" FontSize="16" TextWrapping="Wrap" Foreground="#FF54764E" Margin="3,3,0,0"/>
+                                                    </StackPanel>
+                                                    <StackPanel Width="454" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+                                                        <Image Stretch="None" Width="27" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/images/default_pin.png"  Name="Special_Hire_Pin_Icon" Margin="3,3,0,0" />
+                                                        <TextBlock Text="{Binding District}"  Foreground="#FF54764E" FontFamily="Arial" FontSize="16" TextWrapping="Wrap" Name="Special_Hire_district" Margin="3,3,0,0" />
                                                     </StackPanel>
                                                 </StackPanel>
-                                                <Border BorderBrush="#FF719668" BorderThickness="0,0,0,2" Height="6" Name="border1" Width="455" HorizontalAlignment="Left" VerticalAlignment="Top" />
                                             </StackPanel>
-                                        </DataTemplate>
-                                    </ListBox.ItemTemplate>
-                                </ListBox>
-                            </ScrollViewer>
+                                            <Border BorderBrush="#FF719668" BorderThickness="0,0,0,2" Height="6" Name="border1" Width="455" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
                         </Grid>
-            </controls:PivotItem>
+                    </controls:PivotItem>
 
-            <!--Pivot item two-->
-            <controls:PivotItem Foreground="#FFFFBABA" Name="tourNTravelPivot" Margin="12,5,12,0">
-                <controls:PivotItem.Header>
-                    <Grid Width="200" Height="46" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <StackPanel Orientation="Horizontal">
-                            <Image  Margin="0,0,5,0" Source="/2UG;component/images/tourTravel.png" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Top" />
-                            <TextBlock Name="FirstPivot2" FontSize="26" Text="Tour n Travel" Height="44" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Georgia" TextWrapping="Wrap" Width="163" />
-                        </StackPanel>                        
-                    </Grid>
-                </controls:PivotItem.Header>
-                <Grid Width="460" Height="484" HorizontalAlignment="Left" VerticalAlignment="Top">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="450*" />
-                        <ColumnDefinition Width="10*" />
-                    </Grid.ColumnDefinitions>
-                    <!--Tour n Travel Items-->
-                            <ScrollViewer Width="459"  HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="-2,0,0,0" Grid.ColumnSpan="2" VerticalScrollBarVisibility="Auto">
-                                <ListBox Height="530" Width="453" Name="tourTravelList" HorizontalAlignment="Left" VerticalAlignment="Top" >
-                                    <ListBox.ItemTemplate>
-                                        <DataTemplate>
-                                            <StackPanel  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="455" Orientation="Vertical">
-                                                <StackPanel  Width="455" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
-                                                    <StackPanel HorizontalAlignment="Left"  VerticalAlignment="Top" Width="453" Orientation="Vertical" Margin="0">
-                                                        <StackPanel Width="453" HorizontalAlignment="Left" VerticalAlignment="Top" Background="{x:Null}" Margin="0,3,0,0" Orientation="Horizontal">
-                                                            <TextBlock Text="{Binding Name}" Foreground="#FF34341D" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Arial" FontSize="22" FontStretch="Normal" Name="special_Hire_Name" TextWrapping="Wrap" Margin="3" />
-                                                        </StackPanel>
-                                                        <StackPanel Width="450" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
-                                                            <Image Stretch="None" Width="23" Name="Special_Hire_Address_icon" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/database_images/default_address_icon.png" Margin="3,3,0,0" />
-                                                            <TextBlock Text="{Binding Address}" Name="Special_Hire_Address" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF54764E" FontFamily="Arial" FontSize="15" TextWrapping="Wrap" Margin="3,3,0,0" />
-                                                        </StackPanel>
-                                                        <StackPanel HorizontalAlignment="Left"  VerticalAlignment="Top" Width="453" Orientation="Horizontal">
-                                                            <Image Stretch="None" Width="26" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/database_images/default_telphone_icon.png"  Name="Special_Hire_Tel_Icon" Margin="3,3,0,0" />
-                                                            <TextBlock Name="Special_Hire_Tel" Text="{Binding Telphone}" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Arial" FontSize="16" TextWrapping="Wrap" Foreground="#FF54764E" Margin="3,3,0,0"/>
-                                                        </StackPanel>
-                                                        <StackPanel Width="454" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
-                                                            <Image Stretch="None" Width="27" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/database_images/default_pin.png"  Name="Special_Hire_Pin_Icon" Margin="3,3,0,0" />
-                                                            <TextBlock Text="{Binding District}"  Foreground="#FF54764E" FontFamily="Arial" FontSize="16" TextWrapping="Wrap" Name="Special_Hire_district" Margin="3,3,0,0" />
-                                                        </StackPanel>
+                    <!--Pivot item two-->
+                    <controls:PivotItem Foreground="#FFFFBABA" Name="tourNTravelPivot" Margin="12,5,12,0">
+                        <controls:PivotItem.Header>
+                            <Grid Width="200" Height="46" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image  Margin="0,0,5,0" Source="/2UG;component/images/tourTravel.png" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                                    <TextBlock Name="FirstPivot2" FontSize="26" Text="Tour n Travel" Height="44" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Georgia" TextWrapping="Wrap" Width="163" />
+                                </StackPanel>
+                            </Grid>
+                        </controls:PivotItem.Header>
+                        <Grid Width="460" Height="484" HorizontalAlignment="Left" VerticalAlignment="Top">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="450*" />
+                                <ColumnDefinition Width="10*" />
+                            </Grid.ColumnDefinitions>
+                            <!--Tour n Travel Items-->
+                            <ListBox Height="530" Width="453" Name="tourTravelList" HorizontalAlignment="Left" VerticalAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Visible">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="455" Orientation="Vertical">
+                                            <StackPanel  Width="455" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+                                                <StackPanel HorizontalAlignment="Left"  VerticalAlignment="Top" Width="453" Orientation="Vertical" Margin="0">
+                                                    <StackPanel Width="453" HorizontalAlignment="Left" VerticalAlignment="Top" Background="{x:Null}" Margin="0,3,0,0" Orientation="Horizontal">
+                                                        <TextBlock Text="{Binding Name}" Foreground="#FF34341D" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Arial" FontSize="22" FontStretch="Normal" Name="special_Hire_Name" TextWrapping="Wrap" Margin="3" />
+                                                    </StackPanel>
+                                                    <StackPanel Width="450" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
+                                                        <Image Stretch="None" Width="23" Name="Special_Hire_Address_icon" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/images/default_address_icon.png" Margin="3,3,0,0" />
+                                                        <TextBlock Text="{Binding Address}" Name="Special_Hire_Address" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF54764E" FontFamily="Arial" FontSize="15" TextWrapping="Wrap" Margin="3,3,0,0" />
+                                                    </StackPanel>
+                                                    <StackPanel HorizontalAlignment="Left"  VerticalAlignment="Top" Width="453" Orientation="Horizontal">
+                                                        <Image Stretch="None" Width="26" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/images/default_telphone_icon.png"  Name="Special_Hire_Tel_Icon" Margin="3,3,0,0" />
+                                                        <TextBlock Name="Special_Hire_Tel" Text="{Binding Telphone}" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Arial" FontSize="16" TextWrapping="Wrap" Foreground="#FF54764E" Margin="3,3,0,0"/>
+                                                    </StackPanel>
+                                                    <StackPanel Width="454" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+                                                        <Image Stretch="None" Width="27" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/images/default_pin.png"  Name="Special_Hire_Pin_Icon" Margin="3,3,0,0" />
+                                                        <TextBlock Text="{Binding District}"  Foreground="#FF54764E" FontFamily="Arial" FontSize="16" TextWrapping="Wrap" Name="Special_Hire_district" Margin="3,3,0,0" />
                                                     </StackPanel>
                                                 </StackPanel>
-                                                <Border BorderBrush="#FF891313" BorderThickness="0,0,0,2" Height="6" Name="border1" Width="455" HorizontalAlignment="Left" VerticalAlignment="Top" />
                                             </StackPanel>
-                                        </DataTemplate>
-                                    </ListBox.ItemTemplate>
-                                </ListBox>
-                            </ScrollViewer>
-                </Grid>
-            </controls:PivotItem>
-            
-                <!--Pivot Item 3-->
-            <controls:PivotItem Foreground="#FFFFBABA" Name="otherPivot" Margin="12,5,12,0">
-                <controls:PivotItem.Header>
-                    <Grid Width="200" Height="46" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <StackPanel Orientation="Horizontal">
-                            <Image  Margin="0,0,5,0" Source="/2UG;component/images/other_img.png" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Top" />
-                            <TextBlock Name="FirstPivot3" FontSize="26" Text="Others" Height="44" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Georgia" TextWrapping="Wrap" Width="163" />
-                        </StackPanel>
-                    </Grid>
-                </controls:PivotItem.Header>
-                <Grid Width="460" Height="484" HorizontalAlignment="Left" VerticalAlignment="Top">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="450*" />
-                        <ColumnDefinition Width="10*" />
-                    </Grid.ColumnDefinitions>
-                            <ScrollViewer Height="459" HorizontalAlignment="Left" Margin="-2,0,0,0" VerticalAlignment="Top" Width="459" VerticalContentAlignment="Top">
-                                <ListBox Height="530" Name="otherList" Width="453" HorizontalAlignment="Left" VerticalContentAlignment="Top" >
-                                    <ListBox.ItemTemplate>
-                                        <DataTemplate>
-                                            <StackPanel Width="462" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Vertical" Margin="0,3,0,0">
-                                                <StackPanel Width="454" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,3">
-                                                    <TextBlock Text="{Binding Name}" Foreground="#FF382222" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Arial" FontSize="22" FontStretch="Normal" Name="Other_Name" Width="433" TextWrapping="Wrap" Margin="3" />
-                                                </StackPanel>
-                                                <StackPanel Width="453" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
-                                                    <Image Stretch="None" Width="23" Name="Special_Hire_Address_icon" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/database_images/default_address_icon.png" Margin="3,3,0,0" />
-                                                    <TextBlock Text="{Binding Address}" Width="444" Name="Other_Address" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF54764E" FontFamily="Arial" FontSize="13" TextWrapping="Wrap" Margin="3,3,0,0" />
-                                                </StackPanel>
-                                                <StackPanel HorizontalAlignment="Left"  VerticalAlignment="Top" Width="453" Orientation="Horizontal">
-                                                    <Image Stretch="None" Width="27" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/database_images/default_pin.png"  Name="Special_Hire_Pin_Icon" Margin="3,3,0,0" />
-                                                    <TextBlock Name="Other_Tel" Text="{Binding Route}" Width="447" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Arial" FontSize="14" TextWrapping="Wrap" Foreground="#FF54764E" Margin="3,3,0,0" />
-                                                </StackPanel>
-                                                <Border BorderBrush="#FFEBCEA0" BorderThickness="0,0,0,2" Height="6" Name="border1" Width="455" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                                            <Border BorderBrush="#FF891313" BorderThickness="0,0,0,2" Height="6" Name="border1" Width="455" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                        </Grid>
+                    </controls:PivotItem>
+
+                    <!--Pivot Item 3-->
+                    <controls:PivotItem Foreground="#FFFFBABA" Name="otherPivot" Margin="12,5,12,0">
+                        <controls:PivotItem.Header>
+                            <Grid Width="200" Height="46" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image  Margin="0,0,5,0" Source="/2UG;component/images/other_img.png" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                                    <TextBlock Name="FirstPivot3" FontSize="26" Text="Others" Height="44" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Georgia" TextWrapping="Wrap" Width="163" />
+                                </StackPanel>
+                            </Grid>
+                        </controls:PivotItem.Header>
+                        <Grid Width="460" Height="484" HorizontalAlignment="Left" VerticalAlignment="Top">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="450*" />
+                                <ColumnDefinition Width="10*" />
+                            </Grid.ColumnDefinitions>
+                            <ListBox Height="530" Name="otherList" Width="453" HorizontalAlignment="Left" VerticalContentAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Visible" >
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Width="462" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Vertical" Margin="0,3,0,0">
+                                            <StackPanel Width="454" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,3">
+                                                <TextBlock Text="{Binding Name}" Foreground="#FF382222" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Arial" FontSize="22" FontStretch="Normal" Name="Other_Name" Width="433" TextWrapping="Wrap" Margin="3" />
                                             </StackPanel>
-                                        </DataTemplate>
-                                    </ListBox.ItemTemplate>
-                                </ListBox>
-                    </ScrollViewer>
-                </Grid>
-            </controls:PivotItem>
-        </controls:Pivot>
+                                            <StackPanel Width="453" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
+                                                <Image Stretch="None" Width="23" Name="Special_Hire_Address_icon" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/images/default_address_icon.png" Margin="3,3,0,0" />
+                                                <TextBlock Text="{Binding Address}" Width="444" Name="Other_Address" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF54764E" FontFamily="Arial" FontSize="13" TextWrapping="Wrap" Margin="3,3,0,0" />
+                                            </StackPanel>
+                                            <StackPanel HorizontalAlignment="Left"  VerticalAlignment="Top" Width="453" Orientation="Horizontal">
+                                                <Image Stretch="None" Width="27" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/images/default_pin.png"  Name="Special_Hire_Pin_Icon" Margin="3,3,0,0" />
+                                                <TextBlock Name="Other_Tel" Text="{Binding Route}" Width="447" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Arial" FontSize="14" TextWrapping="Wrap" Foreground="#FF54764E" Margin="3,3,0,0" />
+                                            </StackPanel>
+                                            <Border BorderBrush="#FFEBCEA0" BorderThickness="0,0,0,2" Height="6" Name="border1" Width="455" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                        </Grid>
+                    </controls:PivotItem>
+                </controls:Pivot>
             </Border>
         </StackPanel>
     </Grid>

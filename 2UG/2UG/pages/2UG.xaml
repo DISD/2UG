@@ -85,8 +85,13 @@
                 <Button Height="110" Name="touristABtn" Width="206" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5" Style="{StaticResource TouristButtonStyle}" />
                 <Button Height="110" Name="dangerousSptBtn" Width="206" Margin="10,5" Style="{StaticResource DangerousSpotButtonStyle}" />
             </StackPanel>
+<<<<<<< HEAD
             <StackPanel Height="125" Name="stackPanel5" Width="463" Margin="10" Orientation="Vertical">
                 <Button Height="110" Name="currecyCBtn" Width="206" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,5" Style="{StaticResource CurrencyConverterButtonStyle}" />
+=======
+            <StackPanel Height="125" Name="stackPanel5" Width="463" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Vertical">
+                <Button Height="110" Name="currecyCBtn" Width="206" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,5" Style="{StaticResource CurrencyConverterButtonStyle}" Click="currecyCBtn_Click" />
+>>>>>>> 89aa8b8b1864a21e585287cc58241ea9f652107c
             </StackPanel>
         </StackPanel>
     </Grid>

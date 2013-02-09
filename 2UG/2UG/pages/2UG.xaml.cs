@@ -55,9 +55,15 @@ namespace _2UG
             NavigationService.Navigate(new Uri("/pages/Hotel.xaml", UriKind.Relative));
         }
 
+<<<<<<< HEAD
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
 
+=======
+        private void currecyCBtn_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/pages/CurrencyConvert.xaml", UriKind.Relative));
+>>>>>>> 89aa8b8b1864a21e585287cc58241ea9f652107c
         }
     }
 }
