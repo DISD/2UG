@@ -11,7 +11,7 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
-    shell:SystemTray.IsVisible="True">
+    shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded">
     <!--Form resources-->
     <phone:PhoneApplicationPage.Resources>
         <Style x:Key="TransportButtonStyle" TargetType="Button">
@@ -67,23 +67,25 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <StackPanel x:Name="TitlePanel" Margin="12,17,0,0" Height="0" VerticalAlignment="Top">
+        <StackPanel x:Name="TitlePanel" Height="67" VerticalAlignment="Top" Grid.Row="1">
         </StackPanel>
 
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,-3,0" Background="#FFEFEFEF"></Grid>
-        <StackPanel Height="245" HorizontalAlignment="Left" Name="stackPanel1" VerticalAlignment="Top" Width="480" Grid.RowSpan="2">
-            <Image Height="242" Name="image1" Stretch="Fill" Width="483" Source="/2UG;component/images/banner.jpg" />
-        </StackPanel>
-        <StackPanel Height="436" HorizontalAlignment="Left" Margin="0,231,0,12" Name="stackPanel2" VerticalAlignment="Top" Width="480" Grid.Row="1" Background="#FFEFEFEF" Orientation="Vertical">
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,-3,0" Background="#FFEFEFEF">
+            <StackPanel Height="59" HorizontalAlignment="Left" Name="stackPanel1" VerticalAlignment="Top" Width="667" Background="#FF5E835E">
+                <Image Height="56" Name="image1" Stretch="Fill" Width="208" Source="/2UG;component/images/2Ug.png" HorizontalAlignment="Left" />
+            </StackPanel>
+            <ContentPresenter HorizontalAlignment="Left" Margin="10,496,0,0" Name="contentPresenter1" VerticalAlignment="Top" Height="194" Width="463" DataContext="{Binding}" />
+        </Grid>
+        <StackPanel Height="485" HorizontalAlignment="Left" Margin="0,65,0,0" Name="stackPanel2" VerticalAlignment="Top" Width="480" Background="#FFEFEFEF" Orientation="Vertical" UseLayoutRounding="False" Grid.Row="1">
             <StackPanel Height="125" Name="stackPanel3" Width="463" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Orientation="Horizontal">
                 <Button Height="110" Name="transportBtn" Width="206" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5" Style="{StaticResource TransportButtonStyle}" Click="transportBtn_Click" />
                 <Button Height="110" Name="hotelBtn" Width="206" Margin="10,5" Style="{StaticResource HotelButtonStyle}" Click="hotelBtn_Click" />
             </StackPanel>
-            <StackPanel Height="125" Name="stackPanel4" Width="463" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+            <StackPanel Height="125" Name="stackPanel4" Width="463" Margin="10" Orientation="Horizontal">
                 <Button Height="110" Name="touristABtn" Width="206" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5" Style="{StaticResource TouristButtonStyle}" />
                 <Button Height="110" Name="dangerousSptBtn" Width="206" Margin="10,5" Style="{StaticResource DangerousSpotButtonStyle}" />
             </StackPanel>
-            <StackPanel Height="125" Name="stackPanel5" Width="463" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Vertical">
+            <StackPanel Height="125" Name="stackPanel5" Width="463" Margin="10" Orientation="Vertical">
                 <Button Height="110" Name="currecyCBtn" Width="206" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,5" Style="{StaticResource CurrencyConverterButtonStyle}" />
             </StackPanel>
         </StackPanel>

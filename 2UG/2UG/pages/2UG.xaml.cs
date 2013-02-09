@@ -54,5 +54,10 @@ namespace _2UG
         {
             NavigationService.Navigate(new Uri("/pages/Hotel.xaml", UriKind.Relative));
         }
+
+        private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

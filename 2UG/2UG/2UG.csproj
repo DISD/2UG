@@ -57,7 +57,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Net" />
     <Reference Include="System.Windows.Controls">
-      <HintPath>C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Controls.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Controls.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
@@ -102,6 +102,9 @@
     </Compile>
     <Compile Include="pages\TransportSearchBox.xaml.cs">
       <DependentUpon>TransportSearchBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Welcomelogo.xaml.cs">
+      <DependentUpon>Welcomelogo.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="pages\Spot.xaml.cs">
@@ -164,6 +167,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="pages\Welcomelogo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AppManifest.xml" />
@@ -186,7 +193,6 @@
     <Resource Include="images\specialHire_img.png" />
     <Resource Include="images\tourTravel.png" />
     <Resource Include="images\other_img.png" />
-    <Content Include="music\kadodi.wma" />
     <Resource Include="images\banner.jpg" />
     <Resource Include="images\next.png" />
     <Resource Include="images\currency_converter_icon.png" />
@@ -200,9 +206,14 @@
     <Content Include="images\about_icon.png" />
     <Resource Include="images\search-icon.png" />
     <Content Include="images\appbar.back.rest.png" />
+    <Resource Include="images\clouds.jpg" />
+    <Resource Include="images\clouds25.jpg" />
+    <Resource Include="images\white-clouds2.jpg" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="music\" />
+  </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>

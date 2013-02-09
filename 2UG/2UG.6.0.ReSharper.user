@@ -1,36 +1,42 @@
 <Configuration>
   <RecentFiles>
     <RecentFiles>
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:Currency_convert.xaml" caret="0" fromTop="0" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:Other.xaml" caret="0" fromTop="0" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:welcomepage.xaml" caret="0" fromTop="0" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:ughist.xaml" caret="1684" fromTop="25" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:Animals.xaml" caret="2326" fromTop="18" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:Transport.xaml" caret="0" fromTop="0" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml" caret="1996" fromTop="15" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="1162" fromTop="30" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TransportSearchBox.xaml.cs" caret="627" fromTop="17" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:Properties/f:AppManifest.xml" caret="0" fromTop="0" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:Properties/f:AssemblyInfo.cs" caret="0" fromTop="0" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:App.xaml.cs" caret="3347" fromTop="81" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Welcomelogo.xaml.cs" caret="1091" fromTop="14" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Welcomelogo.xaml" caret="924" fromTop="16" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TransportSearchBox.xaml" caret="1" fromTop="0" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:Properties/f:WMAppManifest.xml" caret="0" fromTop="0" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:2UG.xaml.cs" caret="1848" fromTop="4" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:2UG.xaml" caret="3513" fromTop="16" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Transport.xaml" caret="3308" fromTop="16" />
     </RecentFiles>
     <RecentEdits>
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml" caret="1202" fromTop="11" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml" caret="1574" fromTop="15" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml" caret="1" fromTop="0" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="675" fromTop="31" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="555" fromTop="17" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="567" fromTop="11" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="675" fromTop="13" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="686" fromTop="24" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="686" fromTop="29" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="675" fromTop="7" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="365" fromTop="0" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="1199" fromTop="20" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="5774" fromTop="25" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:Animals.xaml" caret="2502" fromTop="18" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:ughist.xaml" caret="1684" fromTop="25" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml" caret="5205" fromTop="21" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml" caret="5702" fromTop="29" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml.cs" caret="1162" fromTop="30" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml" caret="5565" fromTop="22" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:MainPage.xaml" caret="1996" fromTop="15" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:Properties/f:WMAppManifest.xml" caret="1176" fromTop="19" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Welcomelogo.xaml.cs" caret="759" fromTop="19" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Welcomelogo.xaml.cs" caret="759" fromTop="17" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Welcomelogo.xaml.cs" caret="759" fromTop="4" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Welcomelogo.xaml.cs" caret="1620" fromTop="13" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Welcomelogo.xaml.cs" caret="1393" fromTop="6" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Welcomelogo.xaml.cs" caret="767" fromTop="12" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Welcomelogo.xaml.cs" caret="757" fromTop="4" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Welcomelogo.xaml.cs" caret="570" fromTop="4" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Welcomelogo.xaml.cs" caret="1194" fromTop="21" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Welcomelogo.xaml" caret="1112" fromTop="0" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Welcomelogo.xaml" caret="1357" fromTop="25" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Welcomelogo.xaml.cs" caret="1091" fromTop="14" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Welcomelogo.xaml" caret="1512" fromTop="30" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Welcomelogo.xaml" caret="924" fromTop="16" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:2UG.xaml" caret="5883" fromTop="16" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:2UG.xaml.cs" caret="2245" fromTop="16" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:2UG.xaml.cs" caret="1849" fromTop="4" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:2UG.xaml" caret="1" fromTop="0" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:2UG.xaml" caret="5676" fromTop="28" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:2UG.xaml" caret="3502" fromTop="26" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:2UG.xaml" caret="3513" fromTop="16" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Transport.xaml" caret="3294" fromTop="16" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -59,6 +65,23 @@
       <Item value="Shell" priority="53" />
       <Item value="namespace" priority="30" />
       <Item value="Shell.Interop" priority="22" />
+      <Item value="this" priority="31" />
+      <Item value="true" priority="31" />
+      <Item value="private" priority="63" />
+      <Item value="backgroundWorker" priority="192" />
+      <Item value="popup" priority="32" />
+      <Item value="ShowPopup`0" priority="31" />
+      <Item value="MessageBox`0" priority="31" />
+      <Item value="StartLoadingData`0" priority="31" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:_2UG.pages.Welcomelogo">
+      <Item value="progressBar1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ProgressBar">
+      <Item value="IsIndeterminate" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.MessageBox">
+      <Item value="Show`0" priority="26" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>
