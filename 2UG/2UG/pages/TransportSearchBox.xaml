@@ -4,37 +4,30 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:tk="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
-     mc:Ignorable="d"
-                 VerticalAlignment="Top"
-                HorizontalAlignment="Left"
-    Title="Search Box" 
-                
-                BorderBrush="{x:Null}"
-                BorderThickness="0"                 
+      mc:Ignorable="d"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
-    Foreground="#FF6E7C00"                
-    d:DesignHeight="245" d:DesignWidth="382"
-    HasCloseButton="False" IsHitTestVisible="True" TabNavigation="Cycle" Background="{x:Null}" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" OverlayBrush="{x:Null}">
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="288" d:DesignWidth="442"   HasCloseButton="False" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF904F4F">
 
-    <Grid x:Name="LayoutRoot" Background="{x:Null}" Height="200" Width="364">
-        <StackPanel HorizontalAlignment="Left" Name="stackPanel1" VerticalAlignment="Top" Background="#FF9CB29C" Width="364" Height="200" Orientation="Horizontal">
-            <StackPanel Height="202" Name="stackPanel2" Width="363" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{x:Null}">
-                <StackPanel Height="77"  Width="363" HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Horizontal" Background="#FF5E835E">
-                    <StackPanel Width="96" Orientation="Horizontal" Background="#FF426C42">
-                        <Border Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top">
-                            <TextBlock Name="SearchNameLabel" Text="" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Height="68" Width="68" Margin="3" Foreground="#FFE4FF52"></TextBlock>
-                        </Border>
-                        <Image Name="image1" Stretch="None" Source="/2UG;component/images/next.png" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="3,0,0,0" />
-                    </StackPanel>
-                    <RadioButton Content="District" Name="districtRadioBtn" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="#FFCDE8CD" Margin="0" Width="141" />
-                    <RadioButton Content="Name" Name="nameRadioBtn" HorizontalAlignment="Right" VerticalAlignment="Top" BorderBrush="#BFF2F2F2" Foreground="#FFCDE8CD" VerticalContentAlignment="Top" Margin="0" Width="130" IsChecked="True" HorizontalContentAlignment="Left" />
+    <Grid x:Name="LayoutRoot1" Background="#FFD4D4D4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="425" Height="272">
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Height="271" Orientation="Vertical" Width="424">
+            <StackPanel Width="424" Orientation="Horizontal" Background="#FF659D65" HorizontalAlignment="Left" VerticalAlignment="Top" Height="87">
+                <StackPanel Orientation="Horizontal" Width="145" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Border Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top">
+                        <TextBlock Name="transportSearchNameLabel" Text="Search By:" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Height="31" Width="118" Margin="3" Foreground="#FFF8F8F5" FontFamily="Calibri" FontSize="26"></TextBlock>
+                    </Border>
+                    <Image Name="transportImage" Stretch="None" Source="/2UG;component/images/next.png" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="3,0,0,0" />
                 </StackPanel>
-                <TextBox Name="t_SearchText" Text="" HorizontalAlignment="Center" VerticalAlignment="Top" Width="374" Foreground="#FF297676" FontSize="18" Background="#FFE9EFED" />
-                <StackPanel Name="stackPanel3" VerticalAlignment="Top" HorizontalAlignment="Left" Orientation="Horizontal" Background="Black" Width="362" Height="62">
-                    <Button Content="Search" Height="67" Name="button1" Width="105" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFEBC833" BorderBrush="#FF5E835E" FontSize="13" Click="button1_Click" Background="#0051A751" Padding="0" Margin="50,0,0,0"></Button>
-                    <Button Content="Close" Height="67" Name="closeBtn" Width="108" HorizontalAlignment="Right" VerticalAlignment="Top" Padding="0" Margin="50,0,0,0" BorderBrush="#FF5E835E" Foreground="Red" Click="button2_Click" FontSize="13" Background="#0051A751" />
+                <StackPanel Orientation="Horizontal" Width="278" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <RadioButton Content="District" Name="tdistrictRadioBtn" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="#FFCDE8CD" Margin="0" Width="149" FontFamily="Calibri" FontSize="26" />
+                    <RadioButton Content="Name" Name="tnameRadioBtn" HorizontalAlignment="Right" VerticalAlignment="Top" BorderBrush="#BFF2F2F2" Foreground="#FFCDE8CD" VerticalContentAlignment="Top" Margin="0" Width="140" IsChecked="True" HorizontalContentAlignment="Left" FontFamily="Calibri" FontSize="26" />
                 </StackPanel>
+            </StackPanel>
+            <TextBox Name="t_SearchText" Text="" HorizontalAlignment="Center" VerticalAlignment="Top" Width="399" Foreground="Black" FontSize="26" Background="White" BorderBrush="#BF62726E" Height="88" FontFamily="Calibri" />
+            <StackPanel Name="stackPanel3" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Horizontal" Width="362" Height="83">
+                <Button Content="Search" Height="85" Name="button1" Width="112" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" BorderBrush="#FF647264" FontSize="26" Click="button1_Click" Background="#0051A751" Padding="0" Margin="50,0,0,0" FontFamily="Calibri" BorderThickness="1"></Button>
+                <Button Content="Close" Height="86" Name="closeBtn" Width="108" HorizontalAlignment="Right" VerticalAlignment="Top" Padding="0" Margin="50,0,0,0" BorderBrush="#FF4B4B4B" Foreground="#FFC41212" Click="button2_Click" FontSize="26" Background="#0051A751" FontFamily="Calibri" BorderThickness="1" />
             </StackPanel>
         </StackPanel>
     </Grid>

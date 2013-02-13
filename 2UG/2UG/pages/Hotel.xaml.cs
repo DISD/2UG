@@ -39,40 +39,13 @@ namespace _2UG
         {
             InitializeComponent();
 
-            this.hotelCategoryListPicker.ItemsSource = HOTEL_CATEGORIES;
-            this.categorySelectedLabel.Text = (string)hotelCategoryListPicker.SelectedItem;
+            populateCategoryListBox(loadHotelItemXML, HOTEL_CATEGORY, "", UNKOWN_DISTRICT_NAME, UNKOWN_NAME, hotelList);
+            populateCategoryListBox(loadApartmentXML, APARTMENT_CATEGORY, "", UNKOWN_DISTRICT_NAME, UNKOWN_NAME, apartmentList);
+            populateCategoryListBox(loadRestaurantXML, RESTUARANT_CATEGORY, "", UNKOWN_DISTRICT_NAME, UNKOWN_NAME, restuarantList);
+            populateCategoryListBox(loadClubXML, CLUB_CATEGORY, "", UNKOWN_DISTRICT_NAME, UNKOWN_NAME, clubList);
         }
 
-        // Checks user selections
-        private void hotels_listPicker_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            String selectedCategory = (string)hotelCategoryListPicker.SelectedItem;
-            this.categorySelectedLabel.Text = selectedCategory;
-
-            populateListBox(selectedCategory, UNKOWN_TYPE, UNKOWN_DISTRICT_NAME, UNKOWN_NAME);
-        }
-
-        private void populateListBox(String selectedCategory, String searchByType, String searchByDistrictName, String hotelName)
-        {
-            if (selectedCategory == HOTEL_CATEGORY)
-            {
-                populateCategoryListBox(loadHotelItemXML, HOTEL_CATEGORY, searchByType, searchByDistrictName, hotelName);
-            }
-            else if (selectedCategory == RESTUARANT_CATEGORY)
-            {
-                populateCategoryListBox(loadRestaurantXML, RESTUARANT_CATEGORY, searchByType, searchByDistrictName, hotelName);
-            }
-            else if (selectedCategory == APARTMENT_CATEGORY)
-            {
-                populateCategoryListBox(loadApartmentXML, APARTMENT_CATEGORY, searchByType, searchByDistrictName, hotelName);
-            }
-            else if (selectedCategory == CLUB_CATEGORY)
-            {
-                populateCategoryListBox(loadClubXML, CLUB_CATEGORY, searchByType, searchByDistrictName, hotelName);
-            }
-        }
-
-        private void populateCategoryListBox(XDocument xmlFile, String categoryType, String searchByType, String searchByDistrictName, String hotelName)
+        private void populateCategoryListBox(XDocument xmlFile, String categoryType, String searchByType, String searchByDistrictName, String hotelName, ListBox typeOfListBox)
         {
 
             var retrievedData = retrieveXMLData(xmlFile, categoryType, searchByType, searchByDistrictName, hotelName);
@@ -82,8 +55,7 @@ namespace _2UG
                 hotelModel.name = "No " + categoryType + " found with this search: " + searchByType + searchByDistrictName + hotelName;
                 retrievedData = new[] { hotelModel };
             }
-
-            hotelCategoryList.ItemsSource = retrievedData;
+            typeOfListBox.ItemsSource = retrievedData;
         }
 
         private IEnumerable<HotelModel> retrieveXMLData(XDocument xmlFile, String categoryType, String searchByType, String searchByDistrictName, String hotelName)
@@ -164,36 +136,93 @@ namespace _2UG
 
         private void searchButtonClickHandler(object sender, EventArgs e)
         {
-            (ApplicationBar.Buttons[0] as ApplicationBarIconButton).IsEnabled = false;
-            (ApplicationBar.Buttons[1] as ApplicationBarIconButton).IsEnabled = false;
-            (ApplicationBar.Buttons[2] as ApplicationBarIconButton).IsEnabled = false;
+            disableApplicationIconBar();
 
-            HotelSearchBox hotelSearchBox = new HotelSearchBox((string)hotelCategoryListPicker.SelectedItem);
+            string activePivotName = getActivePivot();
+
+            HotelSearchBox hotelSearchBox = new HotelSearchBox(activePivotName);
             hotelSearchBox.Closed += new EventHandler(hotelSearchBoxClosed);
             hotelSearchBox.Show();
             hotelSearchBox.VerticalAlignment = VerticalAlignment.Top;
             hotelSearchBox.HorizontalAlignment = HorizontalAlignment.Center;
-            hotelSearchBox.Margin = new Thickness(0, 150, 0, 0);
+            hotelSearchBox.Margin = new Thickness(0, 30, 0, 0);
+        }
+
+        private void disableApplicationIconBar()
+        {
+            (ApplicationBar.Buttons[0] as ApplicationBarIconButton).IsEnabled = false;
+            (ApplicationBar.Buttons[1] as ApplicationBarIconButton).IsEnabled = false;
+            (ApplicationBar.Buttons[2] as ApplicationBarIconButton).IsEnabled = false;
+        }
+
+        private string getActivePivot()
+        {
+            string activePivotName = "";
+            int pivotActiveItem = hotelPivot.SelectedIndex;
+
+            if (pivotActiveItem == 0)
+            {
+                activePivotName = HOTEL_CATEGORY;
+            }
+            else if (pivotActiveItem == 1)
+            {
+                activePivotName = APARTMENT_CATEGORY;
+            }
+            else if (pivotActiveItem == 2)
+            {
+                activePivotName = RESTUARANT_CATEGORY;
+            }
+            else
+            {
+                activePivotName = CLUB_CATEGORY;
+            }
+            return activePivotName;
         }
 
         private void hotelSearchBoxClosed(object sender, EventArgs e)
         {
             HotelSearchBox h_searchBox = sender as HotelSearchBox;
+            ListBox listBox = null;
+            XDocument xDoc = null;
+
+            int pivotActiveItem = hotelPivot.SelectedIndex;
+
+            if (pivotActiveItem == 0)
+            {
+                listBox = hotelList;
+                xDoc = loadHotelItemXML;
+            }
+            else if (pivotActiveItem == 1)
+            {
+                listBox = apartmentList;
+                xDoc = loadApartmentXML;
+            }
+            else if (pivotActiveItem == 2)
+            {
+                listBox = restuarantList;
+                xDoc = loadRestaurantXML;
+            }
+            else
+            {
+                listBox = clubList;
+                xDoc = loadClubXML;
+            }
+
 
             if (h_searchBox.DialogResult == true)
             {
-                String selectedCategory = (string)hotelCategoryListPicker.SelectedItem;
+                String selectedCategory = getActivePivot();
                 if (!h_searchBox.hotelName.Equals(""))
                 {
-                    populateListBox(selectedCategory, UNKOWN_TYPE, UNKOWN_DISTRICT_NAME, h_searchBox.hotelName);
+                    populateCategoryListBox(xDoc, selectedCategory, UNKOWN_TYPE, UNKOWN_DISTRICT_NAME, h_searchBox.hotelName, listBox);
                 }
                 else if (!h_searchBox.districtName.Equals(""))
                 {
-                    populateListBox(selectedCategory, UNKOWN_TYPE, h_searchBox.districtName, UNKOWN_NAME);
+                    populateCategoryListBox(xDoc, selectedCategory, UNKOWN_TYPE, h_searchBox.districtName, UNKOWN_NAME, listBox);
                 }
                 else if (!h_searchBox.hotelType.Equals(""))
                 {
-                    populateListBox(selectedCategory, h_searchBox.hotelType, UNKOWN_DISTRICT_NAME, UNKOWN_NAME);
+                    populateCategoryListBox(xDoc, selectedCategory, h_searchBox.hotelType, UNKOWN_DISTRICT_NAME, UNKOWN_NAME, listBox);
                 }
 
                 enableApplicationBarButton();
@@ -213,9 +242,57 @@ namespace _2UG
 
         private void refreshButtonClickHandler(object sender, EventArgs e)
         {
-            String selectedCategory = (string)hotelCategoryListPicker.SelectedItem;
-            populateListBox(selectedCategory, UNKOWN_TYPE, UNKOWN_DISTRICT_NAME, UNKOWN_NAME);
+            ListBox listBox = null;
+            XDocument xDoc = null;
+
+            int pivotActiveItem = hotelPivot.SelectedIndex;
+
+            if (pivotActiveItem == 0)
+            {
+                listBox = hotelList;
+                xDoc = loadHotelItemXML;
+            }
+            else if (pivotActiveItem == 1)
+            {
+                listBox = apartmentList;
+                xDoc = loadApartmentXML;
+            }
+            else if (pivotActiveItem == 2)
+            {
+                listBox = restuarantList;
+                xDoc = loadRestaurantXML;
+            }
+            else
+            {
+                listBox = clubList;
+                xDoc = loadClubXML;
+            }
+
+            String selectedCategory = getActivePivot();
+            populateCategoryListBox(xDoc, selectedCategory, UNKOWN_TYPE, UNKOWN_DISTRICT_NAME, UNKOWN_NAME, listBox);
         }
 
+        private void callEventHandler(object sender, RoutedEventArgs e)
+        {
+            string tel = (string)((Button)sender).Tag;
+            disableApplicationIconBar();
+            CallForm callForm = new CallForm(tel);
+            callForm.Show();
+
+            callForm.Closed += new EventHandler(OnCallEnded);
+
+            callForm.VerticalAlignment = VerticalAlignment.Top;
+            callForm.HorizontalAlignment = HorizontalAlignment.Center;
+            callForm.Margin = new Thickness(0, 30, 0, 0);
+        }
+
+        private void OnCallEnded(object sender, EventArgs e)
+        {
+            CallForm cForm = sender as CallForm;
+            if (cForm.DialogResult == false)
+            {
+                enableApplicationBarButton();
+            }
+        }
     }
 }

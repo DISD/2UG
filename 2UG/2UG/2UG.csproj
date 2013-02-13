@@ -57,12 +57,13 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Net" />
     <Reference Include="System.Windows.Controls">
-      <HintPath>C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Controls.dll</HintPath>
+      <HintPath>C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Controls.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="model\call\CallModel.cs" />
     <Compile Include="model\hotel\HotelModel.cs" />
     <Compile Include="pages\About_ug.xaml.cs">
       <DependentUpon>About_ug.xaml</DependentUpon>
@@ -75,6 +76,9 @@
     </Compile>
     <Compile Include="pages\Attraction.xaml.cs">
       <DependentUpon>Attraction.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pages\CallForm.xaml.cs">
+      <DependentUpon>CallForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="pages\CurrencyConvert.xaml.cs">
       <DependentUpon>CurrencyConvert.xaml</DependentUpon>
@@ -100,8 +104,8 @@
     <Compile Include="pages\TransportSearchBox.xaml.cs">
       <DependentUpon>TransportSearchBox.xaml</DependentUpon>
     </Compile>
-    <Compile Include="pages\Welcomelogo.xaml.cs">
-      <DependentUpon>Welcomelogo.xaml</DependentUpon>
+    <Compile Include="pages\WelcomeForm.xaml.cs">
+      <DependentUpon>WelcomeForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="pages\Spot.xaml.cs">
@@ -125,6 +129,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="pages\Attraction.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\CallForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -164,7 +172,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="pages\Welcomelogo.xaml">
+    <Page Include="pages\WelcomeForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -179,54 +187,41 @@
     <Content Include="database\hotel\apartment.xml" />
     <Content Include="database\hotel\club.xml" />
     <Content Include="database\hotel\hotel.xml" />
-    <Content Include="database\hotel\restaurant.xml" />
+    <Content Include="database\hotel\restaurant.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="database\transport\other.xml" />
     <Content Include="database\transport\specialHire.xml" />
     <Content Include="database\transport\tourTravel.xml" />
+    <Resource Include="images\logo.png" />
+    <Resource Include="images\currency_icon_img.png" />
+    <Resource Include="images\dangerous_icon_img.png" />
+    <Resource Include="images\hotel_icon_img.png" />
+    <Resource Include="images\tourist_icon_img.png" />
+    <Resource Include="images\transport_icon_img.png" />
+    <Resource Include="images\elephant_img.png" />
     <Resource Include="images\2Ug.png" />
-    <Resource Include="images\currency_convert_bg.png" />
+    <Resource Include="images\telphone_handler.png" />
     <Content Include="images\2ug_icon.png" />
     <Content Include="images\about_icon.png" />
+    <Resource Include="images\apartment_img.png" />
     <Content Include="images\appbar.back.rest.png" />
     <Content Include="images\appbar.refresh.rest.png" />
-<<<<<<< HEAD
-    <Resource Include="images\specialHire_img.png" />
-    <Resource Include="images\tourTravel.png" />
-    <Resource Include="images\other_img.png" />
-=======
     <Content Include="images\appbar.search.rest.png" />
->>>>>>> 89aa8b8b1864a21e585287cc58241ea9f652107c
     <Resource Include="images\banner.jpg" />
-    <Resource Include="images\currency_converter_icon.png" />
-    <Resource Include="images\dangerous_spot.png" />
-    <Resource Include="images\dangerous_spot_icon.png" />
+    <Resource Include="images\club_img.png" />
+    <Resource Include="images\currency_convert_bg.png" />
     <Resource Include="images\default_address_icon.png" />
     <Resource Include="images\default_pin.png" />
     <Resource Include="images\default_telphone_icon.png" />
-    <Resource Include="images\down_img.png" />
-    <Resource Include="images\hotel_icon.png" />
+    <Resource Include="images\hotel_img.png" />
     <Resource Include="images\next.png" />
     <Resource Include="images\other_img.png" />
+    <Resource Include="images\resturant_img.png" />
     <Resource Include="images\search-icon.png" />
     <Resource Include="images\specialHire_img.png" />
-    <Resource Include="images\tourist_attraction_icon.png" />
     <Resource Include="images\tourTravel.png" />
-    <Resource Include="images\transport_icon.png" />
-<<<<<<< HEAD
-    <Resource Include="images\dangerous_spot.png" />
-    <Resource Include="database_images\default_telphone_icon.png" />
-    <Resource Include="database_images\default_address_icon.png" />
-    <Content Include="images\2ug_icon.png" />
-    <Content Include="images\about_icon.png" />
-    <Resource Include="images\search-icon.png" />
-    <Content Include="images\appbar.back.rest.png" />
-    <Resource Include="images\clouds.jpg" />
-    <Resource Include="images\clouds25.jpg" />
-    <Resource Include="images\white-clouds2.jpg" />
-=======
-    <Content Include="music\kadodi.wma" />
->>>>>>> 89aa8b8b1864a21e585287cc58241ea9f652107c
-    <Content Include="SplashScreenImage.jpg" />
+    <Resource Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="music\" />

@@ -22,25 +22,25 @@ namespace _2UG.pages
         {
             InitializeComponent();
 
-            this.typeListStackPanel.Visibility = Visibility.Collapsed;
-            this.searchOptionStackPanel.Visibility = Visibility.Visible;
-            this.nameRadioBtn.IsChecked = true;
+            this.hoteTypeListStackPanel.Visibility = Visibility.Collapsed;
+           this.hotelSearchOptionStackPanel.Visibility = Visibility.Visible;
+           this.hotelNameRadioBtn.IsChecked = true;
 
-            this.searchCategoryTextLabel.Text = category;
+           // this.searchCategoryTextLabel.Text = category;
         }
 
         private void search_Click(object sender, RoutedEventArgs e)
         {
-            if (nameRadioBtn.IsChecked == true)
-            {
-                hotelName = districtORNameTextBox.Text;
+            if (hotelNameRadioBtn.IsChecked == true)
+           {
+                hotelName = hotelDistrictORNameTextBox.Text;
                 hotelType = "";
                 districtName = "";
 
             }
-            else if (districtRadioBtn.IsChecked == true)
+           else if (hotelDistrictRadioBtn.IsChecked == true)
             {
-                districtName = districtORNameTextBox.Text;
+               districtName = hotelDistrictORNameTextBox.Text;
                 hotelType = "";
                 hotelName = "";
             }
@@ -51,11 +51,11 @@ namespace _2UG.pages
                 districtName = "";
                 hotelName = "";
 
-                if (chineseRadioBtn.IsChecked == true)
+                if (hotelChineseRadioBtn.IsChecked == true)
                 {
                     hotelType = "chinese";
                 }
-                else if (italianRadioBtn.IsChecked == true)
+                else if (hotelItalianRadioBtn.IsChecked == true)
                 {
                     hotelType = "italian";
                 }
@@ -66,31 +66,31 @@ namespace _2UG.pages
 
         private void close_Click(object sender, RoutedEventArgs e)
         {
-            districtORNameTextBox.Text = "";
+           hotelDistrictORNameTextBox.Text = "";
             this.DialogResult = false;
         }
 
         private void districtRadioBtn_Checked(object sender, RoutedEventArgs e)
         {
-            this.typeListStackPanel.Visibility = Visibility.Collapsed;
-            this.searchOptionStackPanel.Visibility = Visibility.Visible;
+            this.hoteTypeListStackPanel.Visibility = Visibility.Collapsed;
+            this.hotelSearchOptionStackPanel.Visibility = Visibility.Visible;
         }
 
         private void typeRadioBtn_Checked(object sender, RoutedEventArgs e)
         {
-            this.typeListStackPanel.Visibility = Visibility.Visible;
-            this.searchOptionStackPanel.Visibility = Visibility.Collapsed;
+            this.hoteTypeListStackPanel.Visibility = Visibility.Visible;
+            this.hotelSearchOptionStackPanel.Visibility = Visibility.Collapsed;
         }
 
         private void nameRadioBtn_Checked(object sender, RoutedEventArgs e)
         {
-            if (typeListStackPanel.Visibility != Visibility.Collapsed)
+           if (hoteTypeListStackPanel.Visibility != Visibility.Collapsed)
             {
-                this.typeListStackPanel.Visibility = Visibility.Collapsed;
-            }
+                this.hoteTypeListStackPanel.Visibility = Visibility.Collapsed;
+           }
 
-            this.searchOptionStackPanel.Visibility = Visibility.Visible;
-            this.districtORNameTextBox.Text = "";
+            this.hotelSearchOptionStackPanel.Visibility = Visibility.Visible;
+            this.hotelDistrictORNameTextBox.Text = "";
         }
     }
 }

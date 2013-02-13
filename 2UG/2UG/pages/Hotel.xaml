@@ -5,8 +5,8 @@
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
@@ -16,79 +16,195 @@
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="#FFF3F6F9" >
-
-        <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel Height="59" HorizontalAlignment="Left" Name="stackPanel" VerticalAlignment="Top" Width="480" Background="#FF004B4B" Orientation="Horizontal">
-            <Image Height="47" Stretch="None" Margin="5" Source="/2UG;component/images/2Ug.png" />
+        <StackPanel Height="46" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="480" Background="#FFAABA70" Orientation="Horizontal">
+            <Border HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="51" Background="#FF9A2020">
+                <TextBlock Text="2UG" Name="msgText" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Foreground="#E6FFFFFF" FontFamily="Segoe WP" />
+            </Border>
+            <Border HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="32" Background="#FF141414">
+                <Image Stretch="None" Source="/2UG;component/images/next.png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" />
+            </Border>
+            <Border Width="396" Background="#FFCACA4E">
+                <TextBlock FontFamily="Segoe WP" Foreground="#E6440808" Text="Hotel(s)" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" FontSize="26" />
+            </Border>
         </StackPanel>
-        <StackPanel Height="46" HorizontalAlignment="Left" Margin="0,59,0,0" VerticalAlignment="Top" Width="480" Background="#FFAABA70">
-            <StackPanel Height="46" Width="480" Background="#FFAABA70" Orientation="Horizontal">
-                <Border HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="51" Background="#FF141414">
-                    <TextBlock Text="2UG" Name="msgText" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Foreground="#E6FFFFFF" FontFamily="Segoe WP" />
-                </Border>
-                <Border HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="32" Background="#FF9A2020">
-                    <Image Stretch="None" Source="/2UG;component/images/next.png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" />
-                </Border>
-                <Border Width="396" Background="#FFCACA4E">
-                    <TextBlock FontFamily="Segoe WP" Foreground="#E6440808" Text="Hotel(s)" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" FontSize="26" />
-                </Border>
-            </StackPanel>
-        </StackPanel>
-        <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" HorizontalAlignment="Left" VerticalAlignment="Top">
-            <StackPanel Margin="0,111,0,0" Height="579" VerticalAlignment="Top" HorizontalAlignment="Left" Width="479">
-                <StackPanel Height="236" HorizontalAlignment="Left" Margin="0" Name="stackPanel1" VerticalAlignment="Top" Width="480" Orientation="Vertical">
-                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Width="480">
-                        <TextBlock Text="Click to choose category: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,0,0,5" />
-                        <toolkit:ListPicker x:Name="hotelCategoryListPicker" ListPickerMode="Expanded" Grid.Row="5" SelectionChanged="hotels_listPicker_SelectionChanged" Margin="10,0,0,0" Width="380" Background="#FFF3F6F9" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                        <TextBlock Text="The categories include: Hotels, Resturants, Apartments n Clubs" Width="456" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,5,5,5" TextWrapping="Wrap" Foreground="Black" />
-                        <StackPanel.Background>
-                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                <GradientStop Color="#FF004B4B" Offset="0" />
-                                <GradientStop Color="#FFF3F6F9" Offset="1" />
-                            </LinearGradientBrush>
-                        </StackPanel.Background>
-                    </StackPanel>
-                    <StackPanel Height="73" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Width="259">
-                        <Image Source="/2UG;component/images/down_img.png" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,10,0" />
-                        <TextBlock Name="categorySelectedLabel" Text="" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="36" FontFamily="Georgia" />
-                    </StackPanel>
-                    <Border BorderBrush="Black" BorderThickness="0,0,0,2" Height="6" Name="border1" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top" />
-                </StackPanel>
-                <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,5,0,0" Height="342" Width="479">
-                    <ListBox Height="340"  Name="hotelCategoryList" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0" Foreground="#FF931C1C" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Visible">
-                        <ListBox.ItemTemplate>
-                            <DataTemplate>
-                                <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Vertical">
-                                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Vertical">
-                                        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top">
-                                            <TextBlock Height="30" Text="{Binding name}" Foreground="#FF9A2020" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Arial" FontSize="22" FontStretch="Normal" Name="hotel_Name"  TextWrapping="Wrap" Margin="3" />
+        <StackPanel Margin="0,46,0,0">
+            <controls:Pivot  Margin="0" Foreground="Black" FontFamily="Georgia" VerticalAlignment="Stretch" Name="hotelPivot" Height="712">
+                <!--Pivot item one-->
+                <controls:PivotItem  Foreground="#FFFFBABA" Name="hotelPivotItem" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,5,12,0">
+                    <controls:PivotItem.Header>
+                        <StackPanel Orientation="Horizontal" Width="279" Height="60">
+                            <Image  Margin="0,0,5,0" Source="/2UG;component/images/hotel_img.png" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Center" Height="47" />
+                            <TextBlock Name="FirstPivot" FontSize="32" Text="Hotel" Height="44" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Georgia" TextWrapping="Wrap" Width="211" Foreground="#FF44A075" />
+                        </StackPanel>
+                    </controls:PivotItem.Header>
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,10,0,0">
+                        <!--Hotel Items-->
+                        <ListBox Height="543" Width="456" Name="hotelList" HorizontalAlignment="Left" VerticalAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Visible" >
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="455" Orientation="Vertical">
+                                        <StackPanel  Width="455" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal" Margin="0,0,0,2">
+                                            <StackPanel HorizontalAlignment="Left"  VerticalAlignment="Top" Width="453" Orientation="Vertical" Margin="0">
+                                                <StackPanel Width="453" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,3,0,3" Orientation="Horizontal">
+                                                    <TextBlock Name="hotel_Name" Text="{Binding name}" Width="453" Foreground="#FF83342F" Margin="0" HorizontalAlignment="Left" FontFamily="Calibri" FontWeight="Bold" VerticalAlignment="Center" Padding="0,5,0,0" />
+                                                </StackPanel>
+                                                <StackPanel Width="450" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,3,0,0">
+                                                    <TextBlock Name="hotel_Address" Text="{Binding address}" Width="447" Foreground="Black"  TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0"  FontSize="22" />
+                                                </StackPanel>
+                                                <StackPanel HorizontalAlignment="Left"  VerticalAlignment="Top" Width="453" Orientation="Horizontal" Margin="0,3,0,0">
+                                                    <TextBlock Name="hotel_district" Text="{Binding district}"  Foreground="#FF1E7201" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0"  FontSize="22" />
+                                                    <Border Width="1" Background="#FF171414" Margin="3,0" />
+                                                    <TextBlock Name="hotel_type" Text="{Binding type}"  Foreground="#FFA97944" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0"  FontSize="22" />
+                                                </StackPanel>
+                                                <StackPanel Width="454" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,3,0,0">
+                                                    <Border Background="#FF1E98B0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                                        <Button Tag="{Binding Telphone}" Click="callEventHandler" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0" Content="Call ?" Padding="0" Foreground="White" FontFamily="Calibri" FontSize="18" BorderThickness="1" FontWeight="Bold" BorderBrush="Transparent" />
+                                                    </Border>
+                                                    <TextBlock Name="hotel_Tel" Text="{Binding telphone}" Width="404" Foreground="#FF1E4BB4" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0" FontSize="22"/>
+                                                </StackPanel>
+                                            </StackPanel>
                                         </StackPanel>
-                                        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
-                                            <Image Height="19" Stretch="None" Width="23" Name="hotel_Address_icon" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/images/default_address_icon.png" Margin="3,3,0,0" />
-                                            <TextBlock Text="{Binding address}" Name="hotel_Address" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF626262" FontFamily="Arial" FontSize="15" TextWrapping="Wrap" Margin="3,3,0,3" />
-                                        </StackPanel>
-                                        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
-                                            <Image Height="21" Stretch="None" Width="26" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/images/default_telphone_icon.png" Name="hotel_Tel_Icon" Margin="3,3,0,0" />
-                                            <TextBlock Name="hotel_Tel" Text="{Binding telphone}" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Arial" FontSize="16" TextWrapping="Wrap" Foreground="#FF626262" Margin="3,3,0,3" />
-                                        </StackPanel>
-                                        <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" >
-                                            <Image Stretch="None" Width="27" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/images/default_pin.png"  Name="Special_Hire_Pin_Icon" Margin="3,3,0,0" />
-                                            <TextBlock Text="{Binding district}" Foreground="#FF626262" FontFamily="Arial" FontSize="16" TextWrapping="Wrap" Name="hotel_district" HorizontalAlignment="Left" VerticalAlignment="Top" Margin ="3,3,0,0"/>
-                                        </StackPanel>
-                                        <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" >
-                                            <Image Stretch="None" Width="27" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/2UG;component/images/default_pin.png"  Name="Hotel_Pin_Icon" Margin="3,3,0,0" />
-                                            <TextBlock Text="{Binding type}" Foreground="#FF626262" FontFamily="Arial" FontSize="16" TextWrapping="Wrap" Name="hotel_type" HorizontalAlignment="Left" VerticalAlignment="Top" Margin ="3,3,0,0"/>
-                                        </StackPanel>
+                                        <Border BorderBrush="Silver" BorderThickness="0,0,0,1" Height="7" Name="border1" Width="456" HorizontalAlignment="Left" Margin="0,3,0,0" />
                                     </StackPanel>
-                                    <Border BorderBrush="#FFC1BCBC" BorderThickness="0,0,0,2" Height="6" Name="border2" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FFC1BCBC" />
-                                </StackPanel>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                    </ListBox>
-                </StackPanel>
-            </StackPanel>
-        </Grid>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </StackPanel>
+                </controls:PivotItem>
+
+                <controls:PivotItem  Foreground="#FFFFBABA" Name="apartmentPivotItem" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,5,12,0">
+                    <controls:PivotItem.Header>
+                        <StackPanel Orientation="Horizontal" Width="289" Height="60">
+                            <Image  Margin="0,0,5,0" Source="/2UG;component/images/apartment_img.png" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Center" Height="47" />
+                            <TextBlock Name="SecondPivot" FontSize="32" Text="Apartments" Height="44" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Georgia" TextWrapping="Wrap" Width="211" Foreground="#FFF29528" />
+                        </StackPanel>
+                    </controls:PivotItem.Header>
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,10,0,0">
+                        <!--Apartment Items-->
+                        <ListBox Height="543" Width="456" Name="apartmentList" HorizontalAlignment="Left" VerticalAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Visible" >
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="455" Orientation="Vertical">
+                                        <StackPanel  Width="455" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal" Margin="0,0,0,2">
+                                            <StackPanel HorizontalAlignment="Left"  VerticalAlignment="Top" Width="453" Orientation="Vertical" Margin="0">
+                                                <StackPanel Width="453" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,3,0,3" Orientation="Horizontal">
+                                                    <TextBlock Name="hotel_Name" Text="{Binding name}" Width="453" Foreground="#FF83342F" Margin="0" HorizontalAlignment="Left" FontFamily="Calibri" FontWeight="Bold" VerticalAlignment="Center" Padding="0,5,0,0" />
+                                                </StackPanel>
+                                                <StackPanel Width="450" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,3,0,0">
+                                                    <TextBlock Name="hotel_Address" Text="{Binding address}" Width="447" Foreground="Black"  TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0"  FontSize="22" />
+                                                </StackPanel>
+                                                <StackPanel HorizontalAlignment="Left"  VerticalAlignment="Top" Width="453" Orientation="Horizontal" Margin="0,3,0,0">
+                                                    <TextBlock Name="hotel_district" Text="{Binding district}" Width="404" Foreground="#FF1E7201" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0"  FontSize="22" />
+                                                </StackPanel>
+                                                <StackPanel HorizontalAlignment="Left"  VerticalAlignment="Top" Width="453" Orientation="Horizontal" Margin="0,3,0,0">
+                                                    <TextBlock Name="hotel_type" Text="{Binding type}" Width="404" Foreground="#FFA97944" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0"  FontSize="22" />
+                                                </StackPanel>
+                                                <StackPanel Width="454" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,3,0,0">
+                                                    <Border Background="#FF1E98B0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                                        <Button Tag="{Binding Telphone}" Click="callEventHandler" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0" Content="Call ?" Padding="0" Foreground="White" FontFamily="Calibri" FontSize="18" BorderThickness="1" FontWeight="Bold" BorderBrush="Transparent" />
+                                                    </Border>
+                                                    <TextBlock Name="hotel_Tel" Text="{Binding telphone}" Width="404" Foreground="#FF1E4BB4" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0" FontSize="22"/>
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </StackPanel>
+                                        <Border BorderBrush="Silver" BorderThickness="0,0,0,1" Height="7" Name="border2" Width="456" HorizontalAlignment="Left" Margin="0,3,0,0" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </StackPanel>
+                </controls:PivotItem>
+
+                <controls:PivotItem  Foreground="#FFFFBABA" Name="restuarantPivotItem" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,5,12,0">
+                    <controls:PivotItem.Header>
+                        <StackPanel Orientation="Horizontal" Width="289" Height="60">
+                            <Image  Margin="0,0,5,0" Source="/2UG;component/images/resturant_img.png" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Center" Height="47" />
+                            <TextBlock Name="ThirdPivot" FontSize="32" Text="Restuarants" Height="44" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Georgia" TextWrapping="Wrap" Width="211" Foreground="#FF2885F2" />
+                        </StackPanel>
+                    </controls:PivotItem.Header>
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,10,0,0">
+                        <!--Resturant Items-->
+                        <ListBox Height="543" Width="456" Name="restuarantList" HorizontalAlignment="Left" VerticalAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Visible" >
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="455" Orientation="Vertical">
+                                        <StackPanel  Width="455" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal" Margin="0,0,0,2">
+                                            <StackPanel HorizontalAlignment="Left"  VerticalAlignment="Top" Width="453" Orientation="Vertical" Margin="0">
+                                                <StackPanel Width="453" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,3,0,3" Orientation="Horizontal">
+                                                    <TextBlock Name="restuarant_Name" Text="{Binding name}" Width="453" Foreground="#FF83342F" Margin="0" HorizontalAlignment="Left" FontFamily="Calibri" FontWeight="Bold" VerticalAlignment="Center" Padding="0,5,0,0" />
+                                                </StackPanel>
+                                                <StackPanel Width="450" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,3,0,0">
+                                                    <TextBlock Name="restuarant_Address" Text="{Binding address}" Width="447" Foreground="Black"  TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0"  FontSize="22" />
+                                                </StackPanel>
+                                                <StackPanel HorizontalAlignment="Left"  VerticalAlignment="Top" Width="453" Orientation="Horizontal" Margin="0,3,0,0">
+                                                    <TextBlock Name="resturant_district" Text="{Binding district}" Width="404" Foreground="#FF1E7201" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0"  FontSize="22" />
+                                                </StackPanel>
+                                                <StackPanel HorizontalAlignment="Left"  VerticalAlignment="Top" Width="453" Orientation="Horizontal" Margin="0,3,0,0">
+                                                    <TextBlock Name="restuarant_type" Text="{Binding type}" Width="404" Foreground="#FFA97944" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0"  FontSize="22" />
+                                                </StackPanel>
+                                                <StackPanel Width="454" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,3,0,0">
+                                                    <Border Background="#FF1E98B0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                                        <Button Tag="{Binding Telphone}" Click="callEventHandler" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0" Content="Call ?" Padding="0" Foreground="White" FontFamily="Calibri" FontSize="18" BorderThickness="1" FontWeight="Bold" BorderBrush="Transparent" />
+                                                    </Border>
+                                                    <TextBlock Name="restuarant_Tel" Text="{Binding telphone}" Width="404" Foreground="#FF1E4BB4" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0" FontSize="22"/>
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </StackPanel>
+                                        <Border BorderBrush="Silver" BorderThickness="0,0,0,1" Height="7" Name="border3" Width="456" HorizontalAlignment="Left" Margin="0,3,0,0" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </StackPanel>
+                </controls:PivotItem>
+
+
+                <controls:PivotItem  Foreground="#FFFFBABA" Name="clubPivotItem" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,5,12,0">
+                    <controls:PivotItem.Header>
+                        <StackPanel Orientation="Horizontal" Width="289" Height="60">
+                            <Image  Margin="0,0,5,0" Source="/2UG;component/images/club_img.png" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Center" Height="47" />
+                            <TextBlock Name="FourthPivot" FontSize="32" Text="Club(s)" Height="44" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Georgia" TextWrapping="Wrap" Width="211" Foreground="#FFA428F2" />
+                        </StackPanel>
+                    </controls:PivotItem.Header>
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,10,0,0">
+                        <!--Resturant Items-->
+                        <ListBox Height="543" Width="456" Name="clubList" HorizontalAlignment="Left" VerticalAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Visible" >
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="455" Orientation="Vertical">
+                                        <StackPanel  Width="455" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal" Margin="0,0,0,2">
+                                            <StackPanel HorizontalAlignment="Left"  VerticalAlignment="Top" Width="453" Orientation="Vertical" Margin="0">
+                                                <StackPanel Width="453" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,3,0,3" Orientation="Horizontal">
+                                                    <TextBlock Name="club_Name" Text="{Binding name}" Width="453" Foreground="#FF83342F" Margin="0" HorizontalAlignment="Left" FontFamily="Calibri" FontWeight="Bold" VerticalAlignment="Center" Padding="0,5,0,0" />
+                                                </StackPanel>
+                                                <StackPanel Width="450" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,3,0,0">
+                                                    <TextBlock Name="club_Address" Text="{Binding address}" Width="447" Foreground="Black"  TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0"  FontSize="22" />
+                                                </StackPanel>
+                                                <StackPanel HorizontalAlignment="Left"  VerticalAlignment="Top" Width="453" Orientation="Horizontal" Margin="0,3,0,0">
+                                                    <TextBlock Name="club_district" Text="{Binding district}" Width="404" Foreground="#FF1E7201" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0"  FontSize="22" />
+                                                </StackPanel>
+                                                <StackPanel HorizontalAlignment="Left"  VerticalAlignment="Top" Width="453" Orientation="Horizontal" Margin="0,3,0,0">
+                                                    <TextBlock Name="club_type" Text="{Binding type}" Width="404" Foreground="#FFA97944" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0"  FontSize="22" />
+                                                </StackPanel>
+                                                <StackPanel Width="454" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,3,0,0">
+                                                    <Border Background="#FF1E98B0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                                        <Button Tag="{Binding Telphone}" Click="callEventHandler" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0" Content="Call ?" Padding="0" Foreground="White" FontFamily="Calibri" FontSize="18" BorderThickness="1" FontWeight="Bold" BorderBrush="Transparent" />
+                                                    </Border>
+                                                    <TextBlock Name="club_Tel" Text="{Binding telphone}" Width="404" Foreground="#FF1E4BB4" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0" FontSize="22"/>
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </StackPanel>
+                                        <Border BorderBrush="Silver" BorderThickness="0,0,0,1" Height="7" Name="border4" Width="456" HorizontalAlignment="Left" Margin="0,3,0,0" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </StackPanel>
+                </controls:PivotItem>
+
+            </controls:Pivot>
+        </StackPanel>
+
 
     </Grid>
 

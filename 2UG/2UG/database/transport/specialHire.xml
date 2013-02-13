@@ -3,129 +3,50 @@
   <special_hire>
     <name>HERTZ RENT A CAR</name>
     <address>P.O.BOX BOX 23456,KAMPALA, Communications House, Plot 1, Colville Street </address>
-    <telphone>  +256-77-2450460, +256-414-347 191/3, FAX: +256-414-347 192</telphone>
+    <telphone>(+256) 772450460, 414347191</telphone>
     <district>Kampala</district>
-    <icon>../database_images/default_special_hire.png</icon>
   </special_hire>
 
   <special_hire>
     <name>SPEAR MOTORS</name>
-    <address>Spear Motors Complex, Nakawa, Plot M428, Nakawa, Jinja Road, sales@spearmotors.co.ug</address>
-    <telphone> Tel: +256 414 285551, +256 414 505664, Fax: +256 414 505664</telphone>
+    <address>Spear Motors Complex, Nakawa, Plot M428, Nakawa, Jinja Road</address>
+    <telphone>(+256) 414285551, 414505664</telphone>
     <district>Kampala</district>
-    <icon>../database_images/default_special_hire.png</icon>
   </special_hire>
 
   <special_hire>
     <name>SAFARI EYE LTD</name>
-    <address>Old Port Bell Road, Kobil Station Bugolobi, P.O Box 2972 Kampala, info@safarieye.co.ug</address>
-    <telphone> Tel: +256 414 576584, +256 772 443012</telphone>
+    <address>Old Port Bell Road, Kobil Station Bugolobi, P.O Box 2972 Kampala</address>
+    <telphone>(+256) 414576584, 772443012</telphone>
     <district>Kampala</district>
-    <icon>../database_images/default_special_hire.png</icon>
   </special_hire>
 
   <special_hire>
     <name>GLOBAL HIRE SERVICES</name>
     <address>Clive Road, Jinja, P.O.Box 11 Jinja, Uganda</address>
-    <telphone>Tel: +256 43 120110, Fax: +256 414 255144</telphone>
+    <telphone>(+256) 43120110</telphone>
     <district>Jinja</district>
-    <icon></icon>
   </special_hire>
 
   <special_hire>
     <name>CITY CARS</name>
     <address>Tankhill Road, Muyenga, value@citycars.co.ug</address>
-    <telphone> +256 312 260087,+256 772 412001, +256 772 651433</telphone>
+    <telphone>(+256) 312260087, 772412001, 772651433</telphone>
     <district>Kampala</district>
-    <icon></icon>
   </special_hire>
 
   <special_hire>
     <name>ACACIA UGANDA SAFARIS</name>
     <address>Plot 4, Kimathi Avenue, P.O.Box 29493, Kampala, Uganda, tours@acaciasafari.co.ug</address>
-    <telphone> +256 312 260087,+256 772 412001, +256 772 651433</telphone>
+    <telphone>(+256) 312260087, 772412001, 772651433</telphone>
     <district>Kampala</district>
-    <icon></icon>
   </special_hire>
 
   <special_hire>
     <name>ABACUS AFRICAN VACATIONS</name>
     <address>Colline House, 1st Floor, Suite 2, P.O. Box 34944 Kampala, Uganda, info@abacusvacations.com</address>
-    <telphone> +256 312 260087,+256 772 412001, +256 772 651433</telphone>
+    <telphone>(+256) 312260087, 772412001</telphone>
     <district>Kampala</district>
-    <icon></icon>
-  </special_hire>
-
-  <special_hire>
-    <name>EMIRATES SAFARIS N CAR RENTAL SERVICES</name>
-    <address>Aqua Complex, Plot. 364 Old Portbell Rd, Kitintale. P.O Box 12749, Kampala, Uganda, info@emiratessafaris.com</address>
-    <telphone> +256 772 634044, +256 702 634044, Fax +256 312 294785</telphone>
-    <district>Kampala</district>
-    <icon></icon>
-  </special_hire>
-
-  <special_hire>
-    <name>EUROPCAR</name>
-    <address>Entebbe International Airport</address>
-    <telphone> +256 414 237211</telphone>
-    <district>Kampala</district>
-    <icon></icon>
-  </special_hire>
-
-  <special_hire>
-    <name>CITY CAB</name>
-    <address>95 6th Street, Industrial Area, P.O. Box 10827, Kampala, Uganda</address>
-    <telphone> +256 417 130130/1</telphone>
-    <district>Kampala</district>
-    <icon></icon>
-  </special_hire>
-
-  <special_hire>
-    <name>ENYANGE TOURS AND TRAVEL </name>
-    <address>P.o Box 358, Masindi. Llocated On Persie Street Next to Link Bus Office, 256, Uganda</address>
-    <telphone>0778953372, 0701952770</telphone>
-    <district>Masindi</district>
-    <icon></icon>
-  </special_hire>
-
-  <special_hire>
-    <name>ACTIVE AFRICAN VACATIONS</name>
-    <address>Plot 4 Kimtahi Avenue, Kampala, info@vacation-safaris.com, billy@vacation-safaris.com</address>
-    <telphone>+256-774-819-223</telphone>
-    <district>Kampala</district>
-    <icon></icon>
-  </special_hire>
-
-  <special_hire>
-    <name>ESCAPE TOURS AND SAFARIS</name>
-    <address>Cynthia House, Kauku P.O Box 25543, Kampala, Uganda, safari@escapeuganda.com</address>
-    <telphone>+256 312 280584, +256 712 295522</telphone>
-    <district>Kampala</district>
-    <icon></icon>
-  </special_hire>
-
-  <special_hire>
-    <name>SUNSET CAR HIRE</name>
-    <address>King Faisal Building -Kampla road opposite Tervern </address>
-    <telphone>+256 794 2458484 </telphone>
-    <district>Kampala</district>
-    <icon></icon>
-  </special_hire>
-
-  <special_hire>
-    <name>RELIABLE CAR SERVICES</name>
-    <address>Suite 9, Pioneer House, Plot 28 Jinja Road, P.O.BOX 27098 Tel 0712-929392, 0704-022882 email: rntumwesigye@gmail.com </address>
-    <telphone>+256 704 022882  </telphone>
-    <district>Kampala</district>
-    <icon></icon>
-
-    <special_hire>
-      <name>TAPS LTD</name>
-      <address> MNS House, Kitintale </address>
-      <telphone>(+256) 312514800/ 789834814 </telphone>
-      <district>Kampala</district>
-      <icon></icon>
-    </special_hire>
   </special_hire>
 
 </special_hires>

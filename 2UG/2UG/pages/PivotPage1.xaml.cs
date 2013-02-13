@@ -33,6 +33,20 @@ namespace _2UG
             populateOtherListBox();
         }
 
+        private void callEventHandler(object sender, RoutedEventArgs e)
+        {
+            string tel = (string)((Button)sender).Tag;
+            disableAppliicationBarIcon();
+            CallForm callForm = new CallForm(tel);
+            callForm.Show();
+
+            callForm.Closed += new EventHandler(OnCallEnded);
+
+            callForm.VerticalAlignment = VerticalAlignment.Top;
+            callForm.HorizontalAlignment = HorizontalAlignment.Center;
+            callForm.Margin = new Thickness(0, 30, 0, 0);
+        }
+
         private void populateSpecialHireListBox()
         {
             specialHireList.ItemsSource = retrieveSpecialHireData("", UNKOWN_SEARCH_CRITERIA);
@@ -191,9 +205,7 @@ namespace _2UG
         private void BtnSearchClick(object sender, EventArgs e)
         {
 
-            (ApplicationBar.Buttons[0] as ApplicationBarIconButton).IsEnabled = false;
-            (ApplicationBar.Buttons[1] as ApplicationBarIconButton).IsEnabled = false;
-            (ApplicationBar.Buttons[2] as ApplicationBarIconButton).IsEnabled = false;
+            disableAppliicationBarIcon();
 
             string activePivotName = "";
             int pivotActiveItem = transportPivot.SelectedIndex;
@@ -219,7 +231,14 @@ namespace _2UG
             transportSearchBox.Show();
             transportSearchBox.VerticalAlignment = VerticalAlignment.Top;
             transportSearchBox.HorizontalAlignment = HorizontalAlignment.Center;
-            transportSearchBox.Margin = new Thickness(0, 150, 0, 0);
+            transportSearchBox.Margin = new Thickness(0, 30, 0, 0);
+        }
+
+        private void disableAppliicationBarIcon()
+        {
+            (ApplicationBar.Buttons[0] as ApplicationBarIconButton).IsEnabled = false;
+            (ApplicationBar.Buttons[1] as ApplicationBarIconButton).IsEnabled = false;
+            (ApplicationBar.Buttons[2] as ApplicationBarIconButton).IsEnabled = false;
         }
 
         private void OnSearchBoxShow(object sender, EventArgs e)
@@ -313,6 +332,15 @@ namespace _2UG
                 otherList.ItemsSource = retrieveOtherData("", UNKOWN_SEARCH_CRITERIA);
             }
 
+        }
+
+        private void OnCallEnded(object sender, EventArgs e)
+        {
+            CallForm cForm = sender as CallForm;
+            if (cForm.DialogResult == false)
+            {
+                enableApplicationBarButton();
+            }
         }
 
     }

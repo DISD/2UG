@@ -13,17 +13,16 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
-
 namespace _2UG.pages
 {
-    public partial class Welcomelogo : PhoneApplicationPage
+    public partial class WelcomeForm : PhoneApplicationPage
     {
-        private BackgroundWorker _backgroundWorker;
-        public Welcomelogo()
+       private BackgroundWorker _backgroundWorker;
+       public WelcomeForm()
         {
             InitializeComponent();
             this.progressBar1.IsIndeterminate = true;
-            StartLoadingData();
+             StartLoadingData();
         }
         
         private void StartLoadingData()
@@ -37,15 +36,14 @@ namespace _2UG.pages
 
         void BackroungWorkerRunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
+            
             this.Dispatcher.BeginInvoke(() => NavigationService.Navigate(new Uri("/pages/2UG.xaml", UriKind.Relative)));
            
         }
 
         void backroungWorker_DoWork(object sender, DoWorkEventArgs e)
         {
-            // Do some data loading on a background
-            // We'll just sleep for the demo
-            Thread.Sleep(3000);
+            Thread.Sleep(5000);
         }
     }
 }
