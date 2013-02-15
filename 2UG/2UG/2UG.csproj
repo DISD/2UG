@@ -59,12 +59,16 @@
     <Reference Include="System.Windows.Controls">
       <HintPath>C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Controls.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Controls.Input">
+      <HintPath>C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Controls.Input.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="model\call\CallModel.cs" />
     <Compile Include="model\hotel\HotelModel.cs" />
+    <Compile Include="model\touristAttraction\TAttractions.cs" />
     <Compile Include="pages\About_ug.xaml.cs">
       <DependentUpon>About_ug.xaml</DependentUpon>
     </Compile>
@@ -74,8 +78,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="pages\Attraction.xaml.cs">
-      <DependentUpon>Attraction.xaml</DependentUpon>
+    <Compile Include="pages\TouristAttraction.xaml.cs">
+      <DependentUpon>TouristAttraction.xaml</DependentUpon>
     </Compile>
     <Compile Include="pages\CallForm.xaml.cs">
       <DependentUpon>CallForm.xaml</DependentUpon>
@@ -128,7 +132,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="pages\Attraction.xaml">
+    <Page Include="pages\TouristAttraction.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -193,6 +197,9 @@
     <Content Include="database\transport\other.xml" />
     <Content Include="database\transport\specialHire.xml" />
     <Content Include="database\transport\tourTravel.xml" />
+    <Resource Include="images\sample.png" />
+    <Resource Include="images\bg1_img.png" />
+    <Resource Include="images\bg_img.png" />
     <Resource Include="images\logo.png" />
     <Resource Include="images\currency_icon_img.png" />
     <Resource Include="images\dangerous_icon_img.png" />
@@ -224,6 +231,7 @@
     <Resource Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="database\tourist\" />
     <Folder Include="music\" />
   </ItemGroup>
   <ItemGroup>

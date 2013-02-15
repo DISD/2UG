@@ -19,5 +19,15 @@ namespace _2UG
         {
             InitializeComponent();
         }
+
+        private void button4_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnBackClick(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/pages/2UG.xaml", UriKind.Relative));
+        }
     }
 }

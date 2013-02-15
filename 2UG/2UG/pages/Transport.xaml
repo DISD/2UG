@@ -10,20 +10,20 @@
     mc:Ignorable="d" FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
-    SupportedOrientations="Portrait"  Orientation="Portrait"
+    SupportedOrientations="PortraitOrLandscape"  Orientation="Portrait"
     shell:SystemTray.IsVisible="True" d:DesignHeight="696" d:DesignWidth="480">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="#FFF3F6F9" >
 
-        <StackPanel Height="46" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="480" Background="#FFAABA70" Orientation="Horizontal">
+        <StackPanel Height="46" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Top" Background="#FFCACA4E" Orientation="Horizontal">
             <Border HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="51" Background="#FF9A2020">
                 <TextBlock Text="2UG" Name="msgText" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Foreground="#E6FFFFFF" FontFamily="Segoe WP" />
             </Border>
             <Border HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="32" Background="#FF141414">
                 <Image Stretch="None" Source="/2UG;component/images/next.png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" />
             </Border>
-            <Border Width="396" Background="#FFCACA4E">
+            <Border Background="#FFCACA4E">
                 <TextBlock FontFamily="Segoe WP" Foreground="#E6440808" Text="Transport" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" FontSize="26" Name="bannerTxt" />
             </Border>
         </StackPanel>

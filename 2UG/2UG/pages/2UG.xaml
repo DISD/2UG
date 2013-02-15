@@ -16,60 +16,84 @@
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Height="695" Background="#FFD4D4D4">
         <StackPanel x:Name="TitlePanel" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#FFD4D4D4">
-            <StackPanel x:Name="stackPanel1" Height="101" HorizontalAlignment="Stretch"  VerticalAlignment="Top"  Background="#FF5E835E" >
-                <Image  Name="image1" Stretch="None" Source="/2UG;component/images/2Ug.png" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="0" Grid.Column="1"  Grid.Row="2" Height="100" />
+            <StackPanel x:Name="stackPanel1" Height="54" HorizontalAlignment="Stretch"  VerticalAlignment="Top"  Background="#FF5E835E" >
+                <StackPanel Height="53" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="480" Orientation="Horizontal">
+                    <Border HorizontalAlignment="Left" VerticalAlignment="Top" Height="54" Width="51" Background="#FF9A2020">
+                        <TextBlock Text="2UG" Name="msgText" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Foreground="#E6FFFFFF" FontFamily="Segoe WP" />
+                    </Border>
+                    <Border HorizontalAlignment="Left" VerticalAlignment="Top" Height="54" Width="32" Background="#FF141414">
+                        <Image Stretch="None" Source="/2UG;component/images/next.png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" />
+                    </Border>
+                    <Border Width="396" Height="56">
+                        <TextBlock FontFamily="Segoe WP" Foreground="#FFDBDBDB" Text="Select an option" FontSize="20" Name="bannerTxt" Margin="10" />
+                    </Border>
+                </StackPanel>
             </StackPanel>
+            <StackPanel>
+                <StackPanel.Background>
+                    <ImageBrush ImageSource="/2UG;component/images/bg1_img.png" Stretch="Uniform" />
+                </StackPanel.Background>
             <ScrollViewer x:Name="scrollView" Grid.Row="1">
                 <ScrollViewer.Content>
-                 <StackPanel x:Name="stackPanel2" HorizontalAlignment="Stretch" Orientation="Vertical" VerticalAlignment="Stretch" Background="#FFD4D4D4">
-                        <Border Margin="10">
+                 <StackPanel x:Name="stackPanel2" HorizontalAlignment="Stretch" Orientation="Vertical" VerticalAlignment="Stretch">
+                        <Border Margin="0, 10">
                             <StackPanel>
-                                <StackPanel x:Name="transport_stackpanel" Orientation="Horizontal" Margin="3" Background="#FFD4D4D4">
+                                <!--   <StackPanel x:Name="transport_stackpanel" Orientation="Horizontal" Margin="3" Background="#FFD4D4D4" MouseLeave="transport_stackpanel_MouseLeave">
                                     <Image Name="transport_img" Stretch="Fill" HorizontalAlignment="Left" Source="/2UG;component/images/transport_icon_img.png" Width="100" />
                                     <Button Content="Transport" Name="transport_btn" Padding="0" BorderThickness="0" Foreground="#FF211A1A" FontFamily="Georgia" FontSize="32" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="317" Click="transport_btn_Click" />
+                                </StackPanel>-->
+                                    <StackPanel Tag="transport" MouseEnter="Border_MouseEnter">
+                                    <Border Height="100">
+                                        <TextBlock x:Name="transportTxtBlock" Text="Transport" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40" FontFamily="Segoe WP"><TextBlock.Foreground><LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0"><GradientStop Color="#FF58A729" Offset="0" /><GradientStop Color="White" Offset="1" /><GradientStop Color="#FF172B12" Offset="0.964" /></LinearGradientBrush></TextBlock.Foreground></TextBlock>
+                                    </Border>
                                 </StackPanel>
                                 <Border Background="#FFB1A1A1" Height="1" Margin="0,5,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
                             </StackPanel>
                         </Border>
                         <Border Margin="10">
                             <StackPanel>
-                                <StackPanel x:Name="hotel_stackpanel" Orientation="Horizontal" Margin="3" Background="#FFD4D4D4">
-                                    <Image Name="hotel_img" Stretch="Fill" HorizontalAlignment="Left" Source="/2UG;component/images/hotel_icon_img.png" Width="100" />
-                                    <Button Content="Hotels" Name="hotel_Btn" Padding="0" BorderThickness="0" Foreground="#FF211A1A" FontFamily="Georgia" FontSize="32" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="317" Click="hotel_Btn_Click" />
+                                    <StackPanel Tag="hotel" MouseEnter="Border_MouseEnter">
+                                        <Border Height="100">
+                                        <TextBlock x:Name="hotelTxtBlock" Text="Hotel" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40" FontFamily="Trebuchet MS"><TextBlock.Foreground><LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0"><GradientStop Color="#FF58A729" Offset="0" /><GradientStop Color="White" Offset="1" /><GradientStop Color="#FF172B12" Offset="0.964" /></LinearGradientBrush></TextBlock.Foreground></TextBlock>
+                                    </Border>
                                 </StackPanel>
                                 <Border Background="#FFB1A1A1" Height="1" Margin="0,5,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
                             </StackPanel>
                         </Border>
                         <Border Margin="10">
                             <StackPanel>
-                                <StackPanel x:Name="tourist_stackpanel" Orientation="Horizontal" Margin="3" Background="#FFD4D4D4">
-                                    <Image Name="touist_img" Stretch="Fill" HorizontalAlignment="Left" Source="/2UG;component/images/tourist_icon_img.png" Width="100" />
-                                    <Button Content="Tourist Attrations" Name="tourist_btn" Padding="0" BorderThickness="0" Foreground="#FF211A1A" FontFamily="Georgia" FontSize="32" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="317" Click="tourist_btn_Click" />
+                                    <StackPanel Tag="attraction" MouseEnter="Border_MouseEnter">
+                                    <Border Height="100" >
+                                        <TextBlock x:Name="attractionTxtBlock" Text="Tourist Attraction" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40" FontFamily="Trebuchet MS"><TextBlock.Foreground><LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0"><GradientStop Color="#FF58A729" Offset="0" /><GradientStop Color="White" Offset="1" /><GradientStop Color="#FF172B12" Offset="0.964" /></LinearGradientBrush></TextBlock.Foreground></TextBlock>
+                                    </Border>
                                 </StackPanel>
                                 <Border Background="#FFB1A1A1" Height="1" Margin="0,5,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
                             </StackPanel>
                         </Border>
                         <Border Margin="10">
                             <StackPanel>
-                                <StackPanel x:Name="dangerous_stackpanel" Orientation="Horizontal" Margin="3" Background="#FFD4D4D4">
-                                    <Image Name="dangerous_img" Stretch="Fill" HorizontalAlignment="Left" Source="/2UG;component/images/dangerous_icon_img.png" Width="100" />
-                                    <Button Content="Dangeous Spots" Name="dangerous_btn" Padding="0" BorderThickness="0" Foreground="#FF211A1A" FontFamily="Georgia" FontSize="32" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="317" Click="dangerous_btn_Click" />
+                                    <StackPanel Tag="dangerousSpot" MouseEnter="Border_MouseEnter">
+                                    <Border Height="100" >
+                                        <TextBlock x:Name="dangerousTxtBlock" Text="Dangerous Spots" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40" FontFamily="Trebuchet MS"><TextBlock.Foreground><LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0"><GradientStop Color="#FF58A729" Offset="0" /><GradientStop Color="White" Offset="1" /><GradientStop Color="#FF172B12" Offset="0.964" /></LinearGradientBrush></TextBlock.Foreground></TextBlock>
+                                    </Border>
                                 </StackPanel>
                                 <Border Background="#FFB1A1A1" Height="1" Margin="0,5,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
                             </StackPanel>
                         </Border>
                         <Border Margin="10">
                             <StackPanel>
-                                <StackPanel x:Name="currency_stackpanel" Orientation="Horizontal" Margin="3" Background="#FFD4D4D4">
-                                    <Image Name="currency_img" Stretch="Fill" HorizontalAlignment="Left" Source="/2UG;component/images/currency_icon_img.png" Width="100" />
-                                    <Button Content="Currency Converter" Name="currency_btn" Padding="0" BorderThickness="0" Foreground="#FF211A1A" FontFamily="Georgia" FontSize="32" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="317" Click="currency_btn_Click" />
+                                    <StackPanel Tag="currency" MouseEnter="Border_MouseEnter">
+                                    <Border Height="100" >
+                                        <TextBlock x:Name="currecyTxtBlock" Text="Currency Converter" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40" FontFamily="Trebuchet MS"><TextBlock.Foreground><LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0"><GradientStop Color="#FF58A729" Offset="0" /><GradientStop Color="White" Offset="1" /><GradientStop Color="#FF172B12" Offset="0.964" /></LinearGradientBrush></TextBlock.Foreground></TextBlock>
+                                    </Border>
                                 </StackPanel>
                                 <Border Background="#FFB1A1A1" Height="1" Margin="0,5,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
                             </StackPanel>
                         </Border>
                     </StackPanel>
                 </ScrollViewer.Content>
-            </ScrollViewer>
+                </ScrollViewer>
+            </StackPanel>
         </StackPanel>
     </Grid>
 

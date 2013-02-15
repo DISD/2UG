@@ -17,6 +17,13 @@ namespace _2UG
 {
     public partial class MainPage : PhoneApplicationPage
     {
+        private string DANGEROUS_SPOT = "dangerousSpot";
+        private string HOTEL = "hotel";
+        private string TRANSPORT = "transport";
+        private string CURRENCY_CONVERTER = "currency";
+        private string TOURIST_ATTRACTIION = "attraction";
+
+
         // Constructor
         public MainPage()
         {
@@ -45,29 +52,29 @@ namespace _2UG
             NavigationService.Navigate(new Uri("/pages/About_ug.xaml", UriKind.Relative));
         }
 
-        private void transport_btn_Click(object sender, RoutedEventArgs e)
+        private void Border_MouseEnter(object sender, MouseEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/pages/Transport.xaml", UriKind.Relative));
-        }
+            String selectedPanel = (string)((StackPanel)sender).Tag;
 
-        private void hotel_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("/pages/Hotel.xaml", UriKind.Relative));
-        }
+            if(selectedPanel.Equals(TRANSPORT)){
 
-        private void tourist_btn_Click(object sender, RoutedEventArgs e)
-        {
+                NavigationService.Navigate(new Uri("/pages/Transport.xaml", UriKind.Relative));
 
-        }
+            }else if(selectedPanel.Equals(HOTEL)){
 
-        private void dangerous_btn_Click(object sender, RoutedEventArgs e)
-        {
+                NavigationService.Navigate(new Uri("/pages/Hotel.xaml", UriKind.Relative));
 
-        }
+            }else if (selectedPanel.Equals(TOURIST_ATTRACTIION)){
 
-        private void currency_btn_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("/pages/CurrencyConvert.xaml", UriKind.Relative));
+                NavigationService.Navigate(new Uri("/pages/TouristAttraction.xaml", UriKind.Relative));
+
+            }else if (selectedPanel.Equals(DANGEROUS_SPOT)){
+
+            }else if (selectedPanel.Equals(CURRENCY_CONVERTER)){
+
+                NavigationService.Navigate(new Uri("/pages/CurrencyConvert.xaml", UriKind.Relative));
+            }
+            
         }
     }
 }

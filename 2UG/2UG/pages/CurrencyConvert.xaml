@@ -10,7 +10,7 @@
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
-    SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
+    SupportedOrientations="Portrait" Orientation="Portrait"
     mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"
     shell:SystemTray.IsVisible="True">
 
@@ -26,24 +26,22 @@
         </Grid.RowDefinitions>
 
         <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel Height="59" HorizontalAlignment="Left" Name="stackPanel" VerticalAlignment="Top" Width="480" Background="#FF004B4B" Orientation="Horizontal" Grid.ColumnSpan="2">
-            <Image Height="47" Stretch="Uniform" Width="199" Margin="5" Source="/2UG;component/images/2Ug.png" />
-        </StackPanel>
-        <StackPanel Height="46" HorizontalAlignment="Left" Margin="0,59,0,0" VerticalAlignment="Top" Width="480" Background="#FFAABA70" Grid.ColumnSpan="2">
-            <StackPanel Height="46" Width="480" Background="#FFAABA70" Orientation="Horizontal">
+        <StackPanel Height="46" HorizontalAlignment="Stretch" Margin="0,0
+                    ,0,0" VerticalAlignment="Top" Background="#FFAABA70" Grid.ColumnSpan="2">
+            <StackPanel Height="46" Background="#FFCACA4E" Orientation="Horizontal">
                 <Border HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="51" Background="#FF141414">
                     <TextBlock Text="2UG" Name="msgText" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Foreground="#E6FFFFFF" FontFamily="Segoe WP" />
                 </Border>
                 <Border HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="32" Background="#FF9A2020">
                     <Image Stretch="None" Source="/2UG;component/images/next.png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" />
                 </Border>
-                <Border Width="396" Background="#FFCACA4E">
+                <Border Background="#FFCACA4E">
                     <TextBlock FontFamily="Segoe WP" Foreground="#E6440808" Text="Currency Converter" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" FontSize="26" />
                 </Border>
             </StackPanel>
             </StackPanel>
-            <StackPanel Height="595" HorizontalAlignment="Left" Name="stackPanel1" VerticalAlignment="Top" Width="487" OpacityMask="#FF070303" Opacity="1" Orientation="Vertical" Margin="-7,101,0,0" Grid.ColumnSpan="2">
-                <Border Height="89" HorizontalAlignment="Left" VerticalAlignment="Top" Width="484" Opacity="0.5" BorderBrush="#FF6F4040">
+            <StackPanel HorizontalAlignment="Stretch" Name="stackPanel1" VerticalAlignment="Stretch" OpacityMask="#FF070303" Opacity="1" Orientation="Vertical" Margin="-7,46,0,0" Grid.ColumnSpan="2" Height="618">
+                <Border Height="89" HorizontalAlignment="Stretch" VerticalAlignment="Top" Opacity="0.5" BorderBrush="#FF6F4040">
                     <Border.Background>
                         <ImageBrush ImageSource="/2UG;component/images/currency_convert_bg.png" Stretch="UniformToFill" />
                     </Border.Background>
