@@ -69,6 +69,7 @@ namespace _2UG
                 NavigationService.Navigate(new Uri("/pages/TouristAttraction.xaml", UriKind.Relative));
 
             }else if (selectedPanel.Equals(DANGEROUS_SPOT)){
+                NavigationService.Navigate(new Uri("/pages/Spot.xaml", UriKind.Relative));
 
             }else if (selectedPanel.Equals(CURRENCY_CONVERTER)){
 
