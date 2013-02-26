@@ -1,0 +1,438 @@
+<tourist_attractions>
+  <tourist_attraction>
+	<name>MURCHION FALLS NATIONAL PARK</name>
+	<address>+(256) 312280450</address>
+	<district>masindi</district>
+	<activities>
+		<activity>Chimpanzee trekking</activity>
+		<activity>Mountain Hiking</activity>
+		<activity>Water Rafting</activity>
+		<activity>Jungle Walks</activity>
+		<activity>Community Tours</activity>
+		<activity>Sport Fishing</activity>
+		<activity>Game Viewing</activity>
+	</activities>
+  </tourist_attraction>
+
+    <tourist_attraction>
+	<name>BWINDI IMPENETRABLE NATIONAL PARK</name>
+	<address>   </address>
+	<district>kabale</district>
+	<activities>
+		<activity>Gorilla trekking</activity>
+		<activity>Water Rafting</activity>
+		<activity>Jungle Walks</activity>
+		<activity>Community Tours</activity>
+		<activity>Bird watching</activity>
+		<activity>Sport Fishing</activity>
+		<activity>Game Viewing</activity>
+		<activity>Mountain Biking</activity>
+	</activities>
+  </tourist_attraction>
+  
+  <tourist_attraction>
+	<name>QUEEN ELIZABETH NATIONAL PARK</name>
+	<address>+(256) 312280450</address>
+	<district>kasese</district>
+	<activities>
+		<activity>Chimpanzee trekking</activity>
+		<activity>Boat Riding</activity>
+		<activity>Water Rafting</activity>
+		<activity>Jungle Walks</activity>
+		<activity>Community Tours</activity>
+		<activity>Bird watching</activity>
+		<activity>Sport Fishing</activity>
+		<activity>Game Viewing</activity>
+	</activities>
+  </tourist_attraction>
+
+  <tourist_attraction>
+	<name>LAKE MBURO NATIONAL PARK</name>
+	<address>   </address>
+	<district>kiruhura</district>
+	<activities>
+		<activity>Wildlife safaris</activity>
+		<activity>Boat Riding</activity>
+		<activity>Horse Back safaris</activity>
+		<activity>Jungle Walks</activity>
+		<activity>Community Tours</activity>
+		<activity>Bird watching</activity>
+		<activity>Sport Fishing</activity>
+		<activity>Game Viewing</activity>
+	</activities>
+  </tourist_attraction>
+
+  <tourist_attraction>
+	<name>KIDEPO VALLEY NATIONAL PARK</name>
+	<address>   </address>
+	<district>karamoja</district>
+	<activities>
+		<activity>Mountain Hiking</activity>
+		<activity>Wildlife safaris</activity>
+		<activity>Jungle Walks</activity>
+		<activity>Community Tours</activity>
+		<activity>Bird watching</activity>
+		<activity>Game Viewing</activity>
+	</activities>
+  </tourist_attraction>  
+
+  <tourist_attraction>
+	<name>KIBALE NATIONAL PARK</name>
+	<address>   </address>
+	<district>kibale</district>
+	<activities>
+		<activity>Mountain Hiking</activity>
+		<activity>Wildlife safaris</activity>
+		<activity>Jungle Walks</activity>
+		<activity>Community Tours</activity>
+		<activity>Bird watching</activity>
+		<activity>Game Viewing</activity>
+	</activities>
+  </tourist_attraction>
+
+  <tourist_attraction>
+	<name>MPAHINGA NATIONAL PARK</name>
+	<address>   </address>
+	<district>kisoro</district>
+	<activities>
+		<activity>Mountain Hiking</activity>
+		<activity>Wildlife safaris</activity>
+		<activity>Jungle Walks</activity>
+		<activity>Community Tours</activity>
+		<activity>Bird watching</activity>
+		<activity>Game Viewing</activity>
+	</activities>
+  </tourist_attraction>
+
+  <tourist_attraction>
+	<name>MOUNT ELGON NATIONAL PARK</name>
+	<address>   </address>
+	<district>mbale</district>
+	<activities>
+		<activity>Mountain Hiking</activity>
+		<activity>Wildlife safaris</activity>
+		<activity>Jungle Walks</activity>
+		<activity>Community Tours</activity>
+		<activity>Bird watching</activity>
+		<activity>Game Viewing</activity>
+	</activities>
+  </tourist_attraction>   
+  
+  <tourist_attraction>
+	<name>SEMULIKI NATIONAL PARK</name>
+	<address>   </address>
+	<district>bundibugyo</district>
+	<activities>
+		<activity>Mountain Hiking</activity>
+		<activity>Wildlife safaris</activity>
+		<activity>Jungle Walks</activity>
+		<activity>Community Tours</activity>
+		<activity>Bird watching</activity>
+		<activity>Game Viewing</activity>
+	</activities>
+  </tourist_attraction>
+  
+  <tourist_attraction>
+	<name>KATONGA WILDLIFE RESERVE</name>
+	<address>   </address>
+	<district>kabarole</district>
+	<activities>
+		<activity>Mountain Hiking</activity>
+		<activity>Wildlife safaris</activity>
+		<activity>Jungle Walks</activity>
+		<activity>Community Tours</activity>
+		<activity>Bird watching</activity>
+		<activity>Game Viewing</activity>
+	</activities>
+  </tourist_attraction>
+  
+   <tourist_attraction>
+	<name>SSESE ISLANDS</name>
+	<address>   </address>
+	<district>kalangala</district>
+	<activities>
+		<activity>Mountain Hiking</activity>
+		<activity>Wildlife safaris</activity>
+		<activity>Jungle Walks</activity>
+		<activity>Community Tours</activity>
+		<activity>Bird watching</activity>
+		<activity>Game Viewing</activity>
+	</activities>
+  </tourist_attraction> 
+   
+  <tourist_attraction>
+	<name>NGAMBA ISLANDS SANCTUARY</name>
+	<address>Plot 1 Bank Close Entebbe Town P.O.Box 884 Entebbe UGANDA  +(256) 772221880, 414320662 info@ngambaisland.org</address>
+	<district>Kalangala </district>
+	<activities>
+		<activity>Chimpanzee trekking</activity>
+		<activity>Wildlife safaris</activity>
+		<activity>Jungle Walks</activity>
+		<activity>Community Tours</activity>
+		<activity>Boat Riding</activity>
+		<activity>Water Rafting</activity>
+	</activities>
+  </tourist_attraction> 
+  
+  <tourist_attraction>
+	<name>MABIRA FOREST RESERVE</name>
+	<address>P.O. Box 142 Lugazi. +(256) 712487173, 712955671, 71292051</address>
+	<district>Buikwe </district>
+	<activities>
+		<activity>Mountain Biking</activity>
+		<activity>Wildlife safaris</activity>
+		<activity>Jungle Walks</activity>
+		<activity>Community Tours</activity>
+		<activity>Bird watching</activity>
+	</activities>
+  </tourist_attraction> 
+  
+  <tourist_attraction>
+	<name>JINJA TOURS</name>
+	<address>   </address>
+	<district>Jinja </district>
+	<activities>
+		<activity>Mountain Hiking</activity>
+		<activity>Wildlife safaris</activity>
+		<activity>Jungle Walks</activity>
+		<activity>Community Tours</activity>
+		<activity>Bird watching</activity>
+		<activity>Game Viewing</activity>
+	</activities>
+  </tourist_attraction> 
+  
+  <tourist_attraction>
+	<name>BAHAI TEMPLE</name>
+	<address>Kikaya Hill, 4 miles from Kampala on the Gayaza Road +(256) 312262680,772954379</address>
+	<district>Kampala </district>
+	<activities>
+		<activity>Worship</activity>
+	</activities>
+  </tourist_attraction>
+
+  <tourist_attraction>
+	<name>BUDONGO FOREST RESERVE</name>
+	<address>+(256) 465420428  </address>
+	<district>Masindi</district>
+	<activities>
+		<activity>Chimpanzee trekking</activity>
+		<activity>Wildlife safaris</activity>
+		<activity>Jungle Walks</activity>
+		<activity>Community Tours</activity>
+		<activity>Bird watching</activity>
+		<activity>Camping</activity>
+	</activities>
+  </tourist_attraction> 
+
+  <tourist_attraction>
+	<name>LAKE BUNYONYI</name>
+	<address>Plot 1, Kazooba Road P.O Box 710, Kabale +(256) 793930006, 772409510 </address>
+	<district>kabale</district>
+	<activities>
+		<activity>Sport Fishing</activity>
+		<activity>Wildlife safaris</activity>
+		<activity>Jungle Walks</activity>
+		<activity>Community Tours</activity>
+		<activity>Bird watching</activity>
+		<activity>Boat Riding</activity>
+		<activity>Mountain Biking</activity>
+	</activities>
+  </tourist_attraction> 
+
+  <tourist_attraction>
+	<name>UGANDA WILDLIFE EDUCATION CENTER</name>
+	<address> P.O Box 369 Entebbe-Uganda, +(256) 414320520, 414322169  </address>
+	<district>wakiso</district>
+	<activities>
+		<activity>Eco and Cultural Tourism</activity>
+        <activity>Sport Fishing</activity>
+		<activity>Wildlife safaris</activity>
+		<activity>Jungle/Nature- Guided Walks</activity>
+		<activity>Community Tours</activity>
+		<activity>Bird watching</activity>
+		<activity>Game Viewing</activity>
+	</activities>
+  </tourist_attraction>  
+
+  <tourist_attraction>
+	<name>ZZIWA RHINO SANCTUARY</name>
+	<address>+(256) 775521035, 782819777 Email : info@ziwarhino.com</address>
+	<district>nakasongola</district>
+	<activities>
+		<activity>Camping</activity>
+		<activity>Jungle/Nature- Guided Walks</activity>
+		<activity>Community Tours</activity>
+		<activity>Bird watching</activity>
+		<activity>Rhino Trekking</activity>
+	</activities>
+  </tourist_attraction>
+
+  <tourist_attraction>
+	<name>KASUBI TOMBS</name>
+	<address>Kabaka Foundation, Bulange, P.O. Box 58.Kampala. +(256) 414273600 kabakafdtn@utlonline.co.ug</address>
+	<district>kampala</district>
+	<activities>
+		<activity>Worship</activity>
+	</activities>
+  </tourist_attraction>
+
+  <tourist_attraction>
+	<name>NAMUGONGO MATYRS SHRINE</name>
+	<address>P.O. Box 2055 Kampala Uganda +(256) 312274581, 712325196 info@ugandamartyrsshrine.org.ug</address>
+	<district>kampala</district>
+	<activities>
+		<activity>Worship</activity>
+	</activities>
+  </tourist_attraction>
+
+  <tourist_attraction>
+	<name>UGANDA MUSEUM</name>
+	<address>Kira Road, Plot No. 5 Kampala +(256) 414232707 www.ugandamuseums.ug</address>
+	<district>kampala</district>
+	<activities>
+		<activity>Eco and Cultural Tourism</activity>
+	</activities>
+  </tourist_attraction>
+
+  <tourist_attraction>
+	<name>NDERE CENTER</name>
+	<address>Plot 2872 Butuukirwa, Ntinda Kisaasi rd, P.O.Box 11353, Kampala, +(256) 414597704, +256 312 291936</address>
+	<district>kampala</district>
+	<activities>
+		<activity>Eco and Cultural Tourism</activity>
+	</activities>
+  </tourist_attraction>
+
+  <tourist_attraction>
+	<name>NOMMO GALLERY</name>
+	<address>Plot 4 Victoria Avenue Nakasero P.O.Box 6643, Kampala +(256) 414234475, 772502553 nommoart@africaonline.co.ug</address>
+	<district>kampala</district>
+	<activities>
+		<activity>Eco and Cultural Tourism</activity>
+	</activities>
+  </tourist_attraction>
+
+  <tourist_attraction>
+	<name>KAMPALA SNAKE PARK</name>
+	<address>Bweya, Entebbe road, +(256) 772479299, 772890330  </address>
+	<district>kampala</district>
+	<activities>
+		<activity>Reptile watching</activity>
+	</activities>
+  </tourist_attraction>
+
+  <tourist_attraction>
+	<name>MOUNT MOROTO NATIONAL PARK</name>
+	<address>+(256) 414267153, 772426368   </address>
+	<district>Moroto</district>
+	<activities>
+		<activity>Mountain Hiking</activity>
+		<activity>Wildlife safaris</activity>
+		<activity>Jungle Walks</activity>
+		<activity>Community Tours</activity>
+		<activity>Bird watching</activity>
+		<activity>Mountain Biking</activity>
+	</activities>
+  </tourist_attraction>
+
+  <tourist_attraction>
+	<name>SOURCE OF THE RIVER NILE</name>
+	<address>   </address>
+	<district>Jinja </district>
+	<activities>
+		<activity>Sport Fishing</activity>
+		<activity>Mountain Biking</activity>
+		<activity>Wildlife safaris</activity>
+		<activity>Jungle Walks</activity>
+		<activity>Community Tours</activity>
+		<activity>Bird watching</activity>
+		<activity>Boat Riding</activity>
+		<activity>Bungee Jumping</activity>
+	</activities>
+  </tourist_attraction>
+
+  <tourist_attraction>
+	<name>SSEZIBWA FALLS</name>
+	<address>+(256) 414663346 ssezibwafallsresort@yahoo.com www.ssezibwafalls.com</address>
+	<district>Mukono </district>
+	<activities>
+		<activity>Mountain Biking</activity>
+		<activity>Mountain Hiking</activity>
+		<activity>Wildlife safaris</activity>
+		<activity>Jungle Walks</activity>
+		<activity>Community Tours</activity>
+		<activity>Bird watching</activity>
+		<activity>Boat Riding</activity>
+		<activity>Camping</activity>
+	</activities>
+  </tourist_attraction>
+
+  <tourist_attraction>
+	<name>GADDAFI NATIONAL MOSQUE</name>
+	<address>old kampala</address>
+	<district>kampala</district>
+	<activities>
+		<activity>Worship</activity>
+	</activities>
+  </tourist_attraction>  
+  
+  <tourist_attraction>
+	<name>LUBIRI PALACE</name>
+	<address>Plot 25A Sir Apollo Kaggwa Road,+(256) 414271166, 702363988</address>
+	<district>kampala</district>
+	<activities>
+		<activity>Eco and Cultural Tourism</activity>
+		<activity>Community Tours</activity>
+		<activity>Worship</activity>
+	</activities>
+  </tourist_attraction>
+  
+  <tourist_attraction>
+	<name>BATWA CULTURAL HERITAGE</name>
+	<address> Plot 7, Kira Road, Kamwokoya, Kampala, info@thrbatwatrail.com</address>
+	<district>kampala</district>
+	<activities>
+		<activity>Eco and Cultural Tourism</activity>
+		<activity>Community Tours</activity>
+		<activity>Worship</activity>
+	</activities>
+  </tourist_attraction>
+  
+  <tourist_attraction>
+	<name>SIPI FALLS</name>
+	<address>P.O.Box 276, Kapchorwa, Uganda, +(256) 751796109, info@sipiriverlodge.com</address>
+	<district>kapchorwa</district>
+	<activities>
+		<activity>Mountain Biking</activity>
+		<activity>Wildlife safaris</activity>
+		<activity>Community Tours</activity>
+		<activity>Bird watching</activity>
+		<activity>Boat Riding</activity>
+		<activity>Sport fishing</activity>
+	</activities>
+  </tourist_attraction>
+ 
+   <tourist_attraction>
+	<name>IGONGO CULTURAL CENTRE</name>
+	<address>P.O. Box 512 Mbarara /488 Kampala, +(256) 392722828, 392722829</address>
+	<district>mbarara</district>
+	<activities>
+		<activity>Eco and Cultural Tourism</activity>
+		<activity>Community Tours</activity>
+	</activities>
+  </tourist_attraction>
+  
+  <tourist_attraction>
+	<name>AJAI GAME RESERVE</name>
+	<address>   </address>
+	<district>gulu</district>
+	<activities>
+		<activity>Worship</activity>
+	</activities>
+  </tourist_attraction>
+  
+
+  
+
+  
+</tourist_attractions>

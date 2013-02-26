@@ -22,7 +22,15 @@ namespace _2UG
 
         private void button4_Click(object sender, RoutedEventArgs e)
         {
+            if (searchBox.Text == "" || searchBox.Text == null)
+            {
+                return;
+            }
+            else
+            {
+                searchBox.Text = "yes";
 
+            }
         }
 
         private void BtnBackClick(object sender, EventArgs e)

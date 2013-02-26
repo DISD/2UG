@@ -14,7 +14,7 @@
     SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
     mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"
     shell:SystemTray.IsVisible="True">
-    
+
     <phone:PhoneApplicationPage.Resources>
         <local:TAttractions x:Key="AutoCompletions"/>
     </phone:PhoneApplicationPage.Resources>
@@ -38,24 +38,21 @@
                         <Image Height="61" Name="gorilla" Stretch="Fill" Width="64" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/2UG;component/images/sample.png" />
                         <TextBlock Text="Gorilla Tracking" Foreground="#FF86939F" FontFamily="Calibri" FontSize="15" TextWrapping="Wrap" FontWeight="Normal" HorizontalAlignment="Center" />
                     </StackPanel>
+                    <StackPanel Margin="0,0,5,0"></StackPanel>
                     <StackPanel Margin="0,0,5,0">
-                        <Image Height="61" Name="Rafting" Stretch="Fill" Width="64" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/2UG;component/images/sample.png" />
-                        <TextBlock Text="Rafting" Foreground="#FF86939F" FontFamily="Calibri" FontSize="15" TextWrapping="Wrap" FontWeight="Normal" HorizontalAlignment="Center" />
-                    </StackPanel>
-                    <StackPanel Margin="0,0,5,0">
-                        <Image Height="61" Name="Camping" Stretch="Fill" Width="64" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/2UG;component/images/sample.png" />
+                        <Image Height="61" Name="Camping" Stretch="Fill" Width="64" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/2UG;component/images/camping_img.png" />
                         <TextBlock Text="Camping" Foreground="#FF86939F" FontFamily="Calibri" FontSize="15" TextWrapping="Wrap" FontWeight="Normal" HorizontalAlignment="Center" />
                     </StackPanel>
                     <StackPanel Margin="0,0,5,0">
-                        <Image Height="61" Name="Biking" Stretch="Fill" Width="64" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/2UG;component/images/sample.png" />
+                        <Image Height="61" Name="Biking" Stretch="Fill" Width="64" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/2UG;component/images/bicking_img.png" />
                         <TextBlock Text="Biking" Foreground="#FF86939F" FontFamily="Calibri" FontSize="15" TextWrapping="Wrap" FontWeight="Normal" HorizontalAlignment="Center" />
                     </StackPanel>
                     <StackPanel Margin="0,0,5,0">
-                        <Image Height="61" Name="sunbathing" Stretch="Fill" Width="64" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/2UG;component/images/sample.png" />
+                        <Image Height="61" Name="sunbathing" Stretch="Fill" Width="64" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/2UG;component/images/bird_img.png" />
                         <TextBlock Text="Bird Watching" Foreground="#FF86939F" FontFamily="Calibri" FontSize="15" TextWrapping="Wrap" FontWeight="Normal" HorizontalAlignment="Center" />
                     </StackPanel>
                     <StackPanel Margin="0,0,5,0">
-                        <Image Height="61" Name="Fishing" Stretch="Fill" Width="64" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/2UG;component/images/sample.png" />
+                        <Image Height="61" Name="Fishing" Stretch="Fill" Width="64" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/2UG;component/images/fishing_img.png" />
                         <TextBlock Text="Fishing" Foreground="#FF86939F" FontFamily="Calibri" FontSize="15" TextWrapping="Wrap" FontWeight="Normal" HorizontalAlignment="Center" />
                     </StackPanel>
                 </StackPanel>

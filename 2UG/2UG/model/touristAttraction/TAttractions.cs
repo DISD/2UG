@@ -22,7 +22,28 @@ namespace _2UG.model.touristAttraction
         }
 
         public IEnumerable AutoCompletions = new List<string>(){
-            "fishing","camping", "gorilla tracking" , "go"
+            "fishing",
+            "camping", 
+            "gorilla tracking" , 
+            "Chimpanzee trekking",
+            "Wildlife safaris",
+            "Bird watching",
+            "Mountain Hiking",
+            "Launch Cruises",
+            "Water Rafting",
+            "Jungle Walks",
+            "Community Tours",
+            "Eco and Cultural Tourism",
+            "Sport Fishing",
+            "Rwenzori Mountaineering",
+            "Game Viewing",
+            "Boat Riding",
+            "Horse Back safaris",
+            "Mountain Biking",
+            "Worship",
+            "Camping",
+            "Rhino Trekking",
+            "Bungee Jumping"
         };
     }
 }

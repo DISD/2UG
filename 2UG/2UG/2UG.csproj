@@ -212,8 +212,12 @@
     <Content Include="database\transport\other.xml" />
     <Content Include="database\transport\specialHire.xml" />
     <Content Include="database\transport\tourTravel.xml" />
-    <Resource Include="images\Lubowa.PNG" />
+    <Resource Include="images\bicking_img.png" />
+    <Resource Include="images\bird_img.png" />
+    <Resource Include="images\camping_img.png" />
+    <Resource Include="images\fishing_img.png" />
     <Resource Include="images\burton.png" />
+    <Resource Include="images\Lubowa.PNG" />
     <Resource Include="images\sample.png" />
     <Resource Include="images\bg1_img.png" />
     <Resource Include="images\bg_img.png" />
