@@ -10,117 +10,57 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
-using System.Device.Location;
-using Microsoft.Phone.Controls.Maps;
-//using _2UG.model.Spot;
+using _2UG.model;
+using System.Xml.Linq;
+using Microsoft.Phone.Shell;
+using _2UG.pages;
+using _2UG.model.dangerousSpot;
 
-namespace _2UG
+namespace _2UG.pages
 {
-    /*public enum GoogleType
-    {
-        Street = 'm',
-        Hybrid = 'y',
-        Satellite = 's',
-        Physical = 't',
-        PhysicalHybrid = 'p',
-        StreetOverlay = 'h',
-        WaterOverlay = 'r',
-    }*/
     public partial class Spot : PhoneApplicationPage
     {
+        //string btnText;
+        string value;
+        private static XDocument loadSpotItemXML = XDocument.Load("database/spot/spot.xml");
+
         public Spot()
         {
             InitializeComponent();
-            getLocationDetails();
-            Map spotMap = new Map();
-            spotMap.CredentialsProvider = new ApplicationIdCredentialsProvider("Ag7dPWSfPX4rxbDj9FT0aPT_4gsUwpqgACBfzz_8ajJR7xhKms3AJzDraUiu95jq");
-
-            //  MapType = GoogleType.Street;
-
-            // UriFormat = @"http://mt{0}.google.com/vt/lyrs={1}&z={2}&x={3}&y={4}";
+            populateSpotListBox(loadSpotItemXML, spotList);
         }
 
-        //     public GoogleType MapType { get; set; }
-
-        /* public override Uri Geturi(int x, int y, int zoomLevel)
-         {
-             return new Uri(
-                 string.Format(UriFormat, (X % 2) + (2 * (Y % 2)),
-         (char)MapType, zoomLevel, AX, Y));
-         }*/
-
-        private void spot_details(object sender, RoutedEventArgs e)
+        private void populateSpotListBox(XDocument xmlFile, ListBox spotList)
         {
-            // ApplicationIdCredentialsProvider = "";
-
-        }
-
-        static void PlaceText(Map map, string text, LocationRect location)
-        {
-            TextBlock textBlock = new TextBlock();
-            textBlock.DataContext = text;
-
-            map.Children.Add(textBlock);
-        }
-
-        //private IEnumerable<SpotModel> retrieveData()
-        //{
-         //   IEnumerable<SpotModel> data = null;
-         //   SpotModel spot = new SpotModel();
-         //   spot.name = "";
-         //   spot.desc = "";
-            /* data = new SpotModel()
-             {
-                 name = "",
-                 desc = ""
-             };*/
-       //     return data;
-    //    }
-
-        private void position1(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        public void getLocationDetails()
-        {
-            GeoCoordinateWatcher coordinateWatcher;
-            coordinateWatcher = new GeoCoordinateWatcher(GeoPositionAccuracy.High)
+            var retrievedData = retrieveXMLData(xmlFile, spotList);
+            if (retrievedData.Any() == false)
             {
-                MovementThreshold = 20
-            };
-            coordinateWatcher.StatusChanged += this.watcher_StatusChanged;
-            coordinateWatcher.PositionChanged += this.watcher_PositionChanged;
-            coordinateWatcher.Start();
-            textBlock1.Text = coordinateWatcher.Position.Location.ToString();
-
-        }
-
-        private void watcher_StatusChanged(Object sender, GeoPositionStatusChangedEventArgs e)
-        {
-            switch (e.Status)
-            {
-                case GeoPositionStatus.Disabled:
-                    break;
-
-                case GeoPositionStatus.NoData:
-                    break;
+                SpotModel spotModel = new SpotModel();
+                spotModel.name = "Nothing found ";
+                retrievedData = new[] { spotModel };
             }
+            spotList.ItemsSource = retrievedData;
         }
 
-        private void watcher_PositionChanged(Object sender, GeoPositionChangedEventArgs<GeoCoordinate> e)
+        private IEnumerable<SpotModel> retrieveXMLData(XDocument xmlFile, ListBox spotList)
         {
-            var epl = e.Position.Location;
-            epl.Latitude.ToString("0.000");
-            epl.Longitude.ToString("0.000");
-            epl.Altitude.ToString();
-            epl.HorizontalAccuracy.ToString();
-            epl.VerticalAccuracy.ToString();
-            epl.Course.ToString();
-            epl.Speed.ToString();
-            e.Position.Timestamp.LocalDateTime.ToString();
+             IEnumerable<SpotModel> data = null;
+             data = from cItem in loadSpotItemXML.Descendants("spot")
+                    select new SpotModel()
+                    {
+                        name = (string)cItem.Element("name")
+                        
+                    };
+            return data;
         }
-
-
+        
+        private void spot_click(object sender, RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+            value = button.Content.ToString();
+            SpotDetailBox detailBox = new SpotDetailBox(value);
+            detailBox.Show();
+        }
+        }
     }
-}
+    

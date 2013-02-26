@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="model\call\CallModel.cs" />
+    <Compile Include="model\dangerousSpot\SpotModel.cs" />
     <Compile Include="model\hotel\HotelModel.cs" />
     <Compile Include="model\touristAttraction\TAttractions.cs" />
     <Compile Include="pages\About_ug.xaml.cs">
@@ -81,6 +82,12 @@
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Spot.xaml.cs">
+      <DependentUpon>Spot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pages\SpotDetailBox.xaml.cs">
+      <DependentUpon>SpotDetailBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="pages\TouristAttraction.xaml.cs">
       <DependentUpon>TouristAttraction.xaml</DependentUpon>
@@ -116,9 +123,6 @@
       <DependentUpon>WelcomeForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="pages\Spot.xaml.cs">
-      <DependentUpon>Spot.xaml</DependentUpon>
-    </Compile>
     <Compile Include="pages\2UgHistory.xaml.cs">
       <DependentUpon>2UgHistory.xaml</DependentUpon>
     </Compile>
@@ -133,6 +137,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="pages\Animals.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\Spot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\SpotDetailBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -168,10 +180,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="pages\Spot.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="pages\2UgHistory.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -198,9 +206,14 @@
     <Content Include="database\hotel\restaurant.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="database\spot\spot.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="database\transport\other.xml" />
     <Content Include="database\transport\specialHire.xml" />
     <Content Include="database\transport\tourTravel.xml" />
+    <Resource Include="images\Lubowa.PNG" />
+    <Resource Include="images\burton.png" />
     <Resource Include="images\sample.png" />
     <Resource Include="images\bg1_img.png" />
     <Resource Include="images\bg_img.png" />

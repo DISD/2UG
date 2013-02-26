@@ -1,13 +1,11 @@
 ﻿<phone:PhoneApplicationPage 
-    x:Class="_2UG.Spot"
+    x:Class="_2UG.pages.Spot"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:Microsoft_Phone_Controls_Maps="clr-namespace:Microsoft.Phone.Controls.Maps;assembly=Microsoft.Phone.Controls.Maps" 
-    xmlns:MSPCMCore="clr-namespace:Microsoft.Phone.Controls.Maps.Core;assembly=Microsoft.Phone.Controls.Maps"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
@@ -16,28 +14,64 @@
     shell:SystemTray.IsVisible="True">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot" Background="#FFF3F6F9">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="768"/>
+            <RowDefinition Height="0*"/>
         </Grid.RowDefinitions>
 
         <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28" Orientation="Horizontal">
-            <Image Height="47" Stretch="Uniform" Width="199" Margin="5" Source="/2UG;component/images/2Ug.png" />
-            <TextBlock Height="30" Name="textBlock1" Text="TextBlock" />
+        <StackPanel x:Name="TitlePanel" Margin="12,17,0,706" Orientation="Horizontal">
+            <Border HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="51" Background="#FF9A2020">
+                <TextBlock Text="2UG" Name="msgText" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Foreground="#E6FFFFFF" FontFamily="Segoe WP" />
+            </Border>
+            <Border HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="32" Background="#FF141414">
+                <Image Stretch="Fill" Source="/2UG;component/images/next.png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" />
+            </Border>
+            <Border Background="#FFCACA4E">
+                <TextBlock FontFamily="Segoe WP" Foreground="#E6440808" Text="Dangerous Spot(s)" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" FontSize="26" Width="379" />
+            </Border>
+        </StackPanel>
+        
+        <!--<StackPanel Height="643" HorizontalAlignment="Left" Margin="0,125,0,0" Name="stackPanel1" VerticalAlignment="Top" Width="480" Orientation="Vertical">
+            <ListBox Height="412" Name="listBox1" Width="460" HorizontalContentAlignment="Right">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Height="100" Name="stackPanel2" Width="200" HorizontalAlignment="Left">
+                            <TextBlock Height="30" Name="textBlock1" Text="Am a winner" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            
+        </StackPanel>-->
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Height="598" Margin="0,68,0,0">
+            <Border Height="89" HorizontalAlignment="Stretch" VerticalAlignment="Top" Opacity="0.5" BorderBrush="#FF6F4040">
+                <Border.Background>
+                    <ImageBrush ImageSource="/2UG;component/images/dangerous_icon_img.png" Stretch="UniformToFill" />
+                </Border.Background>
+            </Border>
+            <ListBox Height="544" Width="479" Name="spotList" ScrollViewer.VerticalScrollBarVisibility="Visible" >
+                     <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="455" Orientation="Vertical">
+                            <StackPanel  Width="460" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal" Margin="10,0,0,2" Height="81">
+                        <Button Content="{Binding name}" Height="72" Name="spot_btn" Width="437" Foreground="#FF9D2E2E" Margin="10,0,0,0" BorderThickness="0" Click="spot_click" />
+                        <!--<TextBlock Height="50" Name="spot_Name" Text="{Binding name}" Foreground="#FF9D2E2E" Width="203" TextWrapping="Wrap" FontSize="40" HorizontalAlignment="Stretch" Margin="10,0" />
+ -->
+                            </StackPanel>
+                    <!--<Border BorderBrush="Silver" BorderThickness="0,0,0,1" Height="7" Name="border1" Width="456" HorizontalAlignment="Left" Margin="0,3,0,0" /> -->
+                               </StackPanel>
+                </DataTemplate>
+                </ListBox.ItemTemplate> 
+            </ListBox>
+            
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Microsoft_Phone_Controls_Maps:Map Height="687" HorizontalAlignment="Left" Name="dagerous_spot" VerticalAlignment="Top" Width="456" Margin="0,-27,0,0" ZoomLevel="7.8"
-                Center="1.6097, 32.3331" GotFocus="spot_details" >
-                <Microsoft_Phone_Controls_Maps:Pushpin Location="1.6097, 32.3331" Height="17" Width="14" Background="#FFF80606" BorderThickness="1" GotFocus="position1" Opacity="0.7" />
-            </Microsoft_Phone_Controls_Maps:Map>
-
-        </Grid>
+        
     </Grid>
-
+ 
     <!--Sample code showing usage of ApplicationBar-->
     <!--<phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
