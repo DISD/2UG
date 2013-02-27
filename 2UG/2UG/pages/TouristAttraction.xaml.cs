@@ -10,11 +10,14 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
+using _2UG.pages;
+
 
 namespace _2UG
 {
     public partial class Attraction : PhoneApplicationPage
     {
+        
         public Attraction()
         {
             InitializeComponent();
@@ -28,14 +31,19 @@ namespace _2UG
             }
             else
             {
-                searchBox.Text = "yes";
+              //  searchBox.Text = "yes";
+                //Activity activity = new Activity();
+                NavigationService.Navigate(new Uri("/pages/Activity.xaml", UriKind.Relative));
 
             }
         }
 
+        
         private void BtnBackClick(object sender, EventArgs e)
         {
             NavigationService.Navigate(new Uri("/pages/2UG.xaml", UriKind.Relative));
         }
+
+
     }
 }

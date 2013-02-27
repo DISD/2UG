@@ -73,9 +73,13 @@
     <Compile Include="model\call\CallModel.cs" />
     <Compile Include="model\dangerousSpot\SpotModel.cs" />
     <Compile Include="model\hotel\HotelModel.cs" />
+    <Compile Include="model\touristAttraction\ActivityModel.cs" />
     <Compile Include="model\touristAttraction\TAttractions.cs" />
     <Compile Include="pages\About_ug.xaml.cs">
       <DependentUpon>About_ug.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Activity.xaml.cs">
+      <DependentUpon>Activity.xaml</DependentUpon>
     </Compile>
     <Compile Include="pages\Animals.xaml.cs">
       <DependentUpon>Animals.xaml</DependentUpon>
@@ -133,6 +137,10 @@
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
     <Page Include="pages\About_ug.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\Activity.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -203,12 +211,11 @@
     <Content Include="database\hotel\apartment.xml" />
     <Content Include="database\hotel\club.xml" />
     <Content Include="database\hotel\hotel.xml" />
-    <Content Include="database\hotel\restaurant.xml">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="database\hotel\restaurant.xml" />
     <Content Include="database\spot\spot.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="database\tourist\activities.xml" />
     <Content Include="database\transport\other.xml" />
     <Content Include="database\transport\specialHire.xml" />
     <Content Include="database\transport\tourTravel.xml" />
@@ -252,7 +259,6 @@
     <Resource Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="database\tourist\" />
     <Folder Include="music\" />
   </ItemGroup>
   <ItemGroup>

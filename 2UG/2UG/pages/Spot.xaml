@@ -10,7 +10,7 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
-    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"
     shell:SystemTray.IsVisible="True">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
@@ -21,15 +21,15 @@
         </Grid.RowDefinitions>
 
         <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel x:Name="TitlePanel" Margin="12,17,0,706" Orientation="Horizontal">
-            <Border HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="51" Background="#FF9A2020">
+        <StackPanel x:Name="TitlePanel" Margin="0,0,0,724" Orientation="Horizontal">
+            <Border HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="51" Background="#FF9A2020" >
                 <TextBlock Text="2UG" Name="msgText" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Foreground="#E6FFFFFF" FontFamily="Segoe WP" />
             </Border>
             <Border HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="32" Background="#FF141414">
                 <Image Stretch="Fill" Source="/2UG;component/images/next.png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" />
             </Border>
-            <Border Background="#FFCACA4E">
-                <TextBlock FontFamily="Segoe WP" Foreground="#E6440808" Text="Dangerous Spot(s)" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" FontSize="26" Width="379" />
+            <Border Background="#FFCACA4E" Height="46" Width="400" Margin="0">
+                <TextBlock FontFamily="Segoe WP" Foreground="#E6440808" Text="Dangerous Spot(s)" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0" FontSize="26" Width="226" Height="44" />
             </Border>
         </StackPanel>
         
@@ -45,10 +45,10 @@
             </ListBox>
             
         </StackPanel>-->
-        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Height="598" Margin="0,68,0,0">
-            <Border Height="89" HorizontalAlignment="Stretch" VerticalAlignment="Top" Opacity="0.5" BorderBrush="#FF6F4040">
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Height="598" Margin="0,44,0,0">
+            <Border Height="89" Opacity="0.5" BorderBrush="#FF6F4040" Margin="0" Width="481">
                 <Border.Background>
-                    <ImageBrush ImageSource="/2UG;component/images/dangerous_icon_img.png" Stretch="UniformToFill" />
+                    <ImageBrush ImageSource="/2UG;component/images/dangerous_icon_img.png" Stretch="UniformToFill" AlignmentY="Center" />
                 </Border.Background>
             </Border>
             <ListBox Height="544" Width="479" Name="spotList" ScrollViewer.VerticalScrollBarVisibility="Visible" >
@@ -71,7 +71,12 @@
         <!--ContentPanel - place additional content here-->
         
     </Grid>
- 
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar BackgroundColor="#E3E3E3" ForegroundColor="Black" IsVisible="True" Opacity="1">
+            <shell:ApplicationBarIconButton IconUri="/images/appbar.back.rest.png" Text="Back" Click="BtnBackClick" />
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
     <!--Sample code showing usage of ApplicationBar-->
     <!--<phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">

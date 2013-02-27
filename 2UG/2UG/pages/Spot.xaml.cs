@@ -61,6 +61,11 @@ namespace _2UG.pages
             SpotDetailBox detailBox = new SpotDetailBox(value);
             detailBox.Show();
         }
+
+        private void BtnBackClick(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/pages/2UG.xaml", UriKind.Relative));
+        }
         }
     }
     
