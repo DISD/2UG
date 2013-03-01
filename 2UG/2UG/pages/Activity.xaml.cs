@@ -12,38 +12,30 @@ using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 using System.Xml.Linq;
 using _2UG.model.touristAttraction;
-
+using System.Windows.Navigation;
+using Microsoft.Phone.Shell;
 namespace _2UG.pages
 {
     public partial class Activity : PhoneApplicationPage
     {
-        private static XDocument loadActivityItemXML = XDocument.Load("database/tourist/activities.xml");
+
         public Activity()
         {
             InitializeComponent();
-            populateActivityListBox(loadActivityItemXML);
+
+
         }
-        private void populateActivityListBox(XDocument xmlFile)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            var retrievedData = retrieveXMLData(xmlFile, activityList);
-            if (retrievedData.Any() == false)
-            {
-                ActivityModel activityModel = new ActivityModel();
-                activityModel.activity = "Nothing found ";
-                retrievedData = new[] { activityModel };
-            }
-            activityList.ItemsSource = retrievedData;
+            List<ActivityModel> dPage = (List<ActivityModel>)PhoneApplicationService.Current.State["Act"];
+            activityList.ItemsSource = dPage;
         }
 
-        private IEnumerable<ActivityModel> retrieveXMLData(XDocument xmlFile, ListBox activityList)
+        private void BtnBackClick(object sender, EventArgs e)
         {
-            IEnumerable<ActivityModel> data = null;
-            data = from aItem in loadActivityItemXML.Descendants("activity")
-                   select new ActivityModel()
-                   {
-                       activity = (string)aItem.Element("activity")
-                   };
-            return data;
+            NavigationService.Navigate(new Uri("/pages/TouristAttraction.xaml", UriKind.Relative));
         }
+
+
     }
 }

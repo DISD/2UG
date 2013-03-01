@@ -43,7 +43,8 @@ namespace _2UG.model.touristAttraction
             "Worship",
             "Camping",
             "Rhino Trekking",
-            "Bungee Jumping"
+            "Bungee Jumping",
+            "Biking"
         };
     }
 }

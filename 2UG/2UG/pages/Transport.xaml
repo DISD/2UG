@@ -55,8 +55,8 @@
                                                     <TextBlock Name="Special_Hire_Address" Text="{Binding Address}" Width="447" Foreground="Black"  TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0"  FontSize="22" />
                                                 </StackPanel>
                                                 <StackPanel Width="454" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,3,0,0" >
-                                            <Border Background="#FF1E98B0" HorizontalAlignment="Left" VerticalAlignment="Center">
-                                                        <Button Tag="{Binding Telphone}" Click="callEventHandler" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0" Content="Call ?" Padding="0" Foreground="White" FontFamily="Calibri" FontSize="18" BorderThickness="1" FontWeight="Bold" BorderBrush="Transparent" />
+                                                <Border Background="#FF1E98B0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                                <Button Tag="{Binding Telphone}" Click="callEventHandler" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0" Content="Call ?" Padding="0" Foreground="White" FontFamily="Calibri" FontSize="18" BorderThickness="1" FontWeight="Bold" BorderBrush="Transparent" />
                                             </Border>
                                             <TextBlock Name="special_Hire_Tel" Text="{Binding Telphone}" Foreground="#FF1E4BB4" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0" FontSize="22"/>
                                                 </StackPanel>

@@ -215,7 +215,7 @@
     <Content Include="database\spot\spot.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="database\tourist\activities.xml" />
+    <Content Include="database\tourist\touristAttraction.xml" />
     <Content Include="database\transport\other.xml" />
     <Content Include="database\transport\specialHire.xml" />
     <Content Include="database\transport\tourTravel.xml" />

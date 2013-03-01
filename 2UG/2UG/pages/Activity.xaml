@@ -10,7 +10,7 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
-    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"
     shell:SystemTray.IsVisible="True" xmlns:my="clr-namespace:System;assembly=mscorlib">
     <phone:PhoneApplicationPage.Resources>
         <my:String x:Key="Text1">TextBlock</my:String>
@@ -44,43 +44,28 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,0,0">
-            <StackPanel Height="660" HorizontalAlignment="Left" Margin="6,6,0,0" Name="stackPanel1" VerticalAlignment="Top" Width="456">
-                <StackPanel Height="113" Name="stackPanel2" Width="453" Orientation="Horizontal">
-                    <Image Height="111" Name="image1" Stretch="Fill" Width="109" />
-                    <Image Height="110" Name="image2" Stretch="Fill" Width="114" />
-                    <Image Height="113" Name="image3" Stretch="Fill" Width="119" />
-                    <Image Height="111" Name="image4" Stretch="Fill" Width="111" />
-                </StackPanel>
-                <StackPanel Height="552" Name="stackPanel3" Width="459">
-                    <ListBox Height="544" Width="452" Name="activityList" ScrollViewer.VerticalScrollBarVisibility="Visible" >
-                       <ListBox.ItemTemplate>
-                            <DataTemplate>
-                        <StackPanel  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="455" Orientation="Vertical">
-                                    <StackPanel  Width="450" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal" Margin="0,0,0,2" Height="81">
-                                <!--<TextBlock Height="50" Name="spot_Name" Text="{Binding name}" Foreground="#FF9D2E2E" Width="203" TextWrapping="Wrap" FontSize="40" HorizontalAlignment="Stretch" Margin="10,0" />
- -->
-                                <TextBlock Height="40" Name="textBlock1" Text="{Binding activity}" FontSize="26" Width="354" />
-                            </StackPanel>
-                                    <!--<Border BorderBrush="Silver" BorderThickness="0,0,0,1" Height="7" Name="border1" Width="456" HorizontalAlignment="Left" Margin="0,3,0,0" /> -->
-                                </StackPanel>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate> 
-                    </ListBox>
-                </StackPanel>
-            </StackPanel>
+            <ListBox  Height="543" Name="activityList" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="8,6,8,90"  HorizontalAlignment="Left" VerticalAlignment="Top">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel  Width="450" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Vertical" Margin="0">
+                            <TextBlock  Name="nameTxtBox" Text="{Binding name}" FontSize="23" VerticalAlignment="Top" Margin="5" Foreground="#FF484646" HorizontalAlignment="Left" FontWeight="Bold" FontFamily="Portable User Interface" />
+                            <TextBlock  Name="addressTxtBox" Text="{Binding address}" FontSize="26"  VerticalAlignment="Top" Foreground="#FF484646" HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" />
+                            <TextBlock  Name="districtTxtBox" Text="{Binding district}" FontSize="26" Width="354" VerticalAlignment="Top" Margin="5" Foreground="#FF484646" HorizontalAlignment="Left" />
+                            <Border Background="Black" HorizontalAlignment="Left" VerticalAlignment="Top" BorderThickness="0,0,0,1" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+                <ListBox.BorderBrush>
+                    <SolidColorBrush />
+                </ListBox.BorderBrush>
+            </ListBox>
         </Grid>
     </Grid>
  
-    <!--Sample code showing usage of ApplicationBar-->
-    <!--<phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
-            <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
-                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
-            </shell:ApplicationBar.MenuItems>
+     <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar BackgroundColor="#E3E3E3" ForegroundColor="Black" IsVisible="True" Opacity="1">
+            <shell:ApplicationBarIconButton IconUri="/images/appbar.back.rest.png" Text="Back" Click="BtnBackClick"/>
         </shell:ApplicationBar>
-    </phone:PhoneApplicationPage.ApplicationBar>-->
+    </phone:PhoneApplicationPage.ApplicationBar>
 
 </phone:PhoneApplicationPage>
