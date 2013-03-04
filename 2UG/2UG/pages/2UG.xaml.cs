@@ -52,6 +52,11 @@ namespace _2UG
             NavigationService.Navigate(new Uri("/pages/About_ug.xaml", UriKind.Relative));
         }
 
+        private void about_2Ug_click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/pages/About_2ug.xaml", UriKind.Relative));
+        }
+
         private void Border_MouseEnter(object sender, MouseEventArgs e)
         {
             String selectedPanel = (string)((StackPanel)sender).Tag;

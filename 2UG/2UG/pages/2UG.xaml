@@ -99,7 +99,7 @@
 
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar BackgroundColor="#E3E3E3" ForegroundColor="#8995A1" IsVisible="True">
-            <shell:ApplicationBarIconButton IconUri="/images/2ug_icon.png" IsEnabled="true" Text="About" />
+            <shell:ApplicationBarIconButton IconUri="/images/2ug_icon.png" IsEnabled="true" Text="About" Click="about_2Ug_click" />
             <shell:ApplicationBarIconButton IconUri="/images/about_icon.png" IsEnabled="true" Text="Ug History" Click="about_Ug_click"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>

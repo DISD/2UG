@@ -75,6 +75,9 @@
     <Compile Include="model\hotel\HotelModel.cs" />
     <Compile Include="model\touristAttraction\ActivityModel.cs" />
     <Compile Include="model\touristAttraction\TAttractions.cs" />
+    <Compile Include="pages\About_2ug.xaml.cs">
+      <DependentUpon>About_2ug.xaml</DependentUpon>
+    </Compile>
     <Compile Include="pages\About_ug.xaml.cs">
       <DependentUpon>About_ug.xaml</DependentUpon>
     </Compile>
@@ -136,6 +139,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="pages\About_2ug.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="pages\About_ug.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -208,6 +215,7 @@
   <ItemGroup>
     <Content Include="background.png" />
     <Content Include="ApplicationIcon.png" />
+    <Content Include="database\AboutUg.xml" />
     <Content Include="database\hotel\apartment.xml" />
     <Content Include="database\hotel\club.xml" />
     <Content Include="database\hotel\hotel.xml" />
@@ -219,6 +227,8 @@
     <Content Include="database\transport\other.xml" />
     <Content Include="database\transport\specialHire.xml" />
     <Content Include="database\transport\tourTravel.xml" />
+    <Content Include="music\Emali.wav" />
+    <Resource Include="images\gorilla-uganda.jpg" />
     <Resource Include="images\bicking_img.png" />
     <Resource Include="images\bird_img.png" />
     <Resource Include="images\camping_img.png" />
@@ -258,9 +268,7 @@
     <Resource Include="images\tourTravel.png" />
     <Resource Include="SplashScreenImage.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="music\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>

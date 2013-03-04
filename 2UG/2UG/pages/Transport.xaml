@@ -41,7 +41,7 @@
                     <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,10,0,0">
                         <!--Special Hire Items-->
                         <ListBox Height="543" Width="456" Name="specialHireList" HorizontalAlignment="Left" VerticalAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Visible">
-                           <ListBox.ItemTemplate>
+                          <ListBox.ItemTemplate>
                                 <DataTemplate>
                                     <StackPanel  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="455" Orientation="Vertical">
                                         <StackPanel  Width="455" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal" Margin="0,0,0,2">

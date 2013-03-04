@@ -6,6 +6,8 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
@@ -14,31 +16,52 @@
     shell:SystemTray.IsVisible="True">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot" Background="#FFF3F6F9" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="456*" />
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock x:Name="ApplicationTitle" Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock x:Name="PageTitle" Text="About Uganda" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
-        </StackPanel>
-
-        <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0"></Grid>
+        <StackPanel Height="46" HorizontalAlignment="Stretch" Margin="0,0
+                    ,0,0" VerticalAlignment="Top" Background="#FFAABA70" Grid.ColumnSpan="2">
+            <StackPanel Height="46" Background="#FFCACA4E" Orientation="Horizontal">
+                <Border HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="51" Background="#FF141414">
+                    <TextBlock Text="2UG" Name="msgText" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Foreground="#E6FFFFFF" FontFamily="Segoe WP" />
+                </Border>
+                <Border HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="32" Background="#FF9A2020">
+                    <Image Stretch="None" Source="/2UG;component/images/next.png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" />
+                </Border>
+                <Border Background="#FFCACA4E">
+                    <TextBlock FontFamily="Segoe WP" Foreground="#E6440808" Text="About Uganda" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" FontSize="26" />
+                </Border>
+            </StackPanel>
+        </StackPanel>        
+        <ListBox Grid.Column="1" Grid.Row="1" Height="722" HorizontalAlignment="Left"
+                 Name="aboutUg" VerticalAlignment="Top" Width="480">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Grid.Column="1" Grid.Row="1" Height="287" HorizontalAlignment="Left" Margin="6,0,0,0"
+            Name="stackPanel1" VerticalAlignment="Top" Width="462">
+                <StackPanel Height="276" Name="stackPanel2" Width="454">
+                    <TextBlock Height="274" Name="textBlock2" Text="{Binding AboutUgSec}" Width="443" Foreground="White" TextWrapping="Wrap" DataContext="{Binding}" FontWeight="Bold" />
+                </StackPanel>
+            </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            <ListBox.Background>
+                <ImageBrush ImageSource="/2UG;component/images/gorilla-uganda.jpg" />
+            </ListBox.Background>
+        </ListBox>
     </Grid>
- 
-    <!--Sample code showing usage of ApplicationBar-->
+
     <!--<phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
-            <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
-                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
-            </shell:ApplicationBar.MenuItems>
+        <shell:ApplicationBar BackgroundColor="#E3E3E3" ForegroundColor="Black" IsVisible="True" Opacity="1">
+            <shell:ApplicationBarIconButton IconUri="/images/appbar.back.rest.png" Text="Back" Click="BtnBackClick"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>-->
 

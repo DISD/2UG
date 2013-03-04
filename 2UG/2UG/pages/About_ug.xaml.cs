@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
-using System.Windows.Shapes;
+using System.Xml.Linq;
 using Microsoft.Phone.Controls;
 
 namespace _2UG
@@ -19,13 +12,36 @@ namespace _2UG
         {
             InitializeComponent();
             MediaElement backgroundSong = new MediaElement();
-            backgroundSong.Source = new Uri("/music/kadodi.wma", UriKind.Relative);
+            backgroundSong.Source = new Uri("/music/Emali.wav", UriKind.Relative);
             backgroundSong.AutoPlay = true;
             backgroundSong.Position = new TimeSpan(0);
             LayoutRoot.Children.Add(backgroundSong);
             backgroundSong.Volume = 1;
             backgroundSong.Play();
 
+            XDocument loadCategoryData = XDocument.Load("database/AboutUg.xml");
+            var categoryData = from query in loadCategoryData.Descendants("info")
+                               select new Aboutuginfo
+                               {
+                                   AboutUgSec = (string)query.Element("sec"),
+                                  
+                               };
+            aboutUg.ItemsSource = categoryData;
+
         }
+
+        public class Aboutuginfo
+        {
+            string aboutUgSec;
+
+            public string AboutUgSec
+            {
+                get { return aboutUgSec; }
+                set { aboutUgSec = value; }
+
+            }
+
+        }
+
     }
 }
