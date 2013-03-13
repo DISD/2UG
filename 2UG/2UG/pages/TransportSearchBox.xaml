@@ -24,7 +24,7 @@
                     <RadioButton Content="Name" Name="tnameRadioBtn" HorizontalAlignment="Right" VerticalAlignment="Top" BorderBrush="#BFF2F2F2" Foreground="#FFCDE8CD" VerticalContentAlignment="Top" Margin="0" Width="140" IsChecked="True" HorizontalContentAlignment="Left" FontFamily="Calibri" FontSize="26" />
                 </StackPanel>
             </StackPanel>
-            <TextBox Name="t_SearchText" Text="" HorizontalAlignment="Center" VerticalAlignment="Top" Width="399" Foreground="Black" FontSize="26" Background="White" BorderBrush="#BF62726E" Height="88" FontFamily="Calibri" />
+            <TextBox Name="t_SearchText" Text="" HorizontalAlignment="Center" VerticalAlignment="Top" Width="399" Foreground="Black" FontSize="26" Background="White" BorderBrush="#BF62726E" Height="88" FontFamily="Calibri" KeyDown="t_SearchText_KeyDown" />
             <StackPanel Name="stackPanel3" VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Horizontal" Width="362" Height="83">
                 <Button Content="Search" Height="85" Name="button1" Width="112" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" BorderBrush="#FF647264" FontSize="26" Click="button1_Click" Background="#0051A751" Padding="0" Margin="50,0,0,0" FontFamily="Calibri" BorderThickness="1"></Button>
                 <Button Content="Close" Height="86" Name="closeBtn" Width="108" HorizontalAlignment="Right" VerticalAlignment="Top" Padding="0" Margin="50,0,0,0" BorderBrush="#FF4B4B4B" Foreground="#FFC41212" Click="button2_Click" FontSize="26" Background="#0051A751" FontFamily="Calibri" BorderThickness="1" />

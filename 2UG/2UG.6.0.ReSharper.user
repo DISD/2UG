@@ -1,65 +1,52 @@
 <Configuration>
   <RecentFiles>
     <RecentFiles>
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TransportSearchBox.xaml.cs" caret="627" fromTop="17" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TransportSearchBox.xaml" caret="1" fromTop="0" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Animals.xaml" caret="0" fromTop="0" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:CurrencyConvert.xaml" caret="1258" fromTop="22" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:Properties/f:AssemblyInfo.cs" caret="692" fromTop="14" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:Properties/f:WMAppManifest.xml" caret="0" fromTop="0" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:database/d:transport/f:specialHire.xml" caret="4" fromTop="0" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Hotel.xaml" caret="2474" fromTop="8" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Hotel.xaml.cs" caret="1448" fromTop="0" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Transport.xaml" caret="3940" fromTop="26" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TouristAttraction.xaml.cs" caret="463" fromTop="0" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Activity.xaml.cs" caret="460" fromTop="0" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:Animals.xaml.cs" caret="0" fromTop="0" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:2UgHistory.xaml.cs" caret="0" fromTop="0" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:Properties/f:AppManifest.xml" caret="0" fromTop="0" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:App.xaml" caret="834" fromTop="18" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:database/f:AboutUg.xml" caret="1296" fromTop="26" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:PivotPage1.xaml.cs" caret="1405" fromTop="22" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:App.xaml.cs" caret="3002" fromTop="75" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:2UG.xaml.cs" caret="2222" fromTop="14" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml" caret="0" fromTop="0" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:2UG.xaml" caret="0" fromTop="0" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_2ug.xaml" caret="3292" fromTop="16" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_2ug.xaml.cs" caret="514" fromTop="17" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml.cs" caret="474" fromTop="15" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:WelcomeForm.xaml" caret="0" fromTop="0" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:WelcomeForm.xaml.cs" caret="1415" fromTop="31" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:CurrencyConvert.xaml" caret="0" fromTop="0" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:CurrencyConvert.xaml.cs" caret="4270" fromTop="25" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:2UG.xaml.cs" caret="2180" fromTop="8" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:database/f:AboutUg.xml" caret="0" fromTop="0" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:PivotPage1.xaml.cs" caret="11559" fromTop="0" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:HotelSearchBox.xaml" caret="0" fromTop="0" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:HotelSearchBox.xaml.cs" caret="632" fromTop="0" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TouristAttraction.xaml.cs" caret="2540" fromTop="14" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TransportSearchBox.xaml.cs" caret="1816" fromTop="7" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TransportSearchBox.xaml" caret="2611" fromTop="26" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TouristAttraction.xaml" caret="5993" fromTop="20" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:App.xaml" caret="404" fromTop="8" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml" caret="1389" fromTop="22" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml.cs" caret="1074" fromTop="10" />
     </RecentFiles>
     <RecentEdits>
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml.cs" caret="208" fromTop="9" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml.cs" caret="1381" fromTop="25" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml" caret="3648" fromTop="25" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml" caret="3373" fromTop="21" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml" caret="3360" fromTop="19" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml" caret="3633" fromTop="22" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:database/f:AboutUg.xml" caret="151" fromTop="5" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml" caret="2880" fromTop="12" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:database/f:AboutUg.xml" caret="1370" fromTop="20" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml.cs" caret="1381" fromTop="12" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:database/f:AboutUg.xml" caret="807" fromTop="18" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:database/f:AboutUg.xml" caret="39" fromTop="0" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:database/f:AboutUg.xml" caret="1296" fromTop="26" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml" caret="3168" fromTop="10" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml.cs" caret="404" fromTop="8" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_2ug.xaml.cs" caret="514" fromTop="17" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_2ug.xaml" caret="4506" fromTop="0" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_2ug.xaml" caret="4506" fromTop="0" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_2ug.xaml" caret="4506" fromTop="30" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_2ug.xaml" caret="4506" fromTop="31" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_2ug.xaml" caret="4506" fromTop="31" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_2ug.xaml" caret="4093" fromTop="7" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml" caret="48" fromTop="1" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml" caret="1062" fromTop="18" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:2UG.xaml" caret="9105" fromTop="15" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:2UG.xaml.cs" caret="2182" fromTop="13" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml" caret="2880" fromTop="13" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml" caret="3633" fromTop="25" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_2ug.xaml" caret="0" fromTop="0" />
-      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_2ug.xaml" caret="3292" fromTop="16" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TouristAttraction.xaml.cs" caret="4581" fromTop="18" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TouristAttraction.xaml.cs" caret="4581" fromTop="31" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TouristAttraction.xaml.cs" caret="4581" fromTop="27" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TouristAttraction.xaml.cs" caret="4581" fromTop="24" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TouristAttraction.xaml.cs" caret="4581" fromTop="16" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TouristAttraction.xaml.cs" caret="4569" fromTop="24" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TouristAttraction.xaml.cs" caret="4569" fromTop="0" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TouristAttraction.xaml.cs" caret="4569" fromTop="1" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TouristAttraction.xaml.cs" caret="4569" fromTop="40" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TouristAttraction.xaml.cs" caret="4569" fromTop="9" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TouristAttraction.xaml.cs" caret="4569" fromTop="31" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TouristAttraction.xaml.cs" caret="4569" fromTop="4" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TouristAttraction.xaml" caret="5993" fromTop="20" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TouristAttraction.xaml.cs" caret="805" fromTop="9" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TouristAttraction.xaml.cs" caret="4569" fromTop="22" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TouristAttraction.xaml.cs" caret="2592" fromTop="16" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:TransportSearchBox.xaml.cs" caret="1718" fromTop="3" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml.cs" caret="1674" fromTop="14" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml.cs" caret="1674" fromTop="10" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml.cs" caret="739" fromTop="14" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml.cs" caret="1209" fromTop="15" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml.cs" caret="739" fromTop="8" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml.cs" caret="1674" fromTop="13" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml.cs" caret="1211" fromTop="17" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml.cs" caret="416" fromTop="3" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/f:App.xaml" caret="404" fromTop="8" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml" caret="1072" fromTop="13" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml" caret="1388" fromTop="22" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml.cs" caret="727" fromTop="9" />
+      <File id="DD4A43AF-70C4-4912-A939-85AA79B2779E/d:pages/f:About_ug.xaml.cs" caret="1404" fromTop="27" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -94,10 +81,20 @@
       <Item value="backgroundWorker" priority="192" />
       <Item value="popup" priority="32" />
       <Item value="ShowPopup`0" priority="31" />
-      <Item value="MessageBox`0" priority="31" />
+      <Item value="MessageBox`0" priority="63" />
       <Item value="StartLoadingData`0" priority="31" />
       <Item value="About_ug" priority="59" />
-      <Item value="backgroundSong" priority="31" />
+      <Item value="backgroundSong" priority="158" />
+      <Item value="if" priority="31" />
+      <Item value="else" priority="31" />
+      <Item value="MediaPlayerLauncher`0" priority="58" />
+      <Item value="while" priority="95" />
+      <Item value="eventArgs" priority="32" />
+      <Item value="TimeSpan`0" priority="30" />
+      <Item value="new" priority="95" />
+      <Item value="TimeSpan" priority="28" />
+      <Item value="MediaElement" priority="28" />
+      <Item value="MediaEnded" priority="28" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:_2UG.pages.Welcomelogo">
       <Item value="progressBar1" priority="26" />
@@ -106,7 +103,7 @@
       <Item value="IsIndeterminate" priority="27" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Windows.MessageBox">
-      <Item value="Show`0" priority="26" />
+      <Item value="Show`0" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Controls.ListBox">
       <Item value="ItemsSource" priority="26" />
@@ -116,6 +113,13 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:_2UG.MainViewModel">
       <Item value="LoadData`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.MediaElement">
+      <Item value="AutoPlay" priority="26" />
+      <Item value="Play`0" priority="53" />
+      <Item value="Position" priority="26" />
+      <Item value="BufferingTime" priority="26" />
+      <Item value="MediaEnded" priority="26" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

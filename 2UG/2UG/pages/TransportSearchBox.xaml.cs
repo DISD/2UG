@@ -60,5 +60,22 @@ namespace _2UG.pages
             this.DialogResult = true;
         }
 
+        private void t_SearchText_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+            districtOrNameSelected = tdistrictRadioBtn.IsChecked == true ? 0 : 1;
+
+           
+                this.SearchCretria = districtOrNameSelected;
+                this.SearchText = t_SearchText.Text;
+                t_SearchText.Text = "";
+
+                this.DialogResult = true;
+            }
+            
+
+        }
+
     }
 }

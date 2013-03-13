@@ -31,7 +31,7 @@
             </StackPanel>
             <StackPanel  Width="497" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Margin="0" Height="72" Name="hotelSearchOptionStackPanel">
                 <TextBlock Name="districtNameLabel" Text="Name: " HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF2880B7" Margin="5,0,0,0" FontFamily="Calibri" FontSize="26" />
-                <TextBox Height="70" Name="hotelDistrictORNameTextBox" Text="" Width="408" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="26" FontFamily="Calibri" Foreground="#FF55523E" Background="#BFFFFFFF" />
+                <TextBox Height="70" Name="hotelDistrictORNameTextBox" Text="" Width="408" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="26" FontFamily="Calibri" Foreground="#FF55523E" Background="#BFFFFFFF" KeyDown="hotelDistrictORNameTextBox_KeyDown" />
             </StackPanel>
             <StackPanel  Width="497" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Margin="0" Height="81">
                 <Button Content="Search" Height="68" Name="hotelSearchBtn" Width="137" BorderThickness="1" FontSize="26" Click="search_Click" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Calibri" Foreground="Black" Margin="60,0,0,0" />

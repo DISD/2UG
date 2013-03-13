@@ -72,6 +72,57 @@ namespace _2UG
             NavigationService.Navigate(new Uri("/pages/2UG.xaml", UriKind.Relative));
         }
 
+        private void SearchBoxKeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (e.Key == Key.Enter)
+            {
+                MessageBox.Show("hihihih");
+                //if (searchBox.Text == "" || searchBox.Text == null)
+                //{
+                //    return;
+                //}
+                //else
+                //{
+
+                //    IEnumerable<ActivityModel> data = null;
+                //    data = from aItem in loadActivityItemXML.Descendants("tourist_attraction")
+                //           where
+                //               aItem.Element("activities").Element("activity").Value.Contains(searchBox.Text.ToLower())
+                //           select new ActivityModel()
+                //                      {
+                //                          name = (String) aItem.Element("name"),
+                //                          address = (String) aItem.Element("address"),
+                //                          district = (String) aItem.Element("district")
+                //                      };
+
+                //    var retrivedData = data;
+                //    if (retrivedData.Any() == false)
+                //    {
+                //        errorLabel.Text = "No Search result found.";
+
+                //    }
+                //    else
+                //    {
+                //        List<ActivityModel> activityModel = new List<ActivityModel>();
+
+                //        foreach (var activity in retrivedData)
+                //        {
+                //            ActivityModel a = (ActivityModel) activity;
+                //            activityModel.Add(a);
+
+                //        }
+
+                //        PhoneApplicationService.Current.State["Act"] = activityModel;
+                //        NavigationService.Navigate(
+                //            new Uri("/pages/Activity.xaml?selectedCategoryImageUri=" + activityModel, UriKind.Relative));
+                //    }
+                //}
+            }
+        }
+        
+        
+
 
     }
 }

@@ -92,5 +92,44 @@ namespace _2UG.pages
             this.hotelSearchOptionStackPanel.Visibility = Visibility.Visible;
             this.hotelDistrictORNameTextBox.Text = "";
         }
+
+        private void hotelDistrictORNameTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+
+                if (hotelNameRadioBtn.IsChecked == true)
+                {
+                    hotelName = hotelDistrictORNameTextBox.Text;
+                    hotelType = "";
+                    districtName = "";
+
+                }
+                else if (hotelDistrictRadioBtn.IsChecked == true)
+                {
+                    districtName = hotelDistrictORNameTextBox.Text;
+                    hotelType = "";
+                    hotelName = "";
+                }
+                else
+                {
+
+                    hotelType = "general";
+                    districtName = "";
+                    hotelName = "";
+
+                    if (hotelChineseRadioBtn.IsChecked == true)
+                    {
+                        hotelType = "chinese";
+                    }
+                    else if (hotelItalianRadioBtn.IsChecked == true)
+                    {
+                        hotelType = "italian";
+                    }
+                }
+
+                this.DialogResult = true;
+            }
+        }
     }
 }

@@ -65,7 +65,7 @@
                     <StackPanel Background="#FFC4D1C4" Margin="10,0">
                         <toolkit:AutoCompleteBox HorizontalAlignment="Stretch" Grid.Row="0"                                    
                                Name="searchBox" VerticalAlignment="Stretch"
-                               ItemsSource="{StaticResource AutoCompletions}"/>
+                               ItemsSource="{StaticResource AutoCompletions}" KeyDown="SearchBoxKeyDown" />
                     </StackPanel>
                     <TextBlock Height="30" Name="errorLabel" Text="" Foreground="#FFE21D1D" FontFamily="Courier New" Margin="10,3,0,0" />
                     <Button Content="Search" Height="91" Name="button4" Width="154" BorderThickness="1" Background="#FF577696" BorderBrush="#FF253748" Padding="0" FontFamily="Calibri" FontSize="30" HorizontalAlignment="Right" Margin="0,0,10,0" Click="button4_Click" />

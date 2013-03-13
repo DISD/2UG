@@ -17,6 +17,7 @@
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="#FFF3F6F9" >
+        
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="456*" />
@@ -25,7 +26,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
+   <MediaElement x:Name="backgroundMusic" Source="/music/Emali.wav" AutoPlay="True" Volume="1" MediaEnded="DoThisWhenMediaEnds" />
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Height="46" HorizontalAlignment="Stretch" Margin="0,0
                     ,0,0" VerticalAlignment="Top" Background="#FFAABA70" Grid.ColumnSpan="2">
