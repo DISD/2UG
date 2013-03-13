@@ -10,15 +10,20 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
+using _2UG.pages;
+using Microsoft.Phone.Tasks;
+using System;
 
 namespace _2UG
 {
     public partial class Currency_convert : PhoneApplicationPage
     {
-        String[] Currency = { "", "USH", "USD", "GBP", "EUR", "" };
+        String[] Currency = { "", "UGX", "USD", "GBP", "EUR", "" };
         string firstCurrency;
         string secondCurrency;
         String amountEntered;
+        String exchangeRate;
+        double exchangeEntered;
         double valueEntered;
         double result;
         /*
@@ -62,16 +67,25 @@ USD 7/02/13-WAR	2,650.05	2,659.4
             if (!((firstCurrency == "") || (secondCurrency == ""))) 
             {
                 amountEntered = amountTextBox.Text;
-                if (!(amountEntered == "")) 
+                exchangeRate = exchangeTextBox.Text;
+                if (!(amountEntered == "") || (exchangeRate == "")) 
                 {
                     try
                     {
-                        valueEntered = int.Parse(amountEntered);
+
+                        //ConvertorExchangeBox exchangeBox = new ConvertorExchangeBox();
+                       // exchangeBox.Closed += new EventHandler(hotelSearchBoxClosed);
+                       // exchangeBox.Show();
+                       // exchangeBox.VerticalAlignment = VerticalAlignment.Top;
+                      //  exchangeBox.HorizontalAlignment = HorizontalAlignment.Center;
+                       // exchangeBox.Margin = new Thickness(0, 30, 0, 0);
+                        valueEntered = Double.Parse(amountEntered);
+                        exchangeEntered = Double.Parse(exchangeRate);
                         if (firstCurrency == "USD")
                         {
-                            if (secondCurrency == "USH")
+                            if (secondCurrency == "UGX")
                             {
-                                result = valueEntered * 2558.57;
+                                result = valueEntered * exchangeEntered;
                                 resultTextBlock.Text = string.Concat(result) + " SHS";
                             }
                             else 
@@ -82,9 +96,9 @@ USD 7/02/13-WAR	2,650.05	2,659.4
                         }
                         else if (firstCurrency == "GBP")
                         {
-                            if (secondCurrency == "USH")
+                            if (secondCurrency == "UGX")
                             {
-                                result = valueEntered * 4174.75;
+                                result = valueEntered * exchangeEntered;
                                 resultTextBlock.Text = string.Concat(result) + " SHS";
                             }
                             else
@@ -95,9 +109,9 @@ USD 7/02/13-WAR	2,650.05	2,659.4
                         }
                         else if (firstCurrency == "EUR") 
                         {
-                            if (secondCurrency == "USH")
+                            if (secondCurrency == "UGX")
                             {
-                                result = valueEntered * 3559.83;
+                                result = valueEntered * exchangeEntered;
                                resultTextBlock.Text = string.Concat(result) + " SHS";
                             }
                             else
@@ -107,22 +121,22 @@ USD 7/02/13-WAR	2,650.05	2,659.4
                             }
                         }
                         
-                        else if (firstCurrency == "USH")
+                        else if (firstCurrency == "UGX")
                         {
                             if (secondCurrency == "USD")
                             {
-                                result = Math.Round((valueEntered * (1 / 2648.64)), 2);
+                                result = Math.Round((valueEntered * (1 / exchangeEntered)), 2);
                                 resultTextBlock.Text = string.Concat(result) + " USD";
                             }
 
                             else if (secondCurrency == "GBP")
                             {
-                                result = Math.Round((valueEntered * (1 / 4159.16)), 2);
+                                result = Math.Round((valueEntered * (1 / exchangeEntered)), 2);
                                 resultTextBlock.Text = string.Concat(result) + " GBP";
                             }
                             else if (secondCurrency == "EUR")
                             {
-                                result = Math.Round((valueEntered * (1 / 3546.53)), 2);
+                                result = Math.Round((valueEntered * (1 / exchangeEntered)), 2);
                                resultTextBlock.Text = string.Concat(result) + " EUR";
                             }
                         }
@@ -132,6 +146,14 @@ USD 7/02/13-WAR	2,650.05	2,659.4
                     }
                 }
             }
+        }
+
+        private void HyperButton_Clicked(object sender, RoutedEventArgs e)
+        {
+            WebBrowserTask task = new WebBrowserTask();
+           // task.Uri = new Uri("http://www.google.com");
+            //task.URL = new Uri("http://www.bou.or.ug/bou/home.html", UriKind.Absolute);
+            
         }
 
     }

@@ -71,7 +71,7 @@ namespace _2UG
                        {
                            name = (string)hItem.Element("name"),
                            address = (string)hItem.Element("address"),
-                           telphone = (string)hItem.Element("telphone"),
+                           Telphone = (string)hItem.Element("telphone"),
                            district = convertFirstElementToUpperCase((string)hItem.Element("district")),
                            type = convertFirstElementToUpperCase((string)hItem.Element("type"))
                        };
@@ -84,7 +84,7 @@ namespace _2UG
                        {
                            name = (string)hItem.Element("name"),
                            address = (string)hItem.Element("address"),
-                           telphone = (string)hItem.Element("telphone"),
+                           Telphone = (string)hItem.Element("telphone"),
                            district = convertFirstElementToUpperCase((string)hItem.Element("district")),
                            type = convertFirstElementToUpperCase((string)hItem.Element("type"))
                        };
@@ -97,7 +97,7 @@ namespace _2UG
                        {
                            name = (string)hItem.Element("name"),
                            address = (string)hItem.Element("address"),
-                           telphone = (string)hItem.Element("telphone"),
+                           Telphone = (string)hItem.Element("telphone"),
                            district = convertFirstElementToUpperCase((string)hItem.Element("district")),
                            type = convertFirstElementToUpperCase((string)hItem.Element("type"))
                        };
@@ -109,7 +109,7 @@ namespace _2UG
                        {
                            name = (string)hItem.Element("name"),
                            address = (string)hItem.Element("address"),
-                           telphone = (string)hItem.Element("telphone"),
+                           Telphone = (string)hItem.Element("telphone"),
                            district = convertFirstElementToUpperCase((string)hItem.Element("district")),
                            type = convertFirstElementToUpperCase((string)hItem.Element("type"))
                        };

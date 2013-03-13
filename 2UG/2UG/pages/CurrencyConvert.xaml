@@ -50,34 +50,40 @@
                 <StackPanel Width="467" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5" Height="59">
                     <TextBlock Name="resultTextBlock" Text="" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF0A6C6C" FontSize="26" Padding="0" FontWeight="Bold" FontFamily="Lucida Sans Unicode" Margin="10" />
                 </StackPanel>
-
-                <StackPanel Height="100" Name="stackPanel3" Width="443" HorizontalAlignment="Center" Orientation="Horizontal" VerticalAlignment="Top">
-                    <TextBlock Height="30" Name="textBlock2" Text="From" Width="103" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="Black" />
-                    <Border Height="80" HorizontalAlignment="Left" VerticalAlignment="Center" BorderBrush="Black" Background="#FFA7A7A7" Width="310">
-                        <toolkit:ListPicker FullModeItemTemplate="{Binding lpkFullItemTemplate1}" Grid.Row="5" ItemTemplate="{Binding lpkItemTemplate1}" x:Name="lpkCurrency1" Width="283" Height="68" SelectionChanged="currency1_listPicker_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Center" BorderBrush="#BF000000" />
+            <StackPanel Height="94" Name="stackPanel6" Width="436" Orientation="Horizontal">
+                <TextBlock Height="30" Name="textBlock4" Text="Exchange rate" Foreground="Black" Width="129" />
+                <Border Height="80" HorizontalAlignment="Left" VerticalAlignment="Center" BorderBrush="Black" Background="#FFA7A7A7" Width="286">
+                    <TextBox Height="80" Name="exchangeTextBox" Text="" Width="281" BorderBrush="#FFDFE4E5"/>
+                </Border>
+            </StackPanel>
+                <StackPanel Height="90" Name="stackPanel3" Width="443" HorizontalAlignment="Center" Orientation="Horizontal" VerticalAlignment="Top">
+                    <TextBlock Height="30" Name="textBlock2" Text="From" Width="129" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="Black" />
+                    <Border Height="80" HorizontalAlignment="Left" VerticalAlignment="Center" BorderBrush="Black" Background="#FFA7A7A7" Width="287">
+                        <toolkit:ListPicker FullModeItemTemplate="{Binding lpkFullItemTemplate1}" Grid.Row="5" ItemTemplate="{Binding lpkItemTemplate1}" x:Name="lpkCurrency1" Width="259" Height="68" SelectionChanged="currency1_listPicker_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Center" BorderBrush="#BF000000" />
                     </Border>
                 </StackPanel>
 
-                <StackPanel Height="100" Name="stackPanel4" Width="439" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5">
-                    <TextBlock Height="30" Name="textBlock3" Text="To" Width="103" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="Black" />
-                    <Border Height="80" HorizontalAlignment="Left" VerticalAlignment="Center" BorderBrush="Black" Background="#FFA7A7A7" Width="310">
-                        <toolkit:ListPicker FullModeItemTemplate="{Binding lpkFullItemTemplate2}" Grid.Row="5" Height="66" ItemTemplate="{Binding lpkItemTemplate2}" Name="lpkCurrency2" Width="282" SelectionChanged="currency2_listPicker_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                <StackPanel Height="96" Name="stackPanel4" Width="439" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5">
+                    <TextBlock Height="30" Name="textBlock3" Text="To" Width="129" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="Black" />
+                    <Border Height="80" HorizontalAlignment="Left" VerticalAlignment="Center" BorderBrush="Black" Background="#FFA7A7A7" Width="286">
+                        <toolkit:ListPicker FullModeItemTemplate="{Binding lpkFullItemTemplate2}" Grid.Row="5" Height="66" ItemTemplate="{Binding lpkItemTemplate2}" Name="lpkCurrency2" Width="257" SelectionChanged="currency2_listPicker_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Center" />
                     </Border>
                 </StackPanel>
 
-
-                <StackPanel Height="106" Name="stackPanel2" Width="436" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5">
-                    <TextBlock Height="51" Name="textBlock1" Text="Amount" Width="100" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                    <Border Height="80" HorizontalAlignment="Left" VerticalAlignment="Center" BorderBrush="Black" Background="#FFA7A7A7" Width="310">
-                        <TextBox Height="80" Name="amountTextBox" Text="" Width="307" HorizontalAlignment="Left" VerticalAlignment="Center" BorderBrush="#FFDFE4E5" />
+                
+                <StackPanel Height="93" Name="stackPanel2" Width="436" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5">
+                    <TextBlock Height="51" Name="textBlock1" Text="Amount" Width="129" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                    <Border Height="80" HorizontalAlignment="Left" VerticalAlignment="Center" BorderBrush="Black" Background="#FFA7A7A7" Width="286">
+                        <TextBox Height="80" Name="amountTextBox" Text="" Width="281" HorizontalAlignment="Left" VerticalAlignment="Center" BorderBrush="#FFDFE4E5" />
                     </Border>
                 </StackPanel>
-
-                <StackPanel Height="79" Name="stackPanel5" Width="450">
+            
+            <StackPanel Height="97" Name="stackPanel5" Width="436">
                     <Button Content="Convert" Height="77" Name="button1" Width="160" VerticalContentAlignment="Top" Click="Currency_Product" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="#FF004B4B" Foreground="#FF453A1D" Padding="0,5,0,0" HorizontalContentAlignment="Center" />
                 </StackPanel>
 
             </StackPanel>
+        <HyperlinkButton Content="http://www.bou.or.ug/bou/home.html" Grid.Column="1" Grid.Row="1" Height="30" HorizontalAlignment="Left" Margin="35,2,0,0" Name="hyperlinkButton1" VerticalAlignment="Top" Width="419" Foreground="Blue" Click="HyperButton_Clicked" />
     </Grid>
 
     <phone:PhoneApplicationPage.ApplicationBar>

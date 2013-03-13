@@ -2,7 +2,7 @@
   <hotel>
     <name>KAMPALA SERENA HOTEL</name>
     <address>email: kamapla@serena.co.ug</address>
-    <telphone>Tel: +256 414 309000, Fax: +256 414 259130</telphone>
+    <telphone>(+256) 414309000, 414259130</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -10,7 +10,7 @@
   <hotel>
     <name>SHERATON HOTEL</name>
     <address> email: reservations.kampala@sheraton.com, www.sheraton.com/kampala</address>
-    <telphone>Tel: 0312 322337/8, Fax 0414 342357</telphone>
+    <telphone>(+256) 0312 322337/8, 0414342357</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
