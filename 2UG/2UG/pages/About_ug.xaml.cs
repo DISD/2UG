@@ -20,6 +20,7 @@ namespace _2UG
             //LayoutRoot.Children.Add(backgroundSong);
             //backgroundSong.Volume = 1;
             //backgroundSong.Play();
+           
           
 
             XDocument loadCategoryData = XDocument.Load("database/AboutUg.xml");
@@ -32,13 +33,7 @@ namespace _2UG
             aboutUg.ItemsSource = categoryData;
 
         }
-
-        private void DoThisWhenMediaEnds(object sender, RoutedEventArgs e)
-        {
-           
-            //what to do when the media has ended. In this case:
-            backgroundMusic.Play();
-        }
+        
         public class Aboutuginfo
         {
             string aboutUgSec;
@@ -51,6 +46,16 @@ namespace _2UG
             }
 
         }
+
+        private void DoThisWhenMediaEnds(object sender, RoutedEventArgs e)
+        {
+            backgroundMusic.AutoPlay = true;
+            backgroundMusic.Position = new TimeSpan(0);
+            //LayoutRoot.Children.Add(backgroundMusic);
+            backgroundMusic.Volume = 1;
+             backgroundMusic.Play();
+        }
+       
 
     }
 }
