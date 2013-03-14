@@ -103,7 +103,7 @@
                                                     <Border Background="#FF1E98B0" HorizontalAlignment="Left" VerticalAlignment="Center">
                                                         <Button Tag="{Binding Telphone}" Click="callEventHandler" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0" Content="Call ?" Padding="0" Foreground="White" FontFamily="Calibri" FontSize="18" BorderThickness="1" FontWeight="Bold" BorderBrush="Transparent" />
                                                     </Border>
-                                                    <TextBlock Name="hotel_Tel" Text="{Binding telphone}" Width="404" Foreground="#FF1E4BB4" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0" FontSize="22"/>
+                                                    <TextBlock Name="hotel_Tel" Text="{Binding Telphone}" Width="404" Foreground="#FF1E4BB4" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0" FontSize="22"/>
                                                 </StackPanel>
                                             </StackPanel>
                                         </StackPanel>
@@ -146,7 +146,7 @@
                                                     <Border Background="#FF1E98B0" HorizontalAlignment="Left" VerticalAlignment="Center">
                                                         <Button Tag="{Binding Telphone}" Click="callEventHandler" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0" Content="Call ?" Padding="0" Foreground="White" FontFamily="Calibri" FontSize="18" BorderThickness="1" FontWeight="Bold" BorderBrush="Transparent" />
                                                     </Border>
-                                                    <TextBlock Name="restuarant_Tel" Text="{Binding telphone}" Width="404" Foreground="#FF1E4BB4" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0" FontSize="22"/>
+                                                    <TextBlock Name="restuarant_Tel" Text="{Binding Telphone}" Width="404" Foreground="#FF1E4BB4" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0" FontSize="22"/>
                                                 </StackPanel>
                                             </StackPanel>
                                         </StackPanel>
@@ -190,7 +190,7 @@
                                                     <Border Background="#FF1E98B0" HorizontalAlignment="Left" VerticalAlignment="Center">
                                                         <Button Tag="{Binding Telphone}" Click="callEventHandler" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0" Content="Call ?" Padding="0" Foreground="White" FontFamily="Calibri" FontSize="18" BorderThickness="1" FontWeight="Bold" BorderBrush="Transparent" />
                                                     </Border>
-                                                    <TextBlock Name="club_Tel" Text="{Binding telphone}" Width="404" Foreground="#FF1E4BB4" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0" FontSize="22"/>
+                                                    <TextBlock Name="club_Tel" Text="{Binding Telphone}" Width="404" Foreground="#FF1E4BB4" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" FontFamily="Calibri" Margin="3,0,0,0" FontSize="22"/>
                                                 </StackPanel>
                                             </StackPanel>
                                         </StackPanel>

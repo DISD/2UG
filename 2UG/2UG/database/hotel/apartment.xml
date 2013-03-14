@@ -1,59 +1,84 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <apartments>
   <apartment>
-    <name>Prestigue Apartments</name>
+    <name>PRESTIGUE APARTMENTS</name>
     <address> Prestige Apartments P.O. Box 6219 kampala Uganda</address>
-    <telphone>+256-717-820100, +256-717-820100, +256-772-820100</telphone>
+    <telphone>(+256) 717820100,717820100,772820100</telphone>
     <district>kampala</district>
     <type>general</type>
   </apartment>
 
   <apartment>
-    <name>Uganda Property Promotions</name>
+    <name>UGANDA PROPERTY PROMOTIONS</name>
     <address>Plot 33, Nkurumah Road, kampala, Uganda, info@propertypromotions.co.ug</address>
-    <telphone>+256 782 732572</telphone>
-    <district>jinja</district>
-    <type>italian</type>
+    <telphone>(+256) 782732572</telphone>
+    <district>kampala</district>
+    <type>general</type>
   </apartment>
 
   <apartment>
-    <name>Haven Apartments</name>
+    <name>HAVEN APARTMENTS</name>
     <address>Plot 25 Bazeketta Road, Rubaga, nextnext to Uganda Martyrs’ High School Rubaga</address>
-    <telphone>+256-75-2644-366, +256-77-2407119, 256-71-255-9546</telphone>
+    <telphone>(+256) 752644366,772407119,712559546</telphone>
     <district>kampala</district>
-    <type>chinese</type>
+    <type>general</type>
   </apartment>
 
   <apartment>
-    <name>Posh Properties Limited</name>
+    <name>POSH PROPERTIES LIMITED</name>
     <address>bukenyaisa@yahoo.com</address>
-    <telphone>0703 995674</telphone>
+    <telphone>703995674</telphone>
     <district>kampala</district>
-    <type>general</type>
   </apartment>
 
   <apartment>
-    <name>National Housing</name>
+    <name>NATIONAL HOUSING</name>
     <address>P.O Box 659,Plot 5, 7th Street, Industrial Area, kampala 256, Uganda</address>
-    <telphone>0414-330002, 0414-258708</telphone>
+    <telphone>(+256) 414330002, 414258708</telphone>
     <district>kampala</district>
     <type>general</type>
   </apartment>
 
   <apartment>
-    <name>Guide 2 Uganda</name>
+    <name>GUIDE 2 UGANDA</name>
     <address>112 New Port Bell Road, Akamwesi Complex Nakawa, P.O Box 10287,kampala, Uganda</address>
-    <telphone>256 (0) 312 515 167 / +256 (0) 774 795 432</telphone>
+    <telphone>(+256) 312515167,774795432</telphone>
     <district>kampala</district>
     <type>general</type>
   </apartment>
 
   <apartment>
-    <name>Gabe International Homes</name>
+    <name>GABE INTERNATIONAL HOMES</name>
     <address>Plot 1001 Ggaba Road (Next to the American Embassy).Suzie House, Annex. 1st Floor, kampala, Uganda</address>
-    <telphone>+256791525600, +256701525600</telphone>
+    <telphone>(+256)791525600,701525600</telphone>
     <district>kampala</district>
     <type>general</type>
   </apartment>
 
+  <apartment>
+    <name>MOWIN</name>
+    <address>
+      PLOT 3 PARLIAMENT AVENUE, RAJA CHAMBERS(OPPOSITE FORMER BRITISH HIGH COMMISSION),2ND FLOOR ROOM 36,
+      P.O. BOX: 4801, KAMPALA, UGANDA mowinproperties@gmail.com, mowinproperties@gmail.com
+    </address>
+    <telphone>(+256) 414235795, 772439777, 712815022, 702439777</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </apartment>
+
+  <apartment>
+    <name>UGANDAN HOTELS</name>
+    <address> P.O BOX 29132, info@ugandanhotels.com</address>
+    <telephone>(+256) 777887947</telephone>
+    <district>kampala</district>
+    <type>general</type>
+  </apartment>
+
+  <apartment>
+    <name>ONLINE REAL ESTATE UGANDA</name>
+    <address>Plot 53 Kiira Road Kamwokya Kampala, Uganda, info@onlinerealestate.co.ug</address>
+    <telephone>(+256) 772483978, 701976983</telephone>
+    <district>kampala</district>
+    <type>general</type>
+  </apartment>
 </apartments>

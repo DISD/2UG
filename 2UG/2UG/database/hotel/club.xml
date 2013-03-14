@@ -2,7 +2,7 @@
   <club>
     <name>CLUB ZEST</name>
     <address>Makerere Hill Road, Next Chez Johnson Hotel, Nakulabye</address>
-    <telphone>Tel: 039 840035, 077 871495</telphone>
+    <telphone>(+256) 39840035, 77871495</telphone>
     <district>kampala</district>
     <type>general</type>
   </club>
@@ -10,7 +10,7 @@
   <club>
     <name>JINJA CLUB</name>
     <address>17/29 Nile Crescent P O Box 687, Jinja</address>
-    <telphone>Tel: 0434 120169</telphone>
+    <telphone>(+256) 434120169</telphone>
     <district>jinja</district>
     <type>general</type>
   </club>
@@ -18,15 +18,15 @@
   <club>
     <name>KABIRA COUNTRY CLUB</name>
     <address>Plot 63 Old Kiira Road Box 3673, Kampala, kabiracountryclub@kabiracountryclub com</address>
-    <telphone>Tel: 041-227222, 041-227225, 041-227226</telphone>
+    <telphone>(+256) 41227222, 41227225, 41227226</telphone>
     <district>kampala</district>
     <type>general</type>
   </club>
 
   <club>
     <name>MOTEL ANNEX</name>
-    <address>4 Arua Hill Road P O  Box 45, Arua, 077 514182, 077 515128</address>
-    <telphone>Tel: 0772 514182, 0772 515128</telphone>
+    <address>4 Arua Hill Road P O  Box 45, Arua</address>
+    <telphone>(+256) 772514182, 772515128</telphone>
     <district>arua</district>
     <type>general</type>
   </club>
@@ -34,76 +34,76 @@
   <club>
     <name>THE NOOK CLUB</name>
     <address>15 Cooper Road, Kisementi P O Box 6177, Kampala</address>
-    <telphone>Tel: 0414 344037, 345907</telphone>
+    <telphone>(+256) 414344037, 414345907</telphone>
     <district>kampala</district>
-    <type>chinese</type>
+    <type>general</type>
   </club>
 
   <club>
     <name>VOUGUE DISCOQUE</name>
     <address>Entebbe Road, Nkumba, P  O  Box 229, Entebbe</address>
-    <telphone>Tel: 0772 501018</telphone>
+    <telphone>(+256) 772501018</telphone>
     <district>entebbe</district>
     <type>general</type>
   </club>
 
   <club>
-    <name>Club Obligato</name>
+    <name>CLUB OBLIGATO</name>
     <address>Bombo Road, Kampala</address>
     <district>kampala</district>
     <type>general</type>
   </club>
 
   <club>
-    <name>Steak Out</name>
+    <name>STEAK OUT</name>
     <address>Lumumba avenue, Kampala/ P.O.Box 33420 Wandegeya Rd, Kampala</address>
-    <telphone>Tel: +256 312 264677</telphone>
+    <telphone>(+256) 312264677</telphone>
     <district>kampala</district>
     <type>general</type>
   </club>
 
   <club>
-    <name>Club Silk</name>
+    <name>CLUB SILK</name>
     <address>1st St. Industrial Area, silk@clubsilk.co.ug, www clubsilk co ug</address>
-    <telphone>Tel: +256 414 250907 </telphone>
+    <telphone>(+256) 414250907 </telphone>
     <district>kampala</district>
     <type>general</type>
   </club>
 
   <club>
-    <name>Ange Noir/ Ange Mystique</name>
+    <name>ANGE NOIR/ ANGE MYSTIQUE</name>
     <address>1st St,Jinja rd.Industrial area, Plot 77A, Kampala, P.O Box 10977, Kampala</address>
-    <telphone>Tel: 0414 230190, 041 231027</telphone>
+    <telphone>(+256) 414230190, 414231027</telphone>
     <district>kampala</district>
     <type>general</type>
   </club>
 
   <club>
-    <name>Sombreros Discotheque</name>
+    <name>SOMBREROS DISCOTHEQUE</name>
     <address>Plot 2A, Spring Road P  O  Box 224, Jinja</address>
-    <telphone>Tel: 077 404329, 077 535316</telphone>
+    <telphone>(+256) 772404329, 772535316</telphone>
     <district>jinja</district>
     <type>general</type>
   </club>
 
   <club>
-    <name>Rouge Lounge</name>
+    <name>ROUGE LOUNGE</name>
     <address>Plot 2B Jinja Road</address>
-    <telphone>Tel: 0712 707687</telphone>
+    <telphone>(+256) 712707687</telphone>
     <district>kampala</district>
     <type>general</type>
   </club>
 
   <club>
-    <name>Cayenne Reastaurant n Lounge</name>
+    <name>CAYENNE REASTAURANT N LOUNGE</name>
     <address>Kira Road - Next to Kabira Country Club Bukoto, Kampala - Uganda</address>
-    <telphone>Tel: +256 792 200 555</telphone>
+    <telphone>(+256) 792200555</telphone>
     <district>kampala</district>
     <type>general</type>
   </club>
 
   <club>
-    <name>The Park Sqaure</name>
+    <name>THE PARK SQAURE</name>
     <address>Sheraton Hotel, Ternan Avenue, Nakasero, Kampala - Uganda</address>
     <telphone></telphone>
     <district>kampala</district>
@@ -111,7 +111,7 @@
   </club>
 
   <club>
-    <name>Big Mike's</name>
+    <name>BIG MIKE'S</name>
     <address>19 Acacia Avenue, Kololo, Kampala, Uganda </address>
     <telphone></telphone>
     <district>kampala</district>
@@ -119,15 +119,15 @@
   </club>
 
   <club>
-    <name>Sabrina's Pub</name>
+    <name>SABRINA'S PUB</name>
     <address>76A Kampala Road, Kampala</address>
-    <telphone>Tel: +256 414 250 174 </telphone>
+    <telphone>(+256) 414250174 </telphone>
     <district>kampala</district>
     <type>general</type>
   </club>
 
   <club>
-    <name>Casablanca Pub n Restaurant</name>
+    <name>CASABLANCA PUB N RESTAURANT</name>
     <address>Plot 26 Acacia Avenue, Kololo Kampala, Uganda </address>
     <telphone></telphone>
     <district>kampala</district>
@@ -135,7 +135,7 @@
   </club>
 
   <club>
-    <name>Bamboo n Restaurant</name>
+    <name>BAMBOO N RESTAURANT</name>
     <address>Old Portbell Road, Bugolobi Kampala, Uganda </address>
     <telphone></telphone>
     <district>kampala</district>
@@ -143,55 +143,55 @@
   </club>
 
   <club>
-    <name>Efendy's Eternal Lounge</name>
+    <name>EFENDY'S ETERNAL LOUNGE</name>
     <address>Centenary park, Jinja road, Kampala</address>
-    <telphone>Tel: +256 792 200 555</telphone>
+    <telphone>(+256) 792200555</telphone>
     <district>kampala</district>
     <type>general</type>
   </club>
 
   <club>
-    <name>Fat Boyz</name>
+    <name>FAT BOYZ</name>
     <address>7 Cooper Road, Kisementi, Kampala, Uganda</address>
-    <telphone>Tel: +256 782 416 900</telphone>
+    <telphone>(+256) 782416900</telphone>
     <district>kampala</district>
     <type>general</type>
   </club>
 
   <club>
-    <name>Faze 2</name>
+    <name>FAZE 2</name>
     <address>10 Nakasero Road, Nakasero Kampala, Uganda </address>
-    <telphone>Tel: +256 792 200 555</telphone>
+    <telphone>(+256) 792200555</telphone>
     <district>kampala</district>
     <type>general</type>
   </club>
 
   <club>
-    <name>Iguana</name>
-    <address>8, Bukoto Street, Kamwokya Kampala, Uganda </address>
-    <telphone>Tel: +256 792 200 555</telphone>
+    <name>IGUANA8</name>
+    <address>Bukoto Street, Kamwokya Kampala, Uganda </address>
+    <telphone>(+256) 777020658</telphone>
     <district>kampala</district>
     <type>general</type>
   </club>
 
   <club>
-    <name>Just Kicking Sports Bar</name>
+    <name>JUST KICKING SPORTS BAR</name>
     <address>5 Cooper Road Kisementi, Kampala, P.O.Box 2708, Kampala, Uganda</address>
-    <telphone>Tel: +256 414 235134</telphone>
+    <telphone>(+256) 414235134</telphone>
     <district>Kampala</district>
     <type>general</type>
   </club>
 
   <club>
-    <name>Al's Bar</name>
+    <name>AL'S BAR</name>
     <address>Ggaba Road, Kansanga Kampala, Uganda</address>
-    <telphone>Tel: +256 772 581 518</telphone>
+    <telphone>(+256) 772581518</telphone>
     <district>kampala</district>
     <type>general</type>
   </club>
 
   <club>
-    <name>Katch the sun</name>
+    <name>KATCH THE SUN</name>
     <address>3 Bandali Rise, Bugolobi Kampala, Uganda </address>
     <telphone></telphone>
     <district>kampala</district>
@@ -199,23 +199,23 @@
   </club>
 
   <club>
-    <name>Mateo's Restaurant n Bar</name>
+    <name>MATEO'S RESTAURANT N BAR</name>
     <address>Parliament Avenue, Kampala, Uganda</address>
-    <telphone>Tel: +256 414 340 844</telphone>
+    <telphone>(+256) 414340844</telphone>
     <district>kampala</district>
     <type>general</type>
   </club>
 
   <club>
-    <name>Bubbles O'Leary (Irish Pub)</name>
+    <name>BUBBLES O'LEARY (IRISH PUB)</name>
     <address>19 Acacia Avenue,Kololo Kampala, Uganda</address>
-    <telphone>Tel: +256 792 200 555</telphone>
+    <telphone>(+256) 792200555</telphone>
     <district>kampala</district>
     <type>general</type>
   </club>
 
   <club>
-    <name>Lion Bar - Sports Bar</name>
+    <name>LION BAR - SPORTS BAR</name>
     <address>Sheraton Hotel, Ternan Avenue Kampala, Uganda </address>
     <telphone></telphone>
     <district>kampala</district>
@@ -223,7 +223,7 @@
   </club>
 
   <club>
-    <name>Capital Pub</name>
+    <name>CAPITAL PUB</name>
     <address>Off Ggaba Road, Kabalagala Kampala, Uganda </address>
     <telphone></telphone>
     <district>kampala</district>
@@ -231,27 +231,106 @@
   </club>
 
   <club>
-    <name>Equator Bar</name>
+    <name>EQUATOR BAR</name>
     <address>Sheraton Hotel Kampala, Ternan Avenue Nakasero, Kampala - Uganda </address>
+    <telphone>(+256) 414420000</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </club>
+
+  <club>
+    <name>PUNCHLINE BAR</name>
+    <address>Ggaba Road, Kabalagala Kampala, Uganda</address>
+    <telphone>(+256) 772608808 </telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </club>
+
+  <club>
+    <name>ROCK GARDEN</name>
+    <address>Speke Hotel, Nile Avenue, Kampala, Uganda </address>
+    <telphone>(+256) 792200555</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </club>
+
+  <club>
+    <name>HORIZON</name>
+    <address>P.O.BOX 11890 Kampala, Uganda </address>
+    <telphone>(+256) 772273383</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </club>
+
+  <club>
+    <name>ELEGANTA</name>
+    <address>P.O.BOX 21742 Kampala, Uganda </address>
+    <telphone>(+256) 772403146</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </club>
+
+  <club>
+    <name>VOGUE</name>
+    <address>P.O.BOX 25702 Kampala </address>
     <telphone></telphone>
     <district>kampala</district>
     <type>general</type>
   </club>
 
   <club>
-    <name>Punchline Bar</name>
-    <address>Ggaba Road, Kabalagala Kampala, Uganda</address>
-    <telphone>Tel: +256 772 608808 </telphone>
-    <district>kampala</district>
-    <type>italian</type>
-  </club>
-
-   <club>
-    <name>Rock Garden</name>
-    <address>Speke Hotel, Nile Avenue, Kampala, Uganda </address>
-    <telphone>Tel: +256 792 200 555</telphone>
+    <name>CLUB KNIGHT RIDERS</name>
+    <address>Plot 93 Kampala Road, Entebbe</address>
+    <telphone>(+256) 772980502, 772501135.</telphone>
     <district>kampala</district>
     <type>general</type>
   </club>
-  
+
+  <club>
+    <name>THE BASEMENT DISCOTHEQUE</name>
+    <address>Equatoria Hotel, William street</address>
+    <telphone>(+256) 772501345.</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </club>
+
+  <club>
+    <name>LEGENDS</name>
+    <address>Entebbe high street</address>
+    <telphone>(+256) 752517806, 772501135.</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </club>
+
+  <club>
+    <name>AFRICAN VILLAGE</name>
+    <address>Buganda road</address>
+    <telphone>(+256) 752643115</telphone>
+    <district>kampala</district>
+    <type>african</type>
+  </club>
+
+  <club>
+    <name>ALLEYGATORS</name>
+    <address>Garden city 2nd floor</address>
+    <telphone>(+256) 772757700</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </club>
+
+  <club>
+    <name>HAVANA BAR</name>
+    <address>Plot 26 Lubasi road</address>
+    <telphone>(+256) 772980502, 772501135.</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </club>
+
+  <club>
+    <name>CLUB KNIGHT RIDERS</name>
+    <address>Plot 93 Kampala Road, Entebbe</address>
+    <telphone>(+256) 772980502, 772501135.</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </club>
 </clubs>

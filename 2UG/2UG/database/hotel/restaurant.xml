@@ -1,25 +1,417 @@
 <restaurants>
   <restaurant>
-    <name>SOURCE CAFE</name>
+    <name>SOURCE CAFÉ</name>
     <address>20 Main St Town Centre, Jinja </address>
-    <telephone>Tel: 0434 120 911</telephone>
-    <district>jinja</district>
-    <type>italian</type>
+    <telphone>(+256) 434120911</telphone>
+    <district>Jinja</district>
+    <type>general</type>
   </restaurant>
 
   <restaurant>
     <name>FANG FANG</name>
     <address>Colville St City Centre, Kampala </address>
-    <telephone>Tel: 0414 340 067 </telephone>
-    <district>kampala</district>
+    <telphone>(+256) 414340067 </telphone>
+    <district>Kampala</district>
     <type>chinese</type>
   </restaurant>
 
   <restaurant>
     <name>BLACK LANTERN</name>
     <address>Bujagali Falls, Jinja </address>
-    <telephone>(+256) 782 321 541 </telephone>
-    <district>jinja</district>
+    <telphone>(+256) 782321541 </telphone>
+    <district>Jinja</district>
+    <type>indian</type>
+  </restaurant>
+
+  <restaurant>
+    <name>LE PETIT BISTRO</name>
+    <address>Gaba Rd SE of Kampala</address>
+    <district>Kampala</district>
+    <type>French n African</type>
+  </restaurant>
+
+  <restaurant>
+    <name>CAFÉ PAP</name>
+    <address>13 Parliament Ave City Centre, Kampala</address>
+    <district>Kampala</district>
+    <type>Breakfast</type>
+  </restaurant>
+
+  <restaurant>
+    <name>LING LING</name>
+    <address>Kampala Roundabout N of Jinja</address>
+    <district>Kampala</district>
+    <type>Chinise</type>
+  </restaurant>
+
+  <restaurant>
+    <name>MASALA CHAAT HOUSE</name>
+    <address>3 Dewinton Rd City Centre, Kampala </address>
+    <telphone>(+256) 414255710</telphone>
+    <district>Kampala</district>
+    <type>Indian</type>
+  </restaurant>
+
+  <restaurant>
+    <name>BLUE MANGO</name>
+    <address>Kira Rd NE of Kampala</address>
+    <district>Kampala</district>
+    <type>International</type>
+  </restaurant>
+
+  <restaurant>
+    <name>FASIKA</name>
+    <address>Gaba Rd SE of Kampala </address>
+    <telphone>(+256) 414510441, 772303716 </telphone>
+    <district>Kampala</district>
+    <type>Ethopian</type>
+  </restaurant>
+
+  <restaurant>
+    <name>CANAAN</name>
+    <address>off Kampala Rd City Centre</address>
+    <district>Kampala</district>
+    <type>African</type>
+  </restaurant>
+
+  <restaurant>
+    <name>MAMBA POINT</name>
+    <address>22 Aki Bua Rd Nakasero, Kampala </address>
+    <telphone>(+256) 312563000</telphone>
+    <district>Kampala</district>
+    <type>Italian</type>
+  </restaurant>
+
+  <restaurant>
+    <name>NAWAB INDIAN RESTAURANT</name>
+    <address>Garden City Shopping Mall Yusuf Lule Road, Kampala </address>
+    <district>Kampala</district>
+    <type>Local</type>
+  </restaurant>
+
+  <restaurant>
+    <name>SILVER CITY SPUR</name>
+    <address>Golf Course Hotel Plot 64-88 Yusuf Lule Road </address>
+    <telphone>(+256) 312302280</telphone>
+    <district>Kampala</district>
+    <type>Mexican</type>
+  </restaurant>
+
+  <restaurant>
+    <name>7 HILLS REVOLVING RESTAURANT</name>
+    <address>64-88 Yusuf Lule Road, 12 Floor Golf Course Hotel, Kampala - Uganda </address>
+    <telphone>(+256) 414563500</telphone>
+    <district>Kampala</district>
+    <type>Continental</type>
+  </restaurant>
+
+  <restaurant>
+    <name>MEDITERRANEO RESTAURANT</name>
+    <address>31, Acacia Avenue, KololoKampala </address>
+    <telphone>(+256) 414500533</telphone>
+    <district>Kampala</district>
+    <type>Italian</type>
+  </restaurant>
+
+  <restaurant>
+    <name>THE PARK SQUARE</name>
+    <address>Sheraton Hotel, Ternan Avenue Kampala, Uganda </address>
+    <telphone>(+256) 414344590</telphone>
+    <district>Kampala</district>
+    <type>General</type>
+  </restaurant>
+
+  <restaurant>
+    <name>KABIRA COUNTRY CLUB</name>
+    <address>63, Old Kira Road, Bukoto P. O. Box. 3673, Kampala,info@kabiracountryclub.com</address>
+    <telphone>(+256) 312227222 </telphone>
+    <district>Kampala</district>
+    <type>General</type>
+  </restaurant>
+
+  <restaurant>
+    <name>KYOTO JAPANESE RESTAURANT</name>
+    <address>Centenary Park, Jinja Road, Kampala, kyotokampala@gmail.com</address>
+    <telphone>(+256) 414237078 </telphone>
+    <district>Kampala</district>
+    <type>Japanese</type>
+  </restaurant>
+
+  <restaurant>
+    <name>STEAK OUT</name>
+    <address>50 Lumumba Avenue, Nakasero Kampala, Uganda</address>
+    <telphone>(+256) 752264677</telphone>
+    <district>Kampala</district>
+    <type>Local</type>
+  </restaurant>
+
+  <restaurant>
+    <name>MATEO'S RESTAURANT N BAR</name>
+    <address>Parliament Avenue, Kampala, Uganda</address>
+    <telphone>(+256) 414340844</telphone>
+    <type>Italian, local</type>
+  </restaurant>
+
+  <restaurant>
+    <name>KATCH THE SUN</name>
+    <address>3 Bandali Rise, Bugolobi Kampala, Uganda </address>
+    <district>Kampala</district>
+    <type>General</type>
+  </restaurant>
+
+  <restaurant>
+    <name>LE CHATEAU</name>
+    <address>142 Ggaba Road, Kabalagala Kampala, Uganda </address>
+    <telphone>(+256) 414510404 </telphone>
+    <district>Kampala</district>
+    <type>English, Belgian</type>
+  </restaurant>
+
+  <restaurant>
+    <name>SHANGHAI RESTAURANT</name>
+    <address>Plot 8/10 Ternan Avenue, Kampala Opposite Sheraton Hotel  </address>
+    <telphone>(+256) 414236213</telphone>
+    <district>Kampala</district>
+    <type>Chinese</type>
+  </restaurant>
+
+  <restaurant>
+    <name>HAANDI - NORTH INDIAN CUISINE</name>
+    <address>7 Kampala Road,1st Floor Commercial Plaza </address>
+    <telphone>(+256) 414346283</telphone>
+    <district>Kampala</district>
+    <type>Indian</type>
+  </restaurant>
+
+  <restaurant>
+    <name>BARBEQUE LOUNGE</name>
+    <address>Jinja Road, Centenary Park, Kampala, Email: info@bbq-lounge.co.ug. </address>
+    <telphone>(+256) 754955546</telphone>
+    <district>Kampala</district>
+    <type>German</type>
+  </restaurant>
+
+  <restaurant>
+    <name>FANG FANG CHINESE RESTAURANT</name>
+    <address>1 Colville Street, Roof Terrace Communications House, Kampala</address>
+    <telphone>(+256) 414344806</telphone>
+    <district>Kampala</district>
+    <type>Chinese, local</type>
+  </restaurant>
+
+  <restaurant>
+    <name>KHANA KHAZANA</name>
+    <address>Acacia Avenue, Kololo Kampala, Uganda</address>
+    <telphone>(+256) 414233049</telphone>
+    <district>Kampala</district>
+    <type>Indian</type>
+  </restaurant>
+
+  <restaurant>
+    <name>THE LAWNS RESTAURANT</name>
+    <address>34 Impala Avenue, Kololo Kampala, Uganda</address>
+    <telphone>(+256) 414250337</telphone>
+    <district>Kampala</district>
+    <type>African</type>
+  </restaurant>
+
+  <restaurant>
+    <name>ARIRANG KOREAN RESTAURANT</name>
+    <address>Plot 15A, Kyadondo Road, Nakasero</address>
+    <telphone>(+256) 414346777</telphone>
+    <district>Kampala</district>
+    <type>African n Korean</type>
+  </restaurant>
+
+  <restaurant>
+    <name>NANJING CHINESE RESTAURANT</name>
+    <address>15 Impala Avenue Kololo Kampala, Email: lpbluesea@hotmail.com. </address>
+    <telphone>(+256) 414340928, 717588888.</telphone>
+    <district>Kampala</district>
+    <type>Chinese</type>
+  </restaurant>
+
+  <restaurant>
+    <name>SPECTRUM UGANDA</name>
+    <address>Coville Street.Theatre La Bonita just opposite Christ The King Church.</address>
+    <district>Kampala</district>
+    <type>Continental</type>
+  </restaurant>
+
+  <restaurant>
+    <name>EKITOOBERO RESTAURANT</name>
+    <address>along Nakasero Road in Kampala city</address>
+    <district>Kampala</district>
+    <type>Traditional African</type>
+  </restaurant>
+
+  <restaurant>
+    <name>PONNUS RESTAURANT KAMPALA</name>
+    <address>along Nakasero Road in Kampala city</address>
+    <district>Kampala</district>
+    <type>Lebanese</type>
+  </restaurant>
+
+  <restaurant>
+    <name>GATTOMATTO RESTAURANT</name>
+    <address>Plot 2 Bandali Rise, Bugolobi Kampala</address>
+    <district>Kampala</district>
+    <type>Italian</type>
+  </restaurant>
+
+  <restaurant>
+    <name>LE PETIT BISTRO KAMPALA</name>
+    <address>Ggaba Road, Kansanga</address>
+    <telphone>(+256) 7725096667,772403080</telphone>
+    <district>Kampala</district>
+    <type>French</type>
+  </restaurant>
+
+  <restaurant>
+    <name>ATHENA'S TAVERN KAMPALA</name>
+    <address>Windsor Crescent Kololo, Kampala.</address>
+    <district>Kampala</district>
+    <type>Greek</type>
+  </restaurant>
+
+  <restaurant>
+    <name>CAFE BALLET TAVERN KAMPALA</name>
+    <address>34c Kyadondo Road, Nakasero, Kampala. Email: cafeballet@one2netmail.co.ug</address>
+    <telphone>(+256) 414234190</telphone>
+    <district>Kampala</district>
+    <type>Afro-Carribbean, Continental</type>
+  </restaurant>
+
+  <restaurant>
+    <name>MAMMAMIA PIZZERIA N RESTAURANT KAMPALA</name>
+    <address>Speke Hotel, just opposite Sheraton Hotel.</address>
+    <district>Kampala</district>
+    <type>Italian, Continental</type>
+  </restaurant>
+
+  <restaurant>
+    <name>KHYBER PASS RESTAURANT KAMPALA</name>
+    <address>Plot 7-9 Nile Avenue, Kampala, Uganda</address>
+    <telphone>(+256) 414259221</telphone>
+    <district>Kampala</district>
+    <type>Indian</type>
+  </restaurant>
+
+  <restaurant>
+    <name>THE BLACK LANTERN RESTAURANT JINJA</name>
+    <address>Jinja</address>
+    <district>Jinja</district>
+    <type>African</type>
+  </restaurant>
+
+  <restaurant>
+    <name>KAMPALA CASINO RESTAURANT </name>
+    <address>Kampala Casino</address>
+    <district>Kampala</district>
+    <type>African, Continental</type>
+  </restaurant>
+
+  <restaurant>
+    <name>NANDO'S RESTAURANT </name>
+    <address>Kampala Road P.O.Box 26599 Kampala Email: Innscor@africaonline.co.ug</address>
+    <telphone>(+256) 414340842</telphone>
+    <district>Kampala</district>
+    <type>African, Continental</type>
+  </restaurant>
+
+  <restaurant>
+    <name>PYRAMIDS RESTAURANT N CASINO</name>
+    <address>Plot 7A Yusuf Lule Road, opposite the Golf Course</address>
+    <telphone>Tel:(256) 414234840</telphone>
+    <district>Kampala</district>
+    <type>African, Continental</type>
+  </restaurant>
+
+  <restaurant>
+    <name>THE SPACE BAR N RESTAURANT</name>
+    <address>Plot 26 Acacia Avenue, Kololo, Kampala. Email: thespace2008@yahoo.com</address>
+    <telphone>Tel: (+256) 782748840</telphone>
+    <district>Kampala</district>
+    <type>Abyssinian, Ethiopian</type>
+  </restaurant>
+
+  <restaurant>
+    <name>PIATO RESTAURANT</name>
+    <address>Plot 20 Lumumba Avenue, Nakasero, Kampala info@piatokampala.com</address>
+    <telphone>(+256) 312516388</telphone>
+    <district>Kampala</district>
+    <type>Continental</type>
+  </restaurant>
+
+  <restaurant>
+    <name>ST. ANTHONY RESTAURANT</name>
+    <address> 22 Lumumba Avenue 5590,Kampala </address>
+    <telphone>(+256) 772619076</telphone>
+    <district>Kampala</district>
+    <type>Continental</type>
+  </restaurant>
+
+  <restaurant>
+    <name>ATHINA'S TAVERNA</name>
+    <address>30 Windsor Crescent, Kololo, Kampala. Email: athina@infocom.co.ug</address>
+    <telphone>(+256) 4341428</telphone>
+    <district>Kampala</district>
+    <type>Abyssinian, Ethiopian</type>
+  </restaurant>
+
+  <restaurant>
+    <name>UHURU RESTAURANT</name>
+    <address>P.O Box 30153 Wilson Rd, Kampala</address>
+    <telphone>(+256)414234472</telphone>
+    <district>Kampala</district>
+    <type>Traditional</type>
+  </restaurant>
+
+  <restaurant>
+    <name>EFENDY'S TURKISH RESTAURANT</name>
+    <address>Centenary Park, Jinja Road, Kampala.</address>
+    <telphone>(+256) 414374507</telphone>
+    <district>Kampala</district>
+    <type>Turkish</type>
+  </restaurant>
+
+  <restaurant>
+    <name>THE ORIENTAL SIMPLY THAI</name>
+    <address>Plot 51/53, Windsor Crescent, Kololo.</address>
+    <telphone>(+256) 414391000</telphone>
+    <district>Kampala</district>
+    <type>Thai</type>
+  </restaurant>
+
+  <restaurant>
+    <name>CHONG QING</name>
+    <address>Simbamanyo House, 2 Lumumba Avenue</address>
+    <telphone>(+256) 414250242</telphone>
+    <district>Kampala</district>
+    <type>Chinese</type>
+  </restaurant>
+
+  <restaurant>
+    <name>DOLPHINZ RESTAURANT N BAR</name>
+    <address>Level 2 Kalmax Building, Bombo road</address>
+    <telphone>(+256) 782638475</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </restaurant>
+
+  <restaurant>
+    <name>PANDA JUNUUB RESTAURANT</name>
+    <address>william st</address>
+    <telphone>(+256) 788611181, 712863456</telphone>
+    <district>kampala</district>
+    <type>sudanese, ethiopian, kenyan and ugandan</type>
+  </restaurant>
+
+  <restaurant>
+    <name>NEW LIFE BAR N RESTAURANT</name>
+    <address>Level 2 Kalmax Building, Bombo road</address>
+    <telphone>(+256) 783065271</telphone>
+    <district>kampala</district>
     <type>general</type>
   </restaurant>
 </restaurants>

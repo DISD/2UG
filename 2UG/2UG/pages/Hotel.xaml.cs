@@ -55,6 +55,11 @@ namespace _2UG
                 hotelModel.name = "No " + categoryType + " found with this search: " + searchByType + searchByDistrictName + hotelName;
                 retrievedData = new[] { hotelModel };
             }
+            /* HotelModel model = new HotelModel();
+             if (model.Telphone.Any() == false) {
+                // Button.IsEnabledProperty = false;
+                
+             }*/
             typeOfListBox.ItemsSource = retrievedData;
         }
 
@@ -114,7 +119,6 @@ namespace _2UG
                            type = convertFirstElementToUpperCase((string)hItem.Element("type"))
                        };
             }
-
             return data;
         }
 
@@ -275,15 +279,28 @@ namespace _2UG
         private void callEventHandler(object sender, RoutedEventArgs e)
         {
             string tel = (string)((Button)sender).Tag;
-            disableApplicationIconBar();
-            CallForm callForm = new CallForm(tel);
-            callForm.Show();
+            try
+            {
+                if (tel.Any() == true)
+                {
+                    disableApplicationIconBar();
+                    CallForm callForm = new CallForm(tel);
+                    callForm.Show();
 
-            callForm.Closed += new EventHandler(OnCallEnded);
+                    callForm.Closed += new EventHandler(OnCallEnded);
 
-            callForm.VerticalAlignment = VerticalAlignment.Top;
-            callForm.HorizontalAlignment = HorizontalAlignment.Center;
-            callForm.Margin = new Thickness(0, 30, 0, 0);
+                    callForm.VerticalAlignment = VerticalAlignment.Top;
+                    callForm.HorizontalAlignment = HorizontalAlignment.Center;
+                    callForm.Margin = new Thickness(0, 30, 0, 0);
+                }
+                else
+                {
+                    return;
+                }
+            }
+            catch (Exception m)
+            {
+            }
         }
 
         private void OnCallEnded(object sender, EventArgs e)

@@ -2,7 +2,7 @@
   <hotel>
     <name>KAMPALA SERENA HOTEL</name>
     <address>email: kamapla@serena.co.ug</address>
-    <telphone>(+256) 414309000, 414259130</telphone>
+    <telphone>(+256) 414309000</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -10,7 +10,7 @@
   <hotel>
     <name>SHERATON HOTEL</name>
     <address> email: reservations.kampala@sheraton.com, www.sheraton.com/kampala</address>
-    <telphone>(+256) 0312 322337/8, 0414342357</telphone>
+    <telphone>(+256) 312322337</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -19,7 +19,7 @@
   <hotel>
     <name>EMERALD HOTEL</name>
     <address>Bombo Road, Bat Valley Crescent, Plot 3 Semliki Walk  </address>
-    <telphone>Tel: +256 414 309000, Fax: +256 414 259130</telphone>
+    <telphone>(+256) 414309000</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -27,7 +27,7 @@
   <hotel>
     <name>GRAND IMPERIAL HOTEL</name>
     <address>kampala city center </address>
-    <telphone>Tel: +256 414 309000, Fax: +256 414 259130</telphone>
+    <telphone>(+256) 414309000</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -35,23 +35,23 @@
   <hotel>
     <name>CAPITOL PALACE HOTEL</name>
     <address>Naguru hill</address>
-    <telphone>Tel: 0312-102938, Mobile: 0754-370110,(+1)832-545-7770(US)</telphone>
+    <telphone>(+256) 312102938, 754370110</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
 
   <hotel>
-    <name>CITY ROYAL HOTEL</name>
-    <address> </address>
-    <telphone>Tel: +256 414 309000, Fax: +256 414 259130</telphone>
+    <name>CITY ROYAL RESORT HOTEL</name>
+    <address>Plot 8-10- Kataza Close 1 Opposite Shell Bugolobi, www.cityroyalkampala.com </address>
+    <telphone>(+256) 414258037</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
 
   <hotel>
     <name>COLLINE HOTEL</name>
-    <address>mukono Town only 21 kms from kampala City center </address>
-    <telphone>Tel: 0312-102938, 0754-370110, (+1)832-545 7770(US)</telphone>
+    <address>P. O. Box 244, Mukono Uganda, reservations@collinehotel.com</address>
+    <telphone>(+256) 414290240, 752723344</telphone>
     <district>mukono</district>
     <type>general</type>
   </hotel>
@@ -59,7 +59,7 @@
   <hotel>
     <name>FAIRWAY HOTEL</name>
     <address>Plot 1-2 Kafu Road, PO Box 4595, kampala, Uganda, info@fairwayhotel.co.ug</address>
-    <telphone>Tel: +256 (0)41 4259571/2/5</telphone>
+    <telphone>(+256) 414259571</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -67,7 +67,7 @@
   <hotel>
     <name>FOREST COTTAGES</name>
     <address>Old Kira Road, info@forest-cottages.com  </address>
-    <telphone>+256 414287308, +256 414297308 </telphone>
+    <telphone>(+256) 414287308, 414297308 </telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -75,7 +75,7 @@
   <hotel>
     <name>GOLF COURSE HOTEL</name>
     <address>Plot 64-86, Yusuf Lule Road, P.O. Box 22774, kampala, Uganda.  reservation@golfcoursehotel.com,</address>
-    <telphone>Tel: +256 414 309000, Fax: +256 414 259130</telphone>
+    <telphone>(+256) 414563500, 312302280</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -83,16 +83,16 @@
   <hotel>
     <name>HOTEL AFRICANA</name>
     <address> 2-4 Wampewo Ave, email: africana@hotelafricana.com, www.hotelafricana.com.</address>
-    <telphone>0414 777500</telphone>
+    <telphone>(+256) 414777500</telphone>
     <district>kampala</district>
     <type>general</type>
-    
+
   </hotel>
 
   <hotel>
     <name>HOTEL TRIANGLE kampala</name>
     <address>Plot 16 Buganda road, P.O. Box 8632 kampala, email: reservations@hoteltriangle.co.ug  www.hoteltriangle.co.ug </address>
-    <telphone>Tel:  +256 414 231747, +256 (0)414 233410, 	+256 414 662722</telphone>
+    <telphone>(+256) 414231747, 414233410, 414662722</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -100,7 +100,7 @@
   <hotel>
     <name>HUMURA HOTEL</name>
     <address>Plot 3 Kitante Close, Kololo, P. O. Box 35521 kampala, Uganda, reservations@humura.or.ug</address>
-    <telphone>Tel:+256 414 700400, +256 414 700402, Fax: +256 414 235275</telphone>
+    <telphone>(+256) 414700400, 414700402</telphone>
     <district>mukono</district>
     <type>general</type>
   </hotel>
@@ -108,7 +108,7 @@
   <hotel>
     <name>IMPERIAL BOTANICAL BEACH HOTEL</name>
     <address>P O Box 4326, kampala, Uganda. imperialhotels@hoteleq.com</address>
-    <telphone>Tel: +256 417 111000, Fax: +256 414 250146</telphone>
+    <telphone>(+256) 417111000</telphone>
     <district>entebbe</district>
     <type>general</type>
   </hotel>
@@ -116,7 +116,7 @@
   <hotel>
     <name>IMPERIAL RESORT BEACH HOTEL</name>
     <address>P O Box 4326, kampala, Uganda. imperialhotels@hoteleq.com</address>
-    <telphone>Tel: +256 417 111000, Fax: +256 414 250146</telphone>
+    <telphone>(+256) 417111000</telphone>
     <district>entebbe</district>
     <type>general</type>
   </hotel>
@@ -124,23 +124,23 @@
   <hotel>
     <name>IMPERIAL ROYALE HOTEL</name>
     <address>P O Box 4326, kampala, Uganda. imperialhotels@hoteleq.com </address>
-    <telphone>Tel: +256 417 111000, Fax: +256 414 250146</telphone>
+    <telphone>(+256) 417111000</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
 
   <hotel>
-    <name>jinja NILE RESORT</name>
+    <name>JINJA NILE RESORT</name>
     <address> P.O. Box 1553, jinja Uganda. nileresort@source.co.ug</address>
-    <telphone>Tel: +256 43 4 122190, +256 772 607385, Fax: +256 434 122581</telphone>
+    <telphone>(+256) 434122190, 772607385</telphone>
     <district>jinja</district>
-    <type>italian</type>
+    <type>general</type>
   </hotel>
 
   <hotel>
     <name>LAKE VIEW RESORT HOTEL</name>
     <address>Plot 159 Fortportal-Kasese Road, P.O Box 1200 Mbarara Uganda, info@lakeviewresorthotel.co.ug</address>
-    <telphone>Tel: +256 414 309000, Fax: +256 414 259130</telphone>
+    <telphone>(+256) 414309000</telphone>
     <district>Mbarara</district>
     <type>general</type>
   </hotel>
@@ -148,7 +148,7 @@
   <hotel>
     <name>LE PETIT VILLAGE HOTEL</name>
     <address>Plot 1273, Ggaba Road, P.O Box 12721, kampala, Uganda, info@lepetitvillage.net </address>
-    <telphone>Tel: + 256 312 265 530, Fax: +256 414 510 465</telphone>
+    <telphone>(+256) 312265530</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -156,7 +156,7 @@
   <hotel>
     <name>METROPOLE HOTEL</name>
     <address>Plot 51/53, Windsor Crescent, P.O. Box 22774, kampala, Uganda, metropole@metropolekampala.com</address>
-    <telphone>Tel: +256-414-391 000, Fax :+256 414 500116</telphone>
+    <telphone>(+256) 414391000</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -164,7 +164,7 @@
   <hotel>
     <name>MOUNTAIN OF THE MOON HOTEL</name>
     <address>Plot 4 , Nyaika Avenue, Fort Portal, Western Uganda, info@mountainsofthemoon.co.ug</address>
-    <telphone>Tel: +256 483 423200, +256 775 557840, Fax. +256 483 422631</telphone>
+    <telphone>(+256) 483423200, 775557840</telphone>
     <district>fort-portal</district>
     <type>general</type>
   </hotel>
@@ -172,15 +172,15 @@
   <hotel>
     <name>NEW COURT VIEW HOTEL</name>
     <address>P.O. BOX 461, MASINDI UGANDA, courtview@utlonline.co.ug</address>
-    <telphone>Tel: +256 4654 20461</telphone>
+    <telphone>(+256) 465420461</telphone>
     <district>masindi</district>
-    <type>chinese</type>
+    <type>general</type>
   </hotel>
 
   <hotel>
     <name>PALAIS DACHA HOTEL N APARTMENTS</name>
     <address>Mutungo Hill, Engineers Close. P.O. Box 24524 kampala, UGANDA. reservations@palaisdacha.net</address>
-    <telphone>Tel: +256 782 879490, FAX: + 256 414 223159 </telphone>
+    <telphone>(+256) 782879490</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -188,7 +188,7 @@
   <hotel>
     <name>PROTEA HOTEL</name>
     <address>4 Elgon Terrace, Kololo kampala, res@proteakla.co.ug</address>
-    <telphone>Tel: +256 312 550000</telphone>
+    <telphone>(+256) 312550000</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -196,7 +196,7 @@
   <hotel>
     <name>SHANGRI-LA HOTEL</name>
     <address>P.0. Box 11726 kampala / Plot 8/10 Ternan Ave, kampala</address>
-    <telphone>Tel: +256 414 250366 </telphone>
+    <telphone>(+256) 414250366</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -204,7 +204,7 @@
   <hotel>
     <name>SPEKE HOTEL</name>
     <address>Plot 7-9 Nile Avenue, kampala, Uganda. P.O. Box 7036, kampala, Uganda. spekehotel@spekehotel.com</address>
-    <telphone>Tel: 0414 259221 0414 235332, Fax: 0414 235345 </telphone>
+    <telphone>(+256) 414259221, 414 235332</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -212,7 +212,7 @@
   <hotel>
     <name>SPORTS VIEW HOTEL</name>
     <address>mukono Town only 21 kms from kampala City center </address>
-    <telphone>Tel: +256 414 309000, Fax: +256 414 259130</telphone>
+    <telphone>(+256) 414309000</telphone>
     <district>wakiso</district>
     <type>general</type>
   </hotel>
@@ -220,7 +220,7 @@
   <hotel>
     <name>TOURIST HOTEL</name>
     <address>Nakasero Market, email: tourist@spekehotel.com, www.touristhotel.net</address>
-    <telphone>Tel: +256 414 309000, Fax: +256 414 259130</telphone>
+    <telphone>(+256) 414309000</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -244,7 +244,7 @@
   <hotel>
     <name>RIDAR HOTEL</name>
     <address>P.O.Box 7627, kampala, Uganda, reservations@ridarhotel.net</address>
-    <telphone>Tel:+256 414 290697, +256392 700696, Fax: +256 414 290699</telphone>
+    <telphone>(+256) 414290697, 392700696</telphone>
     <district>mukono</district>
     <type>general</type>
   </hotel>
@@ -252,7 +252,7 @@
   <hotel>
     <name>BILKON HOTEL</name>
     <address>P.O Box 984, jinja, bilkonhotel@bilkonhotel.com</address>
-    <telphone>Tel: +256 434 123944, +256 772 504452</telphone>
+    <telphone>(+256) 434 123944, 772504452</telphone>
     <district>jinja</district>
     <type>general</type>
   </hotel>
@@ -260,7 +260,7 @@
   <hotel>
     <name>KINGFISHER RESORT</name>
     <address>P.O.Box 608, jinja, near the Source of the Nile, kingfishersafaris@gmx.net</address>
-    <telphone>Tel:+256772 632063,+256 772 510197, +256 792 365656</telphone>
+    <telphone>(+256) 772632063, 772510197, 792365656</telphone>
     <district>jinja</district>
     <type>general</type>
   </hotel>
@@ -268,7 +268,7 @@
   <hotel>
     <name>MINISTERS' VILLAGE HOTEL</name>
     <address>Ntinda kampala Uganda, info@ministers-village-hotel.com </address>
-    <telphone>Tel: +256 392 858505, +256 775 221992, +256 782 003353</telphone>
+    <telphone>(+256) 392858505, 775221992, 782 003353</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -276,7 +276,7 @@
   <hotel>
     <name>HOTEL RUCH</name>
     <address>Plot 3 Kintu Road</address>
-    <telphone>Tel: +256 312 210110, +256 702 820100, Fax: +256 312 265308 </telphone>
+    <telphone>(+256) 312210110, 702820100</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -284,7 +284,7 @@
   <hotel>
     <name>HOLIDAY EXPRESS HOTEL</name>
     <address>corner of Luwum and Dustur Streets in central kampala, email: holidayexp@holidayexpresshotel.com, www.holidayexpresshotel.com</address>
-    <telphone>Tel: 0312 262858/7 or 0414 253451/253455</telphone>
+    <telphone>(+256) 312262858, 414253451</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -292,7 +292,7 @@
   <hotel>
     <name>EMIN PASHA HOTEL</name>
     <address> 27 Akii-Bua Road </address>
-    <telphone>Tel: +256 (0)414 236977/8/9, +256 (0)312 264712/3/4 Fax: +256 (0)414</telphone>
+    <telphone>(+256) 414236977, 312264712</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -300,7 +300,7 @@
   <hotel>
     <name>HOTEL EQUATORIAL</name>
     <address>William Street, email: equator@starcom.co.ug.</address>
-    <telphone>Tel. 0414 250780/9</telphone>
+    <telphone>(+256) 414250780</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -308,7 +308,7 @@
   <hotel>
     <name>BENCATHY HOTEL</name>
     <address>Plot 1100 Ggaba Rd, P.O BOX 11304, kampala, Email: bencathyhotel@gmail.com, Internet: www.traveluganda.co.ug/bencathyhotel</address>
-    <telphone>Tel: +256 (0)312 294993, +256 (0)783 032040. 0783 032022</telphone>
+    <telphone>(+256) 312294993, 783032040, 783032022</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -316,7 +316,7 @@
   <hotel>
     <name>COLLEGE INN</name>
     <address>Bombo Rd, Wandegeya kampala</address>
-    <telphone>Tel: +256 (0)41 4533835, Mobile: (0)772 897710, email: reservations@collegeinn.co.ug</telphone>
+    <telphone>(+256) 414533835, 772897710, email: reservations@collegeinn.co.ug</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -324,7 +324,7 @@
   <hotel>
     <name>EXCELLENT HOTEL kampala</name>
     <address>along kampala Road, Opposite Fido Dido Restaurant , email:info@excellenthotelkampala.com</address>
-    <telphone>Tel: +256 713660020</telphone>
+    <telphone>(+256) 713660020</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -332,7 +332,7 @@
   <hotel>
     <name>HOTEL DIPLOMATE</name>
     <address>Tank Hill Muyenga, www.diplomatekampala.com</address>
-    <telphone>Tel: 0414 572828</telphone>
+    <telphone>(+256) 414572828</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -340,7 +340,7 @@
   <hotel>
     <name>JICCA HOTEL</name>
     <address> Kabira Road (Bukenya Zone),  info@jiccahotel.com</address>
-    <telphone>Tel: +256 414 299195, 0772 590111</telphone>
+    <telphone>(+256) 414299195, 772590111</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -348,8 +348,120 @@
   <hotel>
     <name>MUKONO RESORT HOTEL</name>
     <address> mukono</address>
-    <telphone>Tel: +256 (0)392 834775, +256 (0)712 348300</telphone>
+    <telphone>(+256) 392834775, 712348300</telphone>
     <district>mukono</district>
+    <type>general</type>
+  </hotel>
+
+  <hotel>
+    <name>VISION HOTEL</name>
+    <address>Sir Albert Cook Road, Mengo, Kampala, Uganda</address>
+    <telphone>(+256) 414270602</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </hotel>
+
+  <hotel>
+    <name>HOTEL INTER TROPICS</name>
+    <address>Nakulabye 37 Km from Entebbe Airport 10 minutes drive from Kampala , info@hotelintertropics.com</address>
+    <telphone>(+256) 312516948, 775212596</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </hotel>
+
+  <hotel>
+    <name>GRAND GLOBAL HOTEL</name>
+    <address>P.O. Box 28951 Kampala, manager@grandglobalhotel.co.ug</address>
+    <telphone>(+256) 312516620, 414531836</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </hotel>
+
+  <hotel>
+    <name>SAM SAM HOTEL</name>
+    <address>Namirembe road</address>
+    <telphone>(+256) 414274211, 772681983</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </hotel>
+
+  <hotel>
+    <name>HOTEL DIPLOMATE</name>
+    <address>Plot 970/971 Diplomate road muyenga, P.O.BOX 6968 Kampala</address>
+    <telphone>(+256) 414267655, 414572828</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </hotel>
+
+  <hotel>
+    <name>HOTEL INTERNATIONAL 200 LTD</name>
+    <address>Tank hill road, Muyenga</address>
+    <telphone>(+256) 414510200</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </hotel>
+
+  <hotel>
+    <name>SKY HOTEL INTERNATIONAL LTD</name>
+    <address>1423 Ntinda Kiwatule, Kisosonkole zone</address>
+    <telphone>(+256) 414240243, 772233314</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </hotel>
+
+  <hotel>
+    <name>NEW GLORIA HOTEL</name>
+    <address>P.O Box 9006, Plot 90, William Street.</address>
+    <telphone>(+256) 414257790, 414257797</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </hotel>
+
+  <hotel>
+    <name>ROYAL MONARCH HOTEL</name>
+    <address>P.O Box 25987, Kampala.</address>
+    <telphone>(+256) 312109843, 752483806</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </hotel>
+
+  <hotel>
+    <name>HOTEL SOJOVALO</name>
+    <address>Plot 856/854 Rubaga Road, P.O Box 5832, Kampala, info@hotelsojovalo.com </address>
+    <telphone>(+256) 414 271879</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </hotel>
+
+  <hotel>
+    <name>HOTEL BARBADOS INTL</name>
+    <address>Plot 118, block 4 west Mengo, Kibuga Rubaga Road P.o box 34683 Kampala.</address>
+    <telphone>(+256) 392856955, 772836569, 772649846</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </hotel>
+
+  <hotel>
+    <name>KINGS CROSS HOTEL</name>
+    <address>Rubaga Road, Opposite Olympic Petrol Station, P.O Box 37820, Kampala.</address>
+    <telphone>(+256) 772854632</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </hotel>
+
+  <hotel>
+    <name>APONYE HOTEL</name>
+    <address>Apollo House, Plot 17B, William Street, P.O. Box 35339, Kampala, Uganda, reservations@aponyehotel.com</address>
+    <telphone>(+256) 414349239, 785151710, 772824802</telphone>
+    <district>kampala</district>
+    <type>general</type>
+  </hotel>
+
+  <hotel>
+    <name>KK TRUST HOTEL</name>
+    <address>Plot 8A, Namirembe road, P.O.Box 28740 Kampala Uganda</address>
+    <telphone>(+256) 414233992</telphone>
+    <district>kampala</district>
     <type>general</type>
   </hotel>
 </hotels>
