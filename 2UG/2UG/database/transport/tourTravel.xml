@@ -3,210 +3,210 @@
     <tour_travel>
       <name>AAB Tours and Travel</name>
       <address>Zana: Kampala - Entebbe Highway. 100 Metreson Nyanama/Ndeeba Road P.O, Box 37400 Kampala Uganda</address>
-      <telphone>(+256)/ 414201299, 755700700, 715700700</telphone>
+      <telphone>(+256) 414201299, 755700700, 715700700</telphone>
       <icon>../database_images/t_tour_n_travel/aab.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Maranatha Tours n Travel</name>
       <address>Maranatha Tours n Travel, Colline House 1st Floor Suit 20, Pilkington Road</address>
-      <telphone>(+256)/ 414231454, 772636412, 773016210</telphone>
+      <telphone>(+256) 414231454, 772636412, 773016210</telphone>
       <icon>../database_images/t_tour_n_travel/maranatha.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Tour and Travel Centre</name>
       <address>info@tourandtravelcentre.com, P.O Box 2890, Nakasero Kampala Uganda</address>
-      <telphone>(+256)/ 414346555, 414343525</telphone>
+      <telphone>(+256) 414346555, 414343525</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Platinum Safaris n Travel Center</name>
       <address>Amandida House,Room 19,Kampala Uganda, P.O Box 8102 Kampala, Uganda</address>
-      <telphone>(+256)/ 712841143</telphone>
+      <telphone>(+256) 712841143</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Advanced Tours n Travel</name>
       <address>Plot No 28/30 Clive Road West, Jinja. P.0.Box 806 Jinja, Uganda, East Africa.</address>
-      <telphone>(+256)/ 434120457, 434120457, 712463474</telphone>
+      <telphone>(+256) 434120457, 434120457, 712463474</telphone>
       <icon>../database_images/t_tour_n_travel/advancedtours.png</icon>
       <district>jinja</district>
     </tour_travel>
     <tour_travel>
       <name>Asyanut</name>
       <address>P. O. Box 3456, Kampala, Uganda. E.A.Lubowa Estate, Entebbe Road. (Next to International School of Uganda);</address>
-      <telphone> (+256)/ 414503065, 414503064, 414503065</telphone>
+      <telphone> (+256) 414503065, 414503064, 414503065</telphone>
       <icon>../database_images/t_tour_n_travel/asyanuttours-safaris.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Afri Tours n Travel Ltd</name>
       <address>info@afritourstravel.com, Afri Tours n Travel Ltd. 1 Kafu Road , Fairway Hotel Poolside, P.O. Box 5187, Kampala, Uganda</address>
-      <telphone>(+256)/ 414233596, 776233596, 414344855</telphone>
+      <telphone>(+256) 414233596, 776233596, 414344855</telphone>
       <icon>../database_images/t_tour_n_travel/afritours.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>ESCAPE TOURS AND SAFARIS UGANDA</name>
       <address>safari@escapeuganda.com, Cynthia House (Offices and Appartments),Kauku (10 kms along Kampala - Entebbe Highway from Entebbe. P.O Box 25543, Kampala, Uganda</address>
-      <telphone>(+256)/ 312280584, 712295522</telphone>
+      <telphone>(+256) 312280584, 712295522</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Kazinga Tours</name>
       <address>mail@kazingatours.com</address>
-      <telphone>(+256)/ 772552819</telphone>
+      <telphone>(+256) 772552819</telphone>
       <icon>../database_images/t_tour_n_travel/kazinga.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Matoke Tours</name>
       <address>PO BOX 1881 Senfuka Road 1 Muyenga,Kampala, Uganda</address>
-      <telphone>(+256)/ 779646072, 751057863</telphone>
+      <telphone>(+256) 779646072, 751057863</telphone>
       <icon>../database_images/t_tour_n_travel/matoke-tours-logo.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Africa Expendition Safaris Ltd</name>
       <address>Plot 4C Main Street, Jinja, P.O.Box 1865 Jinja (U)EA</address>
-      <telphone>(+256)/ 434123561, 752419651</telphone>
+      <telphone>(+256) 434123561, 752419651</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>jinja</district>
     </tour_travel>
     <tour_travel>
       <name>Africa Travel Limited</name>
       <address>Plot 6 Buganda Road - Opp Buganda Road Magistrate Court,P.O.BOX 21833 Kampala Uganda</address>
-      <telphone> Tel: (+256)/ 4341330, 752756756</telphone>
+      <telphone> Tel: (+256) 4341330, 752756756</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>African Pride Tour n Travel Int Ltd</name>
       <address>Namaganda Plaza Luwum Street,P.O.Box 50556 Kampala Uganda</address>
-      <telphone> (+256)/ 752694727</telphone>
+      <telphone> (+256) 752694727</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>African Tours n Travel </name>
       <address>Kimathi Avenue Impala House Kampala</address>
-      <telphone>(+256)/ 414257110</telphone>
+      <telphone>(+256) 414257110</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Africa's Great Exploaration Safari</name>
       <address>Munyonyo Common Wealth Resort, P.O.Box 9021 Kampala Uganda</address>
-      <telphone>(+256)/ 414662300</telphone>
+      <telphone>(+256) 414662300</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Al Heelam Tours n Travel </name>>
       <address>Plot 17/19 Diamond Trust Building, P.O.Box 12051 Kampala Uganda</address>
-      <telphone>(+256)/ 414348910</telphone>
+      <telphone>(+256) 414348910</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Asante Travel Care </name>
       <address>Speke Road Colline House 3rd Floor, P.O.Box 7691 Kampala Uganda</address>
-      <telphone>(+256)/ 414237317</telphone>
+      <telphone>(+256) 414237317</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Crystal Travel Bureau </name>
       <address>Plot 6 colvile Street, P.O.Box 9698 Kampala Ugandal,Website: www.crystalsafaris.com</address>
-      <telphone>(+256)/ 414345742</telphone>
+      <telphone>(+256) 414345742</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Destination Jungle LTD </name>
       <address>Pan Africa House 5th Floor, P.O.Box 2874 Kampala – Uganda</address>
-      <telphone>(+256)414232754, 712385446 </telphone>
+      <telphone>(+256) 414232754, 712385446 </telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Dove Tours n Travel </name>
       <address>Plot 5 Entebbe Road, P.O.Box 1445 Kampala Uganda </address>
-      <telphone>(+256)/ 414342013</telphone>
+      <telphone>(+256) 414342013</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>Entebbe</district>
     </tour_travel>
     <tour_travel>
       <name>Ethnah Safaris </name>
       <address>L4 S13, Shri Ganesh Plaza, Plot 24/26 Entebbe road, Kampala Uganda</address>
-      <telphone>(+256)/ 716690206</telphone>
+      <telphone>(+256) 716690206</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Everbased Tours n Travel </name>
       <address>Colville Street Airways House, P.O.Box 6723 Kampala Uganda</address>
-      <telphone>(+256)/ 414230060</telphone>
+      <telphone>(+256) 414230060</telphone>
       <district>kampala</district>
       <icon>../database_images/default_tour_n_travel.png</icon>
     </tour_travel>
     <tour_travel>
       <name>Expedia Travel n Safari Centre Ltd </name>
       <address>Kamu-Kamu Plaza, Plot 6, suite Ff1. Entebbe Road, P.O Box 34146. Kampala-Uganda</address>
-      <telphone>(+256)/ 312273814, 772466827</telphone>
+      <telphone>(+256) 312273814, 772466827</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Global Interlink Travel Services </name>
       <address>52 Grand Imperial Hotel Mall (1st Floor), Nile Avenue, Kampala Uganda, global@global-interlink.org</address>
-      <telphone>(+256)/ 414235233</telphone>
+      <telphone>(+256) 414235233</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Great Value Safaris </name>
       <address>Plot 1 Portal Avenue Span House, P.O.Box 70191 Kampala Uganda www.gvsafaris.com</address>
-      <telphone>(+256)/ 414347501, 312272236</telphone>
+      <telphone>(+256) 414347501, 312272236</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Globetrotters Travel n Tours </name>
       <address>Plot 1 Kimathi Avenue UAP building, P.O.Box 20099 Kampala Uganda</address>
-      <telphone>(+256)/ 414234673</telphone>
+      <telphone>(+256) 414234673</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Greenleaf Tourist Club </name>
       <address>Suite 5, Airways House, Plot 6 , Colville street, Kampala Uganda</address>
-      <telphone>(+256)/ 414230460</telphone>
+      <telphone>(+256) 414230460</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Hallmark Voyages and Tours </name>
       <address>Lubowa Shopping Village - Lubowa Estates, P.O.Box 9243 Kampala Uganda</address>
-      <telphone>(256)/ 414200233, 703889505</telphone>
+      <telphone>(256) 414200233, 703889505</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>High Flyer Travel Services </name>
       <address>Plot 15 Jinja Road, P.O.Box 34897 Kampala Uganda</address>
-      <telphone>(+256)/ 414250053, 414257943</telphone>
+      <telphone>(+256) 414250053, 414257943</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Intek Africa Ltd</name>
       <address>Plot 3, Parliament Avenue, 1st Floor Raja Chambers Kampala Uganda</address>
-      <telphone>(+256)/ 414342907, 712750350</telphone>
+      <telphone>(+256) 414342907, 712750350</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
@@ -220,56 +220,56 @@
     <tour_travel>
       <name>Interline Tours n Travel </name>
       <address>Plot 8, Luwum Street, P.O.Box 8125 Kampala Uganda</address>
-      <telphone>(+256)/ 414259976</telphone>
+      <telphone>(+256) 414259976</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>JetTours n Travel </name>
       <address>Plot 3, Luwum Street, P.O.Box 5710 Kampala</address>
-      <telphone>(+256)/ 414345158</telphone>
+      <telphone>(+256) 414345158</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Great Value Safaris </name>
       <address>Plot 1 Portal Avenue Span House, P.O.Box 70191 Kampala Uganda www.gvsafaris.com</address>
-      <telphone>(+256)/ 414347501, 312272236</telphone>
+      <telphone>(+256) 414347501, 312272236</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Globetrotters Travel n Tours </name>
       <address>Plot 1 Kimathi Avenue UAP building, P.O.Box 20099 Kampala Uganda</address>
-      <telphone>(+256)/ 414234673</telphone>
+      <telphone>(+256) 414234673</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Greenleaf Tourist Club </name>
       <address>Suite 5, Airways House, Plot 6 , Colville street, Kampala Uganda</address>
-      <telphone>(+256)/ 414230460</telphone>
+      <telphone>(+256) 414230460</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Hallmark Voyages and Tours </name>
       <address>Lubowa Shopping Village - Lubowa Estates, P.O.Box 9243 Kampala Uganda</address>
-      <telphone>(256)/ 414200233, 703889505</telphone>
+      <telphone>(256) 414200233, 703889505</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>High Flyer Travel Services </name>
       <address>Plot 15 Jinja Road, P.O.Box 34897 Kampala Uganda</address>
-      <telphone>(+256)/ 414250053, 414257943</telphone>
+      <telphone>(+256) 414250053, 414257943</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Intek Africa Ltd</name>
       <address>Plot 3, Parliament Avenue, 1st Floor Raja Chambers Kampala Uganda</address>
-      <telphone>(+256)/ 414342907, 712750350</telphone>
+      <telphone>(+256) 414342907, 712750350</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
@@ -284,91 +284,91 @@
     <tour_travel>
       <name>Interline Tours n Travel </name>
       <address>Plot 8, Luwum Street, P.O.Box 8125 Kampala Uganda</address>
-      <telphone>(+256)/ 414259976</telphone>
+      <telphone>(+256) 414259976</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>JetTours n Travel </name>
       <address>Plot 3, Luwum Street, P.O.Box 5710 Kampala</address>
-      <telphone>(+256)/ 414345158</telphone>
+      <telphone>(+256)414345158</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Karibu Travel Services </name>
       <address>Plot 4, Kimathi Avenue, P.O.Box 3297 Kampala</address>
-      <telphone>(+256)/ 414256056</telphone>
+      <telphone>(+256) 414256056</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Maghri Tours n Travel </name>
       <address>Plot 13, Maria’s Galleria Building Rm. L2, No. 8, P.O.BOX 23332 Kampala-Uganda</address>
-      <telphone>(+256)/ 772515462, 752515462</telphone>
+      <telphone>(+256) 772515462, 752515462</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Midas Touch </name>
       <address>Plot 11, Nakasero Road Jocasa House, P.O.Box 10570 Kampala Uganda</address>
-      <telphone>(+256)/ 414250181</telphone>
+      <telphone>(+256) 414250181</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Mihasesu International </name>
       <address>Plot 4, Wilson Road. Ivory Plaza Kampala Uganda</address>
-      <telphone>(+256)/ 312106825, 752280029</telphone>
+      <telphone>(+256) 312106825, 752280029</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Millennium Travel n Tour Services </name>
       <address>Plot 14, Kirumira Towers William Street, P.O.Box 33493 Kampala</address>
-      <telphone>(+256)/ 414346108</telphone>
+      <telphone>(+256) 414346108</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Orbit Link Travel and Tours </name>
       <address>No.890 Kisenyi Road, P.O.Box 11752 Kampala</address>
-      <telphone>(+256)/ 414668642, 775680000</telphone>
+      <telphone>(+256) 414668642, 775680000</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Palm Safaris n Logistics </name>
       <address>Nakawa Capital Shoppers building, P.O.Box 7631 Kampala</address>
-      <telphone>(+256)/ 414668987</telphone>
+      <telphone>(+256) 414668987</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Panari Safaris Ltd </name>
       <address>Shri Ganesh Plaza, Entebbe Road, L2-20 Tel: +256414668869</address>
-      <telphone>(+256)/ 714668307, 772434578</telphone>
+      <telphone>(+256) 714668307, 772434578</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Regional Travel Bureau Co. </name>
       <address>Plot 2, Colville Street Shumuk House, 2B 10/45, P.O.Box 9821 Kampala Uganda</address>
-      <telphone>(+256)/ 414347533, 701423808</telphone>
+      <telphone>(+256) 414347533, 701423808</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Royal Travel Agency of Scotland </name>
       <address>Luwum Street Avemar Shopping Mall, P.O.Box 36819 Kampala Uganda</address>
-      <telphone>(+256)/ 414349437</telphone>
+      <telphone>(+256) 414349437</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Sagal Travel n Tours </name>
       <address>Plot 1 Hoima Road, P.O.Box 27555 Kampala</address>
-      <telphone>(+256)/ 774749566</telphone>
+      <telphone>(+256) 774749566</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
@@ -389,28 +389,28 @@
     <tour_travel>
       <name>Shumuk Tours n Travel </name>
       <address>Shumuk House Plot 2 Colville Street, PO Box 6552 Kampala, Uganda</address>
-      <telphone>(+256)/ 414232302/05, 414597855</telphone>
+      <telphone>(+256) 414232302/05, 414597855</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Simba Tours n Travel </name>
       <address>Plot 8, Colville Street, Neeta Cinema BuildingP.O.Box 9421 kampala, Uganda</address>
-      <telphone>(+256)/ 414250581</telphone>
+      <telphone>(+256) 414250581</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Sky Travel Ltd </name>
       <address>Plot 977, block 17 Nalukulongo, masaka road. Kampala Uganda</address>
-      <telphone>(+256)/ 414273526, 392965889, 758600800</telphone>
+      <telphone>(+256) 414273526, 392965889, 758600800</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Speedwing Travel Centre </name>
       <address>United Assurance Building, Kimathi Avenue, P.O.Box 7507, Kampala Uganda</address>
-      <telphone>(+256)/ 414343208</telphone>
+      <telphone>(+256) 414343208</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
@@ -438,28 +438,28 @@
     <tour_travel>
       <name>Travel Galore Limited </name>
       <address>1st Floor, Esami Building, Plot 52, Bombo Road, P.O.Box 21986, Kampala – Uganda</address>
-      <telphone>(+256)/ 414530413, 312294960</telphone>
+      <telphone>(+256) 414530413, 312294960</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Travel Wonders</name>
       <address>Plot 2 Colvile Street Shumuk House, P.O.Box 12006 Kampala, Uganda</address>
-      <telphone>(+256)/ 772626487</telphone>
+      <telphone>(+256) 772626487</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Travel World International </name>
       <address>Plot 3, Kimathi Avenue, 3rd Floor Pan African House, P.O.Box 37017 Kampala</address>
-      <telphone>(+256)/ 312261990</telphone>
+      <telphone>(+256) 312261990</telphone>
       <icon>../database_images/default_tour_n_travel.png</icon>
       <district>kampala</district>
     </tour_travel>
     <tour_travel>
       <name>Trek East Africa Safaris </name>
       <address>P.O.Box 16322, Wandegeya, Kampala Website: www.trekeastafrica.com</address>
-      <telphone>(+256)/ 785828023, 752975961</telphone>
+      <telphone>(+256) 785828023, 752975961</telphone>
       <icon>../database_images/t_tour_n_travel/trek-ea.gif</icon>
       <district>kampala</district>
     </tour_travel>

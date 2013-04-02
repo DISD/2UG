@@ -15,9 +15,15 @@ namespace _2UG.model.hotel
     {
         public string name {set; get;}
         public string address { set; get; }
-        public string Telphone { set; get; }
+        public string telphone { set; get; }
         public string district { set; get; }
         public string type { set; get; }
+
+        public String Telphone
+        {
+            get { return telphone; }
+            set { telphone = value; }
+        }
 
     }
 }

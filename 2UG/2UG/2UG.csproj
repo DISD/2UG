@@ -227,6 +227,7 @@
     <Content Include="database\transport\other.xml" />
     <Content Include="database\transport\specialHire.xml" />
     <Content Include="database\transport\tourTravel.xml" />
+    <Resource Include="images\uganda.jpg" />
     <Content Include="music\Emali.wav" />
     <Resource Include="images\gorilla-uganda.jpg" />
     <Resource Include="images\bicking_img.png" />

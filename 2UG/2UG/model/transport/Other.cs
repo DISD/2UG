@@ -16,6 +16,7 @@ namespace _2UG.Model
         private String name;
         private String address;
         private String route;
+        public string telphone;
 
         public String Name
         {
@@ -33,6 +34,11 @@ namespace _2UG.Model
         {
             get { return route; }
             set { route = value; }
+        }
+        public String Telphone
+        {
+            get { return telphone; }
+            set { telphone = value; }
         }
     }
 }

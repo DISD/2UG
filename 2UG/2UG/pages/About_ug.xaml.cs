@@ -50,7 +50,7 @@ namespace _2UG
         private void DoThisWhenMediaEnds(object sender, RoutedEventArgs e)
         {
             backgroundMusic.AutoPlay = true;
-            backgroundMusic.Position = new TimeSpan(0);
+            backgroundMusic.Position = new TimeSpan(1);
             //LayoutRoot.Children.Add(backgroundMusic);
             backgroundMusic.Volume = 1;
              backgroundMusic.Play();

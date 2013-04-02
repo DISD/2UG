@@ -9,8 +9,9 @@
 
   <hotel>
     <name>SHERATON HOTEL</name>
-    <address> email: reservations.kampala@sheraton.com, www.sheraton.com/kampala</address>
-    <telphone>(+256) 312322337</telphone>
+    <address>
+	email: reservations.kampala@sheraton.com, www.sheraton.com/kampala</address>
+     <telphone>(+256) 312322337, 414342357, 312322338</telphone>
     <district>kampala</district>
     <type>general</type>
   </hotel>
@@ -74,7 +75,7 @@
 
   <hotel>
     <name>GOLF COURSE HOTEL</name>
-    <address>Plot 64-86, Yusuf Lule Road, P.O. Box 22774, kampala, Uganda.  reservation@golfcoursehotel.com,</address>
+	<address>Plot 64-86, Yusuf Lule Road, P.O. Box 22774, kampala, Uganda.  reservation@golfcoursehotel.com,</address>
     <telphone>(+256) 414563500, 312302280</telphone>
     <district>kampala</district>
     <type>general</type>
@@ -86,7 +87,6 @@
     <telphone>(+256) 414777500</telphone>
     <district>kampala</district>
     <type>general</type>
-
   </hotel>
 
   <hotel>

@@ -55,7 +55,7 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
             <ListBox.Background>
-                <ImageBrush ImageSource="/2UG;component/images/gorilla-uganda.jpg" />
+                <ImageBrush ImageSource="/2UG;component/images/uganda.jpg" />
             </ListBox.Background>
         </ListBox>
     </Grid>

@@ -73,7 +73,8 @@ namespace _2UG
                             {
                                 Name = (String)oTher.Element("name"),
                                 Address = (String)oTher.Element("address"),
-                                Route = (String)oTher.Element("route")
+                                Route = (String)oTher.Element("route"),
+                                Telphone = (String)oTher.Element("telphone")
                             };
             }
             else if (!searchText.Equals("") && searchCriteria == 1)
@@ -84,7 +85,8 @@ namespace _2UG
                             {
                                 Name = (String)oTher.Element("name"),
                                 Address = (String)oTher.Element("address"),
-                                Route = (String)oTher.Element("route")
+                                Route = (String)oTher.Element("route"),
+                                Telphone = (String)oTher.Element("telphone")
                             };
             }
             return otherData;
