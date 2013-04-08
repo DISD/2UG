@@ -3,15 +3,19 @@
 	<name>MURCHION FALLS NATIONAL PARK</name>
 	<address>+(256) 312280450</address>
 	<district>masindi</district>
-    <activities>
-		<activity>chimpanzee trekking</activity>
-		<activity>mountain hiking</activity>
-		<activity>water rafting</activity>
-		<activity>jungle walks</activity>
-		<activity>community tours</activity>
-		<activity>sport fishing</activity>
-		<activity>game viewing</activity>
-    <activity>fu</activity>
+  <activities>
+      <activity>
+        <name>jungle walks</name>
+      </activity>
+      <activity>
+        <name>chimpanzee trekking</name>
+      </activity>
+		  <activity>
+        <name>mountain hiking</name>
+      </activity>
+		  <activity>
+        <name>water rafting</name>
+      </activity>
 	</activities>
   </tourist_attraction>
 
@@ -20,14 +24,21 @@
 	<address>   </address>
 	<district>kabale</district>
 	<activities>
-		<activity>gorilla trekking</activity>
-		<activity>water rafting</activity>
-		<activity>jungle walks</activity>
-		<activity>community tours</activity>
-		<activity>bird watching</activity>
-		<activity>sport fishing</activity>
-		<activity>game viewing</activity>
-		<activity>mountain biking</activity>
+    <activity>
+      <name>gorilla trekking</name>
+    </activity>
+		<activity>
+      <name>water rafting</name>
+    </activity>
+		<activity>
+      <name>community tours</name>
+    </activity>
+		<activity>
+      <name>bird watching</name>
+    </activity>
+		<activity>
+      <name>sport fishing</name>
+    </activity>
 	</activities>
   </tourist_attraction>
   
@@ -36,34 +47,57 @@
 	<address>+(256) 312280450</address>
 	<district>kasese</district>
 	<activities>
-		<activity>chimpanzee trekking</activity>
-		<activity>boat riding</activity>
-		<activity>water rafting</activity>
-		<activity>jungle walks</activity>
-		<activity>community tours</activity>
-		<activity>bird watching</activity>
-		<activity>sport fishing</activity>
-		<activity>game viewing</activity>
+		<activity>
+      <name>boat riding</name>
+    </activity>
+		<activity>
+      <name>water rafting</name>
+    </activity>
+		<activity>
+      <name>community tours</name>
+    </activity>
+    <activity>
+      <name>chimpanzee trekking</name>
+    </activity>
+		<activity>
+      <name>bird watching</name>
+    </activity>
 	</activities>
   </tourist_attraction>
 
-  <tourist_attraction>
+  <!--<tourist_attraction>
 	<name>LAKE MBURO NATIONAL PARK</name>
 	<address>   </address>
 	<district>kiruhura</district>
 	<activities>
-		<activity>wildlife safaris</activity>
-		<activity>boat riding</activity>
-		<activity>horse back safaris</activity>
-		<activity>jungle walks</activity>
-		<activity>community tours</activity>
-		<activity>bird watching</activity>
-		<activity>sport fishing</activity>
-		<activity>game viewing</activity>
+		<activity>
+      <name>wildlife safaris</name>
+    </activity>
+		<activity>
+      <name>boat riding</name>
+    </activity>
+		<activity>
+      <name>horse back safaris</name>
+    </activity>
+		<activity>
+      <name>jungle walks</name>
+    </activity>
+		<activity>
+      <name>community tours</name>
+    </activity>
+		<activity>
+      <name>bird watching</name>
+    </activity>
+		<activity>
+      <name>sport fishing</name>
+    </activity>
+		<activity>
+      <name>game viewing</name>
+    </activity>
 	</activities>
   </tourist_attraction>
 
-  <tourist_attraction>
+<tourist_attraction>
 	<name>KIDEPO VALLEY NATIONAL PARK</name>
 	<address>   </address>
 	<district>karamoja</district>
@@ -445,5 +479,5 @@
 	<activities>
 		<activity>worship</activity>
 	</activities>
-  </tourist_attraction>  
+  </tourist_attraction>-->  
 </tourist_attractions>

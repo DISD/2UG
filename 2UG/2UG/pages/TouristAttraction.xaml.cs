@@ -36,7 +36,7 @@ namespace _2UG
 
                 IEnumerable<ActivityModel> data = null;
                 data = from aItem in loadActivityItemXML.Descendants("tourist_attraction")
-                       where aItem.Element("activities").Element("activity").Value.Contains(searchBox.Text.ToLower())
+                       where (from act in aItem.Descendants("activity") where ((string)act.Element("name")) == searchBox.Text.ToLower() select act).Any()
                    select new ActivityModel()
                   {
                       name = (String)aItem.Element("name"),
